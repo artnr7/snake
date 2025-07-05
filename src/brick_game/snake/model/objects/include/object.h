@@ -1,7 +1,7 @@
 #ifndef OBJECT_H_
 #define OBJECT_H_
 
-#include "config.h"
+#include "../../config.h"
 
 namespace s21 {
 

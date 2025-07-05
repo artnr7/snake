@@ -7,7 +7,9 @@
 #define SNAKE_INIT_SIZE 4
 
 namespace s21 {
+
 class SnakeAnim : public Object {
+
 public:
   SnakeAnim();
 

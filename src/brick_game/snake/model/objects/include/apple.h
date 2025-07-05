@@ -2,8 +2,7 @@
 #define APPLE_H_
 
 #include "object.h"
-#include <random>
-
+#include <iostream>
 
 namespace s21 {
 
@@ -14,7 +13,7 @@ public:
 
 private:
   ObjectPc apple_;
-}
+};
 } // namespace s21
 
 #endif
