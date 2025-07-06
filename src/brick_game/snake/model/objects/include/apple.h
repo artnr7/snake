@@ -11,6 +11,8 @@ class Apple : public Object {
 public:
   Apple();
 
+  ObjectPc &GetBody();
+
 private:
   ObjectPc apple_;
 };

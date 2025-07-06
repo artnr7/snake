@@ -10,21 +10,17 @@ s21::Model *s21::Model::GetModel() {
   return model_;
 }
 
-s21::Model::Model() {
-  s_info_.field = nullptr;
-  s_info_.next = nullptr;
-  s_info_.level = 0;
-  s_info_.pause = 0;
-  s_info_.score = 0;
-  s_info_.speed = 0;
+s21::Model::Model() :s_info_(){
   Malloc();
 }
 
 void s21::Model::Malloc() {
-  s_info_.field = new int *[FIELD_H] {};
+  if (!s_info_.field) {
+    s_info_.field = new int *[FIELD_H] {};
 
-  for (int i = 0; i < FIELD_H; ++i) {
-    (s_info_.field)[i] = new int[FIELD_W]{};
+    for (int i = 0; i < FIELD_H; ++i) {
+      (s_info_.field)[i] = new int[FIELD_W]{};
+    }
   }
 }
 

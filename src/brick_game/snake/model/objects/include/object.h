@@ -1,7 +1,8 @@
 #ifndef OBJECT_H_
 #define OBJECT_H_
 
-#include "../../config.h"
+#include "../../field_attr.h"
+#include "../object_attr.h"
 
 namespace s21 {
 
@@ -9,6 +10,7 @@ using cord = int;
 using cord_ref = int &;
 
 typedef struct {
+  PxCode px_code = Nothing;
   cord cord_y_ = 0;
   cord cord_x_ = 0;
 } ObjectPc;

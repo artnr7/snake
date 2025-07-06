@@ -2,7 +2,7 @@
 #define MODEL_H_
 
 #include "../data_types.h"
-#include "config.h"
+#include "field_attr.h"
 #include "objects/include/apple.h"
 #include "objects/include/snake_anim.h"
 
@@ -17,14 +17,20 @@ protected:
   GameInfo_t s_info_;
   Apple apple_;
   SnakeAnim snake_anim_;
+  int **next_frame;
+
+  /*=====================→ METHODS ←==================== */
+  void Malloc();
+  void ParseObj();
 
 public:
   /*=====================→ METHODS ←==================== */
 
   static Model *GetModel();
-  void Malloc();
   // не нужен void Mdealloc();
   /*=====================→ BUSINESS ←==================== */
+  void GoEnd();
+  void TakeABreak();
   void GoStraight();
   void TurnLeft();
   void TurnRight();

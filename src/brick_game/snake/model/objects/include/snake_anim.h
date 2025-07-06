@@ -2,7 +2,7 @@
 #define SNAKE_ANIM_H_
 
 #include "object.h"
-#include <queue>
+#include <vector>
 
 #define SNAKE_INIT_SIZE 4
 
@@ -12,9 +12,12 @@ class SnakeAnim : public Object {
 
 public:
   SnakeAnim();
+  const std::vector<ObjectPc> &GetBody();
+
+  void StraightShift();
 
 private:
-  std::queue<ObjectPc> body_;
+  std::vector<ObjectPc> body_;
 };
 } // namespace s21
 
