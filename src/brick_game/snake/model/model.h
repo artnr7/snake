@@ -22,6 +22,7 @@ protected:
   /*=====================→ METHODS ←==================== */
   void Malloc();
   void ParseObj();
+  void RespawnApple();
 
 public:
   /*=====================→ METHODS ←==================== */

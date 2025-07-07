@@ -10,7 +10,6 @@ using cord = int;
 using cord_ref = int &;
 
 typedef struct {
-  PxCode px_code = Nothing;
   cord cord_y_ = 0;
   cord cord_x_ = 0;
 } ObjectPc;

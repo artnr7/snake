@@ -18,6 +18,7 @@ public:
 
 private:
   std::vector<ObjectPc> body_;
+  SnakeDirection snake_direction_;
 };
 } // namespace s21
 
