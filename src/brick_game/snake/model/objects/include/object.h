@@ -6,13 +6,6 @@
 
 namespace s21 {
 
-using cord = int;
-using cord_ref = int &;
-
-typedef struct {
-  cord cord_y_ = 0;
-  cord cord_x_ = 0;
-} ObjectPc;
 
 class Object {
 public:

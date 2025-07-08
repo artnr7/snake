@@ -4,7 +4,7 @@
 #include "../data_types.h"
 #include "field_attr.h"
 #include "objects/include/object.h"
-#include "objects/include/snake_anim.h"
+#include "objects/snake_anim.h"
 #include <random>
 
 namespace s21 {
@@ -30,9 +30,8 @@ protected:
 
   void WalkOnSnake(PxCode &px_code);
 
-  
-/*--------→ Score ← ---------*/
-void IncreaseScore();
+  /*--------→ Score ← ---------*/
+  void IncreaseScore();
 
 public:
   /*=====================→ METHODS ←==================== */
@@ -42,10 +41,9 @@ public:
   /*=====================→ BUSINESS ←==================== */
   void GoEnd();
   void TakeABreak();
-  void GoStraight();
-  void TurnLeft();
-  void TurnRight();
+  void MoveSnake(UserAction_t &action);
   void Acceleration();
+  GameInfo_t GetSInfo();
 };
 } // namespace s21
 

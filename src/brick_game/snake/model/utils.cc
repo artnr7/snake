@@ -1,5 +1,7 @@
 #include "model.h"
 
+GameInfo_t s21::Model::GetSInfo() { return s_info_; }
+
 void s21::Model::ParseApple() {
   s_info_.field[apple_.cord_y_][apple_.cord_x_] = PxCode::Apple;
 }

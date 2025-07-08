@@ -2,6 +2,12 @@
 
 s21::Controller::Controller() {}
 
+void s21::Controller::GameLoop(UserAction_t action, bool hold) {
+  while (action != Terminate) {
+    userInput(action, hold);
+  }
+}
+
 void s21::Controller::userInput(UserAction_t action, bool hold) {
 
   s21::Model *model = s21::Model::GetModel();
@@ -16,18 +22,29 @@ void s21::Controller::userInput(UserAction_t action, bool hold) {
   case Terminate:
     model->GoEnd();
     break;
-  case Left:
-    model->TurnLeft();
+  case UserAction_t::Up:
+    model->MoveSnake(action);
     break;
-  case Right:
-    model->TurnRight();
+  case UserAction_t::Right:
+    model->MoveSnake(action);
+    break;
+  case UserAction_t::Down:
+    model->MoveSnake(action);
+    break;
+  case UserAction_t::Left:
+    model->MoveSnake(action);
     break;
   case Action:
     model->Acceleration();
     break;
 
   default:
-    model->GoStraight();
+    model->MoveSnake(action);
     break;
   }
+}
+
+GameInfo_t s21::Controller::updateCurrentState() {
+  s21::Model *model = s21::Model::GetModel();
+  return model->GetSInfo();
 }

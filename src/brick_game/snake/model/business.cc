@@ -1,19 +1,14 @@
 #include "model.h"
 
-void s21::Model::Acceleration() {}
+void s21::Model::Acceleration() {
 
-void s21::Model::GoStraight() {
-  ClearField();
-  snake_anim_.StraightShift();
-  ParseSnake();
-
-  EatApple();
-  ParseApple();
+  //наверное просто уменьшить таймер
 }
 
-void s21::Model::TurnLeft() {
+void s21::Model::MoveSnake(UserAction_t &action) {
   ClearField();
-  snake_anim_.StraightShift();
+  snake_anim_.SetDirection(action);
+  snake_anim_.MoveBody();
   ParseSnake();
 
   EatApple();
