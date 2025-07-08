@@ -3,8 +3,9 @@
 
 #include "../data_types.h"
 #include "field_attr.h"
-#include "objects/include/apple.h"
+#include "objects/include/object.h"
 #include "objects/include/snake_anim.h"
+#include <random>
 
 namespace s21 {
 class Model {
@@ -15,14 +16,23 @@ protected:
   static Model *model_;
   /*=====================→ VARIABLES ←==================== */
   GameInfo_t s_info_;
-  Apple apple_;
+  ObjectPc apple_;
   SnakeAnim snake_anim_;
-  int **next_frame;
 
   /*=====================→ METHODS ←==================== */
   void Malloc();
-  void ParseObj();
-  void RespawnApple();
+  void ParseApple();
+  void ParseSnake();
+  void SpawnApple();
+  void EatApple();
+
+  void ClearField();
+
+  void WalkOnSnake(PxCode &px_code);
+
+  
+/*--------→ Score ← ---------*/
+void IncreaseScore();
 
 public:
   /*=====================→ METHODS ←==================== */

@@ -13,8 +13,6 @@ public:
 
   ObjectPc &GetBody();
 
-  void MoveApple(SnakeAnim);
-
 private:
   ObjectPc apple_;
 };

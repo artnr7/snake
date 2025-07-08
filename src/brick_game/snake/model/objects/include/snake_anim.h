@@ -2,7 +2,7 @@
 #define SNAKE_ANIM_H_
 
 #include "object.h"
-#include <vector>
+#include <deque>
 
 #define SNAKE_INIT_SIZE 4
 
@@ -12,12 +12,13 @@ class SnakeAnim : public Object {
 
 public:
   SnakeAnim();
-  const std::vector<ObjectPc> &GetBody();
+  const std::deque<ObjectPc> &GetBody();
 
   void StraightShift();
+  void LeftShift();
 
 private:
-  std::vector<ObjectPc> body_;
+  std::deque<ObjectPc> body_;
   SnakeDirection snake_direction_;
 };
 } // namespace s21
