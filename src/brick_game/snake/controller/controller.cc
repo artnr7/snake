@@ -14,7 +14,7 @@ void s21::Controller::userInput(UserAction_t action, bool hold) {
 
   switch (action) {
   case Start:
-    //  итак создаём
+    s21::Model::GetModel();
     break;
   case Pause:
     model->TakeABreak();

@@ -2,7 +2,7 @@
 #define CONTROLLER_H_
 
 #include "../data_types.h"
-#include "../model/model.h"
+#include "../model/include/model.h"
 
 namespace s21 {
 class Controller {

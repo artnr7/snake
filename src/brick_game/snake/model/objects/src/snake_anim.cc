@@ -1,4 +1,4 @@
-#include "../snake_anim.h"
+#include "../include/snake_anim.h"
 
 s21::SnakeAnim::SnakeAnim() : body_() {
   for (int i = 0; i < SNAKE_INIT_SIZE; ++i) {

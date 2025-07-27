@@ -1,8 +1,10 @@
 #include "model.h"
 
+/** @brief  */
+
 void s21::Model::Acceleration() {
 
-  //наверное просто уменьшить таймер
+  // наверное просто уменьшить таймер
 }
 
 void s21::Model::MoveSnake(UserAction_t &action) {

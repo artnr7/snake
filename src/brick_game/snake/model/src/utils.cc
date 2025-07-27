@@ -1,21 +1,30 @@
 #include "model.h"
 
+/** @brief  */
+
+/** @brief Получение информации об игровой структуре */
 GameInfo_t s21::Model::GetSInfo() { return s_info_; }
 
+/** @brief  */
 void s21::Model::ParseApple() {
   s_info_.field[apple_.cord_y_][apple_.cord_x_] = PxCode::Apple;
 }
 
+/** @brief  */
 void s21::Model::ParseSnake() {
   PxCode px_code = Snake;
   WalkOnSnake(px_code);
 }
 
+/** @brief  */
 void s21::Model::ClearField() {
   PxCode px_code = Nothing;
   WalkOnSnake(px_code);
 }
 
+/** @brief Спавн яблока в случайной свободной ячейке поля
+ * @todo Когда больше не будет свободной ячейки игра должна завершаться
+ */
 void s21::Model::SpawnApple() {
 
   std::random_device rd;
@@ -28,8 +37,10 @@ void s21::Model::SpawnApple() {
     apple_.cord_y_ = y_dist(rng);
     apple_.cord_x_ = x_dist(rng);
   } while ((s_info_.field)[apple_.cord_y_][apple_.cord_x_] != PxCode::Nothing);
+  /* пока по этим кордам в поле не будет пустоты ↑ */
 }
 
+/** @brief  */
 void s21::Model::EatApple() {
   auto head = *(snake_anim_.GetBody().begin());
   if (head.cord_y_ == apple_.cord_y_ && head.cord_x_ == apple_.cord_x_) {
@@ -38,6 +49,8 @@ void s21::Model::EatApple() {
   }
 }
 
+/** @brief Проходится в поле по кордам змейки и ставит соответствующий код в
+ * ячейку поля */
 void s21::Model::WalkOnSnake(PxCode &px_code) {
   auto it_e = (snake_anim_.GetBody()).end();
   for (auto it_b = snake_anim_.GetBody().begin(); it_b != it_e; ++it_b) {

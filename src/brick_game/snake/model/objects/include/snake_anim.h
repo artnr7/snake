@@ -2,20 +2,13 @@
 #define SNAKE_ANIM_H_
 
 #include "../../data_types.h"
-#include "object_attr.h"
+#include "../../include/field_attr.h"
+#include "object_conf.h"
 #include <deque>
 
 #define SNAKE_INIT_SIZE 4
 
 namespace s21 {
-
-using cord = int;
-
-typedef struct {
-  cord cord_y_ = 0;
-  cord cord_x_ = 0;
-} ObjectPc;
-
 class SnakeAnim {
 
 public:

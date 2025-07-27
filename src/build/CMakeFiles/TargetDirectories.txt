@@ -1,0 +1,5 @@
+/home/atrnr7/snake/src/build/CMakeFiles/hello.dir
+/home/atrnr7/snake/src/build/CMakeFiles/edit_cache.dir
+/home/atrnr7/snake/src/build/CMakeFiles/rebuild_cache.dir
+/home/atrnr7/snake/src/build/CMakeFiles/hello_autogen_timestamp_deps.dir
+/home/atrnr7/snake/src/build/CMakeFiles/hello_autogen.dir

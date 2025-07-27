@@ -1,6 +1,8 @@
 #include "model.h"
 
-s21::Model *s21::Model::model_ = nullptr;
+/** @brief  */
+
+// s21::Model *s21::Model::model_ = nullptr;
 
 s21::Model *s21::Model::GetModel() {
 
@@ -10,9 +12,7 @@ s21::Model *s21::Model::GetModel() {
   return model_;
 }
 
-s21::Model::Model() :s_info_(){
-  Malloc();
-}
+s21::Model::Model() : s_info_() { Malloc(); }
 
 void s21::Model::Malloc() {
   if (!s_info_.field) {

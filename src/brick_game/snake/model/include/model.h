@@ -3,8 +3,8 @@
 
 #include "../data_types.h"
 #include "field_attr.h"
-#include "objects/include/object.h"
-#include "objects/snake_anim.h"
+// #include "objects/include/object.h"
+#include "../objects/include/snake_anim.h"
 #include <random>
 
 namespace s21 {
