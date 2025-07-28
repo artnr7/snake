@@ -1,5 +1,6 @@
-/home/atrnr7/snake/src/build/CMakeFiles/hello.dir
-/home/atrnr7/snake/src/build/CMakeFiles/edit_cache.dir
-/home/atrnr7/snake/src/build/CMakeFiles/rebuild_cache.dir
-/home/atrnr7/snake/src/build/CMakeFiles/hello_autogen_timestamp_deps.dir
-/home/atrnr7/snake/src/build/CMakeFiles/hello_autogen.dir
+/home/artnr7/snake/src/build/CMakeFiles/snake_game.dir
+/home/artnr7/snake/src/build/CMakeFiles/play_snake_game.dir
+/home/artnr7/snake/src/build/CMakeFiles/edit_cache.dir
+/home/artnr7/snake/src/build/CMakeFiles/rebuild_cache.dir
+/home/artnr7/snake/src/build/CMakeFiles/snake_game_autogen_timestamp_deps.dir
+/home/artnr7/snake/src/build/CMakeFiles/snake_game_autogen.dir

@@ -15,21 +15,27 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake")
 find_package(Check REQUIRED)
 find_package(Threads REQUIRED)
 
-find_package(
-  Qt5 REQUIRED
-  COMPONENTS Core Widgets
-  REQUIRED)
+find_package(Qt5 REQUIRED COMPONENTS Core Widgets)
 
-set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTORCC ON)
-set(CMAKE_AUTOUIC ON)
+# snake snake_game
+set(SNAKE_GAME snake_game)
+set(PLAY_SNAKE_GAME play_${SNAKE_GAME})
 
-add_executable(hello gui/desktop/front.cc)
+file(GLOB DESKTOP_SRC "gui/desktop/view/*.cc")
+set(SNAKE_GAME_SRC snake.cc ${DESKTOP_SRC})
+add_executable(${SNAKE_GAME} ${SNAKE_GAME_SRC})
 
-target_link_libraries(hello PRIVATE Qt5::Core)
-target_link_libraries(hello PRIVATE Qt5::Widgets)
+set_target_properties(
+  ${SNAKE_GAME}
+  PROPERTIES AUTOMOC ON
+             AUTORCC ON
+             AUTOUIC ON)
+
+target_link_libraries(${SNAKE_GAME} PRIVATE Qt5::Core Qt5::Widgets)
 
 add_custom_target(
-  play_snake
-  COMMAND ./$(CMAKE_BINARY_DIR/snake_game)
-  DEPENDS ./$(CMAKE_BINARY_DIR/snake_game))
+  ${PLAY_SNAKE_GAME}
+  COMMAND $<TARGET_FILE:${SNAKE_GAME}>
+  DEPENDS ${SNAKE_GAME})
+
+include(cmake/CMakeFormat.cmake)

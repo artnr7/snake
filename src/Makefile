@@ -130,3 +130,7 @@ g: clean clang $(TETRIS_LIB_FILE) $(TETRIS_FRONT_OBJ_FILES)
 	$(TETRIS_FRONT_OBJ_FILES) $(TETRIS_LIB_FILE) -lncursesw
 	@gdb --tty=/dev/pts/5 -tui -x .gdbinit $(TETRIS_PLAY_EXE_FILE)
 
+###--------→ CMAKE ←---------------------------------------------------------------###
+cmakef: 
+	@cmake-format -i cmake/*.cmake CMakeLists.txt
+	@echo "CMake Format done."

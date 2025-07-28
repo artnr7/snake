@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/atrnr7/snake/src
+CMAKE_SOURCE_DIR = /home/artnr7/snake/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/atrnr7/snake/src/build
+CMAKE_BINARY_DIR = /home/artnr7/snake/src/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/atrnr7/snake/src/build/CMakeFiles /home/atrnr7/snake/src/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/artnr7/snake/src/build/CMakeFiles /home/artnr7/snake/src/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/atrnr7/snake/src/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/artnr7/snake/src/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,91 +117,152 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hello
+# Target rules for targets named snake_game
 
 # Build rule for target.
-hello: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello
-.PHONY : hello
+snake_game: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 snake_game
+.PHONY : snake_game
 
 # fast build rule for target.
-hello/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
-.PHONY : hello/fast
+snake_game/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/build
+.PHONY : snake_game/fast
 
 #=============================================================================
-# Target rules for targets named hello_autogen_timestamp_deps
+# Target rules for targets named play_snake_game
 
 # Build rule for target.
-hello_autogen_timestamp_deps: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello_autogen_timestamp_deps
-.PHONY : hello_autogen_timestamp_deps
+play_snake_game: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 play_snake_game
+.PHONY : play_snake_game
 
 # fast build rule for target.
-hello_autogen_timestamp_deps/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_autogen_timestamp_deps.dir/build.make CMakeFiles/hello_autogen_timestamp_deps.dir/build
-.PHONY : hello_autogen_timestamp_deps/fast
+play_snake_game/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/play_snake_game.dir/build.make CMakeFiles/play_snake_game.dir/build
+.PHONY : play_snake_game/fast
 
 #=============================================================================
-# Target rules for targets named hello_autogen
+# Target rules for targets named snake_game_autogen_timestamp_deps
 
 # Build rule for target.
-hello_autogen: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello_autogen
-.PHONY : hello_autogen
+snake_game_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 snake_game_autogen_timestamp_deps
+.PHONY : snake_game_autogen_timestamp_deps
 
 # fast build rule for target.
-hello_autogen/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_autogen.dir/build.make CMakeFiles/hello_autogen.dir/build
-.PHONY : hello_autogen/fast
+snake_game_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game_autogen_timestamp_deps.dir/build.make CMakeFiles/snake_game_autogen_timestamp_deps.dir/build
+.PHONY : snake_game_autogen_timestamp_deps/fast
 
-gui/desktop/front.o: gui/desktop/front.cc.o
-.PHONY : gui/desktop/front.o
+#=============================================================================
+# Target rules for targets named snake_game_autogen
 
-# target to build an object file
-gui/desktop/front.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/gui/desktop/front.cc.o
-.PHONY : gui/desktop/front.cc.o
+# Build rule for target.
+snake_game_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 snake_game_autogen
+.PHONY : snake_game_autogen
 
-gui/desktop/front.i: gui/desktop/front.cc.i
-.PHONY : gui/desktop/front.i
+# fast build rule for target.
+snake_game_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game_autogen.dir/build.make CMakeFiles/snake_game_autogen.dir/build
+.PHONY : snake_game_autogen/fast
 
-# target to preprocess a source file
-gui/desktop/front.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/gui/desktop/front.cc.i
-.PHONY : gui/desktop/front.cc.i
-
-gui/desktop/front.s: gui/desktop/front.cc.s
-.PHONY : gui/desktop/front.s
-
-# target to generate assembly for a file
-gui/desktop/front.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/gui/desktop/front.cc.s
-.PHONY : gui/desktop/front.cc.s
-
-hello_autogen/mocs_compilation.o: hello_autogen/mocs_compilation.cpp.o
-.PHONY : hello_autogen/mocs_compilation.o
+gui/desktop/view/widgets.o: gui/desktop/view/widgets.cc.o
+.PHONY : gui/desktop/view/widgets.o
 
 # target to build an object file
-hello_autogen/mocs_compilation.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/hello_autogen/mocs_compilation.cpp.o
-.PHONY : hello_autogen/mocs_compilation.cpp.o
+gui/desktop/view/widgets.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/widgets.cc.o
+.PHONY : gui/desktop/view/widgets.cc.o
 
-hello_autogen/mocs_compilation.i: hello_autogen/mocs_compilation.cpp.i
-.PHONY : hello_autogen/mocs_compilation.i
+gui/desktop/view/widgets.i: gui/desktop/view/widgets.cc.i
+.PHONY : gui/desktop/view/widgets.i
 
 # target to preprocess a source file
-hello_autogen/mocs_compilation.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/hello_autogen/mocs_compilation.cpp.i
-.PHONY : hello_autogen/mocs_compilation.cpp.i
+gui/desktop/view/widgets.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/widgets.cc.i
+.PHONY : gui/desktop/view/widgets.cc.i
 
-hello_autogen/mocs_compilation.s: hello_autogen/mocs_compilation.cpp.s
-.PHONY : hello_autogen/mocs_compilation.s
+gui/desktop/view/widgets.s: gui/desktop/view/widgets.cc.s
+.PHONY : gui/desktop/view/widgets.s
 
 # target to generate assembly for a file
-hello_autogen/mocs_compilation.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/hello_autogen/mocs_compilation.cpp.s
-.PHONY : hello_autogen/mocs_compilation.cpp.s
+gui/desktop/view/widgets.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/widgets.cc.s
+.PHONY : gui/desktop/view/widgets.cc.s
+
+gui/desktop/view/window.o: gui/desktop/view/window.cc.o
+.PHONY : gui/desktop/view/window.o
+
+# target to build an object file
+gui/desktop/view/window.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/window.cc.o
+.PHONY : gui/desktop/view/window.cc.o
+
+gui/desktop/view/window.i: gui/desktop/view/window.cc.i
+.PHONY : gui/desktop/view/window.i
+
+# target to preprocess a source file
+gui/desktop/view/window.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/window.cc.i
+.PHONY : gui/desktop/view/window.cc.i
+
+gui/desktop/view/window.s: gui/desktop/view/window.cc.s
+.PHONY : gui/desktop/view/window.s
+
+# target to generate assembly for a file
+gui/desktop/view/window.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/window.cc.s
+.PHONY : gui/desktop/view/window.cc.s
+
+snake.o: snake.cc.o
+.PHONY : snake.o
+
+# target to build an object file
+snake.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/snake.cc.o
+.PHONY : snake.cc.o
+
+snake.i: snake.cc.i
+.PHONY : snake.i
+
+# target to preprocess a source file
+snake.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/snake.cc.i
+.PHONY : snake.cc.i
+
+snake.s: snake.cc.s
+.PHONY : snake.s
+
+# target to generate assembly for a file
+snake.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/snake.cc.s
+.PHONY : snake.cc.s
+
+snake_game_autogen/mocs_compilation.o: snake_game_autogen/mocs_compilation.cpp.o
+.PHONY : snake_game_autogen/mocs_compilation.o
+
+# target to build an object file
+snake_game_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/snake_game_autogen/mocs_compilation.cpp.o
+.PHONY : snake_game_autogen/mocs_compilation.cpp.o
+
+snake_game_autogen/mocs_compilation.i: snake_game_autogen/mocs_compilation.cpp.i
+.PHONY : snake_game_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+snake_game_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/snake_game_autogen/mocs_compilation.cpp.i
+.PHONY : snake_game_autogen/mocs_compilation.cpp.i
+
+snake_game_autogen/mocs_compilation.s: snake_game_autogen/mocs_compilation.cpp.s
+.PHONY : snake_game_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+snake_game_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/snake_game_autogen/mocs_compilation.cpp.s
+.PHONY : snake_game_autogen/mocs_compilation.cpp.s
 
 # Help Target
 help:
@@ -211,15 +272,22 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... hello_autogen"
-	@echo "... hello_autogen_timestamp_deps"
-	@echo "... hello"
-	@echo "... gui/desktop/front.o"
-	@echo "... gui/desktop/front.i"
-	@echo "... gui/desktop/front.s"
-	@echo "... hello_autogen/mocs_compilation.o"
-	@echo "... hello_autogen/mocs_compilation.i"
-	@echo "... hello_autogen/mocs_compilation.s"
+	@echo "... play_snake_game"
+	@echo "... snake_game_autogen"
+	@echo "... snake_game_autogen_timestamp_deps"
+	@echo "... snake_game"
+	@echo "... gui/desktop/view/widgets.o"
+	@echo "... gui/desktop/view/widgets.i"
+	@echo "... gui/desktop/view/widgets.s"
+	@echo "... gui/desktop/view/window.o"
+	@echo "... gui/desktop/view/window.i"
+	@echo "... gui/desktop/view/window.s"
+	@echo "... snake.o"
+	@echo "... snake.i"
+	@echo "... snake.s"
+	@echo "... snake_game_autogen/mocs_compilation.o"
+	@echo "... snake_game_autogen/mocs_compilation.i"
+	@echo "... snake_game_autogen/mocs_compilation.s"
 .PHONY : help
 
 

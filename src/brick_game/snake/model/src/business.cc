@@ -1,7 +1,6 @@
 #include "model.h"
 
 /** @brief  */
-
 void s21::Model::Acceleration() {
 
   // наверное просто уменьшить таймер
