@@ -150,8 +150,9 @@
 	"SETTINGS_FILE" : "/home/artnr7/snake/src/build/CMakeFiles/snake_game_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/home/artnr7/snake/src/gui/desktop/view/widgets.cc", "MU", null ],
-		[ "/home/artnr7/snake/src/gui/desktop/view/window.cc", "MU", null ],
+		[ "/home/artnr7/snake/src/gui/desktop/view/src/info.cc", "MU", null ],
+		[ "/home/artnr7/snake/src/gui/desktop/view/src/widgets.cc", "MU", null ],
+		[ "/home/artnr7/snake/src/gui/desktop/view/src/window.cc", "MU", null ],
 		[ "/home/artnr7/snake/src/snake.cc", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

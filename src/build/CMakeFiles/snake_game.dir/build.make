@@ -104,54 +104,70 @@ CMakeFiles/snake_game.dir/snake.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snake_game.dir/snake.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/snake.cc -o CMakeFiles/snake_game.dir/snake.cc.s
 
-CMakeFiles/snake_game.dir/gui/desktop/view/widgets.cc.o: CMakeFiles/snake_game.dir/flags.make
-CMakeFiles/snake_game.dir/gui/desktop/view/widgets.cc.o: /home/artnr7/snake/src/gui/desktop/view/widgets.cc
-CMakeFiles/snake_game.dir/gui/desktop/view/widgets.cc.o: CMakeFiles/snake_game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/snake_game.dir/gui/desktop/view/widgets.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake_game.dir/gui/desktop/view/widgets.cc.o -MF CMakeFiles/snake_game.dir/gui/desktop/view/widgets.cc.o.d -o CMakeFiles/snake_game.dir/gui/desktop/view/widgets.cc.o -c /home/artnr7/snake/src/gui/desktop/view/widgets.cc
+CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.o: CMakeFiles/snake_game.dir/flags.make
+CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.o: /home/artnr7/snake/src/gui/desktop/view/src/info.cc
+CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.o: CMakeFiles/snake_game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.o -MF CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.o.d -o CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.o -c /home/artnr7/snake/src/gui/desktop/view/src/info.cc
 
-CMakeFiles/snake_game.dir/gui/desktop/view/widgets.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/snake_game.dir/gui/desktop/view/widgets.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/gui/desktop/view/widgets.cc > CMakeFiles/snake_game.dir/gui/desktop/view/widgets.cc.i
+CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/gui/desktop/view/src/info.cc > CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.i
 
-CMakeFiles/snake_game.dir/gui/desktop/view/widgets.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snake_game.dir/gui/desktop/view/widgets.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/gui/desktop/view/widgets.cc -o CMakeFiles/snake_game.dir/gui/desktop/view/widgets.cc.s
+CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/gui/desktop/view/src/info.cc -o CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.s
 
-CMakeFiles/snake_game.dir/gui/desktop/view/window.cc.o: CMakeFiles/snake_game.dir/flags.make
-CMakeFiles/snake_game.dir/gui/desktop/view/window.cc.o: /home/artnr7/snake/src/gui/desktop/view/window.cc
-CMakeFiles/snake_game.dir/gui/desktop/view/window.cc.o: CMakeFiles/snake_game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/snake_game.dir/gui/desktop/view/window.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake_game.dir/gui/desktop/view/window.cc.o -MF CMakeFiles/snake_game.dir/gui/desktop/view/window.cc.o.d -o CMakeFiles/snake_game.dir/gui/desktop/view/window.cc.o -c /home/artnr7/snake/src/gui/desktop/view/window.cc
+CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.o: CMakeFiles/snake_game.dir/flags.make
+CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.o: /home/artnr7/snake/src/gui/desktop/view/src/widgets.cc
+CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.o: CMakeFiles/snake_game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.o -MF CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.o.d -o CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.o -c /home/artnr7/snake/src/gui/desktop/view/src/widgets.cc
 
-CMakeFiles/snake_game.dir/gui/desktop/view/window.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/snake_game.dir/gui/desktop/view/window.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/gui/desktop/view/window.cc > CMakeFiles/snake_game.dir/gui/desktop/view/window.cc.i
+CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/gui/desktop/view/src/widgets.cc > CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.i
 
-CMakeFiles/snake_game.dir/gui/desktop/view/window.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snake_game.dir/gui/desktop/view/window.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/gui/desktop/view/window.cc -o CMakeFiles/snake_game.dir/gui/desktop/view/window.cc.s
+CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/gui/desktop/view/src/widgets.cc -o CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.s
+
+CMakeFiles/snake_game.dir/gui/desktop/view/src/window.cc.o: CMakeFiles/snake_game.dir/flags.make
+CMakeFiles/snake_game.dir/gui/desktop/view/src/window.cc.o: /home/artnr7/snake/src/gui/desktop/view/src/window.cc
+CMakeFiles/snake_game.dir/gui/desktop/view/src/window.cc.o: CMakeFiles/snake_game.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/snake_game.dir/gui/desktop/view/src/window.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake_game.dir/gui/desktop/view/src/window.cc.o -MF CMakeFiles/snake_game.dir/gui/desktop/view/src/window.cc.o.d -o CMakeFiles/snake_game.dir/gui/desktop/view/src/window.cc.o -c /home/artnr7/snake/src/gui/desktop/view/src/window.cc
+
+CMakeFiles/snake_game.dir/gui/desktop/view/src/window.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/snake_game.dir/gui/desktop/view/src/window.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/gui/desktop/view/src/window.cc > CMakeFiles/snake_game.dir/gui/desktop/view/src/window.cc.i
+
+CMakeFiles/snake_game.dir/gui/desktop/view/src/window.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snake_game.dir/gui/desktop/view/src/window.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/gui/desktop/view/src/window.cc -o CMakeFiles/snake_game.dir/gui/desktop/view/src/window.cc.s
 
 # Object files for target snake_game
 snake_game_OBJECTS = \
 "CMakeFiles/snake_game.dir/snake_game_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/snake_game.dir/snake.cc.o" \
-"CMakeFiles/snake_game.dir/gui/desktop/view/widgets.cc.o" \
-"CMakeFiles/snake_game.dir/gui/desktop/view/window.cc.o"
+"CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.o" \
+"CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.o" \
+"CMakeFiles/snake_game.dir/gui/desktop/view/src/window.cc.o"
 
 # External object files for target snake_game
 snake_game_EXTERNAL_OBJECTS =
 
 snake_game: CMakeFiles/snake_game.dir/snake_game_autogen/mocs_compilation.cpp.o
 snake_game: CMakeFiles/snake_game.dir/snake.cc.o
-snake_game: CMakeFiles/snake_game.dir/gui/desktop/view/widgets.cc.o
-snake_game: CMakeFiles/snake_game.dir/gui/desktop/view/window.cc.o
+snake_game: CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.o
+snake_game: CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.o
+snake_game: CMakeFiles/snake_game.dir/gui/desktop/view/src/window.cc.o
 snake_game: CMakeFiles/snake_game.dir/build.make
 snake_game: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13
 snake_game: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13
 snake_game: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13
 snake_game: CMakeFiles/snake_game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable snake_game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable snake_game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/snake_game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

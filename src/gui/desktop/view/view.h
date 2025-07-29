@@ -16,8 +16,10 @@ class View {
   void Window(int argc, char* argv[]);
 
  private:
-  void FieldDraw();
-  void InfoDraw();
+  class AppWidget : public QWidget {
+    void paintEvent(QPaintEvent* event) override;
+  };
+  void InfoDraw(AppWidget& field_w);
   //   GameInfo_t vs_info_;
 };
 }  // namespace s21

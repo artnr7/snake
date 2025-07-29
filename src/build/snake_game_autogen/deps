@@ -4,8 +4,9 @@ snake_game_autogen/timestamp: \
 	/home/artnr7/snake/src/build/CMakeFiles/3.28.3/CMakeSystem.cmake \
 	/home/artnr7/snake/src/cmake/CMakeFormat.cmake \
 	/home/artnr7/snake/src/cmake/FindCheck.cmake \
-	/home/artnr7/snake/src/gui/desktop/view/widgets.cc \
-	/home/artnr7/snake/src/gui/desktop/view/window.cc \
+	/home/artnr7/snake/src/gui/desktop/view/src/info.cc \
+	/home/artnr7/snake/src/gui/desktop/view/src/widgets.cc \
+	/home/artnr7/snake/src/gui/desktop/view/src/window.cc \
 	/home/artnr7/snake/src/snake.cc \
 	/usr/lib/x86_64-linux-gnu/cmake/GTest/GMockTargets-none.cmake \
 	/usr/lib/x86_64-linux-gnu/cmake/GTest/GMockTargets.cmake \

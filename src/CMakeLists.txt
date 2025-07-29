@@ -21,7 +21,7 @@ find_package(Qt5 REQUIRED COMPONENTS Core Widgets)
 set(SNAKE_GAME snake_game)
 set(PLAY_SNAKE_GAME play_${SNAKE_GAME})
 
-file(GLOB DESKTOP_SRC "gui/desktop/view/*.cc")
+file(GLOB DESKTOP_SRC "gui/desktop/view/src/*.cc")
 set(SNAKE_GAME_SRC snake.cc ${DESKTOP_SRC})
 add_executable(${SNAKE_GAME} ${SNAKE_GAME_SRC})
 

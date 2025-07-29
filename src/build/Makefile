@@ -168,53 +168,77 @@ snake_game_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game_autogen.dir/build.make CMakeFiles/snake_game_autogen.dir/build
 .PHONY : snake_game_autogen/fast
 
-gui/desktop/view/widgets.o: gui/desktop/view/widgets.cc.o
-.PHONY : gui/desktop/view/widgets.o
+gui/desktop/view/src/info.o: gui/desktop/view/src/info.cc.o
+.PHONY : gui/desktop/view/src/info.o
 
 # target to build an object file
-gui/desktop/view/widgets.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/widgets.cc.o
-.PHONY : gui/desktop/view/widgets.cc.o
+gui/desktop/view/src/info.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.o
+.PHONY : gui/desktop/view/src/info.cc.o
 
-gui/desktop/view/widgets.i: gui/desktop/view/widgets.cc.i
-.PHONY : gui/desktop/view/widgets.i
+gui/desktop/view/src/info.i: gui/desktop/view/src/info.cc.i
+.PHONY : gui/desktop/view/src/info.i
 
 # target to preprocess a source file
-gui/desktop/view/widgets.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/widgets.cc.i
-.PHONY : gui/desktop/view/widgets.cc.i
+gui/desktop/view/src/info.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.i
+.PHONY : gui/desktop/view/src/info.cc.i
 
-gui/desktop/view/widgets.s: gui/desktop/view/widgets.cc.s
-.PHONY : gui/desktop/view/widgets.s
+gui/desktop/view/src/info.s: gui/desktop/view/src/info.cc.s
+.PHONY : gui/desktop/view/src/info.s
 
 # target to generate assembly for a file
-gui/desktop/view/widgets.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/widgets.cc.s
-.PHONY : gui/desktop/view/widgets.cc.s
+gui/desktop/view/src/info.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.s
+.PHONY : gui/desktop/view/src/info.cc.s
 
-gui/desktop/view/window.o: gui/desktop/view/window.cc.o
-.PHONY : gui/desktop/view/window.o
+gui/desktop/view/src/widgets.o: gui/desktop/view/src/widgets.cc.o
+.PHONY : gui/desktop/view/src/widgets.o
 
 # target to build an object file
-gui/desktop/view/window.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/window.cc.o
-.PHONY : gui/desktop/view/window.cc.o
+gui/desktop/view/src/widgets.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.o
+.PHONY : gui/desktop/view/src/widgets.cc.o
 
-gui/desktop/view/window.i: gui/desktop/view/window.cc.i
-.PHONY : gui/desktop/view/window.i
+gui/desktop/view/src/widgets.i: gui/desktop/view/src/widgets.cc.i
+.PHONY : gui/desktop/view/src/widgets.i
 
 # target to preprocess a source file
-gui/desktop/view/window.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/window.cc.i
-.PHONY : gui/desktop/view/window.cc.i
+gui/desktop/view/src/widgets.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.i
+.PHONY : gui/desktop/view/src/widgets.cc.i
 
-gui/desktop/view/window.s: gui/desktop/view/window.cc.s
-.PHONY : gui/desktop/view/window.s
+gui/desktop/view/src/widgets.s: gui/desktop/view/src/widgets.cc.s
+.PHONY : gui/desktop/view/src/widgets.s
 
 # target to generate assembly for a file
-gui/desktop/view/window.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/window.cc.s
-.PHONY : gui/desktop/view/window.cc.s
+gui/desktop/view/src/widgets.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.s
+.PHONY : gui/desktop/view/src/widgets.cc.s
+
+gui/desktop/view/src/window.o: gui/desktop/view/src/window.cc.o
+.PHONY : gui/desktop/view/src/window.o
+
+# target to build an object file
+gui/desktop/view/src/window.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/src/window.cc.o
+.PHONY : gui/desktop/view/src/window.cc.o
+
+gui/desktop/view/src/window.i: gui/desktop/view/src/window.cc.i
+.PHONY : gui/desktop/view/src/window.i
+
+# target to preprocess a source file
+gui/desktop/view/src/window.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/src/window.cc.i
+.PHONY : gui/desktop/view/src/window.cc.i
+
+gui/desktop/view/src/window.s: gui/desktop/view/src/window.cc.s
+.PHONY : gui/desktop/view/src/window.s
+
+# target to generate assembly for a file
+gui/desktop/view/src/window.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/src/window.cc.s
+.PHONY : gui/desktop/view/src/window.cc.s
 
 snake.o: snake.cc.o
 .PHONY : snake.o
@@ -276,12 +300,15 @@ help:
 	@echo "... snake_game_autogen"
 	@echo "... snake_game_autogen_timestamp_deps"
 	@echo "... snake_game"
-	@echo "... gui/desktop/view/widgets.o"
-	@echo "... gui/desktop/view/widgets.i"
-	@echo "... gui/desktop/view/widgets.s"
-	@echo "... gui/desktop/view/window.o"
-	@echo "... gui/desktop/view/window.i"
-	@echo "... gui/desktop/view/window.s"
+	@echo "... gui/desktop/view/src/info.o"
+	@echo "... gui/desktop/view/src/info.i"
+	@echo "... gui/desktop/view/src/info.s"
+	@echo "... gui/desktop/view/src/widgets.o"
+	@echo "... gui/desktop/view/src/widgets.i"
+	@echo "... gui/desktop/view/src/widgets.s"
+	@echo "... gui/desktop/view/src/window.o"
+	@echo "... gui/desktop/view/src/window.i"
+	@echo "... gui/desktop/view/src/window.s"
 	@echo "... snake.o"
 	@echo "... snake.i"
 	@echo "... snake.s"
