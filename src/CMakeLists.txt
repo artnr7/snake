@@ -25,6 +25,8 @@ file(GLOB DESKTOP_SRC "gui/desktop/view/src/*.cc")
 set(SNAKE_GAME_SRC snake.cc ${DESKTOP_SRC})
 add_executable(${SNAKE_GAME} ${SNAKE_GAME_SRC})
 
+target_compile_options(${SNAKE_GAME} PRIVATE -DTETRIS)
+
 set_target_properties(
   ${SNAKE_GAME}
   PROPERTIES AUTOMOC ON
@@ -33,9 +35,13 @@ set_target_properties(
 
 target_link_libraries(${SNAKE_GAME} PRIVATE Qt5::Core Qt5::Widgets)
 
+file(GLOB_RECURSE CLANG "*.cc" "*.h")
+
 add_custom_target(
   ${PLAY_SNAKE_GAME}
+  COMMAND clang-format -i ${CLANG}
   COMMAND $<TARGET_FILE:${SNAKE_GAME}>
   DEPENDS ${SNAKE_GAME})
 
 include(cmake/CMakeFormat.cmake)
+include(cmake/ClangFormat.cmake)

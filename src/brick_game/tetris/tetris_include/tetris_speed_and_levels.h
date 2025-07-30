@@ -6,8 +6,8 @@
 #include "stdio.h"
 #include "tetris_data_types.h"
 
-#define LVL_QTY 10  // ◄ кол-во уровней в игре(не менять, не независ. величина)
-#define SPD_MLT 50  // ◄ множитель скорости (оптимально 50)
+#define LVL_QTY 10 // ◄ кол-во уровней в игре(не менять, не независ. величина)
+#define SPD_MLT 50 // ◄ множитель скорости (оптимально 50)
 
 void lvl_up(GameInfo_t *tg_info);
 

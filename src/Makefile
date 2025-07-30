@@ -131,6 +131,9 @@ g: clean clang $(TETRIS_LIB_FILE) $(TETRIS_FRONT_OBJ_FILES)
 	@gdb --tty=/dev/pts/5 -tui -x .gdbinit $(TETRIS_PLAY_EXE_FILE)
 
 ###--------→ CMAKE ←---------------------------------------------------------------###
-cmakef: 
+# FILES:= $(shell find . -name '*.cc')
+
+c: 
 	@cmake-format -i cmake/*.cmake CMakeLists.txt
-	@echo "CMake Format done."
+	@find . -name '*.cc' -exec clang-format -i {} +
+	@echo "Format done."

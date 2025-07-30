@@ -14,34 +14,34 @@ void s21::Controller::userInput(UserAction_t action, bool hold) {
   s21::Model *model = s21::Model::GetModel();
 
   switch (action) {
-    case Start:
-      s21::Model::GetModel();
-      break;
-    case Pause:
-      model->TakeABreak();
-      break;
-    case Terminate:
-      model->GoEnd();
-      break;
-    case UserAction_t::Up:
-      model->MoveSnake(action);
-      break;
-    case UserAction_t::Right:
-      model->MoveSnake(action);
-      break;
-    case UserAction_t::Down:
-      model->MoveSnake(action);
-      break;
-    case UserAction_t::Left:
-      model->MoveSnake(action);
-      break;
-    case Action:
-      model->Acceleration();
-      break;
+  case Start:
+    s21::Model::GetModel();
+    break;
+  case Pause:
+    model->TakeABreak();
+    break;
+  case Terminate:
+    model->GoEnd();
+    break;
+  case UserAction_t::Up:
+    model->MoveSnake(action);
+    break;
+  case UserAction_t::Right:
+    model->MoveSnake(action);
+    break;
+  case UserAction_t::Down:
+    model->MoveSnake(action);
+    break;
+  case UserAction_t::Left:
+    model->MoveSnake(action);
+    break;
+  case Action:
+    model->Acceleration();
+    break;
 
-    default:
-      model->MoveSnake(action);
-      break;
+  default:
+    model->MoveSnake(action);
+    break;
   }
 }
 

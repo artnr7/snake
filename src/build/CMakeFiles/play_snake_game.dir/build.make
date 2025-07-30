@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/artnr7/snake/src
+CMAKE_SOURCE_DIR = /home/atrnr7/snake/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/artnr7/snake/src/build
+CMAKE_BINARY_DIR = /home/atrnr7/snake/src/build
 
 # Utility rule file for play_snake_game.
 
@@ -67,6 +67,7 @@ include CMakeFiles/play_snake_game.dir/compiler_depend.make
 include CMakeFiles/play_snake_game.dir/progress.make
 
 CMakeFiles/play_snake_game: snake_game
+	clang-format -i /home/atrnr7/snake/src/brick_game/snake/controller/controller.cc /home/atrnr7/snake/src/brick_game/snake/controller/controller.h /home/atrnr7/snake/src/brick_game/snake/data_types.h /home/atrnr7/snake/src/brick_game/snake/model/include/field_attr.h /home/atrnr7/snake/src/brick_game/snake/model/include/model.h /home/atrnr7/snake/src/brick_game/snake/model/objects/include/object_conf.h /home/atrnr7/snake/src/brick_game/snake/model/objects/include/snake_anim.h /home/atrnr7/snake/src/brick_game/snake/model/objects/src/snake_anim.cc /home/atrnr7/snake/src/brick_game/snake/model/src/business.cc /home/atrnr7/snake/src/brick_game/snake/model/src/init.cc /home/atrnr7/snake/src/brick_game/snake/model/src/utils.cc /home/atrnr7/snake/src/brick_game/snake/snake\ del/apple.h /home/atrnr7/snake/src/brick_game/snake/snake\ del/object.cc /home/atrnr7/snake/src/brick_game/snake/snake\ del/object.h /home/atrnr7/snake/src/brick_game/tetris/tetris_backend.h /home/atrnr7/snake/src/brick_game/tetris/tetris_include/tetris_backend_utils.h /home/atrnr7/snake/src/brick_game/tetris/tetris_include/tetris_collision.h /home/atrnr7/snake/src/brick_game/tetris/tetris_include/tetris_data_types.h /home/atrnr7/snake/src/brick_game/tetris/tetris_include/tetris_init.h /home/atrnr7/snake/src/brick_game/tetris/tetris_include/tetris_moving/tetris_left_right_move.h /home/atrnr7/snake/src/brick_game/tetris/tetris_include/tetris_moving/tetris_moving.h /home/atrnr7/snake/src/brick_game/tetris/tetris_include/tetris_moving/tetris_moving_utils.h /home/atrnr7/snake/src/brick_game/tetris/tetris_include/tetris_moving/tetris_rotate.h /home/atrnr7/snake/src/brick_game/tetris/tetris_include/tetris_moving/tetris_tetromino_fall.h /home/atrnr7/snake/src/brick_game/tetris/tetris_include/tetris_rows_hit.h /home/atrnr7/snake/src/brick_game/tetris/tetris_include/tetris_speed_and_levels.h /home/atrnr7/snake/src/brick_game/tetris/tetris_include/tetris_tetromino_create.h /home/atrnr7/snake/src/brick_game/tetris/tetris_include/tetris_timer.h /home/atrnr7/snake/src/build/snake_game_autogen/moc_predefs.h /home/atrnr7/snake/src/gui/cli/include/tetris_frontend_utils.h /home/atrnr7/snake/src/gui/cli/include/tetris_menu.h /home/atrnr7/snake/src/gui/cli/tetris_frontend.h /home/atrnr7/snake/src/gui/desktop/view/app.h /home/atrnr7/snake/src/gui/desktop/view/src/gamefield.cc /home/atrnr7/snake/src/gui/desktop/view/src/info.cc /home/atrnr7/snake/src/gui/desktop/view/src/window.cc /home/atrnr7/snake/src/gui/desktop/view/view.h /home/atrnr7/snake/src/snake.cc /home/atrnr7/snake/src/tetris_test_dir/test_utils.h /home/atrnr7/snake/src/tetris_test_dir/tetris_test.h
 	./snake_game
 
 play_snake_game: CMakeFiles/play_snake_game
@@ -82,6 +83,6 @@ CMakeFiles/play_snake_game.dir/clean:
 .PHONY : CMakeFiles/play_snake_game.dir/clean
 
 CMakeFiles/play_snake_game.dir/depend:
-	cd /home/artnr7/snake/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/artnr7/snake/src /home/artnr7/snake/src /home/artnr7/snake/src/build /home/artnr7/snake/src/build /home/artnr7/snake/src/build/CMakeFiles/play_snake_game.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/atrnr7/snake/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/atrnr7/snake/src /home/atrnr7/snake/src /home/atrnr7/snake/src/build /home/atrnr7/snake/src/build /home/atrnr7/snake/src/build/CMakeFiles/play_snake_game.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/play_snake_game.dir/depend
 

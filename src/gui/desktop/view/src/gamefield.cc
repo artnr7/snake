@@ -18,5 +18,13 @@ void s21::View::AppWidget::paintEvent(QPaintEvent *event) {
     }
   }
 
+#ifdef TETRIS
+  for (size_t i = 0; i < NEXT_H / MULT; ++i) {
+    for (size_t j = 0; j < NEXT_W / MULT; ++j) {
+      painter.drawRect(NEXT_X + j * MULT, NEXT_Y + i * MULT, MULT, MULT);
+    }
+  }
+#endif
+
   painter.end();
 }

@@ -7,11 +7,12 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/artnr7/snake/src/CMakeLists.txt"
+  "/home/atrnr7/snake/src/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
-  "/home/artnr7/snake/src/cmake/CMakeFormat.cmake"
-  "/home/artnr7/snake/src/cmake/FindCheck.cmake"
+  "/home/atrnr7/snake/src/cmake/CMakeFormat.cmake"
+  "/home/atrnr7/snake/src/cmake/ClangFormat.cmake"
+  "/home/atrnr7/snake/src/cmake/FindCheck.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/GTest/GMockTargets-none.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/GTest/GMockTargets.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake"
@@ -102,6 +103,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/snake_game.dir/DependInfo.cmake"
   "CMakeFiles/play_snake_game.dir/DependInfo.cmake"
+  "CMakeFiles/clang-format-fix.dir/DependInfo.cmake"
   "CMakeFiles/snake_game_autogen_timestamp_deps.dir/DependInfo.cmake"
   "CMakeFiles/snake_game_autogen.dir/DependInfo.cmake"
   )

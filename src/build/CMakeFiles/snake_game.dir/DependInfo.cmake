@@ -9,11 +9,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "snake_game_autogen/timestamp" "custom" "snake_game_autogen/deps"
-  "/home/artnr7/snake/src/gui/desktop/view/src/info.cc" "CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.o" "gcc" "CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.o.d"
-  "/home/artnr7/snake/src/gui/desktop/view/src/widgets.cc" "CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.o" "gcc" "CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.o.d"
-  "/home/artnr7/snake/src/gui/desktop/view/src/window.cc" "CMakeFiles/snake_game.dir/gui/desktop/view/src/window.cc.o" "gcc" "CMakeFiles/snake_game.dir/gui/desktop/view/src/window.cc.o.d"
-  "/home/artnr7/snake/src/snake.cc" "CMakeFiles/snake_game.dir/snake.cc.o" "gcc" "CMakeFiles/snake_game.dir/snake.cc.o.d"
-  "/home/artnr7/snake/src/build/snake_game_autogen/mocs_compilation.cpp" "CMakeFiles/snake_game.dir/snake_game_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/snake_game.dir/snake_game_autogen/mocs_compilation.cpp.o.d"
+  "/home/atrnr7/snake/src/gui/desktop/view/src/gamefield.cc" "CMakeFiles/snake_game.dir/gui/desktop/view/src/gamefield.cc.o" "gcc" "CMakeFiles/snake_game.dir/gui/desktop/view/src/gamefield.cc.o.d"
+  "/home/atrnr7/snake/src/gui/desktop/view/src/info.cc" "CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.o" "gcc" "CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.o.d"
+  "/home/atrnr7/snake/src/gui/desktop/view/src/window.cc" "CMakeFiles/snake_game.dir/gui/desktop/view/src/window.cc.o" "gcc" "CMakeFiles/snake_game.dir/gui/desktop/view/src/window.cc.o.d"
+  "/home/atrnr7/snake/src/snake.cc" "CMakeFiles/snake_game.dir/snake.cc.o" "gcc" "CMakeFiles/snake_game.dir/snake.cc.o.d"
+  "/home/atrnr7/snake/src/build/snake_game_autogen/mocs_compilation.cpp" "CMakeFiles/snake_game.dir/snake_game_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/snake_game.dir/snake_game_autogen/mocs_compilation.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

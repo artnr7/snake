@@ -23,5 +23,4 @@ typedef struct {
 
 } GameInfo_t;
 
-
 #endif

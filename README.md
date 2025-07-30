@@ -7,5 +7,5 @@ cmake --build build --parallel $(nproc)
 ```
 
 ```
-cmake --build build --target hello
+cmake --build build --target play_snake_game --parallel $(nproc)
 ```

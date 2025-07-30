@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/artnr7/snake/src
+CMAKE_SOURCE_DIR = /home/atrnr7/snake/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/artnr7/snake/src/build
+CMAKE_BINARY_DIR = /home/atrnr7/snake/src/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/artnr7/snake/src/build/CMakeFiles /home/artnr7/snake/src/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/atrnr7/snake/src/build/CMakeFiles /home/atrnr7/snake/src/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/artnr7/snake/src/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/atrnr7/snake/src/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -143,6 +143,19 @@ play_snake_game/fast:
 .PHONY : play_snake_game/fast
 
 #=============================================================================
+# Target rules for targets named clang-format-fix
+
+# Build rule for target.
+clang-format-fix: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clang-format-fix
+.PHONY : clang-format-fix
+
+# fast build rule for target.
+clang-format-fix/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clang-format-fix.dir/build.make CMakeFiles/clang-format-fix.dir/build
+.PHONY : clang-format-fix/fast
+
+#=============================================================================
 # Target rules for targets named snake_game_autogen_timestamp_deps
 
 # Build rule for target.
@@ -168,6 +181,30 @@ snake_game_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game_autogen.dir/build.make CMakeFiles/snake_game_autogen.dir/build
 .PHONY : snake_game_autogen/fast
 
+gui/desktop/view/src/gamefield.o: gui/desktop/view/src/gamefield.cc.o
+.PHONY : gui/desktop/view/src/gamefield.o
+
+# target to build an object file
+gui/desktop/view/src/gamefield.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/src/gamefield.cc.o
+.PHONY : gui/desktop/view/src/gamefield.cc.o
+
+gui/desktop/view/src/gamefield.i: gui/desktop/view/src/gamefield.cc.i
+.PHONY : gui/desktop/view/src/gamefield.i
+
+# target to preprocess a source file
+gui/desktop/view/src/gamefield.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/src/gamefield.cc.i
+.PHONY : gui/desktop/view/src/gamefield.cc.i
+
+gui/desktop/view/src/gamefield.s: gui/desktop/view/src/gamefield.cc.s
+.PHONY : gui/desktop/view/src/gamefield.s
+
+# target to generate assembly for a file
+gui/desktop/view/src/gamefield.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/src/gamefield.cc.s
+.PHONY : gui/desktop/view/src/gamefield.cc.s
+
 gui/desktop/view/src/info.o: gui/desktop/view/src/info.cc.o
 .PHONY : gui/desktop/view/src/info.o
 
@@ -191,30 +228,6 @@ gui/desktop/view/src/info.s: gui/desktop/view/src/info.cc.s
 gui/desktop/view/src/info.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/src/info.cc.s
 .PHONY : gui/desktop/view/src/info.cc.s
-
-gui/desktop/view/src/widgets.o: gui/desktop/view/src/widgets.cc.o
-.PHONY : gui/desktop/view/src/widgets.o
-
-# target to build an object file
-gui/desktop/view/src/widgets.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.o
-.PHONY : gui/desktop/view/src/widgets.cc.o
-
-gui/desktop/view/src/widgets.i: gui/desktop/view/src/widgets.cc.i
-.PHONY : gui/desktop/view/src/widgets.i
-
-# target to preprocess a source file
-gui/desktop/view/src/widgets.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.i
-.PHONY : gui/desktop/view/src/widgets.cc.i
-
-gui/desktop/view/src/widgets.s: gui/desktop/view/src/widgets.cc.s
-.PHONY : gui/desktop/view/src/widgets.s
-
-# target to generate assembly for a file
-gui/desktop/view/src/widgets.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/gui/desktop/view/src/widgets.cc.s
-.PHONY : gui/desktop/view/src/widgets.cc.s
 
 gui/desktop/view/src/window.o: gui/desktop/view/src/window.cc.o
 .PHONY : gui/desktop/view/src/window.o
@@ -296,16 +309,17 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... clang-format-fix"
 	@echo "... play_snake_game"
 	@echo "... snake_game_autogen"
 	@echo "... snake_game_autogen_timestamp_deps"
 	@echo "... snake_game"
+	@echo "... gui/desktop/view/src/gamefield.o"
+	@echo "... gui/desktop/view/src/gamefield.i"
+	@echo "... gui/desktop/view/src/gamefield.s"
 	@echo "... gui/desktop/view/src/info.o"
 	@echo "... gui/desktop/view/src/info.i"
 	@echo "... gui/desktop/view/src/info.s"
-	@echo "... gui/desktop/view/src/widgets.o"
-	@echo "... gui/desktop/view/src/widgets.i"
-	@echo "... gui/desktop/view/src/widgets.s"
 	@echo "... gui/desktop/view/src/window.o"
 	@echo "... gui/desktop/view/src/window.i"
 	@echo "... gui/desktop/view/src/window.s"

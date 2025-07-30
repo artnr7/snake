@@ -6,7 +6,6 @@
 
 namespace s21 {
 
-
 class Object {
 public:
   void SetCords(cord_ref cord_y, cord_ref cord_x);
