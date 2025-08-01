@@ -3,14 +3,14 @@
 
 void s21::View::Window(int argc, char *argv[]) {
   QApplication app(argc, argv);
-  AppWidget *field_w = new AppWidget;
+  AppWidget *game_w = new AppWidget;
 
-  field_w->setFixedSize(APP_W, APP_H);
-  field_w->setWindowTitle("Snake");
+  game_w->setFixedSize(APP_W, APP_H);
+  game_w->setWindowTitle("Snake");
 
-  InfoDraw(field_w);
+  InfoDraw(game_w);
 
-  field_w->show();
+  game_w->show();
 
   app.exec();
 }

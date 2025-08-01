@@ -11,16 +11,27 @@
 namespace s21 {
 class View {
 public:
-  //   void DeviceInput();
+  class App : public QObject {
+    Q_OBJECT
+  public:
+    App() {}
 
-  void Window(int argc, char *argv[]);
+    void AppObj(int argc, char *argv[]);
 
-private:
-  class AppWidget : public QWidget {
-    void paintEvent(QPaintEvent *event) override;
+  private:
+    class GameWidget : public QWidget {
+      void paintEvent(QPaintEvent *event) override;
+    };
+    void InfoDraw(GameWidget *game_w);
+    //   GameInfo_t vs_info_;
+
+  signals:
+    void DeviceInput();
+
+  private slots:
+
+    void DeviceInput();
   };
-  void InfoDraw(AppWidget *field_w);
-  //   GameInfo_t vs_info_;
 };
 } // namespace s21
 
