@@ -3,7 +3,7 @@
 #include "../app.h"
 #include "../view.h"
 
-void s21::View::InfoDraw(AppWidget *field_w) {
+void s21::View::InfoDraw(GameWidget *field_w) {
   QVBoxLayout *info_lay = new QVBoxLayout(field_w);
   info_lay->setContentsMargins(INFO_X + INDENT_X, INFO_Y + INDENT_Y, INDENT_X,
                                INDENT_Y);

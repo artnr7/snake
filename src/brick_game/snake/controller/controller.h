@@ -10,7 +10,7 @@ class Controller {
 public:
   Controller();
 
-  void userInput(UserAction_t action, bool hold);
+  static void userInput(UserAction_t action, bool hold);
   GameInfo_t updateCurrentState();
 
   void GameLoop(UserAction_t action, bool hold);

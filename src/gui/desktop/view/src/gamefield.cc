@@ -1,7 +1,7 @@
 #include "../app.h"
 #include "../view.h"
 
-void s21::View::AppWidget::paintEvent(QPaintEvent *event) {
+void s21::View::App::GameWidget::paintEvent(QPaintEvent *event) {
   QPainter painter;
   painter.begin(this);
 
