@@ -1,7 +1,0 @@
-/home/atrnr7/snake/src/build/CMakeFiles/snake_game.dir
-/home/atrnr7/snake/src/build/CMakeFiles/play_snake_game.dir
-/home/atrnr7/snake/src/build/CMakeFiles/clang-format-fix.dir
-/home/atrnr7/snake/src/build/CMakeFiles/edit_cache.dir
-/home/atrnr7/snake/src/build/CMakeFiles/rebuild_cache.dir
-/home/atrnr7/snake/src/build/CMakeFiles/snake_game_autogen_timestamp_deps.dir
-/home/atrnr7/snake/src/build/CMakeFiles/snake_game_autogen.dir

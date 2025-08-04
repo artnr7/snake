@@ -4,8 +4,8 @@
 #include "gui/desktop/view/view.h"
 
 int main(int argc, char *argv[]) {
-  s21::View view_snake;
+  s21::View::App view_snake;
 
-  view_snake.Window(argc, argv);
+  view_snake.AppObj(argc, argv);
   return 0;
 }

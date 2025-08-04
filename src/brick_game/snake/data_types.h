@@ -13,8 +13,8 @@ typedef enum {
 } UserAction_t;
 
 typedef struct {
-  int **field; // ← игровое поле
-  int **next;
+  int **field;    // ← игровое поле
+  int **next;     // ← следующая фигура в Тетрисе
   int score;      // ← счёт
   int high_score; // ← рекорд счёта
   int level;      // ← уровень сложности

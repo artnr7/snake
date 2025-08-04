@@ -1,54 +1,102 @@
-#include "../app.h"
 #include "../view.h"
 #include <iostream>
 
-s21::View::App::App(QObject *parent) : QObject(parent) {
-
-  QObject::connect(this, SIGNAL(DeviceInput()), this, SLOT(OnDeviceInput()));
-  emit DeviceInput();
+s21::View::App::GameWidget::GameWidget(QWidget *parent) : QWidget(parent) {
+  QWidget::connect(this, &s21::View::App::GameWidget::DeviceInputFixed, this,
+                   &s21::View::App::GameWidget::TransmiteSignal);
 }
 
-void s21::View::App::DeviceInput(UserAction_t action, bool hold) {
-  s21::Controller::userInput();
-}
+void s21::View::App::GameWidget::TransmiteSignal(bool hold) {}
+// void s21::View::App::GameWidget::TransmiteSignal(UserAction_t action,
+//                                                  bool hold) {
 
-void s21::View::App::OnDeviceInput() { std::cout << "Slot is activated!"; }
+//   s21::Controller::userInput(action, hold);
+//   std::cout << "Slot is activated!" << std::endl;
+// }
 
-void s21::View::App::KeyPressEvent(QKeyEvent *Kevent) {
-  static int key = Kevent->key();
-  bool hold = false;
-
-  switch (key) {
+void s21::View::App::GameWidget::keyPressEvent(QKeyEvent *Kevent) {
+  switch (Kevent->key()) {
   case Qt::Key_S:
-    emit s21::View::App::DeviceInput(UserAction_t::Start, false);
+    emit s21::View::App::GameWidget::DeviceInputFixed(
+                                                      false);
     break;
   case Qt::Key_T:
-    emit s21::View::App::DeviceInput(UserAction_t::Pause, false);
+    emit s21::View::App::GameWidget::DeviceInputFixed(
+                                                      false);
     break;
   case Qt::Key_Q:
-    emit s21::View::App::DeviceInput(UserAction_t::Terminate, false);
+    emit s21::View::App::GameWidget::DeviceInputFixed(
+                                                      false);
     break;
   case Qt::Key_Left:
-    emit s21::View::App::DeviceInput(UserAction_t::Left, false);
+    emit s21::View::App::GameWidget::DeviceInputFixed(
+                                                      false);
     break;
 
   case Qt::Key_Right:
-    emit s21::View::App::DeviceInput(UserAction_t::Right, false);
+    emit s21::View::App::GameWidget::DeviceInputFixed(
+                                                      false);
     break;
 
   case Qt::Key_Up:
-    emit s21::View::App::DeviceInput(UserAction_t::Up, false);
+    emit s21::View::App::GameWidget::DeviceInputFixed( false);
     break;
   case Qt::Key_Down:
-    emit s21::View::App::DeviceInput(UserAction_t::Down, false);
+    emit s21::View::App::GameWidget::DeviceInputFixed(
+                                                      false);
     break;
 
   case Qt::Key_Space:
-hold 
-    emit s21::View::App::DeviceInput(UserAction_t::Action, hold);
+    hold_ = true;
+    emit s21::View::App::GameWidget::DeviceInputFixed(
+                                                      hold_);
     break;
   }
-  static int old_key = Kevent->key();
+}
+// void s21::View::App::GameWidget::keyPressEvent(QKeyEvent *Kevent) {
+//   switch (Kevent->key()) {
+//   case Qt::Key_S:
+//     emit s21::View::App::GameWidget::DeviceInputFixed(UserAction_t::Start,
+//                                                       false);
+//     break;
+//   case Qt::Key_T:
+//     emit s21::View::App::GameWidget::DeviceInputFixed(UserAction_t::Pause,
+//                                                       false);
+//     break;
+//   case Qt::Key_Q:
+//     emit s21::View::App::GameWidget::DeviceInputFixed(UserAction_t::Terminate,
+//                                                       false);
+//     break;
+//   case Qt::Key_Left:
+//     emit s21::View::App::GameWidget::DeviceInputFixed(UserAction_t::Left,
+//                                                       false);
+//     break;
+
+//   case Qt::Key_Right:
+//     emit s21::View::App::GameWidget::DeviceInputFixed(UserAction_t::Right,
+//                                                       false);
+//     break;
+
+//   case Qt::Key_Up:
+//     emit s21::View::App::GameWidget::DeviceInputFixed(UserAction_t::Up, false);
+//     break;
+//   case Qt::Key_Down:
+//     emit s21::View::App::GameWidget::DeviceInputFixed(UserAction_t::Down,
+//                                                       false);
+//     break;
+
+//   case Qt::Key_Space:
+//     hold_ = true;
+//     emit s21::View::App::GameWidget::DeviceInputFixed(UserAction_t::Action,
+//                                                       hold_);
+//     break;
+//   }
+// }
+
+void s21::View::App::GameWidget::keyReleaseEvent(QKeyEvent *Kevent) {
+  if (Kevent->key() == Qt::Key_Space) {
+    hold_ = false;
+  }
 }
 
 // Само приложение
@@ -59,7 +107,7 @@ void s21::View::App::AppObj(int argc, char *argv[]) {
   game_w->setFixedSize(APP_W, APP_H);
   game_w->setWindowTitle("Snake");
 
-  InfoDraw(game_w);
+  game_w->InfoDraw(game_w);
 
   game_w->show();
 

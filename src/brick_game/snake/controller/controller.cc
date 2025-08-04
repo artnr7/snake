@@ -2,13 +2,20 @@
 
 s21::Controller::Controller() {}
 
-void s21::Controller::GameLoop(UserAction_t action, bool hold) {
-  s21::Model *model = s21::Model::GetModel();
+// void s21::Controller::GameLoop(UserAction_t action, bool hold) {
+//   s21::Model *model = s21::Model::GetModel();
 
-  while (model) {
-    userInput(action, hold);
-  }
-}
+//   while (model) {
+//     userInput(action, hold);
+//   }
+// }
+
+// s21::Controller *s21::Controller::GetController() {
+//   if (controller_ == nullptr) {
+//     controller_ = new Controller();
+//   }
+//   return controller_;
+// }
 
 void s21::Controller::userInput(UserAction_t action, bool hold) {
   s21::Model *model = s21::Model::GetModel();

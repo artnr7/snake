@@ -1,7 +1,7 @@
 #ifndef MODEL_H_
 #define MODEL_H_
 
-#include "../data_types.h"
+#include "../../data_types.h"
 #include "field_attr.h"
 // #include "objects/include/object.h"
 #include "../objects/include/snake_anim.h"

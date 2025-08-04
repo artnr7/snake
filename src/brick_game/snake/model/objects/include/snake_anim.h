@@ -1,7 +1,7 @@
 #ifndef SNAKE_ANIM_H_
 #define SNAKE_ANIM_H_
 
-#include "../../data_types.h"
+#include "../../../data_types.h"
 #include "../../include/field_attr.h"
 #include "object_conf.h"
 #include <deque>

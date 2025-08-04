@@ -26,6 +26,7 @@ set(SNAKE_GAME_SRC snake.cc ${DESKTOP_SRC})
 add_executable(${SNAKE_GAME} ${SNAKE_GAME_SRC})
 
 target_compile_options(${SNAKE_GAME} PRIVATE -DTETRIS)
+set(CMAKE_AUTOMOC ON)
 
 set_target_properties(
   ${SNAKE_GAME}

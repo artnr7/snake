@@ -1,4 +1,3 @@
-#include "../app.h"
 #include "../view.h"
 
 void s21::View::App::GameWidget::paintEvent(QPaintEvent *event) {

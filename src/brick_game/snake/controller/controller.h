@@ -7,13 +7,19 @@
 namespace s21 {
 class Controller {
 
-public:
+protected:
   Controller();
 
+  // static Controller *controller_;
+
+public:
+  /*=====================→ METHODS ←==================== */
   static void userInput(UserAction_t action, bool hold);
   GameInfo_t updateCurrentState();
 
-  void GameLoop(UserAction_t action, bool hold);
+  // void GameLoop(UserAction_t action, bool hold);
+
+  // static Controller *GetController();
 };
 } // namespace s21
 
