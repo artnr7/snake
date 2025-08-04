@@ -1,3 +1,14 @@
+#include <QApplication>
+#include <QKeyEvent>
+#include <QLabel>
+#include <QPainter>
+#include <QPalette>
+#include <QTimer>
+#include <QWidget>
+
+#include "../../../brick_game/snake/controller/controller.h"
+#include "../../../brick_game/snake/data_types.h"
+
 /*------------------→ MISC ←---------------- */
 #define INDENT_Y 10
 #define INDENT_X 10

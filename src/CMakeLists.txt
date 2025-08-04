@@ -22,8 +22,29 @@ set(SNAKE_GAME snake_game)
 set(PLAY_SNAKE_GAME play_${SNAKE_GAME})
 
 file(GLOB DESKTOP_SRC "gui/desktop/view/src/*.cc")
-set(SNAKE_GAME_SRC snake.cc ${DESKTOP_SRC})
-add_executable(${SNAKE_GAME} ${SNAKE_GAME_SRC})
+file(GLOB DESKTOP_INCLUDE "gui/desktop/view/include/*.h")
+
+file(GLOB CONTROLLER_SRC "brick_game/snake/controller/*.cc")
+file(GLOB CONTROLLER_INCLUDE "brick_game/snake/controller/*.h")
+
+file(GLOB MODEL_SRC "brick_game/snake/model/src/*.cc")
+file(GLOB MODEL_INCLUDE "brick_game/snake/model/include/*.h")
+
+file(GLOB MODEL_OBJECTS_SRC "brick_game/snake/model/objects/src/*.cc")
+file(GLOB MODEL_OBJECTS_INCLUDE "brick_game/snake/model/objects/src/*.h")
+
+set(SNAKE_GAME_SRC_INCLUDE
+    snake.cc
+    ${DESKTOP_SRC}
+    ${DESKTOP_INCLUDE}
+    ${CONTROLLER_SRC}
+    ${CONTROLLER_INCLUDE}
+    ${MODEL_SRC}
+    ${MODEL_INCLUDE}
+    ${MODEL_OBJECTS_SRC}
+    ${MODEL_OBJECTS_INCLUDE})
+
+add_executable(${SNAKE_GAME} ${SNAKE_GAME_SRC_INCLUDE})
 
 target_compile_options(${SNAKE_GAME} PRIVATE -DTETRIS)
 set(CMAKE_AUTOMOC ON)

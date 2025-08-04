@@ -1,9 +1,8 @@
+#include "../include/view.h"
+
 #include <QVBoxLayout>
 
-#include "../app.h"
-#include "../view.h"
-
-void s21::View::App::GameWidget::InfoDraw(GameWidget *field_w) {
+void s21::GameWidget::InfoDraw(GameWidget *field_w) {
   QVBoxLayout *info_lay = new QVBoxLayout(field_w);
   info_lay->setContentsMargins(INFO_X + INDENT_X, INFO_Y + INDENT_Y, INDENT_X,
                                INDENT_Y);

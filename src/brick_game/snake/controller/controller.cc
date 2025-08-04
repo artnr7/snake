@@ -25,10 +25,11 @@ void s21::Controller::userInput(UserAction_t action, bool hold) {
     s21::Model::GetModel();
     break;
   case Pause:
-    model->TakeABreak();
+    // model->TakeABreak();
+
     break;
   case Terminate:
-    model->GoEnd();
+    // model->GoEnd();
     break;
   case UserAction_t::Up:
     model->MoveSnake(action);

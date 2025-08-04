@@ -1,8 +1,9 @@
-#include "model.h"
+#include "../include/model.h"
 
 /** @brief  */
 
-// s21::Model *s21::Model::model_ = nullptr;
+s21::Model *s21::Model::model_ = nullptr;
+// s21::Model::model_ = nullptr;
 
 s21::Model *s21::Model::GetModel() {
 
