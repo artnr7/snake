@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/snake_game.dir/brick_game/snake/controller/controller.cc.o.d"
   "CMakeFiles/snake_game.dir/brick_game/snake/model/objects/src/snake_anim.cc.o"
   "CMakeFiles/snake_game.dir/brick_game/snake/model/objects/src/snake_anim.cc.o.d"
+  "CMakeFiles/snake_game.dir/brick_game/snake/model/src/apple.cc.o"
+  "CMakeFiles/snake_game.dir/brick_game/snake/model/src/apple.cc.o.d"
   "CMakeFiles/snake_game.dir/brick_game/snake/model/src/business.cc.o"
   "CMakeFiles/snake_game.dir/brick_game/snake/model/src/business.cc.o.d"
   "CMakeFiles/snake_game.dir/brick_game/snake/model/src/init.cc.o"

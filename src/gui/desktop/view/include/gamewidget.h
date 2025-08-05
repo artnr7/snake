@@ -19,5 +19,6 @@ signals:
   void DeviceInputFixed(UserAction_t action, bool hold);
 private slots:
   void TransmiteSignal(UserAction_t action, bool hold);
+  void Exit();
 };
 } // namespace s21

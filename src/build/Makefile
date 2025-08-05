@@ -229,6 +229,30 @@ brick_game/snake/model/objects/src/snake_anim.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/brick_game/snake/model/objects/src/snake_anim.cc.s
 .PHONY : brick_game/snake/model/objects/src/snake_anim.cc.s
 
+brick_game/snake/model/src/apple.o: brick_game/snake/model/src/apple.cc.o
+.PHONY : brick_game/snake/model/src/apple.o
+
+# target to build an object file
+brick_game/snake/model/src/apple.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/brick_game/snake/model/src/apple.cc.o
+.PHONY : brick_game/snake/model/src/apple.cc.o
+
+brick_game/snake/model/src/apple.i: brick_game/snake/model/src/apple.cc.i
+.PHONY : brick_game/snake/model/src/apple.i
+
+# target to preprocess a source file
+brick_game/snake/model/src/apple.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/brick_game/snake/model/src/apple.cc.i
+.PHONY : brick_game/snake/model/src/apple.cc.i
+
+brick_game/snake/model/src/apple.s: brick_game/snake/model/src/apple.cc.s
+.PHONY : brick_game/snake/model/src/apple.s
+
+# target to generate assembly for a file
+brick_game/snake/model/src/apple.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/brick_game/snake/model/src/apple.cc.s
+.PHONY : brick_game/snake/model/src/apple.cc.s
+
 brick_game/snake/model/src/business.o: brick_game/snake/model/src/business.cc.o
 .PHONY : brick_game/snake/model/src/business.o
 
@@ -440,6 +464,9 @@ help:
 	@echo "... brick_game/snake/model/objects/src/snake_anim.o"
 	@echo "... brick_game/snake/model/objects/src/snake_anim.i"
 	@echo "... brick_game/snake/model/objects/src/snake_anim.s"
+	@echo "... brick_game/snake/model/src/apple.o"
+	@echo "... brick_game/snake/model/src/apple.i"
+	@echo "... brick_game/snake/model/src/apple.s"
 	@echo "... brick_game/snake/model/src/business.o"
 	@echo "... brick_game/snake/model/src/business.i"
 	@echo "... brick_game/snake/model/src/business.s"

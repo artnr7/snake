@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "snake_game_autogen/timestamp" "custom" "snake_game_autogen/deps"
   "/home/artnr7/snake/src/brick_game/snake/controller/controller.cc" "CMakeFiles/snake_game.dir/brick_game/snake/controller/controller.cc.o" "gcc" "CMakeFiles/snake_game.dir/brick_game/snake/controller/controller.cc.o.d"
   "/home/artnr7/snake/src/brick_game/snake/model/objects/src/snake_anim.cc" "CMakeFiles/snake_game.dir/brick_game/snake/model/objects/src/snake_anim.cc.o" "gcc" "CMakeFiles/snake_game.dir/brick_game/snake/model/objects/src/snake_anim.cc.o.d"
+  "/home/artnr7/snake/src/brick_game/snake/model/src/apple.cc" "CMakeFiles/snake_game.dir/brick_game/snake/model/src/apple.cc.o" "gcc" "CMakeFiles/snake_game.dir/brick_game/snake/model/src/apple.cc.o.d"
   "/home/artnr7/snake/src/brick_game/snake/model/src/business.cc" "CMakeFiles/snake_game.dir/brick_game/snake/model/src/business.cc.o" "gcc" "CMakeFiles/snake_game.dir/brick_game/snake/model/src/business.cc.o.d"
   "/home/artnr7/snake/src/brick_game/snake/model/src/init.cc" "CMakeFiles/snake_game.dir/brick_game/snake/model/src/init.cc.o" "gcc" "CMakeFiles/snake_game.dir/brick_game/snake/model/src/init.cc.o.d"
   "/home/artnr7/snake/src/brick_game/snake/model/src/utils.cc" "CMakeFiles/snake_game.dir/brick_game/snake/model/src/utils.cc.o" "gcc" "CMakeFiles/snake_game.dir/brick_game/snake/model/src/utils.cc.o.d"

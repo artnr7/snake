@@ -14,16 +14,16 @@ void s21::GameWidget::paintEvent(QPaintEvent *event) {
 
   for (size_t i = 0; i < GAMEFIELD_H / MULT; ++i) {
     for (size_t j = 0; j < GAMEFIELD_W / MULT; ++j) {
+      painter.drawRect(GAMEFIELD_X + j * MULT, GAMEFIELD_Y + i * MULT, MULT,
+                       MULT);
 
       if (g_info.field[i][j] == s21::PxCode::Snake) {
-        painter.fillRect(GAMEFIELD_X + j * MULT, GAMEFIELD_Y + i * MULT, MULT,
-                         MULT, QBrush{"#00FFFF"});
+        painter.fillRect(GAMEFIELD_X + j * MULT + 1, GAMEFIELD_Y + i * MULT + 1,
+                         MULT - 1, MULT - 1, QBrush{"#00FFFF"});
       } else if (g_info.field[i][j] == s21::PxCode::Apple) {
-        painter.fillRect(GAMEFIELD_X + j * MULT, GAMEFIELD_Y + i * MULT, MULT,
-                         MULT, QBrush{"#FF0000"});
+        painter.fillRect(GAMEFIELD_X + j * MULT + 1, GAMEFIELD_Y + i * MULT + 1,
+                         MULT - 1, MULT - 1, QBrush{"#FF0000"});
       } else {
-        painter.drawRect(GAMEFIELD_X + j * MULT, GAMEFIELD_Y + i * MULT, MULT,
-                         MULT);
       }
     }
   }

@@ -5,6 +5,7 @@ snake_game_autogen/timestamp: \
 	/home/artnr7/snake/src/brick_game/snake/model/include/field_attr.h \
 	/home/artnr7/snake/src/brick_game/snake/model/include/model.h \
 	/home/artnr7/snake/src/brick_game/snake/model/objects/src/snake_anim.cc \
+	/home/artnr7/snake/src/brick_game/snake/model/src/apple.cc \
 	/home/artnr7/snake/src/brick_game/snake/model/src/business.cc \
 	/home/artnr7/snake/src/brick_game/snake/model/src/init.cc \
 	/home/artnr7/snake/src/brick_game/snake/model/src/utils.cc \

@@ -17,6 +17,7 @@ class SnakeAnim {
 public:
   SnakeAnim();
   const std::deque<ObjectPc> &GetBody();
+  const ObjectPc GetHead();
 
   void SetDirection(UserAction_t &action);
   void MoveBody();

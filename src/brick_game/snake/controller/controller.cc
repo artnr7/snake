@@ -46,9 +46,9 @@ void s21::Controller::userInput(UserAction_t action, bool hold) {
     model->Acceleration();
     break;
 
-  default:
-    model->MoveSnake(action);
-    break;
+    // default:
+    //   model->MoveSnake(action);
+    //   break;
   }
 }
 

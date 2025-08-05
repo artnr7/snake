@@ -11,7 +11,7 @@ namespace s21 {
 
 typedef enum { Nothing, Apple, Snake } PxCode;
 
-typedef enum { NoLaunched, Launched, Paused, Terminated } GameState;
+typedef enum { NoLaunched, Launched, Paused, Terminated, GameOver } GameState;
 
 class Model {
 
@@ -50,6 +50,7 @@ public:
   void GoEnd();
   void TakeABreak();
   void MoveSnake(UserAction_t &action);
+  void WallCollision();
   void Acceleration();
   GameInfo_t GetSInfo();
 };

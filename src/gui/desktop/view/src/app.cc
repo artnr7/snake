@@ -7,8 +7,28 @@ s21::GameWidget::GameWidget(QWidget *parent) : QWidget(parent) {
   update_freq_timer_->start(15);
   QWidget::connect(update_freq_timer_, &QTimer::timeout, this,
                    QOverload<>::of(&s21::GameWidget::update));
+
   QWidget::connect(this, &s21::GameWidget::DeviceInputFixed, this,
                    &s21::GameWidget::TransmiteSignal);
+
+  QWidget::connect(update_freq_timer_, &QTimer::timeout, this,
+                   &s21::GameWidget::Exit);
+}
+
+void s21::GameWidget::Exit() {
+  GameInfo_t g_info = {};
+
+#ifdef TETRIS
+  g_info = updateCurrentState();
+#elif SNAKE
+  g_info = s21::Controller::updateCurrentState();
+#endif
+  if (g_info.pause == GameState::GameOver) {
+    exit(1);
+  }
+  if (g_info.pause == GameState::Terminated) {
+    exit(2);
+  }
 }
 
 void s21::GameWidget::TransmiteSignal(UserAction_t action, bool hold) {
@@ -28,10 +48,10 @@ void s21::GameWidget::keyPressEvent(QKeyEvent *Kevent) {
   case Qt::Key_Q:
     emit s21::GameWidget::DeviceInputFixed(UserAction_t::Terminate, false);
     break;
+
   case Qt::Key_Left:
     emit s21::GameWidget::DeviceInputFixed(UserAction_t::Left, false);
     break;
-
   case Qt::Key_Right:
     emit s21::GameWidget::DeviceInputFixed(UserAction_t::Right, false);
     break;
@@ -71,11 +91,6 @@ void s21::App::AppObj(int argc, char *argv[]) {
 #endif
   game_w->setWindowTitle(g_name);
 
-  // #ifdef TETRIS
-  //   GameInfo_t g_info = updateCurrentState();
-  // #elif SNAKE
-  //   GameInfo_t g_info = s21::Controller::updateCurrentState();
-  // #endif
   // Цвета ↓
   QPalette pal = game_w->palette();
   pal.setColor(QPalette::Window, Qt::gray);
