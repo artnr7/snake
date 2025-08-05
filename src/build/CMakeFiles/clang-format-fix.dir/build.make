@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/atrnr7/snake/src
+CMAKE_SOURCE_DIR = /home/artnr7/snake/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/atrnr7/snake/src/build
+CMAKE_BINARY_DIR = /home/artnr7/snake/src/build
 
 # Utility rule file for clang-format-fix.
 
@@ -67,8 +67,8 @@ include CMakeFiles/clang-format-fix.dir/compiler_depend.make
 include CMakeFiles/clang-format-fix.dir/progress.make
 
 CMakeFiles/clang-format-fix:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Formatting code with clang-format (Google Style)"
-	cd /home/atrnr7/snake/src && --style=Google -i
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Formatting code with clang-format (Google Style)"
+	cd /home/artnr7/snake/src && --style=Google -i
 
 clang-format-fix: CMakeFiles/clang-format-fix
 clang-format-fix: CMakeFiles/clang-format-fix.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/clang-format-fix.dir/clean:
 .PHONY : CMakeFiles/clang-format-fix.dir/clean
 
 CMakeFiles/clang-format-fix.dir/depend:
-	cd /home/atrnr7/snake/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/atrnr7/snake/src /home/atrnr7/snake/src /home/atrnr7/snake/src/build /home/atrnr7/snake/src/build /home/atrnr7/snake/src/build/CMakeFiles/clang-format-fix.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/artnr7/snake/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/artnr7/snake/src /home/artnr7/snake/src /home/artnr7/snake/src/build /home/artnr7/snake/src/build /home/artnr7/snake/src/build/CMakeFiles/clang-format-fix.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/clang-format-fix.dir/depend
 

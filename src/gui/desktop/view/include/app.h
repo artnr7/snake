@@ -10,7 +10,7 @@ public:
   void AppObj(int argc, char *argv[]);
 
 private:
-  s21::GameWidget *GameWidgetptr;
+  s21::GameWidget *GameWidget;
 };
 } // namespace s21
 

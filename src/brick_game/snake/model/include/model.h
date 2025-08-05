@@ -8,6 +8,11 @@
 #include <random>
 
 namespace s21 {
+
+typedef enum { Nothing, Apple, Snake } PxCode;
+
+typedef enum { NoLaunched, Launched, Paused, Terminated } GameState;
+
 class Model {
 
 protected:
@@ -21,8 +26,10 @@ protected:
 
   /*=====================→ METHODS ←==================== */
   void Malloc();
-  void ParseApple();
   void ParseSnake();
+
+  /*--------→ Apple ← ---------*/
+  void ParseApple();
   void SpawnApple();
   void EatApple();
 
@@ -35,6 +42,7 @@ protected:
 
 public:
   /*=====================→ METHODS ←==================== */
+  void InitGame();
 
   static Model *GetModel();
   // не нужен void Mdealloc();

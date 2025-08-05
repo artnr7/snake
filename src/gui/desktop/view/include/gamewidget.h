@@ -14,6 +14,7 @@ public:
 private:
   void paintEvent(QPaintEvent *event) override;
   bool hold_;
+  QTimer *update_freq_timer_;
 signals:
   void DeviceInputFixed(UserAction_t action, bool hold);
 private slots:

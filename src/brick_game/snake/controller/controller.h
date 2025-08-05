@@ -15,7 +15,7 @@ protected:
 public:
   /*=====================→ METHODS ←==================== */
   static void userInput(UserAction_t action, bool hold);
-  GameInfo_t updateCurrentState();
+  static GameInfo_t updateCurrentState();
 
   // void GameLoop(UserAction_t action, bool hold);
 

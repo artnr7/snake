@@ -9,9 +9,5 @@ typedef struct {
   cord cord_x_ = 0;
 } ObjectPc;
 
-typedef enum { Nothing, Apple, Snake } PxCode;
-
-typedef enum { Up, Right, Down, Left } SnakeDirection;
-
 } // namespace s21
 #endif

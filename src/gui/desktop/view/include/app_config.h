@@ -1,3 +1,6 @@
+#ifndef APP_CONFIG_H_
+#define APP_CONFIG_H_
+
 #include <QApplication>
 #include <QKeyEvent>
 #include <QLabel>
@@ -6,6 +9,10 @@
 #include <QTimer>
 #include <QWidget>
 
+// #ifdef TETRIS
+// #include "../../../brick_game/tetris/tetris_backend.h"
+
+// #elif SNAKE
 #include "../../../brick_game/snake/controller/controller.h"
 #include "../../../brick_game/snake/data_types.h"
 
@@ -38,3 +45,6 @@
 #define NEXT_X (INFO_X + INDENT_X + 5)
 #define NEXT_H (2 * MULT)
 #define NEXT_W (4 * MULT)
+// #endif
+
+#endif

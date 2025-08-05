@@ -46,7 +46,7 @@ set(SNAKE_GAME_SRC_INCLUDE
 
 add_executable(${SNAKE_GAME} ${SNAKE_GAME_SRC_INCLUDE})
 
-target_compile_options(${SNAKE_GAME} PRIVATE -DTETRIS)
+target_compile_options(${SNAKE_GAME} PRIVATE -DSNAKE)
 set(CMAKE_AUTOMOC ON)
 
 set_target_properties(

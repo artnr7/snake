@@ -22,14 +22,13 @@ void s21::Controller::userInput(UserAction_t action, bool hold) {
 
   switch (action) {
   case Start:
-    s21::Model::GetModel();
+    model->InitGame();
     break;
   case Pause:
-    // model->TakeABreak();
-
+    model->TakeABreak();
     break;
   case Terminate:
-    // model->GoEnd();
+    model->GoEnd();
     break;
   case UserAction_t::Up:
     model->MoveSnake(action);

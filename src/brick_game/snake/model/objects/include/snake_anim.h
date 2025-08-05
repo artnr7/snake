@@ -9,6 +9,9 @@
 #define SNAKE_INIT_SIZE 4
 
 namespace s21 {
+
+typedef enum { Up, Right, Down, Left } SnakeDirection;
+
 class SnakeAnim {
 
 public:
@@ -20,7 +23,7 @@ public:
 
 private:
   std::deque<ObjectPc> body_;
-  SnakeDirection snake_direction_;
+  SnakeDirection s_dir_;
 };
 } // namespace s21
 
