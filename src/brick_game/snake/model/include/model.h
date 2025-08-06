@@ -40,18 +40,25 @@ protected:
   /*--------→ Score ← ---------*/
   void IncreaseScore();
 
+  /*--------→ Speed ← ---------*/
+  int SnakeSpeed();
+  /*--------→ Score ← ---------*/
+  void LevelUp();
+
 public:
   /*=====================→ METHODS ←==================== */
   void InitGame();
 
   static Model *GetModel();
   // не нужен void Mdealloc();
-  /*=====================→ BUSINESS ←==================== */
+  /*--------→ Business ← ---------*/
+  void MoveSnake(UserAction_t &action);
+  void DelayMoveSnake();
   void GoEnd();
   void TakeABreak();
-  void MoveSnake(UserAction_t &action);
   void WallCollision();
   void Acceleration();
+  void Slowdown();
   GameInfo_t GetSInfo();
 };
 } // namespace s21

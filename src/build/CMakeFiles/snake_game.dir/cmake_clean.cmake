@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/snake_game.dir/brick_game/snake/model/src/business.cc.o.d"
   "CMakeFiles/snake_game.dir/brick_game/snake/model/src/init.cc.o"
   "CMakeFiles/snake_game.dir/brick_game/snake/model/src/init.cc.o.d"
+  "CMakeFiles/snake_game.dir/brick_game/snake/model/src/speed.cc.o"
+  "CMakeFiles/snake_game.dir/brick_game/snake/model/src/speed.cc.o.d"
   "CMakeFiles/snake_game.dir/brick_game/snake/model/src/utils.cc.o"
   "CMakeFiles/snake_game.dir/brick_game/snake/model/src/utils.cc.o.d"
   "CMakeFiles/snake_game.dir/gui/desktop/view/src/app.cc.o"

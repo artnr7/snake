@@ -8,6 +8,7 @@ snake_game_autogen/timestamp: \
 	/home/artnr7/snake/src/brick_game/snake/model/src/apple.cc \
 	/home/artnr7/snake/src/brick_game/snake/model/src/business.cc \
 	/home/artnr7/snake/src/brick_game/snake/model/src/init.cc \
+	/home/artnr7/snake/src/brick_game/snake/model/src/speed.cc \
 	/home/artnr7/snake/src/brick_game/snake/model/src/utils.cc \
 	/home/artnr7/snake/src/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
 	/home/artnr7/snake/src/build/CMakeFiles/3.28.3/CMakeSystem.cmake \

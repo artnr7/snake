@@ -1,4 +1,5 @@
 #include "../include/model.h"
+#include <iostream>
 
 /** @brief  */
 
@@ -7,6 +8,9 @@ GameInfo_t s21::Model::GetSInfo() { return s_info_; }
 
 /** @brief  */
 void s21::Model::ParseSnake() {
+  if (s_info_.pause == GameState::GameOver ||
+      s_info_.pause == GameState::Terminated)
+    return;
   PxCode px_code = Snake;
   WalkOnSnake(px_code);
 }

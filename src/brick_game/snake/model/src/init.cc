@@ -15,6 +15,7 @@ s21::Model *s21::Model::GetModel() {
 s21::Model::Model() : s_info_() {
   Malloc();
   s_info_.pause = GameState::NoLaunched;
+  s_info_.speed = 350;
 }
 
 void s21::Model::Malloc() {

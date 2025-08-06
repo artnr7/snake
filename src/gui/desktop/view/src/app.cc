@@ -4,9 +4,12 @@
 
 s21::GameWidget::GameWidget(QWidget *parent) : QWidget(parent) {
   update_freq_timer_ = new QTimer(this);
-  update_freq_timer_->start(15);
+  update_freq_timer_->start(1);
   QWidget::connect(update_freq_timer_, &QTimer::timeout, this,
                    QOverload<>::of(&s21::GameWidget::update));
+
+  QWidget::connect(update_freq_timer_, &QTimer::timeout, this,
+                   &s21::GameWidget::BackUpdate);
 
   QWidget::connect(this, &s21::GameWidget::DeviceInputFixed, this,
                    &s21::GameWidget::TransmiteSignal);
@@ -22,6 +25,7 @@ void s21::GameWidget::Exit() {
   g_info = updateCurrentState();
 #elif SNAKE
   g_info = s21::Controller::updateCurrentState();
+  // std::cout << s21::Controller::updateCurrentState().pause << " ";
 #endif
   if (g_info.pause == GameState::GameOver) {
     exit(1);
@@ -31,10 +35,14 @@ void s21::GameWidget::Exit() {
   }
 }
 
+void s21::GameWidget::BackUpdate() {
+  s21::Controller::userInput((UserAction_t)-1, false);
+}
+
 void s21::GameWidget::TransmiteSignal(UserAction_t action, bool hold) {
 
   s21::Controller::userInput(action, hold);
-  std::cout << "Slot is activated!" << std::endl;
+  // std::cout << "Slot is activated!" << std::endl;
 }
 
 void s21::GameWidget::keyPressEvent(QKeyEvent *Kevent) {
@@ -62,15 +70,14 @@ void s21::GameWidget::keyPressEvent(QKeyEvent *Kevent) {
     emit s21::GameWidget::DeviceInputFixed(UserAction_t::Down, false);
     break;
   case Qt::Key_Space:
-    hold_ = true;
-    emit s21::GameWidget::DeviceInputFixed(UserAction_t::Action, hold_);
+    emit s21::GameWidget::DeviceInputFixed(UserAction_t::Action, true);
     break;
   }
 }
 
 void s21::GameWidget::keyReleaseEvent(QKeyEvent *Kevent) {
   if (Kevent->key() == Qt::Key_Space) {
-    hold_ = false;
+    emit s21::GameWidget::DeviceInputFixed(UserAction_t::Action, false);
   }
 }
 
@@ -83,13 +90,11 @@ void s21::App::AppObj(int argc, char *argv[]) {
   game_w->setFixedSize(APP_W, APP_H);
 
   // Название окна ↓
-  QString g_name = {};
 #ifdef TETRIS
-  g_name = "Tetris";
+  game_w->setWindowTitle((QString) "Tetris");
 #elif SNAKE
-  g_name = "Snake";
+  game_w->setWindowTitle((QString) "Snake");
 #endif
-  game_w->setWindowTitle(g_name);
 
   // Цвета ↓
   QPalette pal = game_w->palette();

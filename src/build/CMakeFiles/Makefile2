@@ -86,12 +86,12 @@ CMakeFiles/snake_game.dir/all: CMakeFiles/snake_game_autogen_timestamp_deps.dir/
 CMakeFiles/snake_game.dir/all: CMakeFiles/snake_game_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target snake_game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=2,3,4,5,6,7,8,9,10,11,12,13,14,15 "Built target snake_game"
 .PHONY : CMakeFiles/snake_game.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/snake_game.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/artnr7/snake/src/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/artnr7/snake/src/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/snake_game.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/artnr7/snake/src/build/CMakeFiles 0
 .PHONY : CMakeFiles/snake_game.dir/rule
@@ -117,7 +117,7 @@ CMakeFiles/play_snake_game.dir/all: CMakeFiles/snake_game.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/play_snake_game.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/artnr7/snake/src/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/artnr7/snake/src/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/play_snake_game.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/artnr7/snake/src/build/CMakeFiles 0
 .PHONY : CMakeFiles/play_snake_game.dir/rule
@@ -190,7 +190,7 @@ CMakeFiles/snake_game_autogen_timestamp_deps.dir/clean:
 CMakeFiles/snake_game_autogen.dir/all: CMakeFiles/snake_game_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game_autogen.dir/build.make CMakeFiles/snake_game_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game_autogen.dir/build.make CMakeFiles/snake_game_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=15 "Built target snake_game_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=16 "Built target snake_game_autogen"
 .PHONY : CMakeFiles/snake_game_autogen.dir/all
 
 # Build rule for subdir invocation for target.

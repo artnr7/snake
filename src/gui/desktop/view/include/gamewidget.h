@@ -20,5 +20,6 @@ signals:
 private slots:
   void TransmiteSignal(UserAction_t action, bool hold);
   void Exit();
+  void BackUpdate();
 };
 } // namespace s21

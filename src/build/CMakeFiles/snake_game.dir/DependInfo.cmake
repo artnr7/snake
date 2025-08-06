@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/artnr7/snake/src/brick_game/snake/model/src/apple.cc" "CMakeFiles/snake_game.dir/brick_game/snake/model/src/apple.cc.o" "gcc" "CMakeFiles/snake_game.dir/brick_game/snake/model/src/apple.cc.o.d"
   "/home/artnr7/snake/src/brick_game/snake/model/src/business.cc" "CMakeFiles/snake_game.dir/brick_game/snake/model/src/business.cc.o" "gcc" "CMakeFiles/snake_game.dir/brick_game/snake/model/src/business.cc.o.d"
   "/home/artnr7/snake/src/brick_game/snake/model/src/init.cc" "CMakeFiles/snake_game.dir/brick_game/snake/model/src/init.cc.o" "gcc" "CMakeFiles/snake_game.dir/brick_game/snake/model/src/init.cc.o.d"
+  "/home/artnr7/snake/src/brick_game/snake/model/src/speed.cc" "CMakeFiles/snake_game.dir/brick_game/snake/model/src/speed.cc.o" "gcc" "CMakeFiles/snake_game.dir/brick_game/snake/model/src/speed.cc.o.d"
   "/home/artnr7/snake/src/brick_game/snake/model/src/utils.cc" "CMakeFiles/snake_game.dir/brick_game/snake/model/src/utils.cc.o" "gcc" "CMakeFiles/snake_game.dir/brick_game/snake/model/src/utils.cc.o.d"
   "/home/artnr7/snake/src/gui/desktop/view/src/app.cc" "CMakeFiles/snake_game.dir/gui/desktop/view/src/app.cc.o" "gcc" "CMakeFiles/snake_game.dir/gui/desktop/view/src/app.cc.o.d"
   "/home/artnr7/snake/src/gui/desktop/view/src/gamefield.cc" "CMakeFiles/snake_game.dir/gui/desktop/view/src/gamefield.cc.o" "gcc" "CMakeFiles/snake_game.dir/gui/desktop/view/src/gamefield.cc.o.d"

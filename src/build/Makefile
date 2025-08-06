@@ -301,6 +301,30 @@ brick_game/snake/model/src/init.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/brick_game/snake/model/src/init.cc.s
 .PHONY : brick_game/snake/model/src/init.cc.s
 
+brick_game/snake/model/src/speed.o: brick_game/snake/model/src/speed.cc.o
+.PHONY : brick_game/snake/model/src/speed.o
+
+# target to build an object file
+brick_game/snake/model/src/speed.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/brick_game/snake/model/src/speed.cc.o
+.PHONY : brick_game/snake/model/src/speed.cc.o
+
+brick_game/snake/model/src/speed.i: brick_game/snake/model/src/speed.cc.i
+.PHONY : brick_game/snake/model/src/speed.i
+
+# target to preprocess a source file
+brick_game/snake/model/src/speed.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/brick_game/snake/model/src/speed.cc.i
+.PHONY : brick_game/snake/model/src/speed.cc.i
+
+brick_game/snake/model/src/speed.s: brick_game/snake/model/src/speed.cc.s
+.PHONY : brick_game/snake/model/src/speed.s
+
+# target to generate assembly for a file
+brick_game/snake/model/src/speed.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_game.dir/build.make CMakeFiles/snake_game.dir/brick_game/snake/model/src/speed.cc.s
+.PHONY : brick_game/snake/model/src/speed.cc.s
+
 brick_game/snake/model/src/utils.o: brick_game/snake/model/src/utils.cc.o
 .PHONY : brick_game/snake/model/src/utils.o
 
@@ -473,6 +497,9 @@ help:
 	@echo "... brick_game/snake/model/src/init.o"
 	@echo "... brick_game/snake/model/src/init.i"
 	@echo "... brick_game/snake/model/src/init.s"
+	@echo "... brick_game/snake/model/src/speed.o"
+	@echo "... brick_game/snake/model/src/speed.i"
+	@echo "... brick_game/snake/model/src/speed.s"
 	@echo "... brick_game/snake/model/src/utils.o"
 	@echo "... brick_game/snake/model/src/utils.i"
 	@echo "... brick_game/snake/model/src/utils.s"

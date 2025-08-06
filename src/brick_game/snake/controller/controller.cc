@@ -1,4 +1,5 @@
 #include "controller.h"
+#include <iostream>
 
 s21::Controller::Controller() {}
 
@@ -21,13 +22,13 @@ void s21::Controller::userInput(UserAction_t action, bool hold) {
   s21::Model *model = s21::Model::GetModel();
 
   switch (action) {
-  case Start:
+  case UserAction_t::Start:
     model->InitGame();
     break;
-  case Pause:
+  case UserAction_t::Pause:
     model->TakeABreak();
     break;
-  case Terminate:
+  case UserAction_t::Terminate:
     model->GoEnd();
     break;
   case UserAction_t::Up:
@@ -42,13 +43,16 @@ void s21::Controller::userInput(UserAction_t action, bool hold) {
   case UserAction_t::Left:
     model->MoveSnake(action);
     break;
-  case Action:
-    model->Acceleration();
+  case UserAction_t::Action:
+    if (hold) {
+      model->Acceleration();
+    } else {
+      model->Slowdown();
+    }
     break;
-
-    // default:
-    //   model->MoveSnake(action);
-    //   break;
+  default:
+    model->DelayMoveSnake();
+    break;
   }
 }
 
