@@ -2,10 +2,8 @@
 #define MODEL_H_
 
 #include "../../data_types.h"
+#include "../snake_anim/snake_anim.h"
 #include "field_attr.h"
-// #include "objects/include/object.h"
-#include "../objects/include/snake_anim.h"
-#include <random>
 
 namespace s21 {
 
@@ -26,40 +24,68 @@ protected:
 
   /*=====================→ METHODS ←==================== */
   void Malloc();
-  void ParseSnake();
 
-  /*--------→ Apple ← ---------*/
-  void ParseApple();
-  void SpawnApple();
-  void EatApple();
-
+  /*-------------------→ UTILS ←----------------------*/
   void ClearField();
-
   void WalkOnSnake(PxCode &px_code);
 
-  /*--------→ Score ← ---------*/
+  /*--------→ Parse ←---------*/
+  void ParseObjs();
+  void ParseSnake();
+  void ParseApple();
+
+  /*-------------------→ APPLE ←----------------------*/
+  void SpawnApple();
+  int EatApple();
+
+  /*-------------------→ SNAKE ←----------------------*/
+
+  /*--------→ Speed ←---------*/
+  void SetSnakeSpeed();
+  void GetAccSpeed();
+  void GetConstSnakeSpeed();
+
+  /*--------→ Levels ←---------*/
+  void LevelUp();
+
+  /*--------→ Collision ←---------*/
+  void Collision();
+  void WallCollision();
+  void SnakeSelfCollision();
+
+  /*--------→ GameState Check ←---------*/
+  bool IsNoLaunched();
+  bool IsLanchedOrPaused();
+  bool IsGameoverOrTerminated();
+  bool IsGameEnd();
+
+  /*--------→ Score ←---------*/
   void IncreaseScore();
 
-  /*--------→ Speed ← ---------*/
-  int SnakeSpeed();
-  /*--------→ Score ← ---------*/
-  void LevelUp();
+  /*--------→ Highscore ←---------*/
+  void SetHighscore();
+  int GetHighscore();
+
+  /*--------→ Move ←---------*/
+  bool MoveDelay();
+  void MoveSnake(bool &dly);
+  void RemoveOrNotTail(bool &ate_apple, bool &dly);
 
 public:
   /*=====================→ METHODS ←==================== */
-  void InitGame();
-
   static Model *GetModel();
   // не нужен void Mdealloc();
-  /*--------→ Business ← ---------*/
-  void MoveSnake(UserAction_t &action);
-  void DelayMoveSnake();
-  void GoEnd();
-  void TakeABreak();
-  void WallCollision();
-  void Acceleration();
-  void Slowdown();
+
   GameInfo_t GetSInfo();
+  /*--------→ Business ←---------*/
+  void GameStep();
+
+  void InitGame();
+  void TakeBreak();
+  void GoEnd();
+
+  void SetSnakeDir(UserAction_t &action);
+  void ChangeSpeed(bool &hold);
 };
 } // namespace s21
 

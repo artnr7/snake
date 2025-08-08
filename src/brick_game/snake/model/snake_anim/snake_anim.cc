@@ -1,4 +1,5 @@
-#include "../include/snake_anim.h"
+#include "snake_anim.h"
+#include <iostream>
 
 s21::SnakeAnim::SnakeAnim() : body_() {
   for (int i = 0; i < SNAKE_INIT_SIZE; ++i) {
@@ -6,7 +7,7 @@ s21::SnakeAnim::SnakeAnim() : body_() {
   }
   s_dir_ = SnakeDirection::Right;
 
-  speed_.normal_speed = DEFAULT_SPEED;
+  speed_.default_speed = DEFAULT_SPEED;
   speed_.acc_speed = ACCELERATE_SPEED;
 }
 
@@ -15,25 +16,37 @@ const std::deque<s21::ObjectPc> &s21::SnakeAnim::GetBody() { return body_; }
 const s21::ObjectPc s21::SnakeAnim::GetHead() { return *body_.begin(); }
 
 void s21::SnakeAnim::MoveBody() {
-  auto head = GetHead();
+  auto new_head = GetHead();
 
   switch (s_dir_) {
   case Up:
-    --(head.cord_y_);
+    --(new_head.cord_y_);
     break;
   case Right:
-    ++(head.cord_x_);
+    ++(new_head.cord_x_);
     break;
   case Down:
-    ++(head.cord_y_);
+    ++(new_head.cord_y_);
     break;
   case Left:
-    --(head.cord_x_);
+    --(new_head.cord_x_);
   }
 
-  body_.pop_back();
-  body_.push_front({head});
+  body_.push_front({new_head});
 }
+
+int s21::SnakeAnim::CheckCollision() {
+  auto head = GetHead();
+  int flag = 0;
+  for (auto it_b = body_.begin() + 1; it_b != body_.end(); ++it_b) {
+    if (head.cord_y_ == (*it_b).cord_y_ && head.cord_x_ == (*it_b).cord_x_) {
+      flag = 1;
+    }
+  }
+  return flag;
+}
+
+void s21::SnakeAnim::RemoveTail() { body_.pop_back(); }
 
 void s21::SnakeAnim::SetDirection(UserAction_t &action) {
 
@@ -60,8 +73,8 @@ void s21::SnakeAnim::SetDirection(UserAction_t &action) {
   }
 }
 
-void s21::SnakeAnim::MakeFaster() { speed_.normal_speed -= 25; }
+const int s21::SnakeAnim::GetConstSpeed() { return speed_.default_speed; }
 
-const int s21::SnakeAnim::GetSpeed() { return speed_.normal_speed; }
+int &s21::SnakeAnim::GetSpeed() { return speed_.default_speed; }
 
 const int s21::SnakeAnim::GetAccSpeed() { return speed_.acc_speed; }

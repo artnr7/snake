@@ -30,8 +30,8 @@ file(GLOB CONTROLLER_INCLUDE "brick_game/snake/controller/*.h")
 file(GLOB MODEL_SRC "brick_game/snake/model/src/*.cc")
 file(GLOB MODEL_INCLUDE "brick_game/snake/model/include/*.h")
 
-file(GLOB MODEL_OBJECTS_SRC "brick_game/snake/model/objects/src/*.cc")
-file(GLOB MODEL_OBJECTS_INCLUDE "brick_game/snake/model/objects/src/*.h")
+file(GLOB MODEL_OBJECTS_SRC "brick_game/snake/model/snake_anim/*.cc")
+file(GLOB MODEL_OBJECTS_INCLUDE "brick_game/snake/model/snake_anim/*.h")
 
 set(SNAKE_GAME_SRC_INCLUDE
     snake.cc

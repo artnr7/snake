@@ -1,24 +1,22 @@
 #include "../include/model.h"
-#include <chrono>
-#include <iostream>
+#define DEFAULT_SNAKE_SPEED DEFAULT_SPEED
+#define SNAKE_SPEED_MULT 20
 
-int s21::Model::SnakeSpeed() {
-  int move = 0;
-  auto now = std::chrono::system_clock::now();
-  auto ms = std::chrono::time_point_cast<std::chrono::milliseconds>(now);
-  auto value = ms.time_since_epoch();
-  static long old_time = value.count();
-  long new_time = value.count();
-
-  static long time_diff = 0;
-  time_diff += new_time - old_time;
-  // std::cout << time_diff << "  ";
-
-  if (time_diff >= s_info_.speed) {
-    move = 1;
-    time_diff = 0;
+void s21::Model::ChangeSpeed(bool &hold) {
+  if (hold) {
+    GetAccSpeed();
+  } else {
+    GetConstSnakeSpeed();
   }
+}
 
-  old_time = value.count();
-  return move;
+void s21::Model::GetAccSpeed() { s_info_.speed = snake_anim_.GetAccSpeed(); }
+
+void s21::Model::GetConstSnakeSpeed() {
+  s_info_.speed = snake_anim_.GetConstSpeed();
+}
+
+void s21::Model::SetSnakeSpeed() {
+  snake_anim_.GetSpeed() =
+      DEFAULT_SNAKE_SPEED - s_info_.level * SNAKE_SPEED_MULT;
 }

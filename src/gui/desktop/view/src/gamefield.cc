@@ -6,8 +6,8 @@ void s21::GameWidget::paintEvent(QPaintEvent *event) {
   QPainter painter;
   painter.begin(this);
 
-  // // Границы игрового поля
-  // painter.drawRect(GAMEFIELD_X, GAMEFIELD_Y, GAMEFIELD_W, GAMEFIELD_H);
+  // Границы игрового поля
+  painter.drawRect(GAMEFIELD_X, GAMEFIELD_Y, GAMEFIELD_W, GAMEFIELD_H);
 
   // Границы поля с информацией
   painter.drawRect(INFO_X, INFO_Y, INFO_W, INFO_H);

@@ -1,10 +1,15 @@
 #include "../include/model.h"
-#include <iostream>
 
 /** @brief  */
 
 /** @brief Получение информации об игровой структуре */
 GameInfo_t s21::Model::GetSInfo() { return s_info_; }
+
+void s21::Model::ParseObjs() {
+  ClearField();
+  ParseSnake();
+  ParseApple();
+}
 
 /** @brief  */
 void s21::Model::ParseSnake() {
@@ -17,8 +22,11 @@ void s21::Model::ParseSnake() {
 
 /** @brief  */
 void s21::Model::ClearField() {
-  PxCode px_code = Nothing;
-  WalkOnSnake(px_code);
+  for (int i = 0; i < FIELD_H; ++i) {
+    for (int j = 0; j < FIELD_W; ++j) {
+      s_info_.field[i][j] = PxCode::Nothing;
+    }
+  }
 }
 
 /** @brief Проходится в поле по кордам змейки и ставит соответствующий код в
@@ -28,6 +36,20 @@ void s21::Model::WalkOnSnake(PxCode &px_code) {
   for (auto it_b = snake_anim_.GetBody().begin(); it_b != it_e; ++it_b) {
     (s_info_.field)[(*it_b).cord_y_][(*it_b).cord_x_] = px_code;
   }
+}
+
+/*--------→ Score ← ---------*/
+void s21::Model::IncreaseScore() { s_info_.score += 5; }
+
+void s21::Model::SetSnakeDir(UserAction_t &action) {
+  snake_anim_.SetDirection(action);
+}
+
+/*--------→ Collision ← ---------*/
+
+void s21::Model::Collision() {
+  WallCollision();
+  SnakeSelfCollision();
 }
 
 void s21::Model::WallCollision() {
@@ -40,5 +62,12 @@ void s21::Model::WallCollision() {
   }
 }
 
-/*--------→ Score ← ---------*/
-void s21::Model::IncreaseScore() { ++s_info_.score; }
+void s21::Model::SnakeSelfCollision() {
+  if (s_info_.pause == GameState::GameOver ||
+      s_info_.pause == GameState::Terminated)
+    return;
+
+  if (snake_anim_.CheckCollision()) {
+    s_info_.pause = GameState::GameOver;
+  }
+}

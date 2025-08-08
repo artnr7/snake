@@ -8,6 +8,7 @@ namespace s21 {
 class App : public QObject {
 public:
   void AppObj(int argc, char *argv[]);
+  void Config(s21::GameWidget *game_w);
 
 private:
   s21::GameWidget *GameWidget;

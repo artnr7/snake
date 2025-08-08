@@ -1,29 +1,38 @@
 snake_game_autogen/timestamp: \
-	/home/artnr7/snake/src/CMakeLists.txt \
-	/home/artnr7/snake/src/brick_game/snake/controller/controller.cc \
-	/home/artnr7/snake/src/brick_game/snake/controller/controller.h \
-	/home/artnr7/snake/src/brick_game/snake/model/include/field_attr.h \
-	/home/artnr7/snake/src/brick_game/snake/model/include/model.h \
-	/home/artnr7/snake/src/brick_game/snake/model/objects/src/snake_anim.cc \
-	/home/artnr7/snake/src/brick_game/snake/model/src/apple.cc \
-	/home/artnr7/snake/src/brick_game/snake/model/src/business.cc \
-	/home/artnr7/snake/src/brick_game/snake/model/src/init.cc \
-	/home/artnr7/snake/src/brick_game/snake/model/src/speed.cc \
-	/home/artnr7/snake/src/brick_game/snake/model/src/utils.cc \
-	/home/artnr7/snake/src/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
-	/home/artnr7/snake/src/build/CMakeFiles/3.28.3/CMakeSystem.cmake \
-	/home/artnr7/snake/src/build/snake_game_autogen/moc_predefs.h \
-	/home/artnr7/snake/src/cmake/CMakeFormat.cmake \
-	/home/artnr7/snake/src/cmake/ClangFormat.cmake \
-	/home/artnr7/snake/src/cmake/FindCheck.cmake \
-	/home/artnr7/snake/src/gui/desktop/view/include/app.h \
-	/home/artnr7/snake/src/gui/desktop/view/include/app_config.h \
-	/home/artnr7/snake/src/gui/desktop/view/include/gamewidget.h \
-	/home/artnr7/snake/src/gui/desktop/view/include/view.h \
-	/home/artnr7/snake/src/gui/desktop/view/src/app.cc \
-	/home/artnr7/snake/src/gui/desktop/view/src/gamefield.cc \
-	/home/artnr7/snake/src/gui/desktop/view/src/info.cc \
-	/home/artnr7/snake/src/snake.cc \
+	/home/atrnr7/snake/src/CMakeLists.txt \
+	/home/atrnr7/snake/src/brick_game/snake/controller/controller.cc \
+	/home/atrnr7/snake/src/brick_game/snake/controller/controller.h \
+	/home/atrnr7/snake/src/brick_game/snake/model/include/field_attr.h \
+	/home/atrnr7/snake/src/brick_game/snake/model/include/model.h \
+	/home/atrnr7/snake/src/brick_game/snake/model/snake_anim/snake_anim.cc \
+	/home/atrnr7/snake/src/brick_game/snake/model/snake_anim/snake_anim.h \
+	/home/atrnr7/snake/src/brick_game/snake/model/src/apple.cc \
+	/home/atrnr7/snake/src/brick_game/snake/model/src/business.cc \
+	/home/atrnr7/snake/src/brick_game/snake/model/src/gamestate_check.cc \
+	/home/atrnr7/snake/src/brick_game/snake/model/src/highscore_and_level.cc \
+	/home/atrnr7/snake/src/brick_game/snake/model/src/init.cc \
+	/home/atrnr7/snake/src/brick_game/snake/model/src/snake_move.cc \
+	/home/atrnr7/snake/src/brick_game/snake/model/src/speed.cc \
+	/home/atrnr7/snake/src/brick_game/snake/model/src/timerforspeed.cc \
+	/home/atrnr7/snake/src/brick_game/snake/model/src/utils.cc \
+	/home/atrnr7/snake/src/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
+	/home/atrnr7/snake/src/build/CMakeFiles/3.28.3/CMakeSystem.cmake \
+	/home/atrnr7/snake/src/build/snake_game_autogen/moc_predefs.h \
+	/home/atrnr7/snake/src/cmake/CMakeFormat.cmake \
+	/home/atrnr7/snake/src/cmake/ClangFormat.cmake \
+	/home/atrnr7/snake/src/cmake/FindCheck.cmake \
+	/home/atrnr7/snake/src/gui/desktop/view/include/app.h \
+	/home/atrnr7/snake/src/gui/desktop/view/include/app_config.h \
+	/home/atrnr7/snake/src/gui/desktop/view/include/gamewidget.h \
+	/home/atrnr7/snake/src/gui/desktop/view/include/view.h \
+	/home/atrnr7/snake/src/gui/desktop/view/src/app.cc \
+	/home/atrnr7/snake/src/gui/desktop/view/src/connects.cc \
+	/home/atrnr7/snake/src/gui/desktop/view/src/game_w.cc \
+	/home/atrnr7/snake/src/gui/desktop/view/src/gamefield.cc \
+	/home/atrnr7/snake/src/gui/desktop/view/src/info.cc \
+	/home/atrnr7/snake/src/gui/desktop/view/src/key_events.cc \
+	/home/atrnr7/snake/src/gui/desktop/view/src/slots.cc \
+	/home/atrnr7/snake/src/snake.cc \
 	/usr/include/asm-generic/errno-base.h \
 	/usr/include/asm-generic/errno.h \
 	/usr/include/assert.h \
@@ -269,6 +278,7 @@ snake_game_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
 	/usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
 	/usr/include/x86_64-linux-gnu/gnu/stubs.h \
+	/usr/include/x86_64-linux-gnu/qt5/QtCore/QString \
 	/usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer \
 	/usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h \
 	/usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h \
@@ -372,10 +382,15 @@ snake_game_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
+	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h \
+	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h \
+	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
+	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayout.h \
+	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayoutitem.h \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h \
 	/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \

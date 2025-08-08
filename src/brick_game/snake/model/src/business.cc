@@ -1,29 +1,22 @@
 #include "../include/model.h"
 
+/*=====================→ BUSINESS ←==================== */
 /** @brief  */
-void s21::Model::Acceleration() { s_info_.speed = snake_anim_.GetAccSpeed(); }
 
-void s21::Model::Slowdown() { s_info_.speed = snake_anim_.GetSpeed(); }
-
-void s21::Model::MoveSnake(UserAction_t &action) {
-  if (s_info_.pause == GameState::NoLaunched)
+void s21::Model::GameStep() {
+  if (IsNoLaunched())
     return;
-  ClearField();
-  snake_anim_.SetDirection(action);
-  snake_anim_.MoveBody();
-  WallCollision();
+  bool dly = MoveDelay();
 
-  ParseSnake();
+  MoveSnake(dly);
 
-  EatApple();
-  ParseApple();
+  bool ate_apple = EatApple();
 
-  SnakeSpeed();
-}
+  RemoveOrNotTail(ate_apple, dly);
 
-void s21::Model::DelayMoveSnake() {
-  if (SnakeSpeed()) {
-    UserAction_t temp = (UserAction_t)-1;
-    MoveSnake(temp);
-  }
+  SetHighscore();
+
+  Collision();
+
+  ParseObjs();
 }
