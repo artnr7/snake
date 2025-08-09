@@ -29,7 +29,7 @@ TETRIS_TEST_FILES := $(wildcard $(TETRIS_TEST_DIR)/*.c)
 # скомпилированные файлы
 TETRIS_LIB_FILE = $(TETRIS_LIB_DIR)/tetris_backend.a
 TETRIS_TEST_EXE_FILE = tetris_test
-TETRIS_PLAY_EXE_FILE = tetris_play
+tetris_cli_EXE_FILE = tetris_cli
 
 
 ###--------→ ЦЕЛИ ←--------------------------------------------------------------------###
@@ -59,7 +59,7 @@ dvi:
 	doxygen
 
 ###--------→ DIST ←--------------------------------------------------------------------###
-TETRIS_DIST_FILES := brick_game gui Doxyfile tetris_play.c Makefile FSM.png tetris_test_dir
+TETRIS_DIST_FILES := brick_game gui Doxyfile tetris_cli.c Makefile FSM.png tetris_test_dir
 
 dist:
 	@mkdir -p $(TETRIS_DIST_DIR)
@@ -70,9 +70,9 @@ dist:
 
 ###--------→ PLAY ←--------------------------------------------------------------------###
 play: clean clang $(TETRIS_LIB_FILE) $(TETRIS_FRONT_OBJ_FILES)
-	@$(GCC) tetris_play.c $(GT_FLAGS) -o $(TETRIS_PLAY_EXE_FILE)\
+	@$(GCC) tetris_cli.c $(GT_FLAGS) -o $(tetris_cli_EXE_FILE)\
 	 $(TETRIS_FRONT_OBJ_FILES) $(TETRIS_LIB_FILE) -lncursesw
-	@./$(TETRIS_PLAY_EXE_FILE)
+	@./$(tetris_cli_EXE_FILE)
 
 
 ###--------→ ТЕСТЫ ←--------------------------------------------------------------------###
@@ -103,7 +103,7 @@ gcov_report: clean
 
 FILES_TO_DEL = $(TETRIS_TEST_EXE_FILE) $(TETRIS_LIB_FILE)\
  $(TETRIS_BACK_OBJ_FILES) $(TETRIS_GCOV_FILES) doxygen $(TETRIS_INSTALL_DIR)\
- *.o $(TETRIS_PLAY_EXE_FILE) tetris-1.0.tar.gz $(TETRIS_GCOV_DIRS)
+ *.o $(tetris_cli_EXE_FILE) tetris-1.0.tar.gz $(TETRIS_GCOV_DIRS)
 
 clean: 
 	@rm -rf $(FILES_TO_DEL)
@@ -112,7 +112,7 @@ clean:
 ###--------→ CLANG ←---------------------------------------------------------------###
 # файлы для Clang
 TETRIS_CLANG_FILES = $(TETRIS_BACK_C_FILES) $(TETRIS_BACK_H_FILES)\
-$(TETRIS_FRONT_C_FILES) $(TETRIS_FRONT_H_FILES) $(TETRIS_TEST_FILES) tetris_play.c
+$(TETRIS_FRONT_C_FILES) $(TETRIS_FRONT_H_FILES) $(TETRIS_TEST_FILES) tetris_cli.c
 
 clang:
 	@cp ../materials/linters/.clang-format . 
@@ -126,14 +126,15 @@ cppcheck:
 
 ###--------→ GDB ←---------------------------------------------------------------###
 g: clean clang $(TETRIS_LIB_FILE) $(TETRIS_FRONT_OBJ_FILES)
-	@$(GCC) tetris_play.c $(GT_FLAGS) -o $(TETRIS_PLAY_EXE_FILE)\
+	@$(GCC) tetris_cli.c $(GT_FLAGS) -o $(tetris_cli_EXE_FILE)\
 	$(TETRIS_FRONT_OBJ_FILES) $(TETRIS_LIB_FILE) -lncursesw
-	@gdb --tty=/dev/pts/5 -tui -x .gdbinit $(TETRIS_PLAY_EXE_FILE)
+	@gdb --tty=/dev/pts/5 -tui -x .gdbinit $(tetris_cli_EXE_FILE)
 
 ###--------→ CMAKE ←---------------------------------------------------------------###
 # FILES:= $(shell find . -name '*.cc')
 
 c: 
-	@cmake-format -i cmake/*.cmake CMakeLists.txt
+	@cmake-format -i cmake/*.cmake cmake/find_packages/*.cmake\
+	 cmake/srcs/*.cmake CMakeLists.txt
 	@find . -name '*.cc' -exec clang-format -i {} +
 	@echo "Format done."

@@ -7,7 +7,7 @@ namespace s21 {
 class Controller {
 
 protected:
-  Controller() {};
+  Controller(){};
 
 public:
   /*=====================→ METHODS ←==================== */
