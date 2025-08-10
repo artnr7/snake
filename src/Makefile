@@ -134,7 +134,8 @@ g: clean clang $(TETRIS_LIB_FILE) $(TETRIS_FRONT_OBJ_FILES)
 # FILES:= $(shell find . -name '*.cc')
 
 c: 
-	@cmake-format -i cmake/*.cmake cmake/find_packages/*.cmake\
-	 cmake/srcs/*.cmake CMakeLists.txt
 	@find . -name '*.cc' -exec clang-format -i {} +
+	
+	@cmake-format -i CMakeLists.txt
+	@find . -name '*.cmake' -exec cmake-format -i {} +
 	@echo "Format done."

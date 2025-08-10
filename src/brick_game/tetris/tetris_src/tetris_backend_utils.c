@@ -1,32 +1,33 @@
 #include "../tetris_include/tetris_backend_utils.h"
+#include <stdlib.h>
 
 /** @brief Реакция на действия пользователя */
 void act_fncs(GameInfo_t *tg_info, UserAction_t action, long int dly,
               bool *tmino_fell, int *tmino_pos) {
   switch (action) {
-    case Start:
-      start_fn(tg_info, tmino_pos);
-      break;
-    case Pause:
-      tg_info->pause = 1;  // ◄ pause == 1 - пауза игры
-      break;
-    case Terminate:
-      tg_info_and_nxt_frm_free(tg_info);
-      break;
-    case Left:
-      lr_mv(tg_info, Left);
-      break;
-    case Right:
-      lr_mv(tg_info, Right);
-      break;
-    case Down:
-      action_down_fn(tg_info, tmino_fell);
-      break;
-    case Action:
-      action_fn(tg_info, tmino_pos, tmino_fell);
-      break;
-    default:
-      tmino_fall_with_dly(tg_info, tmino_fell, dly);
+  case Start:
+    start_fn(tg_info, tmino_pos);
+    break;
+  case Pause:
+    tg_info->pause = 1; // ◄ pause == 1 - пауза игры
+    break;
+  case Terminate:
+    tg_info_and_nxt_frm_free(tg_info);
+    break;
+  case Left:
+    lr_mv(tg_info, Left);
+    break;
+  case Right:
+    lr_mv(tg_info, Right);
+    break;
+  case Down:
+    action_down_fn(tg_info, tmino_fell);
+    break;
+  case Action:
+    action_fn(tg_info, tmino_pos, tmino_fell);
+    break;
+  default:
+    tmino_fall_with_dly(tg_info, tmino_fell, dly);
   }
 }
 
@@ -50,7 +51,7 @@ void start_fn(GameInfo_t *tg_info, int *tmino_pos) {
   if (tg_info->pause != 2) {
     tg_info_init(tg_info);
 
-    bool init_fell = true;  // ◄ одноразовая переменная, запускающая созд. тмино
+    bool init_fell = true; // ◄ одноразовая переменная, запускающая созд. тмино
     shall_create_tmino(tg_info, &init_fell, tmino_pos);
     tg_info->pause = 2;
   }
@@ -61,7 +62,8 @@ void noact_fncs(GameInfo_t *tg_info, const UserAction_t *action, long int *dly,
                 bool *tmino_fell, int *tmino_pos, bool *hold) {
   /* Если код выхода из игры или стоит пауза, выполняется выход, последующие
    * функции не выполняются*/
-  if (*action == Terminate || tg_info->pause == 1 || !(malloc_check(tg_info))) {
+  if (tg_info->field == NULL || *action == Terminate || tg_info->pause == 1 ||
+      !(malloc_check(tg_info))) {
     return;
   }
 
@@ -73,5 +75,5 @@ void noact_fncs(GameInfo_t *tg_info, const UserAction_t *action, long int *dly,
   high_scr_set(tg_info);
 
   dly_reset(*tg_info, dly);
-  *hold += 1;  // ◄ заглушка
+  *hold += 1; // ◄ заглушка
 }

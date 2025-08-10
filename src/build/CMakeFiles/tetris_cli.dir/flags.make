@@ -7,11 +7,11 @@ C_DEFINES =
 
 C_INCLUDES = -I/home/artnr7/snake/src/build/tetris_cli_autogen/include
 
-C_FLAGS = -g -std=gnu11 -Wno-dev -DTETRIS -Wall -Werror -Wextra -lncursesw
+C_FLAGS = -g -std=gnu11 -DTETRIS -Wall -Werror -Wextra -lncursesw
 
 CXX_DEFINES = 
 
 CXX_INCLUDES = -I/home/artnr7/snake/src/build/tetris_cli_autogen/include
 
-CXX_FLAGS = -g -std=gnu++20 -Wno-dev -DTETRIS -Wall -Werror -Wextra -lncursesw
+CXX_FLAGS = -g -std=gnu++20 -DTETRIS -Wall -Werror -Wextra -lncursesw
 

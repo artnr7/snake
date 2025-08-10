@@ -1,5 +1,5 @@
 #include "controller.h"
-#include <iostream>
+// #include <iostream>
 
 void s21::Controller::userInput(UserAction_t action, bool hold) {
   s21::Model *model = s21::Model::GetModel();

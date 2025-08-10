@@ -1,2 +1,4 @@
 file(GLOB_RECURSE TETRIS_BACK_SRC "brick_game/tetris/*.c")
 file(GLOB_RECURSE TETRIS_BACK_INCLUDE "brick_game/tetris/*.h")
+
+set(TETRIS_BACK_SRC_INCLUDE ${TETRIS_BACK_SRC} ${TETRIS_BACK_INCLUDE})

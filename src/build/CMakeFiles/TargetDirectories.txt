@@ -2,6 +2,8 @@
 /home/artnr7/snake/src/build/CMakeFiles/play_snake_desktop.dir
 /home/artnr7/snake/src/build/CMakeFiles/tetris_cli.dir
 /home/artnr7/snake/src/build/CMakeFiles/play_tetris_cli.dir
+/home/artnr7/snake/src/build/CMakeFiles/tetris_desktop.dir
+/home/artnr7/snake/src/build/CMakeFiles/play_tetris_desktop.dir
 /home/artnr7/snake/src/build/CMakeFiles/clf.dir
 /home/artnr7/snake/src/build/CMakeFiles/edit_cache.dir
 /home/artnr7/snake/src/build/CMakeFiles/rebuild_cache.dir
@@ -9,3 +11,5 @@
 /home/artnr7/snake/src/build/CMakeFiles/snake_desktop_autogen.dir
 /home/artnr7/snake/src/build/CMakeFiles/tetris_cli_autogen_timestamp_deps.dir
 /home/artnr7/snake/src/build/CMakeFiles/tetris_cli_autogen.dir
+/home/artnr7/snake/src/build/CMakeFiles/tetris_desktop_autogen_timestamp_deps.dir
+/home/artnr7/snake/src/build/CMakeFiles/tetris_desktop_autogen.dir

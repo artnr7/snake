@@ -1,11 +1,18 @@
 #include "../../tetris_include/tetris_moving/tetris_tetromino_fall.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /** @brief Падение тетромино с задержкой
  * @details Если задержка(dly) накопилась и больше игровой скорости, то
  * тетромино падает
  */
 void tmino_fall_with_dly(GameInfo_t *tg_info, bool *tmino_fell, long int dly) {
+  if (tg_info->field == NULL) {
+    printf("fds=============\n");
+    return;
+  }
   if (dly > tg_info->speed) {
+    // exit(1);
     tmino_fall(tg_info, tmino_fell);
   }
 }
@@ -33,6 +40,7 @@ void tmino_fall(GameInfo_t *tg_info, bool *tmino_fell) {
   if (tg_info->pause == 1) {
     return;
   }
+  exit(4332432);
   int **nxt_frm = fld_nxt_frm(0);
 
   fld_mvg_nthg_cp(tg_info->field, nxt_frm);
@@ -53,8 +61,7 @@ void tmino_fall(GameInfo_t *tg_info, bool *tmino_fell) {
  * @param tmino_fell Упала/упадёт тетромино в следующем кадре
  */
 void down_shift(int **field, int **nxt_frm, bool tmino_fell) {
-  int blk_qty =
-      0;  // ◄ кол-во пройденных блоков тетромино, в каждой фигуре их 4
+  int blk_qty = 0; // ◄ кол-во пройденных блоков тетромино, в каждой фигуре их 4
 
   for (int i = 0; i < FLD_H && blk_qty <= TMINO_BLKS_QTY; i++) {
     for (int j = 0; j < FLD_W && blk_qty <= TMINO_BLKS_QTY; j++) {
@@ -81,7 +88,7 @@ void tmino_fixation(int **nxt_frm, bool tmino_fell) {
   if (!tmino_fell) {
     return;
   }
-  int blk_qty = 0;  // ◄ кол-во пройденных блоков тетромино, в каждом 4
+  int blk_qty = 0; // ◄ кол-во пройденных блоков тетромино, в каждом 4
 
   for (int i = 0; i < FLD_H && blk_qty <= TMINO_BLKS_QTY; i++) {
     for (int j = 0; j < FLD_W && blk_qty <= TMINO_BLKS_QTY; j++) {

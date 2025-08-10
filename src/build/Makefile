@@ -169,6 +169,32 @@ play_tetris_cli/fast:
 .PHONY : play_tetris_cli/fast
 
 #=============================================================================
+# Target rules for targets named tetris_desktop
+
+# Build rule for target.
+tetris_desktop: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tetris_desktop
+.PHONY : tetris_desktop
+
+# fast build rule for target.
+tetris_desktop/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/build
+.PHONY : tetris_desktop/fast
+
+#=============================================================================
+# Target rules for targets named play_tetris_desktop
+
+# Build rule for target.
+play_tetris_desktop: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 play_tetris_desktop
+.PHONY : play_tetris_desktop
+
+# fast build rule for target.
+play_tetris_desktop/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/play_tetris_desktop.dir/build.make CMakeFiles/play_tetris_desktop.dir/build
+.PHONY : play_tetris_desktop/fast
+
+#=============================================================================
 # Target rules for targets named clf
 
 # Build rule for target.
@@ -232,6 +258,32 @@ tetris_cli_autogen: cmake_check_build_system
 tetris_cli_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli_autogen.dir/build.make CMakeFiles/tetris_cli_autogen.dir/build
 .PHONY : tetris_cli_autogen/fast
+
+#=============================================================================
+# Target rules for targets named tetris_desktop_autogen_timestamp_deps
+
+# Build rule for target.
+tetris_desktop_autogen_timestamp_deps: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tetris_desktop_autogen_timestamp_deps
+.PHONY : tetris_desktop_autogen_timestamp_deps
+
+# fast build rule for target.
+tetris_desktop_autogen_timestamp_deps/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop_autogen_timestamp_deps.dir/build.make CMakeFiles/tetris_desktop_autogen_timestamp_deps.dir/build
+.PHONY : tetris_desktop_autogen_timestamp_deps/fast
+
+#=============================================================================
+# Target rules for targets named tetris_desktop_autogen
+
+# Build rule for target.
+tetris_desktop_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tetris_desktop_autogen
+.PHONY : tetris_desktop_autogen
+
+# fast build rule for target.
+tetris_desktop_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop_autogen.dir/build.make CMakeFiles/tetris_desktop_autogen.dir/build
+.PHONY : tetris_desktop_autogen/fast
 
 brick_game/snake/controller/controller.o: brick_game/snake/controller/controller.cc.o
 .PHONY : brick_game/snake/controller/controller.o
@@ -503,6 +555,7 @@ brick_game/tetris/tetris_backend.o: brick_game/tetris/tetris_backend.c.o
 # target to build an object file
 brick_game/tetris/tetris_backend.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_backend.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_backend.c.o
 .PHONY : brick_game/tetris/tetris_backend.c.o
 
 brick_game/tetris/tetris_backend.i: brick_game/tetris/tetris_backend.c.i
@@ -511,6 +564,7 @@ brick_game/tetris/tetris_backend.i: brick_game/tetris/tetris_backend.c.i
 # target to preprocess a source file
 brick_game/tetris/tetris_backend.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_backend.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_backend.c.i
 .PHONY : brick_game/tetris/tetris_backend.c.i
 
 brick_game/tetris/tetris_backend.s: brick_game/tetris/tetris_backend.c.s
@@ -519,6 +573,7 @@ brick_game/tetris/tetris_backend.s: brick_game/tetris/tetris_backend.c.s
 # target to generate assembly for a file
 brick_game/tetris/tetris_backend.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_backend.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_backend.c.s
 .PHONY : brick_game/tetris/tetris_backend.c.s
 
 brick_game/tetris/tetris_src/tetris_backend_utils.o: brick_game/tetris/tetris_src/tetris_backend_utils.c.o
@@ -527,6 +582,7 @@ brick_game/tetris/tetris_src/tetris_backend_utils.o: brick_game/tetris/tetris_sr
 # target to build an object file
 brick_game/tetris/tetris_src/tetris_backend_utils.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_backend_utils.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_backend_utils.c.o
 .PHONY : brick_game/tetris/tetris_src/tetris_backend_utils.c.o
 
 brick_game/tetris/tetris_src/tetris_backend_utils.i: brick_game/tetris/tetris_src/tetris_backend_utils.c.i
@@ -535,6 +591,7 @@ brick_game/tetris/tetris_src/tetris_backend_utils.i: brick_game/tetris/tetris_sr
 # target to preprocess a source file
 brick_game/tetris/tetris_src/tetris_backend_utils.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_backend_utils.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_backend_utils.c.i
 .PHONY : brick_game/tetris/tetris_src/tetris_backend_utils.c.i
 
 brick_game/tetris/tetris_src/tetris_backend_utils.s: brick_game/tetris/tetris_src/tetris_backend_utils.c.s
@@ -543,6 +600,7 @@ brick_game/tetris/tetris_src/tetris_backend_utils.s: brick_game/tetris/tetris_sr
 # target to generate assembly for a file
 brick_game/tetris/tetris_src/tetris_backend_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_backend_utils.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_backend_utils.c.s
 .PHONY : brick_game/tetris/tetris_src/tetris_backend_utils.c.s
 
 brick_game/tetris/tetris_src/tetris_collision.o: brick_game/tetris/tetris_src/tetris_collision.c.o
@@ -551,6 +609,7 @@ brick_game/tetris/tetris_src/tetris_collision.o: brick_game/tetris/tetris_src/te
 # target to build an object file
 brick_game/tetris/tetris_src/tetris_collision.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_collision.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_collision.c.o
 .PHONY : brick_game/tetris/tetris_src/tetris_collision.c.o
 
 brick_game/tetris/tetris_src/tetris_collision.i: brick_game/tetris/tetris_src/tetris_collision.c.i
@@ -559,6 +618,7 @@ brick_game/tetris/tetris_src/tetris_collision.i: brick_game/tetris/tetris_src/te
 # target to preprocess a source file
 brick_game/tetris/tetris_src/tetris_collision.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_collision.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_collision.c.i
 .PHONY : brick_game/tetris/tetris_src/tetris_collision.c.i
 
 brick_game/tetris/tetris_src/tetris_collision.s: brick_game/tetris/tetris_src/tetris_collision.c.s
@@ -567,6 +627,7 @@ brick_game/tetris/tetris_src/tetris_collision.s: brick_game/tetris/tetris_src/te
 # target to generate assembly for a file
 brick_game/tetris/tetris_src/tetris_collision.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_collision.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_collision.c.s
 .PHONY : brick_game/tetris/tetris_src/tetris_collision.c.s
 
 brick_game/tetris/tetris_src/tetris_init.o: brick_game/tetris/tetris_src/tetris_init.c.o
@@ -575,6 +636,7 @@ brick_game/tetris/tetris_src/tetris_init.o: brick_game/tetris/tetris_src/tetris_
 # target to build an object file
 brick_game/tetris/tetris_src/tetris_init.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_init.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_init.c.o
 .PHONY : brick_game/tetris/tetris_src/tetris_init.c.o
 
 brick_game/tetris/tetris_src/tetris_init.i: brick_game/tetris/tetris_src/tetris_init.c.i
@@ -583,6 +645,7 @@ brick_game/tetris/tetris_src/tetris_init.i: brick_game/tetris/tetris_src/tetris_
 # target to preprocess a source file
 brick_game/tetris/tetris_src/tetris_init.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_init.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_init.c.i
 .PHONY : brick_game/tetris/tetris_src/tetris_init.c.i
 
 brick_game/tetris/tetris_src/tetris_init.s: brick_game/tetris/tetris_src/tetris_init.c.s
@@ -591,6 +654,7 @@ brick_game/tetris/tetris_src/tetris_init.s: brick_game/tetris/tetris_src/tetris_
 # target to generate assembly for a file
 brick_game/tetris/tetris_src/tetris_init.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_init.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_init.c.s
 .PHONY : brick_game/tetris/tetris_src/tetris_init.c.s
 
 brick_game/tetris/tetris_src/tetris_moving/tetris_left_right_move.o: brick_game/tetris/tetris_src/tetris_moving/tetris_left_right_move.c.o
@@ -599,6 +663,7 @@ brick_game/tetris/tetris_src/tetris_moving/tetris_left_right_move.o: brick_game/
 # target to build an object file
 brick_game/tetris/tetris_src/tetris_moving/tetris_left_right_move.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_left_right_move.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_left_right_move.c.o
 .PHONY : brick_game/tetris/tetris_src/tetris_moving/tetris_left_right_move.c.o
 
 brick_game/tetris/tetris_src/tetris_moving/tetris_left_right_move.i: brick_game/tetris/tetris_src/tetris_moving/tetris_left_right_move.c.i
@@ -607,6 +672,7 @@ brick_game/tetris/tetris_src/tetris_moving/tetris_left_right_move.i: brick_game/
 # target to preprocess a source file
 brick_game/tetris/tetris_src/tetris_moving/tetris_left_right_move.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_left_right_move.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_left_right_move.c.i
 .PHONY : brick_game/tetris/tetris_src/tetris_moving/tetris_left_right_move.c.i
 
 brick_game/tetris/tetris_src/tetris_moving/tetris_left_right_move.s: brick_game/tetris/tetris_src/tetris_moving/tetris_left_right_move.c.s
@@ -615,6 +681,7 @@ brick_game/tetris/tetris_src/tetris_moving/tetris_left_right_move.s: brick_game/
 # target to generate assembly for a file
 brick_game/tetris/tetris_src/tetris_moving/tetris_left_right_move.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_left_right_move.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_left_right_move.c.s
 .PHONY : brick_game/tetris/tetris_src/tetris_moving/tetris_left_right_move.c.s
 
 brick_game/tetris/tetris_src/tetris_moving/tetris_moving_utils.o: brick_game/tetris/tetris_src/tetris_moving/tetris_moving_utils.c.o
@@ -623,6 +690,7 @@ brick_game/tetris/tetris_src/tetris_moving/tetris_moving_utils.o: brick_game/tet
 # target to build an object file
 brick_game/tetris/tetris_src/tetris_moving/tetris_moving_utils.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_moving_utils.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_moving_utils.c.o
 .PHONY : brick_game/tetris/tetris_src/tetris_moving/tetris_moving_utils.c.o
 
 brick_game/tetris/tetris_src/tetris_moving/tetris_moving_utils.i: brick_game/tetris/tetris_src/tetris_moving/tetris_moving_utils.c.i
@@ -631,6 +699,7 @@ brick_game/tetris/tetris_src/tetris_moving/tetris_moving_utils.i: brick_game/tet
 # target to preprocess a source file
 brick_game/tetris/tetris_src/tetris_moving/tetris_moving_utils.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_moving_utils.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_moving_utils.c.i
 .PHONY : brick_game/tetris/tetris_src/tetris_moving/tetris_moving_utils.c.i
 
 brick_game/tetris/tetris_src/tetris_moving/tetris_moving_utils.s: brick_game/tetris/tetris_src/tetris_moving/tetris_moving_utils.c.s
@@ -639,6 +708,7 @@ brick_game/tetris/tetris_src/tetris_moving/tetris_moving_utils.s: brick_game/tet
 # target to generate assembly for a file
 brick_game/tetris/tetris_src/tetris_moving/tetris_moving_utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_moving_utils.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_moving_utils.c.s
 .PHONY : brick_game/tetris/tetris_src/tetris_moving/tetris_moving_utils.c.s
 
 brick_game/tetris/tetris_src/tetris_moving/tetris_rotate.o: brick_game/tetris/tetris_src/tetris_moving/tetris_rotate.c.o
@@ -647,6 +717,7 @@ brick_game/tetris/tetris_src/tetris_moving/tetris_rotate.o: brick_game/tetris/te
 # target to build an object file
 brick_game/tetris/tetris_src/tetris_moving/tetris_rotate.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_rotate.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_rotate.c.o
 .PHONY : brick_game/tetris/tetris_src/tetris_moving/tetris_rotate.c.o
 
 brick_game/tetris/tetris_src/tetris_moving/tetris_rotate.i: brick_game/tetris/tetris_src/tetris_moving/tetris_rotate.c.i
@@ -655,6 +726,7 @@ brick_game/tetris/tetris_src/tetris_moving/tetris_rotate.i: brick_game/tetris/te
 # target to preprocess a source file
 brick_game/tetris/tetris_src/tetris_moving/tetris_rotate.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_rotate.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_rotate.c.i
 .PHONY : brick_game/tetris/tetris_src/tetris_moving/tetris_rotate.c.i
 
 brick_game/tetris/tetris_src/tetris_moving/tetris_rotate.s: brick_game/tetris/tetris_src/tetris_moving/tetris_rotate.c.s
@@ -663,6 +735,7 @@ brick_game/tetris/tetris_src/tetris_moving/tetris_rotate.s: brick_game/tetris/te
 # target to generate assembly for a file
 brick_game/tetris/tetris_src/tetris_moving/tetris_rotate.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_rotate.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_rotate.c.s
 .PHONY : brick_game/tetris/tetris_src/tetris_moving/tetris_rotate.c.s
 
 brick_game/tetris/tetris_src/tetris_moving/tetris_tetromino_fall.o: brick_game/tetris/tetris_src/tetris_moving/tetris_tetromino_fall.c.o
@@ -671,6 +744,7 @@ brick_game/tetris/tetris_src/tetris_moving/tetris_tetromino_fall.o: brick_game/t
 # target to build an object file
 brick_game/tetris/tetris_src/tetris_moving/tetris_tetromino_fall.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_tetromino_fall.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_tetromino_fall.c.o
 .PHONY : brick_game/tetris/tetris_src/tetris_moving/tetris_tetromino_fall.c.o
 
 brick_game/tetris/tetris_src/tetris_moving/tetris_tetromino_fall.i: brick_game/tetris/tetris_src/tetris_moving/tetris_tetromino_fall.c.i
@@ -679,6 +753,7 @@ brick_game/tetris/tetris_src/tetris_moving/tetris_tetromino_fall.i: brick_game/t
 # target to preprocess a source file
 brick_game/tetris/tetris_src/tetris_moving/tetris_tetromino_fall.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_tetromino_fall.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_tetromino_fall.c.i
 .PHONY : brick_game/tetris/tetris_src/tetris_moving/tetris_tetromino_fall.c.i
 
 brick_game/tetris/tetris_src/tetris_moving/tetris_tetromino_fall.s: brick_game/tetris/tetris_src/tetris_moving/tetris_tetromino_fall.c.s
@@ -687,6 +762,7 @@ brick_game/tetris/tetris_src/tetris_moving/tetris_tetromino_fall.s: brick_game/t
 # target to generate assembly for a file
 brick_game/tetris/tetris_src/tetris_moving/tetris_tetromino_fall.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_tetromino_fall.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_moving/tetris_tetromino_fall.c.s
 .PHONY : brick_game/tetris/tetris_src/tetris_moving/tetris_tetromino_fall.c.s
 
 brick_game/tetris/tetris_src/tetris_rows_hit.o: brick_game/tetris/tetris_src/tetris_rows_hit.c.o
@@ -695,6 +771,7 @@ brick_game/tetris/tetris_src/tetris_rows_hit.o: brick_game/tetris/tetris_src/tet
 # target to build an object file
 brick_game/tetris/tetris_src/tetris_rows_hit.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_rows_hit.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_rows_hit.c.o
 .PHONY : brick_game/tetris/tetris_src/tetris_rows_hit.c.o
 
 brick_game/tetris/tetris_src/tetris_rows_hit.i: brick_game/tetris/tetris_src/tetris_rows_hit.c.i
@@ -703,6 +780,7 @@ brick_game/tetris/tetris_src/tetris_rows_hit.i: brick_game/tetris/tetris_src/tet
 # target to preprocess a source file
 brick_game/tetris/tetris_src/tetris_rows_hit.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_rows_hit.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_rows_hit.c.i
 .PHONY : brick_game/tetris/tetris_src/tetris_rows_hit.c.i
 
 brick_game/tetris/tetris_src/tetris_rows_hit.s: brick_game/tetris/tetris_src/tetris_rows_hit.c.s
@@ -711,6 +789,7 @@ brick_game/tetris/tetris_src/tetris_rows_hit.s: brick_game/tetris/tetris_src/tet
 # target to generate assembly for a file
 brick_game/tetris/tetris_src/tetris_rows_hit.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_rows_hit.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_rows_hit.c.s
 .PHONY : brick_game/tetris/tetris_src/tetris_rows_hit.c.s
 
 brick_game/tetris/tetris_src/tetris_speed_and_levels.o: brick_game/tetris/tetris_src/tetris_speed_and_levels.c.o
@@ -719,6 +798,7 @@ brick_game/tetris/tetris_src/tetris_speed_and_levels.o: brick_game/tetris/tetris
 # target to build an object file
 brick_game/tetris/tetris_src/tetris_speed_and_levels.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_speed_and_levels.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_speed_and_levels.c.o
 .PHONY : brick_game/tetris/tetris_src/tetris_speed_and_levels.c.o
 
 brick_game/tetris/tetris_src/tetris_speed_and_levels.i: brick_game/tetris/tetris_src/tetris_speed_and_levels.c.i
@@ -727,6 +807,7 @@ brick_game/tetris/tetris_src/tetris_speed_and_levels.i: brick_game/tetris/tetris
 # target to preprocess a source file
 brick_game/tetris/tetris_src/tetris_speed_and_levels.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_speed_and_levels.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_speed_and_levels.c.i
 .PHONY : brick_game/tetris/tetris_src/tetris_speed_and_levels.c.i
 
 brick_game/tetris/tetris_src/tetris_speed_and_levels.s: brick_game/tetris/tetris_src/tetris_speed_and_levels.c.s
@@ -735,6 +816,7 @@ brick_game/tetris/tetris_src/tetris_speed_and_levels.s: brick_game/tetris/tetris
 # target to generate assembly for a file
 brick_game/tetris/tetris_src/tetris_speed_and_levels.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_speed_and_levels.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_speed_and_levels.c.s
 .PHONY : brick_game/tetris/tetris_src/tetris_speed_and_levels.c.s
 
 brick_game/tetris/tetris_src/tetris_tetromino_create.o: brick_game/tetris/tetris_src/tetris_tetromino_create.c.o
@@ -743,6 +825,7 @@ brick_game/tetris/tetris_src/tetris_tetromino_create.o: brick_game/tetris/tetris
 # target to build an object file
 brick_game/tetris/tetris_src/tetris_tetromino_create.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_tetromino_create.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_tetromino_create.c.o
 .PHONY : brick_game/tetris/tetris_src/tetris_tetromino_create.c.o
 
 brick_game/tetris/tetris_src/tetris_tetromino_create.i: brick_game/tetris/tetris_src/tetris_tetromino_create.c.i
@@ -751,6 +834,7 @@ brick_game/tetris/tetris_src/tetris_tetromino_create.i: brick_game/tetris/tetris
 # target to preprocess a source file
 brick_game/tetris/tetris_src/tetris_tetromino_create.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_tetromino_create.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_tetromino_create.c.i
 .PHONY : brick_game/tetris/tetris_src/tetris_tetromino_create.c.i
 
 brick_game/tetris/tetris_src/tetris_tetromino_create.s: brick_game/tetris/tetris_src/tetris_tetromino_create.c.s
@@ -759,6 +843,7 @@ brick_game/tetris/tetris_src/tetris_tetromino_create.s: brick_game/tetris/tetris
 # target to generate assembly for a file
 brick_game/tetris/tetris_src/tetris_tetromino_create.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_tetromino_create.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_tetromino_create.c.s
 .PHONY : brick_game/tetris/tetris_src/tetris_tetromino_create.c.s
 
 brick_game/tetris/tetris_src/tetris_timer.o: brick_game/tetris/tetris_src/tetris_timer.c.o
@@ -767,6 +852,7 @@ brick_game/tetris/tetris_src/tetris_timer.o: brick_game/tetris/tetris_src/tetris
 # target to build an object file
 brick_game/tetris/tetris_src/tetris_timer.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_timer.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_timer.c.o
 .PHONY : brick_game/tetris/tetris_src/tetris_timer.c.o
 
 brick_game/tetris/tetris_src/tetris_timer.i: brick_game/tetris/tetris_src/tetris_timer.c.i
@@ -775,6 +861,7 @@ brick_game/tetris/tetris_src/tetris_timer.i: brick_game/tetris/tetris_src/tetris
 # target to preprocess a source file
 brick_game/tetris/tetris_src/tetris_timer.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_timer.c.i
 .PHONY : brick_game/tetris/tetris_src/tetris_timer.c.i
 
 brick_game/tetris/tetris_src/tetris_timer.s: brick_game/tetris/tetris_src/tetris_timer.c.s
@@ -783,6 +870,7 @@ brick_game/tetris/tetris_src/tetris_timer.s: brick_game/tetris/tetris_src/tetris
 # target to generate assembly for a file
 brick_game/tetris/tetris_src/tetris_timer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/tetris_src/tetris_timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/tetris_src/tetris_timer.c.s
 .PHONY : brick_game/tetris/tetris_src/tetris_timer.c.s
 
 gui/cli/src/tetris_frontend_utils.o: gui/cli/src/tetris_frontend_utils.c.o
@@ -863,6 +951,7 @@ gui/desktop/view/src/app.o: gui/desktop/view/src/app.cc.o
 # target to build an object file
 gui/desktop/view/src/app.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_desktop.dir/build.make CMakeFiles/snake_desktop.dir/gui/desktop/view/src/app.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.o
 .PHONY : gui/desktop/view/src/app.cc.o
 
 gui/desktop/view/src/app.i: gui/desktop/view/src/app.cc.i
@@ -871,6 +960,7 @@ gui/desktop/view/src/app.i: gui/desktop/view/src/app.cc.i
 # target to preprocess a source file
 gui/desktop/view/src/app.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_desktop.dir/build.make CMakeFiles/snake_desktop.dir/gui/desktop/view/src/app.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.i
 .PHONY : gui/desktop/view/src/app.cc.i
 
 gui/desktop/view/src/app.s: gui/desktop/view/src/app.cc.s
@@ -879,6 +969,7 @@ gui/desktop/view/src/app.s: gui/desktop/view/src/app.cc.s
 # target to generate assembly for a file
 gui/desktop/view/src/app.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_desktop.dir/build.make CMakeFiles/snake_desktop.dir/gui/desktop/view/src/app.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.s
 .PHONY : gui/desktop/view/src/app.cc.s
 
 gui/desktop/view/src/connects.o: gui/desktop/view/src/connects.cc.o
@@ -887,6 +978,7 @@ gui/desktop/view/src/connects.o: gui/desktop/view/src/connects.cc.o
 # target to build an object file
 gui/desktop/view/src/connects.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_desktop.dir/build.make CMakeFiles/snake_desktop.dir/gui/desktop/view/src/connects.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connects.cc.o
 .PHONY : gui/desktop/view/src/connects.cc.o
 
 gui/desktop/view/src/connects.i: gui/desktop/view/src/connects.cc.i
@@ -895,6 +987,7 @@ gui/desktop/view/src/connects.i: gui/desktop/view/src/connects.cc.i
 # target to preprocess a source file
 gui/desktop/view/src/connects.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_desktop.dir/build.make CMakeFiles/snake_desktop.dir/gui/desktop/view/src/connects.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connects.cc.i
 .PHONY : gui/desktop/view/src/connects.cc.i
 
 gui/desktop/view/src/connects.s: gui/desktop/view/src/connects.cc.s
@@ -903,6 +996,7 @@ gui/desktop/view/src/connects.s: gui/desktop/view/src/connects.cc.s
 # target to generate assembly for a file
 gui/desktop/view/src/connects.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_desktop.dir/build.make CMakeFiles/snake_desktop.dir/gui/desktop/view/src/connects.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connects.cc.s
 .PHONY : gui/desktop/view/src/connects.cc.s
 
 gui/desktop/view/src/game_w.o: gui/desktop/view/src/game_w.cc.o
@@ -911,6 +1005,7 @@ gui/desktop/view/src/game_w.o: gui/desktop/view/src/game_w.cc.o
 # target to build an object file
 gui/desktop/view/src/game_w.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_desktop.dir/build.make CMakeFiles/snake_desktop.dir/gui/desktop/view/src/game_w.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.o
 .PHONY : gui/desktop/view/src/game_w.cc.o
 
 gui/desktop/view/src/game_w.i: gui/desktop/view/src/game_w.cc.i
@@ -919,6 +1014,7 @@ gui/desktop/view/src/game_w.i: gui/desktop/view/src/game_w.cc.i
 # target to preprocess a source file
 gui/desktop/view/src/game_w.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_desktop.dir/build.make CMakeFiles/snake_desktop.dir/gui/desktop/view/src/game_w.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.i
 .PHONY : gui/desktop/view/src/game_w.cc.i
 
 gui/desktop/view/src/game_w.s: gui/desktop/view/src/game_w.cc.s
@@ -927,6 +1023,7 @@ gui/desktop/view/src/game_w.s: gui/desktop/view/src/game_w.cc.s
 # target to generate assembly for a file
 gui/desktop/view/src/game_w.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_desktop.dir/build.make CMakeFiles/snake_desktop.dir/gui/desktop/view/src/game_w.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.s
 .PHONY : gui/desktop/view/src/game_w.cc.s
 
 gui/desktop/view/src/gamefield.o: gui/desktop/view/src/gamefield.cc.o
@@ -935,6 +1032,7 @@ gui/desktop/view/src/gamefield.o: gui/desktop/view/src/gamefield.cc.o
 # target to build an object file
 gui/desktop/view/src/gamefield.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_desktop.dir/build.make CMakeFiles/snake_desktop.dir/gui/desktop/view/src/gamefield.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.o
 .PHONY : gui/desktop/view/src/gamefield.cc.o
 
 gui/desktop/view/src/gamefield.i: gui/desktop/view/src/gamefield.cc.i
@@ -943,6 +1041,7 @@ gui/desktop/view/src/gamefield.i: gui/desktop/view/src/gamefield.cc.i
 # target to preprocess a source file
 gui/desktop/view/src/gamefield.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_desktop.dir/build.make CMakeFiles/snake_desktop.dir/gui/desktop/view/src/gamefield.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.i
 .PHONY : gui/desktop/view/src/gamefield.cc.i
 
 gui/desktop/view/src/gamefield.s: gui/desktop/view/src/gamefield.cc.s
@@ -951,6 +1050,7 @@ gui/desktop/view/src/gamefield.s: gui/desktop/view/src/gamefield.cc.s
 # target to generate assembly for a file
 gui/desktop/view/src/gamefield.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_desktop.dir/build.make CMakeFiles/snake_desktop.dir/gui/desktop/view/src/gamefield.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.s
 .PHONY : gui/desktop/view/src/gamefield.cc.s
 
 gui/desktop/view/src/info.o: gui/desktop/view/src/info.cc.o
@@ -959,6 +1059,7 @@ gui/desktop/view/src/info.o: gui/desktop/view/src/info.cc.o
 # target to build an object file
 gui/desktop/view/src/info.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_desktop.dir/build.make CMakeFiles/snake_desktop.dir/gui/desktop/view/src/info.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.o
 .PHONY : gui/desktop/view/src/info.cc.o
 
 gui/desktop/view/src/info.i: gui/desktop/view/src/info.cc.i
@@ -967,6 +1068,7 @@ gui/desktop/view/src/info.i: gui/desktop/view/src/info.cc.i
 # target to preprocess a source file
 gui/desktop/view/src/info.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_desktop.dir/build.make CMakeFiles/snake_desktop.dir/gui/desktop/view/src/info.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.i
 .PHONY : gui/desktop/view/src/info.cc.i
 
 gui/desktop/view/src/info.s: gui/desktop/view/src/info.cc.s
@@ -975,6 +1077,7 @@ gui/desktop/view/src/info.s: gui/desktop/view/src/info.cc.s
 # target to generate assembly for a file
 gui/desktop/view/src/info.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_desktop.dir/build.make CMakeFiles/snake_desktop.dir/gui/desktop/view/src/info.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.s
 .PHONY : gui/desktop/view/src/info.cc.s
 
 gui/desktop/view/src/key_events.o: gui/desktop/view/src/key_events.cc.o
@@ -983,6 +1086,7 @@ gui/desktop/view/src/key_events.o: gui/desktop/view/src/key_events.cc.o
 # target to build an object file
 gui/desktop/view/src/key_events.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_desktop.dir/build.make CMakeFiles/snake_desktop.dir/gui/desktop/view/src/key_events.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.o
 .PHONY : gui/desktop/view/src/key_events.cc.o
 
 gui/desktop/view/src/key_events.i: gui/desktop/view/src/key_events.cc.i
@@ -991,6 +1095,7 @@ gui/desktop/view/src/key_events.i: gui/desktop/view/src/key_events.cc.i
 # target to preprocess a source file
 gui/desktop/view/src/key_events.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_desktop.dir/build.make CMakeFiles/snake_desktop.dir/gui/desktop/view/src/key_events.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.i
 .PHONY : gui/desktop/view/src/key_events.cc.i
 
 gui/desktop/view/src/key_events.s: gui/desktop/view/src/key_events.cc.s
@@ -999,6 +1104,7 @@ gui/desktop/view/src/key_events.s: gui/desktop/view/src/key_events.cc.s
 # target to generate assembly for a file
 gui/desktop/view/src/key_events.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_desktop.dir/build.make CMakeFiles/snake_desktop.dir/gui/desktop/view/src/key_events.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.s
 .PHONY : gui/desktop/view/src/key_events.cc.s
 
 gui/desktop/view/src/slots.o: gui/desktop/view/src/slots.cc.o
@@ -1007,6 +1113,7 @@ gui/desktop/view/src/slots.o: gui/desktop/view/src/slots.cc.o
 # target to build an object file
 gui/desktop/view/src/slots.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_desktop.dir/build.make CMakeFiles/snake_desktop.dir/gui/desktop/view/src/slots.cc.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.o
 .PHONY : gui/desktop/view/src/slots.cc.o
 
 gui/desktop/view/src/slots.i: gui/desktop/view/src/slots.cc.i
@@ -1015,6 +1122,7 @@ gui/desktop/view/src/slots.i: gui/desktop/view/src/slots.cc.i
 # target to preprocess a source file
 gui/desktop/view/src/slots.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_desktop.dir/build.make CMakeFiles/snake_desktop.dir/gui/desktop/view/src/slots.cc.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.i
 .PHONY : gui/desktop/view/src/slots.cc.i
 
 gui/desktop/view/src/slots.s: gui/desktop/view/src/slots.cc.s
@@ -1023,6 +1131,7 @@ gui/desktop/view/src/slots.s: gui/desktop/view/src/slots.cc.s
 # target to generate assembly for a file
 gui/desktop/view/src/slots.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_desktop.dir/build.make CMakeFiles/snake_desktop.dir/gui/desktop/view/src/slots.cc.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.s
 .PHONY : gui/desktop/view/src/slots.cc.s
 
 snake_desktop.o: snake_desktop.cc.o
@@ -1121,6 +1230,54 @@ tetris_cli_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/tetris_cli_autogen/mocs_compilation.cpp.s
 .PHONY : tetris_cli_autogen/mocs_compilation.cpp.s
 
+tetris_desktop.o: tetris_desktop.cc.o
+.PHONY : tetris_desktop.o
+
+# target to build an object file
+tetris_desktop.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/tetris_desktop.cc.o
+.PHONY : tetris_desktop.cc.o
+
+tetris_desktop.i: tetris_desktop.cc.i
+.PHONY : tetris_desktop.i
+
+# target to preprocess a source file
+tetris_desktop.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/tetris_desktop.cc.i
+.PHONY : tetris_desktop.cc.i
+
+tetris_desktop.s: tetris_desktop.cc.s
+.PHONY : tetris_desktop.s
+
+# target to generate assembly for a file
+tetris_desktop.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/tetris_desktop.cc.s
+.PHONY : tetris_desktop.cc.s
+
+tetris_desktop_autogen/mocs_compilation.o: tetris_desktop_autogen/mocs_compilation.cpp.o
+.PHONY : tetris_desktop_autogen/mocs_compilation.o
+
+# target to build an object file
+tetris_desktop_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/tetris_desktop_autogen/mocs_compilation.cpp.o
+.PHONY : tetris_desktop_autogen/mocs_compilation.cpp.o
+
+tetris_desktop_autogen/mocs_compilation.i: tetris_desktop_autogen/mocs_compilation.cpp.i
+.PHONY : tetris_desktop_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+tetris_desktop_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/tetris_desktop_autogen/mocs_compilation.cpp.i
+.PHONY : tetris_desktop_autogen/mocs_compilation.cpp.i
+
+tetris_desktop_autogen/mocs_compilation.s: tetris_desktop_autogen/mocs_compilation.cpp.s
+.PHONY : tetris_desktop_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+tetris_desktop_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/tetris_desktop_autogen/mocs_compilation.cpp.s
+.PHONY : tetris_desktop_autogen/mocs_compilation.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1132,12 +1289,16 @@ help:
 	@echo "... clf"
 	@echo "... play_snake_desktop"
 	@echo "... play_tetris_cli"
+	@echo "... play_tetris_desktop"
 	@echo "... snake_desktop_autogen"
 	@echo "... snake_desktop_autogen_timestamp_deps"
 	@echo "... tetris_cli_autogen"
 	@echo "... tetris_cli_autogen_timestamp_deps"
+	@echo "... tetris_desktop_autogen"
+	@echo "... tetris_desktop_autogen_timestamp_deps"
 	@echo "... snake_desktop"
 	@echo "... tetris_cli"
+	@echo "... tetris_desktop"
 	@echo "... brick_game/snake/controller/controller.o"
 	@echo "... brick_game/snake/controller/controller.i"
 	@echo "... brick_game/snake/controller/controller.s"
@@ -1249,6 +1410,12 @@ help:
 	@echo "... tetris_cli_autogen/mocs_compilation.o"
 	@echo "... tetris_cli_autogen/mocs_compilation.i"
 	@echo "... tetris_cli_autogen/mocs_compilation.s"
+	@echo "... tetris_desktop.o"
+	@echo "... tetris_desktop.i"
+	@echo "... tetris_desktop.s"
+	@echo "... tetris_desktop_autogen/mocs_compilation.o"
+	@echo "... tetris_desktop_autogen/mocs_compilation.i"
+	@echo "... tetris_desktop_autogen/mocs_compilation.s"
 .PHONY : help
 
 

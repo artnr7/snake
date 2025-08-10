@@ -1,7 +1,12 @@
 #include "../include/view.h"
 
 void s21::GameWidget::InfoDraw(GameWidget *field_w) {
-  GameInfo_t g_info = s21::Controller::updateCurrentState();
+  GameInfo_t g_info = {};
+#ifdef SNAKE
+  g_info = s21::Controller::updateCurrentState();
+#elif TETRIS
+  // GameInfo_t g_info = updateCurrentState();
+#endif
 
   info_lay = new QVBoxLayout(field_w);
   info_lay->setContentsMargins(INFO_X + INDENT_X, INFO_Y + INDENT_Y, INDENT_X,
@@ -51,7 +56,13 @@ void s21::GameWidget::InfoDraw(GameWidget *field_w) {
 }
 
 void s21::GameWidget::UpdateInfoFun() {
-  GameInfo_t g_info = s21::Controller::updateCurrentState();
+  GameInfo_t g_info = {};
+
+#ifdef SNAKE
+  g_info = s21::Controller::updateCurrentState();
+#elif TETRIS
+  // GameInfo_t g_info = updateCurrentState();
+#endif
   QString user_level = QString::number(g_info.level);
   level->setText("Level:" + user_level);
 

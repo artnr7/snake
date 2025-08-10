@@ -18,7 +18,9 @@ public:
 private:
   void Connections();
 
+  // Painters
   void paintEvent(QPaintEvent *event) override;
+  void TetrisChooseBrush(QBrush &brush, int &px);
   bool hold_;
 
   // Variables

@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /home/artnr7/snake/src/build
 # The main recursive "all" target.
 all: CMakeFiles/snake_desktop.dir/all
 all: CMakeFiles/tetris_cli.dir/all
+all: CMakeFiles/tetris_desktop.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,11 +77,15 @@ clean: CMakeFiles/snake_desktop.dir/clean
 clean: CMakeFiles/play_snake_desktop.dir/clean
 clean: CMakeFiles/tetris_cli.dir/clean
 clean: CMakeFiles/play_tetris_cli.dir/clean
+clean: CMakeFiles/tetris_desktop.dir/clean
+clean: CMakeFiles/play_tetris_desktop.dir/clean
 clean: CMakeFiles/clf.dir/clean
 clean: CMakeFiles/snake_desktop_autogen_timestamp_deps.dir/clean
 clean: CMakeFiles/snake_desktop_autogen.dir/clean
 clean: CMakeFiles/tetris_cli_autogen_timestamp_deps.dir/clean
 clean: CMakeFiles/tetris_cli_autogen.dir/clean
+clean: CMakeFiles/tetris_desktop_autogen_timestamp_deps.dir/clean
+clean: CMakeFiles/tetris_desktop_autogen.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -188,6 +193,59 @@ play_tetris_cli: CMakeFiles/play_tetris_cli.dir/rule
 CMakeFiles/play_tetris_cli.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/play_tetris_cli.dir/build.make CMakeFiles/play_tetris_cli.dir/clean
 .PHONY : CMakeFiles/play_tetris_cli.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tetris_desktop.dir
+
+# All Build rule for target.
+CMakeFiles/tetris_desktop.dir/all: CMakeFiles/tetris_desktop_autogen_timestamp_deps.dir/all
+CMakeFiles/tetris_desktop.dir/all: CMakeFiles/tetris_desktop_autogen.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67 "Built target tetris_desktop"
+.PHONY : CMakeFiles/tetris_desktop.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tetris_desktop.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/artnr7/snake/src/build/CMakeFiles 24
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tetris_desktop.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/artnr7/snake/src/build/CMakeFiles 0
+.PHONY : CMakeFiles/tetris_desktop.dir/rule
+
+# Convenience name for target.
+tetris_desktop: CMakeFiles/tetris_desktop.dir/rule
+.PHONY : tetris_desktop
+
+# clean rule for target.
+CMakeFiles/tetris_desktop.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/clean
+.PHONY : CMakeFiles/tetris_desktop.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/play_tetris_desktop.dir
+
+# All Build rule for target.
+CMakeFiles/play_tetris_desktop.dir/all: CMakeFiles/tetris_desktop.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/play_tetris_desktop.dir/build.make CMakeFiles/play_tetris_desktop.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/play_tetris_desktop.dir/build.make CMakeFiles/play_tetris_desktop.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num= "Built target play_tetris_desktop"
+.PHONY : CMakeFiles/play_tetris_desktop.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/play_tetris_desktop.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/artnr7/snake/src/build/CMakeFiles 24
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/play_tetris_desktop.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/artnr7/snake/src/build/CMakeFiles 0
+.PHONY : CMakeFiles/play_tetris_desktop.dir/rule
+
+# Convenience name for target.
+play_tetris_desktop: CMakeFiles/play_tetris_desktop.dir/rule
+.PHONY : play_tetris_desktop
+
+# clean rule for target.
+CMakeFiles/play_tetris_desktop.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/play_tetris_desktop.dir/build.make CMakeFiles/play_tetris_desktop.dir/clean
+.PHONY : CMakeFiles/play_tetris_desktop.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/clf.dir
@@ -318,6 +376,58 @@ tetris_cli_autogen: CMakeFiles/tetris_cli_autogen.dir/rule
 CMakeFiles/tetris_cli_autogen.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli_autogen.dir/build.make CMakeFiles/tetris_cli_autogen.dir/clean
 .PHONY : CMakeFiles/tetris_cli_autogen.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tetris_desktop_autogen_timestamp_deps.dir
+
+# All Build rule for target.
+CMakeFiles/tetris_desktop_autogen_timestamp_deps.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop_autogen_timestamp_deps.dir/build.make CMakeFiles/tetris_desktop_autogen_timestamp_deps.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop_autogen_timestamp_deps.dir/build.make CMakeFiles/tetris_desktop_autogen_timestamp_deps.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num= "Built target tetris_desktop_autogen_timestamp_deps"
+.PHONY : CMakeFiles/tetris_desktop_autogen_timestamp_deps.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tetris_desktop_autogen_timestamp_deps.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/artnr7/snake/src/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tetris_desktop_autogen_timestamp_deps.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/artnr7/snake/src/build/CMakeFiles 0
+.PHONY : CMakeFiles/tetris_desktop_autogen_timestamp_deps.dir/rule
+
+# Convenience name for target.
+tetris_desktop_autogen_timestamp_deps: CMakeFiles/tetris_desktop_autogen_timestamp_deps.dir/rule
+.PHONY : tetris_desktop_autogen_timestamp_deps
+
+# clean rule for target.
+CMakeFiles/tetris_desktop_autogen_timestamp_deps.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop_autogen_timestamp_deps.dir/build.make CMakeFiles/tetris_desktop_autogen_timestamp_deps.dir/clean
+.PHONY : CMakeFiles/tetris_desktop_autogen_timestamp_deps.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tetris_desktop_autogen.dir
+
+# All Build rule for target.
+CMakeFiles/tetris_desktop_autogen.dir/all: CMakeFiles/tetris_desktop_autogen_timestamp_deps.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop_autogen.dir/build.make CMakeFiles/tetris_desktop_autogen.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop_autogen.dir/build.make CMakeFiles/tetris_desktop_autogen.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=68 "Built target tetris_desktop_autogen"
+.PHONY : CMakeFiles/tetris_desktop_autogen.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tetris_desktop_autogen.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/artnr7/snake/src/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tetris_desktop_autogen.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/artnr7/snake/src/build/CMakeFiles 0
+.PHONY : CMakeFiles/tetris_desktop_autogen.dir/rule
+
+# Convenience name for target.
+tetris_desktop_autogen: CMakeFiles/tetris_desktop_autogen.dir/rule
+.PHONY : tetris_desktop_autogen
+
+# clean rule for target.
+CMakeFiles/tetris_desktop_autogen.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop_autogen.dir/build.make CMakeFiles/tetris_desktop_autogen.dir/clean
+.PHONY : CMakeFiles/tetris_desktop_autogen.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,5 +1,7 @@
 #ifndef __TETRIS_MOVING_UTILS__
+
 #define __TETRIS_MOVING_UTILS__
+
 
 #include "../tetris_data_types.h"
 #include "../tetris_init.h"
