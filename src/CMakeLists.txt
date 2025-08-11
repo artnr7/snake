@@ -17,11 +17,14 @@ include(cmake/find_packages/tests.cmake)
 include(cmake/find_packages/qt.cmake)
 include(cmake/find_packages/curses.cmake)
 
-# snake_desktop
-include(cmake/targets/snake_desktop.cmake)
+# snake_cli
+include(cmake/targets/snake_cli.cmake)
 
 # tetris_cli
 include(cmake/targets/tetris_cli.cmake)
+
+# snake_desktop
+include(cmake/targets/snake_desktop.cmake)
 
 # tetris_desktop
 include(cmake/targets/tetris_desktop.cmake)

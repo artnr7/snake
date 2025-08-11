@@ -7,9 +7,12 @@ namespace s21 {
 class Controller {
 
 protected:
-  Controller(){};
+  Controller() {};
 
 public:
+#ifdef CLI
+  static Controller *GetController();
+#endif
   /*=====================→ METHODS ←==================== */
   static void userInput(UserAction_t action, bool hold);
   static GameInfo_t updateCurrentState();

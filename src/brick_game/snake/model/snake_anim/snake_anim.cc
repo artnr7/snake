@@ -1,4 +1,4 @@
-#include "snake_anim.h"
+#include "snake_anim.hpp"
 #include <iostream>
 
 s21::SnakeAnim::SnakeAnim() : body_() {

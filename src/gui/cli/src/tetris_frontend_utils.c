@@ -27,6 +27,10 @@ void tetris_fst_start(UserAction_t *action, bool *hold) {
     start_menu();
   }
   clear();
+  // #ifdef TETRIS
+  // userInput(*action, *hold);
+  // #elif SNAKE
+  // #endif
   userInput(*action, *hold);
   tetris_rendering(*action);
 }

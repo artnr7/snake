@@ -2,7 +2,7 @@
 #define MODEL_H_
 
 #include "../../data_types.h"
-#include "../snake_anim/snake_anim.h"
+#include "../snake_anim/snake_anim.hpp"
 #include "field_attr.h"
 
 namespace s21 {

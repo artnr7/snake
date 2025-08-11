@@ -1,6 +1,4 @@
-file(REMOVE_RECURSE
-  "CMakeFiles/clf"
-)
+file(REMOVE_RECURSE "CMakeFiles/clf")
 
 # Per-language clean rules from dependency scanning.
 foreach(lang )

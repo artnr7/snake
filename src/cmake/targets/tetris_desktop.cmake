@@ -4,7 +4,7 @@ set(PLAY_TETRIS_DESKTOP play_${TETRIS_DESKTOP})
 include(cmake/srcs/tetris_back.cmake)
 include(cmake/srcs/desktop_gui.cmake)
 
-set(TETRIS_DESKTOP_SRC_INCLUDE tetris_desktop.cc ${TETRIS_BACK_SRC_INCLUDE}
+set(TETRIS_DESKTOP_SRC_INCLUDE desktop.cc ${TETRIS_BACK_SRC_INCLUDE}
                                ${DESKTOP_SRC_INCLUDE})
 
 add_executable(${TETRIS_DESKTOP} ${TETRIS_DESKTOP_SRC_INCLUDE})

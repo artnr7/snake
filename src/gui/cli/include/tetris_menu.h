@@ -1,6 +1,8 @@
 #ifndef __TETRIS_MENU__
 #define __TETRIS_MENU__
 
+#include "../../../brick_game/snake/controller/c_controller.h"
+// #include "../../../brick_game/snake/data_types.h"
 #include "../../../brick_game/tetris/tetris_include/tetris_data_types.h"
 #include "tetris_frontend_utils.h"
 

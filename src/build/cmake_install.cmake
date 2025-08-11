@@ -1,4 +1,4 @@
-# Install script for directory: /home/artnr7/snake/src
+# Install script for directory: /home/atrnr7/snake/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -9,8 +9,8 @@ string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 # Set the install configuration name.
 if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
   if(BUILD_TYPE)
-    string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
-           CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
+    string(REGEX REPLACE "^[^A-Za-z0-9_]+" "" CMAKE_INSTALL_CONFIG_NAME
+                         "${BUILD_TYPE}")
   else()
     set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
@@ -49,6 +49,6 @@ else()
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/artnr7/snake/src/build/${CMAKE_INSTALL_MANIFEST}"
+               "${CMAKE_INSTALL_MANIFEST_FILES}")
+file(WRITE "/home/atrnr7/snake/src/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

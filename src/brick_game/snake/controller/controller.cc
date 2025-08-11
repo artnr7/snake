@@ -1,5 +1,23 @@
 #include "controller.h"
+#ifdef CLI
+#include "c_controller.h"
+#endif
 // #include <iostream>
+
+// Обёртки
+#ifdef CLI
+s21::Controller *s21::Controller::GetController() {
+  static Controller st_controller;
+  return &st_controller;
+}
+
+void userInput(UserAction_t action, bool hold) {
+  return s21::Controller::GetController()->userInput(action, hold);
+}
+GameInfo_t updateCurrentState() {
+  return s21::Controller::GetController()->updateCurrentState();
+}
+#endif
 
 void s21::Controller::userInput(UserAction_t action, bool hold) {
   s21::Model *model = s21::Model::GetModel();
