@@ -1,8 +1,9 @@
 #include "../include/tetris_frontend_utils.h"
+#include <stdio.h>
 
 /** @brief Инициализация окна ncurses */
 void ncurses_init() {
-  initscr();  // ◄ инициализация окна ncurses
+  initscr(); // ◄ инициализация окна ncurses
 
   /* ▼ Инициализация цветовых пар */
   start_color();
@@ -14,9 +15,9 @@ void ncurses_init() {
   init_pair(6, COLOR_CYAN, COLOR_BLACK);
   init_pair(7, COLOR_WHITE, COLOR_BLACK);
 
-  noecho();  // ◄ отсутствие реакции на ввод пользователя
-  keypad(stdscr, true);  // ◄ поддержка клавиш стрелочек на клавиатуре
-  timeout(1);  // ◄ чтобы в случае отсутствия ввода в userinput попадал ERR
+  noecho(); // ◄ отсутствие реакции на ввод пользователя
+  keypad(stdscr, true); // ◄ поддержка клавиш стрелочек на клавиатуре
+  timeout(1); // ◄ чтобы в случае отсутствия ввода в userinput попадал ERR
 }
 
 /** @brief Цикл для начала игры */
@@ -27,10 +28,6 @@ void tetris_fst_start(UserAction_t *action, bool *hold) {
     start_menu();
   }
   clear();
-  // #ifdef TETRIS
-  // userInput(*action, *hold);
-  // #elif SNAKE
-  // #endif
   userInput(*action, *hold);
   tetris_rendering(*action);
 }
@@ -40,6 +37,7 @@ void tetris_main_loop(UserAction_t *action, bool *hold) {
   while (*action != Terminate) {
     keyboard_input(action, hold);
     userInput(*action, *hold);
+    printf("%p\n", updateCurrentState().field);
     if (updateCurrentState().field == NULL) {
       *action = Terminate;
     }
@@ -50,32 +48,37 @@ void tetris_main_loop(UserAction_t *action, bool *hold) {
 /** @brief Ввод с клавиатуры */
 void keyboard_input(UserAction_t *action, bool *hold) {
   switch (getch()) {
-    case 's':
-      *action = Start;
-      break;
-    case 't':
-      *action = Pause;
-      break;
-    case 'q':
-      *action = Terminate;
-      break;
-    case KEY_LEFT:
-      *action = Left;
-      break;
-    case KEY_RIGHT:
-      *action = Right;
-      break;
-    case KEY_DOWN:
-      *action = Down;
-      break;
-    case ' ':
-      *action = Action;
-      break;
-    default:
-      *action = ERR;  // ◄ отстутствие ввода
+  case 's':
+    *action = Start;
+    break;
+  case 't':
+    *action = Pause;
+    break;
+  case 'q':
+    *action = Terminate;
+    break;
+#ifdef SNAKE
+  case KEY_UP:
+    *action = Up;
+    break;
+#endif
+  case KEY_LEFT:
+    *action = Left;
+    break;
+  case KEY_RIGHT:
+    *action = Right;
+    break;
+  case KEY_DOWN:
+    *action = Down;
+    break;
+  case ' ':
+    *action = Action;
+    break;
+  default:
+    *action = ERR; // ◄ отстутствие ввода
   }
 
-  *hold += 1;  // ◄ заглушка
+  *hold += 1; // ◄ заглушка
 }
 
 /** @brief Определение цвета тетромино по его кодам(движ. и стат.) */

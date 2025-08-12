@@ -69,19 +69,19 @@ include CMakeFiles/snake_cli.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/snake_cli.dir/flags.make
 
-CMakeFiles/snake_cli.dir/snake_cli.c.o: CMakeFiles/snake_cli.dir/flags.make
-CMakeFiles/snake_cli.dir/snake_cli.c.o: /home/atrnr7/snake/src/snake_cli.c
-CMakeFiles/snake_cli.dir/snake_cli.c.o: CMakeFiles/snake_cli.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/snake_cli.dir/snake_cli.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/snake_cli.c.o -MF CMakeFiles/snake_cli.dir/snake_cli.c.o.d -o CMakeFiles/snake_cli.dir/snake_cli.c.o -c /home/atrnr7/snake/src/snake_cli.c
+CMakeFiles/snake_cli.dir/tetris_cli.c.o: CMakeFiles/snake_cli.dir/flags.make
+CMakeFiles/snake_cli.dir/tetris_cli.c.o: /home/atrnr7/snake/src/tetris_cli.c
+CMakeFiles/snake_cli.dir/tetris_cli.c.o: CMakeFiles/snake_cli.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/snake_cli.dir/tetris_cli.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/tetris_cli.c.o -MF CMakeFiles/snake_cli.dir/tetris_cli.c.o.d -o CMakeFiles/snake_cli.dir/tetris_cli.c.o -c /home/atrnr7/snake/src/tetris_cli.c
 
-CMakeFiles/snake_cli.dir/snake_cli.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/snake_cli.dir/snake_cli.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atrnr7/snake/src/snake_cli.c > CMakeFiles/snake_cli.dir/snake_cli.c.i
+CMakeFiles/snake_cli.dir/tetris_cli.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/snake_cli.dir/tetris_cli.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atrnr7/snake/src/tetris_cli.c > CMakeFiles/snake_cli.dir/tetris_cli.c.i
 
-CMakeFiles/snake_cli.dir/snake_cli.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/snake_cli.dir/snake_cli.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atrnr7/snake/src/snake_cli.c -o CMakeFiles/snake_cli.dir/snake_cli.c.s
+CMakeFiles/snake_cli.dir/tetris_cli.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/snake_cli.dir/tetris_cli.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atrnr7/snake/src/tetris_cli.c -o CMakeFiles/snake_cli.dir/tetris_cli.c.s
 
 CMakeFiles/snake_cli.dir/gui/cli/src/tetris_frontend_utils.c.o: CMakeFiles/snake_cli.dir/flags.make
 CMakeFiles/snake_cli.dir/gui/cli/src/tetris_frontend_utils.c.o: /home/atrnr7/snake/src/gui/cli/src/tetris_frontend_utils.c
@@ -281,7 +281,7 @@ CMakeFiles/snake_cli.dir/brick_game/snake/model/snake_anim/snake_anim.cc.s: cmak
 
 # Object files for target snake_cli
 snake_cli_OBJECTS = \
-"CMakeFiles/snake_cli.dir/snake_cli.c.o" \
+"CMakeFiles/snake_cli.dir/tetris_cli.c.o" \
 "CMakeFiles/snake_cli.dir/gui/cli/src/tetris_frontend_utils.c.o" \
 "CMakeFiles/snake_cli.dir/gui/cli/src/tetris_menu.c.o" \
 "CMakeFiles/snake_cli.dir/gui/cli/tetris_frontend.c.o" \
@@ -300,7 +300,7 @@ snake_cli_OBJECTS = \
 # External object files for target snake_cli
 snake_cli_EXTERNAL_OBJECTS =
 
-snake_cli: CMakeFiles/snake_cli.dir/snake_cli.c.o
+snake_cli: CMakeFiles/snake_cli.dir/tetris_cli.c.o
 snake_cli: CMakeFiles/snake_cli.dir/gui/cli/src/tetris_frontend_utils.c.o
 snake_cli: CMakeFiles/snake_cli.dir/gui/cli/src/tetris_menu.c.o
 snake_cli: CMakeFiles/snake_cli.dir/gui/cli/tetris_frontend.c.o

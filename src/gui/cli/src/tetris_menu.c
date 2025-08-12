@@ -1,4 +1,5 @@
 #include "../include/tetris_menu.h"
+#include <stdio.h>
 
 /* В этом файле встречаются случайные числа для координат отрисовки в терминале
  * потому что я не хочу реализовывать функционал изменения их на основе
@@ -10,42 +11,45 @@ void tetris_rendering(UserAction_t action) {
     return;
   }
 
-  GameInfo_t tg_info = updateCurrentState();
+  GameInfo_t g_info = updateCurrentState();
   /* Масштаб игры, высчитывается относительно масштаба по горизонтали для более
-   * равномерной картинки
-   ▼ */
-  int rend_scl_x = 4,  // ◄ стандартно == 4, только rend_scl_x %2 == 0
+  * равномерной картинки
+  ▼ */
+  int rend_scl_x = 4, // ◄ стандартно == 4, только rend_scl_x %2 == 0
       rend_scl_y = rend_scl_x / 2;
 
   /* ▼ Горизонтальный отступ от границ окна */
-  int rend_shift_x = 10;  // ◄ стандартно == 10
+  int rend_shift_x = 10; // ◄ стандартно == 10
   /* ▼ Горизонтальный отступ от границ окна */
-  int rend_shift_y = 7;  // ◄ стандартно == 7
+  int rend_shift_y = 7; // ◄ стандартно == 7
 
   logo_rend(rend_scl_x, rend_scl_y);
-  info_rend(tg_info, rend_scl_x, rend_scl_y, rend_shift_x, rend_shift_y);
-  gamefield_and_nxt_frm_rend(tg_info, rend_scl_x, rend_scl_y, rend_shift_x,
+  info_rend(g_info, rend_scl_x, rend_scl_y, rend_shift_x, rend_shift_y);
+  gamefield_and_nxt_frm_rend(g_info, rend_scl_x, rend_scl_y, rend_shift_x,
                              rend_shift_y);
   bord_rend(rend_scl_x, rend_scl_y, rend_shift_x, rend_shift_y);
 }
 
 /** @brief Прорисовка игрового поля и следующей фигуры */
-void gamefield_and_nxt_frm_rend(GameInfo_t tg_info, int rend_scl_x,
+void gamefield_and_nxt_frm_rend(GameInfo_t g_info, int rend_scl_x,
                                 int rend_scl_y, int rend_shift_x,
                                 int rend_shift_y) {
   for (int i = 0; i < FLD_H; i++) {
     for (int j = 0; j < FLD_W; j++) {
       px_rend(i, j, rend_scl_x, rend_scl_y, rend_shift_x, rend_shift_y,
-              clr_dtrm(tg_info.field[i][j]));
+              clr_dtrm(g_info.field[i][j]));
     }
   }
 
+#ifdef TETRIS
   for (int i = 0; i < NEXT_TMINO_H; i++) {
     for (int j = 0; j < NEXT_TMINO_W; j++) {
+      // printf("i = %d j = %d\n", i, j);
       px_rend(i, j, rend_scl_x, rend_scl_y, 2, 16,
-              clr_dtrm(tg_info.next[i][j]));
+              clr_dtrm(g_info.next[i][j]));
     }
   }
+#endif
 }
 
 /** @brief Прорисовка пикселя тетромино на игровом поле */
@@ -146,7 +150,7 @@ void tb_bord_and_corner_rend(int rend_scl_x, int rend_shift_x, int top_y,
 /** @brief Прорисовка  информационной части Тетриса
  * @details Управление, счёт
  */
-void info_rend(GameInfo_t tg_info, int rend_scl_x, int rend_scl_y,
+void info_rend(GameInfo_t g_info, int rend_scl_x, int rend_scl_y,
                int rend_shift_x, int rend_shift_y) {
   int info_y = rend_shift_y * rend_scl_y - 1;
   int info_x = rend_shift_x * rend_scl_x / 2;
@@ -154,20 +158,18 @@ void info_rend(GameInfo_t tg_info, int rend_scl_x, int rend_scl_y,
    * подогнал все положения под один масштаб
    ▼ */
   info_action_rend(info_y);
-  player_info_rend(tg_info, info_y, info_x);
+  player_info_rend(g_info, info_y, info_x);
 }
 
 /** @brief Прорисовка управления в информационной части */
 void info_action_rend(int info_y) {
-  wchar_t *start_exit =
-      L"\n\
+  wchar_t *start_exit = L"\n\
       █  PRESS S   █      PRESS Q    █\n\
  █▀▀▀▐█▌▄▀▀██ █▀▀█▐█▌    █▀▀█ █ █ ▀ ▐█▌\n\
  █▄▄▄ █ █  ██ █    █     █▄▄█  █  █  █\n\
  ▄▄▄█ █ ▀██ █ █    █     █▄▄▄ █ █ █  █";
 
-  wchar_t *pause =
-      L"\n\
+  wchar_t *pause = L"\n\
 \t█▀█ ▄▀▀██ █ █ █▀▀▀ █▀▀█\n\
 \t█▄█ █  ██ █ █ █▄▄▄ █▄▄█\n\
 \t█   ▀██ █ █▄█ ▄▄▄█ █▄▄▄\n\
@@ -178,29 +180,25 @@ void info_action_rend(int info_y) {
 }
 
 /** @brief Прорисовка счёта в информационной части */
-void player_info_rend(GameInfo_t tg_info, int info_y, int info_x) {
-  wchar_t *next =
-      L"\n\
+void player_info_rend(GameInfo_t g_info, int info_y, int info_x) {
+  wchar_t *next = L"\n\
 \t                █\n\
 \t  ▄▄▄▄ █▀▀█ █ █▐█▌\n\
 \t  █  █ █▄▄█  █  █\n\
 \t  █  █ █▄▄▄ █ █ █";
 
-  wchar_t *score =
-      L"\n\
+  wchar_t *score = L"\n\
 \t█▀▀▀ █▀▀▀ █▀▀█ █▀▀█ █▀▀█\n\
 \t█▄▄▄ █    █  █ █    █▄▄█\n\
 \t▄▄▄█ █▄▄▄ █▄▄█ █    █▄▄▄";
 
-  wchar_t *level =
-      L"\n\
+  wchar_t *level = L"\n\
 \t    █               █\n\
 \t    █ █▀▀█ █ █ █▀▀█ █\n\
 \t    █ █▄▄█ █▄█ █▄▄█ █\n\
 \t    █ █▄▄▄ ▀█▀ █▄▄▄ █";
 
-  wchar_t *highscore =
-      L"\n\
+  wchar_t *highscore = L"\n\
  ▄                                       \n\
  █▄▄▄ ▀ █▀▀█ █▄▄▄ █▀▀▀ █▀▀▀ █▀▀█ █▀▀█ █▀▀█\n\
  █  █ █ █▄▄█ █  █ █▄▄▄ █    █  █ █    █▄▄█\n\
@@ -210,16 +208,15 @@ void player_info_rend(GameInfo_t tg_info, int info_y, int info_x) {
   mvprintw(info_y + 28, 0, "%ls", score);
   mvprintw(info_y + 32, 0, "%ls", level);
   mvprintw(info_y + 37, 0, "%ls", highscore);
-  mvprintw(info_y + 32, info_x, "%d", tg_info.score);
-  mvprintw(info_y + 37, info_x, "%d", tg_info.level);
-  mvprintw(info_y + 42, info_x, "%d", tg_info.high_score);
+  mvprintw(info_y + 32, info_x, "%d", g_info.score);
+  mvprintw(info_y + 37, info_x, "%d", g_info.level);
+  mvprintw(info_y + 42, info_x, "%d", g_info.high_score);
 }
 /** @brief Прорисовка названия игры
  * @todo Сделать чтение из файла по-хорошему, но не хочу тратить время
  */
 void logo_rend() {
-  wchar_t *logo =
-      L"\n\
+  wchar_t *logo = L"\n\
 ████████████████ ███████████████ ████████████████   ██████████████ ████████    █████████████\n\
 ████████████████ ███████████████ ████████████████  ███████████████ ████████  ███████████████\n\
 ███   ████   ███  ████       ███ ███   ████   ███ ██████    █████  ████████ ██████    █████ \n\

@@ -1,4 +1,4 @@
-#include "../include/model.h"
+#include "../include/model.hpp"
 #include <random>
 
 /** @brief Спавн яблока в случайной свободной ячейке поля

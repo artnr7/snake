@@ -3,12 +3,13 @@
 
 #include <ncursesw/ncurses.h>
 
-// #ifdef TETRIS
-// #include "../../../brick_game/tetris/tetris_backend.h"
-// #include "../../../brick_game/tetris/tetris_include/tetris_data_types.h"
-// #elif SNAKE
+#ifdef TETRIS
+#include "../../../brick_game/tetris/backend.h"
+#elif SNAKE
+#include "../../../brick_game/snake/controller/c_controller.h"
+#include "../../../brick_game/tetris/tetris_include/tetris_data_types.h"
+#endif
 
-// #endif
 #include "tetris_menu.h"
 
 void ncurses_init();

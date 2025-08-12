@@ -1,4 +1,6 @@
-file(REMOVE_RECURSE "CMakeFiles/play_snake_cli")
+file(REMOVE_RECURSE
+  "CMakeFiles/play_snake_cli"
+)
 
 # Per-language clean rules from dependency scanning.
 foreach(lang )

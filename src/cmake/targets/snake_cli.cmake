@@ -11,7 +11,7 @@ set(SNAKE_CLI_SRC_INCLUDE tetris_cli.c ${CLI_GUI_SRC_INCLUDE}
 
 add_executable(${SNAKE_CLI} ${SNAKE_CLI_SRC_INCLUDE})
 
-target_compile_options(${SNAKE_CLI} PRIVATE -DCLI -lncursesw)
+target_compile_options(${SNAKE_CLI} PRIVATE -DSNAKE -DCLI -lncursesw)
 
 target_link_libraries(${SNAKE_CLI} PRIVATE Curses::Curses)
 

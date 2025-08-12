@@ -1,6 +1,6 @@
-#include "controller.h"
+#include "controller.hpp"
 #ifdef CLI
-#include "c_controller.h"
+#include "controller_wrapper_for_c"
 #endif
 // #include <iostream>
 
@@ -8,6 +8,7 @@
 #ifdef CLI
 s21::Controller *s21::Controller::GetController() {
   static Controller st_controller;
+  // может он и не нужен как статик
   return &st_controller;
 }
 
@@ -23,7 +24,6 @@ void s21::Controller::userInput(UserAction_t action, bool hold) {
   s21::Model *model = s21::Model::GetModel();
 
   model->GameStep();
-
   switch (action) {
   case UserAction_t::Start:
     model->InitGame();

@@ -1,5 +1,4 @@
-file(
-  REMOVE_RECURSE
+file(REMOVE_RECURSE
   "CMakeFiles/snake_cli.dir/brick_game/snake/controller/controller.cc.o"
   "CMakeFiles/snake_cli.dir/brick_game/snake/controller/controller.cc.o.d"
   "CMakeFiles/snake_cli.dir/brick_game/snake/model/snake_anim/snake_anim.cc.o"
@@ -28,10 +27,11 @@ file(
   "CMakeFiles/snake_cli.dir/gui/cli/src/tetris_menu.c.o.d"
   "CMakeFiles/snake_cli.dir/gui/cli/tetris_frontend.c.o"
   "CMakeFiles/snake_cli.dir/gui/cli/tetris_frontend.c.o.d"
-  "CMakeFiles/snake_cli.dir/snake_cli.c.o"
-  "CMakeFiles/snake_cli.dir/snake_cli.c.o.d"
+  "CMakeFiles/snake_cli.dir/tetris_cli.c.o"
+  "CMakeFiles/snake_cli.dir/tetris_cli.c.o.d"
   "snake_cli"
-  "snake_cli.pdb")
+  "snake_cli.pdb"
+)
 
 # Per-language clean rules from dependency scanning.
 foreach(lang C CXX)

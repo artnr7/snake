@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/backend.c.o"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/backend.c.o.d"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/backend_utils.c.o"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/backend_utils.c.o.d"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/collision.c.o"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/collision.c.o.d"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/gamestate.c.o"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/gamestate.c.o.d"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/init.c.o"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/init.c.o.d"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/rows_hit.c.o"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/rows_hit.c.o.d"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/speed_and_levels.c.o"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/speed_and_levels.c.o.d"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetris_moving/left_right_move.c.o"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetris_moving/left_right_move.c.o.d"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetris_moving/moving_utils.c.o"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetris_moving/moving_utils.c.o.d"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetris_moving/rotate.c.o"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetris_moving/rotate.c.o.d"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetris_moving/tetromino_fall.c.o"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetris_moving/tetromino_fall.c.o.d"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.o"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.o.d"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.o"
+  "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.o.d"
+  "CMakeFiles/tetris_cli.dir/gui/cli/src/tetris_frontend_utils.c.o"
+  "CMakeFiles/tetris_cli.dir/gui/cli/src/tetris_frontend_utils.c.o.d"
+  "CMakeFiles/tetris_cli.dir/gui/cli/src/tetris_menu.c.o"
+  "CMakeFiles/tetris_cli.dir/gui/cli/src/tetris_menu.c.o.d"
+  "CMakeFiles/tetris_cli.dir/gui/cli/tetris_frontend.c.o"
+  "CMakeFiles/tetris_cli.dir/gui/cli/tetris_frontend.c.o.d"
+  "CMakeFiles/tetris_cli.dir/tetris_cli.c.o"
+  "CMakeFiles/tetris_cli.dir/tetris_cli.c.o.d"
+  "tetris_cli"
+  "tetris_cli.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/tetris_cli.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
