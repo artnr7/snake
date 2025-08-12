@@ -10,10 +10,10 @@
 #include <QWidget>
 
 #ifdef TETRIS
-#include "../../../brick_game/tetris/tetris_backend.h"
+#include "../../../brick_game/tetris/backend.h"
 #elif SNAKE
-#include "../../../brick_game/snake/controller/controller.h"
-#include "../../../brick_game/snake/data_types.h"
+#include "../../../brick_game/data_types/data_types.h"
+#include "../../../brick_game/snake/controller/controller.hpp"
 #endif
 
 /*------------------→ MISC ←---------------- */

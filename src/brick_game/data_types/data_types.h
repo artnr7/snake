@@ -1,6 +1,13 @@
 #ifndef DATA_TYPES_H_
 #define DATA_TYPES_H_
 
+/*----------→ DEFINES ←---------- */
+#define TMINO_QTY 7  // ◄ Кол-во видов тетромино
+#define FIELD_H 20     // ◄ Высота игрового поля
+#define FIELD_W 10     // ◄ Ширина игрового поля
+#define FIELD_H_HALF 9 // ◄ Половина высоты поля(имеет смысл индекс внутри)
+#define FIELD_W_HALF 4 // ◄ Половина ширины поля(имеет смысл индекс внутри)
+
 typedef enum {
   Start,
   Pause,
@@ -12,12 +19,6 @@ typedef enum {
   Action
 } UserAction_t;
 
-/** @param pause 1 ► пауза игры
- * @param pause NotInitialized ► самое первое состяние переменной, то
- * есть изначально не инициализировано, но уже используется
- * @param pause 2 ► состояние игры без паузы, но не самое первое
- состояние при старте, сделано это для того чтобы после снятия паузы не
- пересоздавалось поле */
 typedef struct {
   int **field;
   int **next;

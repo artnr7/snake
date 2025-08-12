@@ -6,6 +6,7 @@
 /** @brief Функция обработки действия игрока Start */
 void init_game(GameInfo_t *g_info, int *tmino_pos) {
   if (is_nolaunched(g_info)) {
+    g_info_init(g_info);
     bool init_fell = true; // ◄ одноразовая переменная, запускающая созд. тмино
     shall_create_tmino(g_info, &init_fell, tmino_pos);
     set_launched(g_info);

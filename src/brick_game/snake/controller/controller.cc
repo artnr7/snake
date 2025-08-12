@@ -1,6 +1,6 @@
 #include "controller.hpp"
 #ifdef CLI
-#include "controller_wrapper_for_c"
+#include "controller_wrapper_for_c.h"
 #endif
 // #include <iostream>
 

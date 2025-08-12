@@ -21,7 +21,7 @@ void ncurses_init() {
 }
 
 /** @brief Цикл для начала игры */
-void tetris_fst_start(UserAction_t *action, bool *hold) {
+void start(UserAction_t *action, bool *hold) {
   /* ▼ В начале должны получить start хотя бы 1 раз */
   while (*action != Start) {
     keyboard_input(action, hold);
@@ -29,19 +29,16 @@ void tetris_fst_start(UserAction_t *action, bool *hold) {
   }
   clear();
   userInput(*action, *hold);
-  tetris_rendering(*action);
+  rendering();
 }
 
 /** @brief Основной игровой цикл */
-void tetris_main_loop(UserAction_t *action, bool *hold) {
-  while (*action != Terminate) {
+void gameloop(UserAction_t *action, bool *hold) {
+  while (updateCurrentState().pause != Terminated &&
+         updateCurrentState().pause != GameOver) {
     keyboard_input(action, hold);
     userInput(*action, *hold);
-    printf("%p\n", updateCurrentState().field);
-    if (updateCurrentState().field == NULL) {
-      *action = Terminate;
-    }
-    tetris_rendering(*action);
+    rendering();
   }
 }
 
@@ -82,27 +79,27 @@ void keyboard_input(UserAction_t *action, bool *hold) {
 }
 
 /** @brief Определение цвета тетромино по его кодам(движ. и стат.) */
-int clr_dtrm(int px) {
+int determ_color(int px) {
   /* Переиспользование переменной под другую задачу, она используется один раз,
    * и ни на что не влияет, по сути нужна еще одна чтобы записать туда цвет, но
    * я её просто переиспользовываю(такого слова нет XD) */
 
   if (px == RedIStc || px == RedIMvg) {
-    px = 1;
+    px = Red;
   } else if (px == GreenLStc || px == GreenLMvg) {
-    px = 2;
+    px = Green;
   } else if (px == YellowZStc || px == YellowZMvg) {
-    px = 3;
+    px = Yellow;
   } else if (px == BlueJStc || px == BlueJMvg) {
-    px = 4;
+    px = Blue;
   } else if (px == MagentaOStc || px == MagentaOMvg) {
-    px = 5;
+    px = Magenta;
   } else if (px == CyanSStc || px == CyanSMvg) {
-    px = 6;
+    px = Cyan;
   } else if (px == WhiteTStc || px == WhiteTMvg) {
-    px = 7;
+    px = White;
   } else if (px == Nothing) {
-    px = 8;
+    px = DefaultColor;
   }
   return px;
 }

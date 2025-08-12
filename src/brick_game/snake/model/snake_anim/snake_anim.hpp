@@ -2,7 +2,6 @@
 #define SNAKE_ANIM_H_
 
 #include "../../../data_types/data_types.h"
-#include "../include/field_attr.hpp"
 #include <deque>
 
 #define SNAKE_INIT_SIZE 4

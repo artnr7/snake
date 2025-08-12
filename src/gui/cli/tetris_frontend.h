@@ -2,7 +2,8 @@
 #define __TETRIS_FRONTEND__
 
 #include "include/tetris_frontend_utils.h"
+#include <locale.h>
 
-void tetris_gui();
+void frontend();
 
 #endif

@@ -30,8 +30,8 @@ CMakeFiles/tetris_cli.dir/brick_game/tetris/backend.c.o: /home/atrnr7/snake/src/
   /home/atrnr7/snake/src/brick_game/tetris/include/moving/tetromino_fall.h \
   /home/atrnr7/snake/src/brick_game/tetris/include/rows_hit.h \
   /home/atrnr7/snake/src/brick_game/tetris/include/speed_and_levels.h \
-  /home/atrnr7/snake/src/brick_game/tetris/include/tetromino_create.h \
   /home/atrnr7/snake/src/brick_game/tetris/include/timer.h \
+  /home/atrnr7/snake/src/brick_game/tetris/include/tmino_create.h \
   /usr/include/alloca.h \
   /usr/include/endian.h \
   /usr/include/features-time64.h \
@@ -127,8 +127,8 @@ CMakeFiles/tetris_cli.dir/brick_game/tetris/src/backend_utils.c.o: /home/atrnr7/
   /home/atrnr7/snake/src/brick_game/tetris/include/moving/tetromino_fall.h \
   /home/atrnr7/snake/src/brick_game/tetris/include/rows_hit.h \
   /home/atrnr7/snake/src/brick_game/tetris/include/speed_and_levels.h \
-  /home/atrnr7/snake/src/brick_game/tetris/include/tetromino_create.h \
   /home/atrnr7/snake/src/brick_game/tetris/include/timer.h \
+  /home/atrnr7/snake/src/brick_game/tetris/include/tmino_create.h \
   /usr/include/alloca.h \
   /usr/include/endian.h \
   /usr/include/features-time64.h \
@@ -787,7 +787,69 @@ CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetris_moving/tetromino_fall.c.o
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
 
-CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.o: /home/atrnr7/snake/src/brick_game/tetris/src/tetromino_create.c \
+CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.o: /home/atrnr7/snake/src/brick_game/tetris/src/timer.c \
+  /home/atrnr7/snake/src/brick_game/data_types/data_types.h \
+  /home/atrnr7/snake/src/brick_game/tetris/include/conf.h \
+  /home/atrnr7/snake/src/brick_game/tetris/include/defs.h \
+  /home/atrnr7/snake/src/brick_game/tetris/include/timer.h \
+  /usr/include/alloca.h \
+  /usr/include/endian.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdlib.h \
+  /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/time.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
+
+CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tmino_create.c.o: /home/atrnr7/snake/src/brick_game/tetris/src/tmino_create.c \
   /home/atrnr7/snake/src/brick_game/data_types/data_types.h \
   /home/atrnr7/snake/src/brick_game/tetris/include/conf.h \
   /home/atrnr7/snake/src/brick_game/tetris/include/defs.h \
@@ -799,7 +861,7 @@ CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.o: /home/atrn
   /home/atrnr7/snake/src/brick_game/tetris/include/init.h \
   /home/atrnr7/snake/src/brick_game/tetris/include/moving/moving_utils.h \
   /home/atrnr7/snake/src/brick_game/tetris/include/speed_and_levels.h \
-  /home/atrnr7/snake/src/brick_game/tetris/include/tetromino_create.h \
+  /home/atrnr7/snake/src/brick_game/tetris/include/tmino_create.h \
   /usr/include/alloca.h \
   /usr/include/endian.h \
   /usr/include/features-time64.h \
@@ -866,68 +928,6 @@ CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.o: /home/atrn
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
 
-CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.o: /home/atrnr7/snake/src/brick_game/tetris/src/timer.c \
-  /home/atrnr7/snake/src/brick_game/data_types/data_types.h \
-  /home/atrnr7/snake/src/brick_game/tetris/include/conf.h \
-  /home/atrnr7/snake/src/brick_game/tetris/include/defs.h \
-  /home/atrnr7/snake/src/brick_game/tetris/include/timer.h \
-  /usr/include/alloca.h \
-  /usr/include/endian.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdlib.h \
-  /usr/include/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/sys/time.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
-
 CMakeFiles/tetris_cli.dir/gui/cli/src/tetris_frontend_utils.c.o: /home/atrnr7/snake/src/gui/cli/src/tetris_frontend_utils.c \
   /home/atrnr7/snake/src/brick_game/tetris/backend.h \
   /home/atrnr7/snake/src/brick_game/data_types/data_types.h \
@@ -957,8 +957,8 @@ CMakeFiles/tetris_cli.dir/gui/cli/src/tetris_frontend_utils.c.o: /home/atrnr7/sn
   /home/atrnr7/snake/src/brick_game/tetris/include/moving/tetromino_fall.h \
   /home/atrnr7/snake/src/brick_game/tetris/include/rows_hit.h \
   /home/atrnr7/snake/src/brick_game/tetris/include/speed_and_levels.h \
-  /home/atrnr7/snake/src/brick_game/tetris/include/tetromino_create.h \
   /home/atrnr7/snake/src/brick_game/tetris/include/timer.h \
+  /home/atrnr7/snake/src/brick_game/tetris/include/tmino_create.h \
   /home/atrnr7/snake/src/gui/cli/include/tetris_frontend_utils.h \
   /home/atrnr7/snake/src/gui/cli/include/tetris_menu.h \
   /usr/include/alloca.h \
@@ -1064,8 +1064,8 @@ CMakeFiles/tetris_cli.dir/gui/cli/src/tetris_menu.c.o: /home/atrnr7/snake/src/gu
   /home/atrnr7/snake/src/brick_game/tetris/include/moving/tetromino_fall.h \
   /home/atrnr7/snake/src/brick_game/tetris/include/rows_hit.h \
   /home/atrnr7/snake/src/brick_game/tetris/include/speed_and_levels.h \
-  /home/atrnr7/snake/src/brick_game/tetris/include/tetromino_create.h \
   /home/atrnr7/snake/src/brick_game/tetris/include/timer.h \
+  /home/atrnr7/snake/src/brick_game/tetris/include/tmino_create.h \
   /home/atrnr7/snake/src/gui/cli/include/tetris_frontend_utils.h \
   /home/atrnr7/snake/src/gui/cli/include/tetris_menu.h \
   /usr/include/alloca.h \
@@ -1171,8 +1171,8 @@ CMakeFiles/tetris_cli.dir/gui/cli/tetris_frontend.c.o: /home/atrnr7/snake/src/gu
   /home/atrnr7/snake/src/brick_game/tetris/include/moving/tetromino_fall.h \
   /home/atrnr7/snake/src/brick_game/tetris/include/rows_hit.h \
   /home/atrnr7/snake/src/brick_game/tetris/include/speed_and_levels.h \
-  /home/atrnr7/snake/src/brick_game/tetris/include/tetromino_create.h \
   /home/atrnr7/snake/src/brick_game/tetris/include/timer.h \
+  /home/atrnr7/snake/src/brick_game/tetris/include/tmino_create.h \
   /home/atrnr7/snake/src/gui/cli/include/tetris_frontend_utils.h \
   /home/atrnr7/snake/src/gui/cli/include/tetris_menu.h \
   /home/atrnr7/snake/src/gui/cli/tetris_frontend.h \
@@ -1181,6 +1181,7 @@ CMakeFiles/tetris_cli.dir/gui/cli/tetris_frontend.c.o: /home/atrnr7/snake/src/gu
   /usr/include/endian.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/locale.h \
   /usr/include/ncurses_dll.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
@@ -1196,6 +1197,7 @@ CMakeFiles/tetris_cli.dir/gui/cli/tetris_frontend.c.o: /home/atrnr7/snake/src/gu
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
@@ -1279,8 +1281,8 @@ CMakeFiles/tetris_cli.dir/tetris_cli.c.o: /home/atrnr7/snake/src/tetris_cli.c \
   /home/atrnr7/snake/src/brick_game/tetris/include/moving/tetromino_fall.h \
   /home/atrnr7/snake/src/brick_game/tetris/include/rows_hit.h \
   /home/atrnr7/snake/src/brick_game/tetris/include/speed_and_levels.h \
-  /home/atrnr7/snake/src/brick_game/tetris/include/tetromino_create.h \
   /home/atrnr7/snake/src/brick_game/tetris/include/timer.h \
+  /home/atrnr7/snake/src/brick_game/tetris/include/tmino_create.h \
   /home/atrnr7/snake/src/gui/cli/include/tetris_frontend_utils.h \
   /home/atrnr7/snake/src/gui/cli/include/tetris_menu.h \
   /home/atrnr7/snake/src/gui/cli/tetris_frontend.h \
@@ -1377,7 +1379,7 @@ CMakeFiles/tetris_cli.dir/tetris_cli.c.o: /home/atrnr7/snake/src/tetris_cli.c \
 
 /home/atrnr7/snake/src/gui/cli/include/tetris_menu.h:
 
-/home/atrnr7/snake/src/brick_game/tetris/src/tetromino_create.c:
+/home/atrnr7/snake/src/brick_game/tetris/src/tmino_create.c:
 
 /home/atrnr7/snake/src/brick_game/tetris/src/tetris_moving/tetromino_fall.c:
 
@@ -1390,6 +1392,8 @@ CMakeFiles/tetris_cli.dir/tetris_cli.c.o: /home/atrnr7/snake/src/tetris_cli.c \
 /home/atrnr7/snake/src/brick_game/tetris/src/collision.c:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
 
 /usr/include/x86_64-linux-gnu/sys/time.h:
 
@@ -1469,11 +1473,9 @@ CMakeFiles/tetris_cli.dir/tetris_cli.c.o: /home/atrnr7/snake/src/tetris_cli.c \
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
+/home/atrnr7/snake/src/brick_game/tetris/include/tmino_create.h:
+
 /home/atrnr7/snake/src/brick_game/tetris/include/timer.h:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
-/home/atrnr7/snake/src/brick_game/tetris/include/tetromino_create.h:
 
 /home/atrnr7/snake/src/brick_game/tetris/include/moving/left_right_move.h:
 

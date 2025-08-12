@@ -26,14 +26,14 @@ void rows_hit(GameInfo_t *g_info) {
  */
 bool is_row_compl(GameInfo_t g_info, int *full_row_i) {
   bool is_row_compl = false;
-  for (int i = 0; i < FLD_H && !is_row_compl; i++) {
+  for (int i = 0; i < FIELD_H && !is_row_compl; i++) {
     int stc_qty = 0;
-    for (int j = 0; j < FLD_W; j++) {
+    for (int j = 0; j < FIELD_W; j++) {
       if (stc_px_dtrm(g_info.field[i][j])) {
         stc_qty++;
       }
     }
-    if (stc_qty == FLD_W) {
+    if (stc_qty == FIELD_W) {
       *full_row_i = i;
       is_row_compl = true;
     }
@@ -46,14 +46,14 @@ void tmino_collapse(GameInfo_t *g_info, int full_row_i) {
   int **nxt_frm = fld_nxt_frm(0);
 
   /* ▼ Перерисовывание нижней части поля */
-  for (int i = full_row_i + 1; i < FLD_H; i++) {
-    for (int j = 0; j < FLD_W; j++) {
+  for (int i = full_row_i + 1; i < FIELD_H; i++) {
+    for (int j = 0; j < FIELD_W; j++) {
       nxt_frm[i][j] = g_info->field[i][j];
     }
   }
   /* ▼ Перерисовывание верхней части поля */
   for (int i = 0; i < full_row_i; i++) {
-    for (int j = 0; j < FLD_W; j++) {
+    for (int j = 0; j < FIELD_W; j++) {
       nxt_frm[i + 1][j] = g_info->field[i][j];
     }
   }

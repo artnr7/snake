@@ -7,7 +7,7 @@
 #include "moving/moving.h"
 #include "rows_hit.h"
 #include "speed_and_levels.h"
-#include "tetromino_create.h"
+#include "tmino_create.h"
 #include "timer.h"
 
 void init_game(GameInfo_t *g_info, int *tmino_pos);

@@ -237,24 +237,10 @@ CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetris_moving/tetromino_fall.c.s
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetris_moving/tetromino_fall.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atrnr7/snake/src/brick_game/tetris/src/tetris_moving/tetromino_fall.c -o CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetris_moving/tetromino_fall.c.s
 
-CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.o: CMakeFiles/tetris_cli.dir/flags.make
-CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.o: /home/atrnr7/snake/src/brick_game/tetris/src/tetromino_create.c
-CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.o: CMakeFiles/tetris_cli.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.o -MF CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.o.d -o CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.o -c /home/atrnr7/snake/src/brick_game/tetris/src/tetromino_create.c
-
-CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atrnr7/snake/src/brick_game/tetris/src/tetromino_create.c > CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.i
-
-CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atrnr7/snake/src/brick_game/tetris/src/tetromino_create.c -o CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.s
-
 CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.o: CMakeFiles/tetris_cli.dir/flags.make
 CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.o: /home/atrnr7/snake/src/brick_game/tetris/src/timer.c
 CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.o: CMakeFiles/tetris_cli.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.o -MF CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.o.d -o CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.o -c /home/atrnr7/snake/src/brick_game/tetris/src/timer.c
 
 CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.i: cmake_force
@@ -264,6 +250,20 @@ CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.i: cmake_force
 CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atrnr7/snake/src/brick_game/tetris/src/timer.c -o CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.s
+
+CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tmino_create.c.o: CMakeFiles/tetris_cli.dir/flags.make
+CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tmino_create.c.o: /home/atrnr7/snake/src/brick_game/tetris/src/tmino_create.c
+CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tmino_create.c.o: CMakeFiles/tetris_cli.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tmino_create.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tmino_create.c.o -MF CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tmino_create.c.o.d -o CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tmino_create.c.o -c /home/atrnr7/snake/src/brick_game/tetris/src/tmino_create.c
+
+CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tmino_create.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tmino_create.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atrnr7/snake/src/brick_game/tetris/src/tmino_create.c > CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tmino_create.c.i
+
+CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tmino_create.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tmino_create.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atrnr7/snake/src/brick_game/tetris/src/tmino_create.c -o CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tmino_create.c.s
 
 CMakeFiles/tetris_cli.dir/gui/cli/src/tetris_frontend_utils.c.o: CMakeFiles/tetris_cli.dir/flags.make
 CMakeFiles/tetris_cli.dir/gui/cli/src/tetris_frontend_utils.c.o: /home/atrnr7/snake/src/gui/cli/src/tetris_frontend_utils.c
@@ -321,8 +321,8 @@ tetris_cli_OBJECTS = \
 "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetris_moving/moving_utils.c.o" \
 "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetris_moving/rotate.c.o" \
 "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetris_moving/tetromino_fall.c.o" \
-"CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.o" \
 "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.o" \
+"CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tmino_create.c.o" \
 "CMakeFiles/tetris_cli.dir/gui/cli/src/tetris_frontend_utils.c.o" \
 "CMakeFiles/tetris_cli.dir/gui/cli/src/tetris_menu.c.o" \
 "CMakeFiles/tetris_cli.dir/gui/cli/tetris_frontend.c.o"
@@ -342,8 +342,8 @@ tetris_cli: CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetris_moving/left_r
 tetris_cli: CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetris_moving/moving_utils.c.o
 tetris_cli: CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetris_moving/rotate.c.o
 tetris_cli: CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetris_moving/tetromino_fall.c.o
-tetris_cli: CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.o
 tetris_cli: CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.o
+tetris_cli: CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tmino_create.c.o
 tetris_cli: CMakeFiles/tetris_cli.dir/gui/cli/src/tetris_frontend_utils.c.o
 tetris_cli: CMakeFiles/tetris_cli.dir/gui/cli/src/tetris_menu.c.o
 tetris_cli: CMakeFiles/tetris_cli.dir/gui/cli/tetris_frontend.c.o

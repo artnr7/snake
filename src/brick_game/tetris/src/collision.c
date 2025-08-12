@@ -5,7 +5,7 @@
  * игрового поля по индексу
  */
 bool is_blk_insd(int i, int j) {
-  return (i >= 0 && i < FLD_H) && (j >= 0 && j < FLD_W);
+  return (i >= 0 && i < FIELD_H) && (j >= 0 && j < FIELD_W);
 }
 
 /** @brief Определение может ли тетромино вращаться
@@ -35,7 +35,7 @@ void can_tmino_rot_fn(GameInfo_t g_info, int i, int j, int rot_mtx_h,
             (is_blk_insd(k, l) && stc_px_dtrm(g_info.field[k][l]))) {
           *try_x_mv = true;
         }
-        *can_tmino_rot = k >= FLD_H ? false : *can_tmino_rot;
+        *can_tmino_rot = k >= FIELD_H ? false : *can_tmino_rot;
         *try_x_mv = *can_tmino_rot ? *try_x_mv : false;
 
         blk_qty++;
@@ -52,11 +52,11 @@ bool bot_coll(GameInfo_t g_info) {
   int blk_qty = 0;  // ◄ кол-во пройденных блоков тетромино, в каждом их 4
   bool tmino_will_fall = false;  // ◄ упадёт ли тетромино в следующем кадре
 
-  for (int i = 0; i < FLD_H && blk_qty <= TMINO_BLKS_QTY; i++) {
-    for (int j = 0; j < FLD_W && blk_qty <= TMINO_BLKS_QTY; j++) {
+  for (int i = 0; i < FIELD_H && blk_qty <= TMINO_BLKS_QTY; i++) {
+    for (int j = 0; j < FIELD_W && blk_qty <= TMINO_BLKS_QTY; j++) {
       if (mvg_px_dtrm(g_info.field[i][j])) {
         /* ▼ Коллизия с нижней границей поля */
-        if (i == FLD_H - 1 ||
+        if (i == FIELD_H - 1 ||
             (is_blk_insd(i + 1, j) && stc_px_dtrm(g_info.field[i + 1][j]))) {
           tmino_will_fall = true;
         }
@@ -72,13 +72,13 @@ void lr_brd_tmino_coll(const GameInfo_t *g_info,
                        WhoIsNearby_t *who_is_nearby) {
   int blk_qty = 0;  // ◄ кол-во пройденных блоков тетромино, в каждом их 4
 
-  for (int i = 0; i < FLD_H && blk_qty <= TMINO_BLKS_QTY; i++) {
-    for (int j = 0; j < FLD_W && blk_qty <= TMINO_BLKS_QTY; j++) {
+  for (int i = 0; i < FIELD_H && blk_qty <= TMINO_BLKS_QTY; i++) {
+    for (int j = 0; j < FIELD_W && blk_qty <= TMINO_BLKS_QTY; j++) {
       if (mvg_px_dtrm(g_info->field[i][j])) {
         /* ▼ Коллизия с левой и правой границами поля */
         if (j == 0) {
           who_is_nearby->LBorder = true;
-        } else if (j == FLD_W - 1) {
+        } else if (j == FIELD_W - 1) {
           who_is_nearby->RBorder = true;
         }
         /* ▼ Коллизия с тетромино */

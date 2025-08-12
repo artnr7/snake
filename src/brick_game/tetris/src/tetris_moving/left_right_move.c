@@ -36,8 +36,8 @@ void lr_shift(GameInfo_t g_info, int **nxt_frm, UserAction_t action,
               CanTetrominoMove_t can_tmino_mv, bool *mvd) {
   int blk_qty = 0; // ◄ кол-во пройденных блоков тетромино, в каждоме их 4
 
-  for (int i = 0; i < FLD_H && blk_qty <= TMINO_BLKS_QTY; i++) {
-    for (int j = 0; j < FLD_W && blk_qty <= TMINO_BLKS_QTY; j++) {
+  for (int i = 0; i < FIELD_H && blk_qty <= TMINO_BLKS_QTY; i++) {
+    for (int j = 0; j < FIELD_W && blk_qty <= TMINO_BLKS_QTY; j++) {
       if (mvg_px_dtrm(g_info.field[i][j])) {
         int x_shift = j; // ◄ смещение по горизонтали
 

@@ -49,8 +49,8 @@ void fst_mvg_blk_find(GameInfo_t g_info, int *fst_blk_i, int *fst_blk_j,
                       bool *can_tmino_rot) {
   bool braek = false; // ◄ выход из цикла после нахождения блока
 
-  for (int i = 0; i < FLD_H && braek == false; i++) {
-    for (int j = 0; j < FLD_W && braek == false; j++) {
+  for (int i = 0; i < FIELD_H && braek == false; i++) {
+    for (int j = 0; j < FIELD_W && braek == false; j++) {
       if (mvg_px_dtrm(g_info.field[i][j])) {
         if (g_info.field[i][j] == MagentaOMvg) {
           *can_tmino_rot = false;
@@ -115,9 +115,9 @@ void tmino_rot(GameInfo_t *g_info, int **nxt_frm, int i, int j, int rot_mtx_h,
 void tmino_shift_rot(GameInfo_t *g_info, int j, int *pos, bool *tmino_fell,
                      bool *can_tmino_rot) {
   int lr_way = 0;
-  if (j > FLD_W_HALF) { // ◄ правая половина
+  if (j > FIELD_W_HALF) { // ◄ правая половина
     lr_way = Left;
-  } else if (j <= FLD_W_HALF) { // ◄ левая половина
+  } else if (j <= FIELD_W_HALF) { // ◄ левая половина
     lr_way = Right;
   }
 

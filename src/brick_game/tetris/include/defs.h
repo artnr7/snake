@@ -6,9 +6,6 @@
 
 /*----------→ DEFINES ←---------- */
 #define TMINO_QTY 7  // ◄ Кол-во видов тетромино
-#define FLD_H 20     // ◄ Высота игрового поля
-#define FLD_W 10     // ◄ Ширина игрового поля
-#define FLD_W_HALF 4 // ◄ Половина ширины поля(имеет смысл индекс внутри)
 
 #define NEXT_TMINO_H 2 // ◄ Высота матрицы для хранения тетромино
 #define NEXT_TMINO_W 4 // ◄ Ширина матрицы для хранения тетромино
@@ -41,6 +38,18 @@ typedef enum {
   WhiteTMvg    // ◄ Белый T статичный
 
 } PixelCode_t;
+
+/** @brief Enum, который описывает цвета*/
+typedef enum {
+  Red = 1, // ◄ Красный
+  Green,   // ◄ Зелёный
+  Yellow,  // ◄ Жёлтый
+  Blue,    // ◄ Синий
+  Magenta, // ◄ Фиолетовый
+  Cyan,    // ◄ Бирюзовый
+  White,   // ◄ Белый
+  DefaultColor = 8 // ◄ ничего(отсутствие цвета)
+} PxColor_t;
 
 /** @brief Структура тетромино */
 typedef struct {

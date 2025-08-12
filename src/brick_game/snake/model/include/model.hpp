@@ -3,7 +3,6 @@
 
 #include "../../../data_types/data_types.h"
 #include "../snake_anim/snake_anim.hpp"
-#include "field_attr.hpp"
 
 namespace s21 {
 

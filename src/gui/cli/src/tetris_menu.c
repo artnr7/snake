@@ -6,12 +6,12 @@
  * масштаба, и так уже toomuch */
 
 /** @brief Прорисовка игры */
-void tetris_rendering(UserAction_t action) {
-  if (action == Terminate) {
+void rendering() {
+  GameInfo_t g_info = updateCurrentState();
+  if (g_info.pause == Terminated || g_info.pause == GameOver) {
     return;
   }
 
-  GameInfo_t g_info = updateCurrentState();
   /* Масштаб игры, высчитывается относительно масштаба по горизонтали для более
   * равномерной картинки
   ▼ */
@@ -25,19 +25,19 @@ void tetris_rendering(UserAction_t action) {
 
   logo_rend(rend_scl_x, rend_scl_y);
   info_rend(g_info, rend_scl_x, rend_scl_y, rend_shift_x, rend_shift_y);
-  gamefield_and_nxt_frm_rend(g_info, rend_scl_x, rend_scl_y, rend_shift_x,
+  gamefield_and_next_frame_rend(g_info, rend_scl_x, rend_scl_y, rend_shift_x,
                              rend_shift_y);
   bord_rend(rend_scl_x, rend_scl_y, rend_shift_x, rend_shift_y);
 }
 
 /** @brief Прорисовка игрового поля и следующей фигуры */
-void gamefield_and_nxt_frm_rend(GameInfo_t g_info, int rend_scl_x,
+void gamefield_and_next_frame_rend(GameInfo_t g_info, int rend_scl_x,
                                 int rend_scl_y, int rend_shift_x,
                                 int rend_shift_y) {
-  for (int i = 0; i < FLD_H; i++) {
-    for (int j = 0; j < FLD_W; j++) {
+  for (int i = 0; i < FIELD_H; i++) {
+    for (int j = 0; j < FIELD_W; j++) {
       px_rend(i, j, rend_scl_x, rend_scl_y, rend_shift_x, rend_shift_y,
-              clr_dtrm(g_info.field[i][j]));
+              determ_color(g_info.field[i][j]));
     }
   }
 
@@ -45,8 +45,7 @@ void gamefield_and_nxt_frm_rend(GameInfo_t g_info, int rend_scl_x,
   for (int i = 0; i < NEXT_TMINO_H; i++) {
     for (int j = 0; j < NEXT_TMINO_W; j++) {
       // printf("i = %d j = %d\n", i, j);
-      px_rend(i, j, rend_scl_x, rend_scl_y, 2, 16,
-              clr_dtrm(g_info.next[i][j]));
+      px_rend(i, j, rend_scl_x, rend_scl_y, 2, 16, determ_color(g_info.next[i][j]));
     }
   }
 #endif
@@ -57,7 +56,7 @@ void px_rend(int gui_y, int gui_x, int rend_scl_x, int rend_scl_y,
              int rend_shift_x, int rend_shift_y, int px_clr) {
   attron(COLOR_PAIR(px_clr));
   char *ch = "█";
-  if (px_clr == 8) {
+  if (px_clr == DefaultColor) {
     ch = " ";
   }
 
@@ -88,7 +87,7 @@ void bord_rend(int rend_scl_x, int rend_scl_y, int rend_shift_x,
   /* ▲ -1 это толщина символа */
 
   /* ▼ Горизонтальная координата для нижней обводки */
-  int bot_y = (FLD_H + rend_shift_y + 1) * rend_scl_y;
+  int bot_y = (FIELD_H + rend_shift_y + 1) * rend_scl_y;
   /* ▲ +1 это компенсация смещения прорисовки игрового поля */
 
   /* ▼ Вертикальная координата для левой обводки */
@@ -96,10 +95,10 @@ void bord_rend(int rend_scl_x, int rend_scl_y, int rend_shift_x,
   /* ▲ -1 это толщина символа */
 
   /* ▼ Вертикальная координата для правой обводки */
-  int right_x = (FLD_W + rend_shift_x + 1) * rend_scl_x;
+  int right_x = (FIELD_W + rend_shift_x + 1) * rend_scl_x;
   /* ▲ +1 это компенсация смещения прорисовки игрового поля */
 
-  for (int i = 0; i < FLD_H; i++) {
+  for (int i = 0; i < FIELD_H; i++) {
     lr_bord_rend(i, rend_scl_y, rend_shift_y, left_x, right_x);
 
     tb_bord_and_corner_rend(rend_scl_x, rend_shift_x, top_y, bot_y, left_x,
@@ -124,7 +123,7 @@ void lr_bord_rend(int i, int rend_scl_y, int rend_shift_y, int left_x,
  * углов */
 void tb_bord_and_corner_rend(int rend_scl_x, int rend_shift_x, int top_y,
                              int bot_y, int left_x, int right_x) {
-  for (int j = 0; j < FLD_W; j++) {
+  for (int j = 0; j < FIELD_W; j++) {
     /* ▼ Рисование в толщину по вертикали */
     for (int k = 0; k < rend_scl_x; k++) {
       /* ▼ +1 это компенсация смещения прорисовки игрового поля */

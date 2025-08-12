@@ -879,33 +879,6 @@ brick_game/tetris/src/tetris_moving/tetromino_fall.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/src/tetris_moving/tetromino_fall.c.s
 .PHONY : brick_game/tetris/src/tetris_moving/tetromino_fall.c.s
 
-brick_game/tetris/src/tetromino_create.o: brick_game/tetris/src/tetromino_create.c.o
-.PHONY : brick_game/tetris/src/tetromino_create.o
-
-# target to build an object file
-brick_game/tetris/src/tetromino_create.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/src/tetromino_create.c.o
-.PHONY : brick_game/tetris/src/tetromino_create.c.o
-
-brick_game/tetris/src/tetromino_create.i: brick_game/tetris/src/tetromino_create.c.i
-.PHONY : brick_game/tetris/src/tetromino_create.i
-
-# target to preprocess a source file
-brick_game/tetris/src/tetromino_create.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/src/tetromino_create.c.i
-.PHONY : brick_game/tetris/src/tetromino_create.c.i
-
-brick_game/tetris/src/tetromino_create.s: brick_game/tetris/src/tetromino_create.c.s
-.PHONY : brick_game/tetris/src/tetromino_create.s
-
-# target to generate assembly for a file
-brick_game/tetris/src/tetromino_create.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tetromino_create.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/src/tetromino_create.c.s
-.PHONY : brick_game/tetris/src/tetromino_create.c.s
-
 brick_game/tetris/src/timer.o: brick_game/tetris/src/timer.c.o
 .PHONY : brick_game/tetris/src/timer.o
 
@@ -932,6 +905,33 @@ brick_game/tetris/src/timer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/src/timer.c.s
 .PHONY : brick_game/tetris/src/timer.c.s
+
+brick_game/tetris/src/tmino_create.o: brick_game/tetris/src/tmino_create.c.o
+.PHONY : brick_game/tetris/src/tmino_create.o
+
+# target to build an object file
+brick_game/tetris/src/tmino_create.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tmino_create.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/src/tmino_create.c.o
+.PHONY : brick_game/tetris/src/tmino_create.c.o
+
+brick_game/tetris/src/tmino_create.i: brick_game/tetris/src/tmino_create.c.i
+.PHONY : brick_game/tetris/src/tmino_create.i
+
+# target to preprocess a source file
+brick_game/tetris/src/tmino_create.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tmino_create.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/src/tmino_create.c.i
+.PHONY : brick_game/tetris/src/tmino_create.c.i
+
+brick_game/tetris/src/tmino_create.s: brick_game/tetris/src/tmino_create.c.s
+.PHONY : brick_game/tetris/src/tmino_create.s
+
+# target to generate assembly for a file
+brick_game/tetris/src/tmino_create.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_cli.dir/build.make CMakeFiles/tetris_cli.dir/brick_game/tetris/src/tmino_create.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tetris_desktop.dir/build.make CMakeFiles/tetris_desktop.dir/brick_game/tetris/src/tmino_create.c.s
+.PHONY : brick_game/tetris/src/tmino_create.c.s
 
 desktop.o: desktop.cc.o
 .PHONY : desktop.o
@@ -1392,12 +1392,12 @@ help:
 	@echo "... brick_game/tetris/src/tetris_moving/tetromino_fall.o"
 	@echo "... brick_game/tetris/src/tetris_moving/tetromino_fall.i"
 	@echo "... brick_game/tetris/src/tetris_moving/tetromino_fall.s"
-	@echo "... brick_game/tetris/src/tetromino_create.o"
-	@echo "... brick_game/tetris/src/tetromino_create.i"
-	@echo "... brick_game/tetris/src/tetromino_create.s"
 	@echo "... brick_game/tetris/src/timer.o"
 	@echo "... brick_game/tetris/src/timer.i"
 	@echo "... brick_game/tetris/src/timer.s"
+	@echo "... brick_game/tetris/src/tmino_create.o"
+	@echo "... brick_game/tetris/src/tmino_create.i"
+	@echo "... brick_game/tetris/src/tmino_create.s"
 	@echo "... desktop.o"
 	@echo "... desktop.i"
 	@echo "... desktop.s"

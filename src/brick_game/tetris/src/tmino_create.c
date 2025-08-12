@@ -1,4 +1,4 @@
-#include "../include/tetromino_create.h"
+#include "../include/tmino_create.h"
 
 /** @brief Следует ли создавать тетромино
  * @details Исходя из входных данных принимается решение следует ли создавать

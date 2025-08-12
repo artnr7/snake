@@ -62,8 +62,8 @@ void tmino_fall(GameInfo_t *g_info, bool *tmino_fell) {
 void down_shift(int **field, int **nxt_frm, bool tmino_fell) {
   int blk_qty = 0; // ◄ кол-во пройденных блоков тетромино, в каждой фигуре их 4
 
-  for (int i = 0; i < FLD_H && blk_qty <= TMINO_BLKS_QTY; i++) {
-    for (int j = 0; j < FLD_W && blk_qty <= TMINO_BLKS_QTY; j++) {
+  for (int i = 0; i < FIELD_H && blk_qty <= TMINO_BLKS_QTY; i++) {
+    for (int j = 0; j < FIELD_W && blk_qty <= TMINO_BLKS_QTY; j++) {
       if (mvg_px_dtrm(field[i][j])) {
         int shift_y = 0;
 
@@ -89,8 +89,8 @@ void tmino_fixation(int **nxt_frm, bool tmino_fell) {
   }
   int blk_qty = 0; // ◄ кол-во пройденных блоков тетромино, в каждом 4
 
-  for (int i = 0; i < FLD_H && blk_qty <= TMINO_BLKS_QTY; i++) {
-    for (int j = 0; j < FLD_W && blk_qty <= TMINO_BLKS_QTY; j++) {
+  for (int i = 0; i < FIELD_H && blk_qty <= TMINO_BLKS_QTY; i++) {
+    for (int j = 0; j < FIELD_W && blk_qty <= TMINO_BLKS_QTY; j++) {
       if (nxt_frm[i][j] == RedIMvg) {
         nxt_frm[i][j] = RedIStc;
       } else if (nxt_frm[i][j] == GreenLMvg) {
@@ -120,7 +120,7 @@ void tmino_fixation(int **nxt_frm, bool tmino_fell) {
  * не упадёт
  */
 void tmino_drop(GameInfo_t *g_info, bool *tmino_fell) {
-  for (int i = 0; i < FLD_H && !(*tmino_fell); i++) {
+  for (int i = 0; i < FIELD_H && !(*tmino_fell); i++) {
     tmino_fall(g_info, tmino_fell);
   }
 }

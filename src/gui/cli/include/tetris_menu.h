@@ -3,9 +3,9 @@
 
 #include "tetris_frontend_utils.h"
 
-void tetris_rendering(UserAction_t action);
+void rendering();
 
-void gamefield_and_nxt_frm_rend(GameInfo_t g_info, int rend_scl_x,
+void gamefield_and_next_frame_rend(GameInfo_t g_info, int rend_scl_x,
                                 int rend_scl_y, int rend_shift_x,
                                 int rend_shift_y);
 
