@@ -245,6 +245,7 @@ void green_l_rot(const int *pos, int *i, int *j) {
      * │.■.│
      * │.■.│
      * └───┘ */
+    break;
   }
 }
 
@@ -372,6 +373,7 @@ void cyan_s_rot(const int *pos, int *i, int *j) {
      * │.■■│
      * │..■│
      * └───┘ */
+    break;
   }
 }
 

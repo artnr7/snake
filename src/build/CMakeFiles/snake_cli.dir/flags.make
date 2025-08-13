@@ -7,11 +7,11 @@ C_DEFINES =
 
 C_INCLUDES = 
 
-C_FLAGS = -g -std=gnu11 -DSNAKE -DCLI -lncursesw
+C_FLAGS = -g -std=gnu11 -DSNAKE -DCLI -Wall -Werror -Wextra -pedantic -lncursesw
 
 CXX_DEFINES = 
 
 CXX_INCLUDES = 
 
-CXX_FLAGS = -g -std=gnu++20 -DSNAKE -DCLI -lncursesw
+CXX_FLAGS = -g -std=gnu++20 -DSNAKE -DCLI -Wall -Werror -Wextra -pedantic -lncursesw
 

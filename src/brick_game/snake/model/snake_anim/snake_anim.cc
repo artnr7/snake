@@ -11,9 +11,9 @@ s21::SnakeAnim::SnakeAnim() : body_() {
   speed_.acc_speed = ACCELERATE_SPEED;
 }
 
-const std::deque<s21::ObjectPc> &s21::SnakeAnim::GetBody() { return body_; }
+std::deque<s21::ObjectPc> &s21::SnakeAnim::GetBody() { return body_; }
 
-const s21::ObjectPc s21::SnakeAnim::GetHead() { return *body_.begin(); }
+s21::ObjectPc s21::SnakeAnim::GetHead() { return *body_.begin(); }
 
 void s21::SnakeAnim::MoveBody() {
   auto new_head = GetHead();
@@ -70,11 +70,20 @@ void s21::SnakeAnim::SetDirection(UserAction_t &action) {
     if (s_dir_ == SnakeDirection::Up || s_dir_ == SnakeDirection::Down) {
       s_dir_ = SnakeDirection::Left;
     }
+    break;
+  case UserAction_t::Start:
+    break;
+  case UserAction_t::Pause:
+    break;
+  case UserAction_t::Action:
+    break;
+  case UserAction_t::Terminate:
+    break;
   }
 }
 
-const int s21::SnakeAnim::GetConstSpeed() { return speed_.default_speed; }
+int s21::SnakeAnim::GetConstSpeed() { return speed_.default_speed; }
 
 int &s21::SnakeAnim::GetSpeed() { return speed_.default_speed; }
 
-const int s21::SnakeAnim::GetAccSpeed() { return speed_.acc_speed; }
+int s21::SnakeAnim::GetAccSpeed() { return speed_.acc_speed; }

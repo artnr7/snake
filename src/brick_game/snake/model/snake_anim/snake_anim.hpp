@@ -26,11 +26,11 @@ class SnakeAnim {
 
 public:
   SnakeAnim();
-  const std::deque<ObjectPc> &GetBody();
-  const ObjectPc GetHead();
-  const int GetConstSpeed();
+  std::deque<ObjectPc> &GetBody();
+  ObjectPc GetHead();
+  int GetConstSpeed();
   int &GetSpeed();
-  const int GetAccSpeed();
+  int GetAccSpeed();
 
   void SetDirection(UserAction_t &action);
   void MoveBody();

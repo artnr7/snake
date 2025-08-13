@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = 
 
-C_FLAGS = -g -std=gnu11 -DTETRIS -Wall -Werror -Wextra -lncursesw
+C_FLAGS = -g -std=gnu11 -DTETRIS -Wall -Werror -Wextra -std=c11 -pedantic -lncursesw
 

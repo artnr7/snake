@@ -1,4 +1,4 @@
-#include "../include/view.h"
+#include "../include/view.hpp"
 
 void s21::GameWidget::keyPressEvent(QKeyEvent *Kevent) {
   switch (Kevent->key()) {

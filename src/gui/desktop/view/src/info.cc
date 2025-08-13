@@ -1,4 +1,4 @@
-#include "../include/view.h"
+#include "../include/view.hpp"
 
 void s21::GameWidget::InfoDraw(GameWidget *field_w) {
   GameInfo_t g_info = {};

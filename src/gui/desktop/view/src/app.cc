@@ -1,5 +1,4 @@
-#include "../include/view.h"
-#include <iostream>
+#include "../include/view.hpp"
 
 // Само приложение ↓
 void s21::App::AppObj(int argc, char *argv[]) {

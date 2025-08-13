@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
 
-C_INCLUDES = -I/home/atrnr7/snake/src/build/tetris_desktop_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui
+C_INCLUDES = -I/home/artnr7/snake/src/build/tetris_desktop_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui
 
-C_FLAGS = -g -std=gnu11 -DTETRIS -fPIC
+C_FLAGS = -g -std=gnu11 -DTETRIS -Wall -Werror -Wextra -std=c++20 -pedantic -fPIC
 
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -I/home/atrnr7/snake/src/build/tetris_desktop_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui
+CXX_INCLUDES = -I/home/artnr7/snake/src/build/tetris_desktop_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui
 
-CXX_FLAGS = -g -std=gnu++20 -DTETRIS -fPIC
+CXX_FLAGS = -g -std=gnu++20 -DTETRIS -Wall -Werror -Wextra -std=c++20 -pedantic -fPIC
 

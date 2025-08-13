@@ -1,4 +1,4 @@
-#include "../include/view.h"
+#include "../include/view.hpp"
 #include <iostream>
 
 void s21::GameWidget::Exit() {

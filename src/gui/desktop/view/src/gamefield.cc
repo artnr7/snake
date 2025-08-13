@@ -1,8 +1,8 @@
-#include "../include/view.h"
+#include "../include/view.hpp"
 #include <iostream>
 
-void s21::GameWidget::TetrisChooseBrush(QBrush &brush, int &px) {
 #ifdef TETRIS
+void s21::GameWidget::TetrisChooseBrush(QBrush &brush, int &px) {
   if (px == PixelCode_t::RedIMvg || px == PixelCode_t::RedIStc) {
     brush = {"#FF0000"};
   }
@@ -24,8 +24,8 @@ void s21::GameWidget::TetrisChooseBrush(QBrush &brush, int &px) {
   if (px == PixelCode_t::WhiteTMvg || px == PixelCode_t::WhiteTStc) {
     brush = {"#FFFFFF"};
   }
-#endif
 }
+#endif
 
 void s21::GameWidget::paintEvent(QPaintEvent *event) {
   // event = nullptr;

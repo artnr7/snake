@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/atrnr7/snake/src
+CMAKE_SOURCE_DIR = /home/artnr7/snake/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/atrnr7/snake/src/build
+CMAKE_BINARY_DIR = /home/artnr7/snake/src/build
 
 # Utility rule file for snake_desktop_autogen.
 
@@ -71,9 +71,9 @@ CMakeFiles/snake_desktop_autogen: snake_desktop_autogen/timestamp
 snake_desktop_autogen/timestamp: /usr/lib/qt5/bin/moc
 snake_desktop_autogen/timestamp: /usr/lib/qt5/bin/uic
 snake_desktop_autogen/timestamp: CMakeFiles/snake_desktop_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target snake_desktop"
-	/usr/bin/cmake -E cmake_autogen /home/atrnr7/snake/src/build/CMakeFiles/snake_desktop_autogen.dir/AutogenInfo.json Debug
-	/usr/bin/cmake -E touch /home/atrnr7/snake/src/build/snake_desktop_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target snake_desktop"
+	/usr/bin/cmake -E cmake_autogen /home/artnr7/snake/src/build/CMakeFiles/snake_desktop_autogen.dir/AutogenInfo.json Debug
+	/usr/bin/cmake -E touch /home/artnr7/snake/src/build/snake_desktop_autogen/timestamp
 
 snake_desktop_autogen: CMakeFiles/snake_desktop_autogen
 snake_desktop_autogen: snake_desktop_autogen/timestamp
@@ -89,6 +89,6 @@ CMakeFiles/snake_desktop_autogen.dir/clean:
 .PHONY : CMakeFiles/snake_desktop_autogen.dir/clean
 
 CMakeFiles/snake_desktop_autogen.dir/depend:
-	cd /home/atrnr7/snake/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/atrnr7/snake/src /home/atrnr7/snake/src /home/atrnr7/snake/src/build /home/atrnr7/snake/src/build /home/atrnr7/snake/src/build/CMakeFiles/snake_desktop_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/artnr7/snake/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/artnr7/snake/src /home/artnr7/snake/src /home/artnr7/snake/src/build /home/artnr7/snake/src/build /home/artnr7/snake/src/build/CMakeFiles/snake_desktop_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/snake_desktop_autogen.dir/depend
 

@@ -9,7 +9,8 @@ set(SNAKE_DESKTOP_SRC_INCLUDE desktop.cc ${DESKTOP_SRC_INCLUDE}
 
 add_executable(${SNAKE_DESKTOP} ${SNAKE_DESKTOP_SRC_INCLUDE})
 
-target_compile_options(${SNAKE_DESKTOP} PRIVATE -DSNAKE)
+target_compile_options(${SNAKE_DESKTOP} PRIVATE -DSNAKE -Wall -Werror -Wextra
+                                                -std=c++20 -pedantic)
 set(CMAKE_AUTOMOC ON)
 
 set_target_properties(

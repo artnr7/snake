@@ -1,4 +1,4 @@
-# Install script for directory: /home/atrnr7/snake/src
+# Install script for directory: /home/artnr7/snake/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/atrnr7/snake/src/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/artnr7/snake/src/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
