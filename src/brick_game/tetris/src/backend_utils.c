@@ -24,8 +24,6 @@ void gamestep(GameInfo_t *g_info, const UserAction_t *action, long int *dly,
   if (is_inactive(g_info)) {
     return;
   }
-  tmino_fall_with_dly(g_info, tmino_fell, dly);
-
   rand_fall(g_info, *action, dly, tmino_fell);
   rows_hit(g_info);
   shall_create_tmino(g_info, tmino_fell, tmino_pos);
@@ -34,5 +32,7 @@ void gamestep(GameInfo_t *g_info, const UserAction_t *action, long int *dly,
   high_scr_set(g_info);
 
   dly_reset(*g_info, dly);
+#ifdef TETRIS
   *hold += 1; // ◄ заглушка
+#endif
 }

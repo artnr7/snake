@@ -3,8 +3,7 @@ set(SNAKE_CLI snake_cli)
 set(PLAY_SNAKE_CLI play_${SNAKE_CLI})
 
 include(cmake/srcs/cli_gui.cmake)
-include(cmake/srcs/snake_back.cmake)
-# include(cmake/make_libs/snake_back_lib.cmake)
+include(cmake/make_libs/snake_back_lib.cmake)
 
 set(SNAKE_CLI_SRC_INCLUDE cli.c ${CLI_GUI_SRC_INCLUDE} ${SNAKE_BACK_SRC_INCLUDE})
 
@@ -23,6 +22,8 @@ target_compile_options(
 
 # target_link_libraries(${SNAKE_CLI} PRIVATE Curses::Curses snake_back_lib)
 target_link_libraries(${SNAKE_CLI} PRIVATE Curses::Curses)
+target_include_directories(${SNAKE_CLI} PRIVATE "brick_game/snake" "gui/cli"
+                                                "brick_game/data_types")
 
 add_custom_target(
   ${PLAY_SNAKE_CLI}

@@ -19,10 +19,9 @@ void dly_get(long int *dly) {
   /* Переводим секунды в более точные миллисекунды, очень вряд ли когда-либо
   будет больше 0
   ▼ */
-  long millisec = (new_time.tv_sec - old_time.tv_sec) * MILLISEC_IN_SEC;
+  long microsec = (new_time.tv_sec - old_time.tv_sec) * MICROSEC_IN_SEC;
   /* ▼ Переводим микросекунды в менее точные миллисекунды */
-  long usec =
-      millisec + ((new_time.tv_usec - old_time.tv_usec) / MICROSEC_IN_MILLISEC);
+  long usec = microsec + new_time.tv_usec - old_time.tv_usec;
 
   /* ▼ "Копим" задержку */
   *dly += usec;

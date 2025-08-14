@@ -17,7 +17,7 @@ void ncurses_init() {
 
   noecho(); // ◄ отсутствие реакции на ввод пользователя
   keypad(stdscr, true); // ◄ поддержка клавиш стрелочек на клавиатуре
-  timeout(1); // ◄ чтобы в случае отсутствия ввода в userinput попадал ERR
+  timeout(50); // ◄ чтобы в случае отсутствия ввода в userinput попадал ERR
 }
 
 /** @brief Цикл для начала игры */
@@ -44,6 +44,8 @@ void gameloop(UserAction_t *action, bool *hold) {
 
 /** @brief Ввод с клавиатуры */
 void keyboard_input(UserAction_t *action, bool *hold) {
+  static UserAction_t old_act = 0;
+
   switch (getch()) {
   case 's':
     *action = Start;
@@ -69,20 +71,30 @@ void keyboard_input(UserAction_t *action, bool *hold) {
     *action = Down;
     break;
   case ' ':
+    if (old_act == Action) {
+      *hold = 1;
+    }
     *action = Action;
     break;
   default:
-    *action = ERR; // ◄ отстутствие ввода
+    *action = ERR;
+    break;
   }
-
-  *hold += 1; // ◄ заглушка
+  if (*action != Action && *hold) {
+    old_act = 0;
+    *action = Action;
+    *hold = 0;
+  }
+  if (*hold == 0) {
+    old_act = *action;
+  }
 }
 
 /** @brief Определение цвета тетромино по его кодам(движ. и стат.) */
 int determ_color(int px) {
-  /* Переиспользование переменной под другую задачу, она используется один раз,
-   * и ни на что не влияет, по сути нужна еще одна чтобы записать туда цвет, но
-   * я её просто переиспользовываю(такого слова нет XD) */
+  /* Переиспользование переменной под другую задачу, она используется один
+   * раз, и ни на что не влияет, по сути нужна еще одна чтобы записать туда
+   * цвет, но я её просто переиспользовываю(такого слова нет XD) */
 
   if (px == RedIStc || px == RedIMvg) {
     px = Red;

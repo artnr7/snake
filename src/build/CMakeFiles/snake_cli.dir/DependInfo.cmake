@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/artnr7/snake/src/brick_game/tetris/src/timer.c" "CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.o" "gcc" "CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.o.d"
   "/home/artnr7/snake/src/cli.c" "CMakeFiles/snake_cli.dir/cli.c.o" "gcc" "CMakeFiles/snake_cli.dir/cli.c.o.d"
   "/home/artnr7/snake/src/gui/cli/frontend.c" "CMakeFiles/snake_cli.dir/gui/cli/frontend.c.o" "gcc" "CMakeFiles/snake_cli.dir/gui/cli/frontend.c.o.d"
   "/home/artnr7/snake/src/gui/cli/src/frontend_utils.c" "CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.o" "gcc" "CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.o.d"

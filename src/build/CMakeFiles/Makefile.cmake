@@ -18,15 +18,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/artnr7/snake/src/cmake/formatting/CMakeFormat.cmake"
   "/home/artnr7/snake/src/cmake/formatting/ClangFormat.cmake"
   "/home/artnr7/snake/src/cmake/glob_vars.cmake"
-  "/home/artnr7/snake/src/cmake/make_libs/tetris_back_lib.cmake"
+  "/home/artnr7/snake/src/cmake/make_libs/snake_back_lib.cmake"
+  "/home/artnr7/snake/src/cmake/single_use.cmake"
   "/home/artnr7/snake/src/cmake/srcs/cli_gui.cmake"
-  "/home/artnr7/snake/src/cmake/srcs/desktop_gui.cmake"
   "/home/artnr7/snake/src/cmake/srcs/snake_back.cmake"
-  "/home/artnr7/snake/src/cmake/srcs/tetris_back.cmake"
   "/home/artnr7/snake/src/cmake/targets/snake_cli.cmake"
-  "/home/artnr7/snake/src/cmake/targets/snake_desktop.cmake"
-  "/home/artnr7/snake/src/cmake/targets/tetris_cli.cmake"
-  "/home/artnr7/snake/src/cmake/targets/tetris_desktop.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/GTest/GMockTargets-none.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/GTest/GMockTargets.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/GTest/GTestConfig.cmake"
@@ -114,25 +110,13 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/snake_desktop_autogen.dir/AutogenInfo.json"
-  "CMakeFiles/tetris_desktop_autogen.dir/AutogenInfo.json"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/snake_back_lib.dir/DependInfo.cmake"
   "CMakeFiles/snake_cli.dir/DependInfo.cmake"
   "CMakeFiles/play_snake_cli.dir/DependInfo.cmake"
-  "CMakeFiles/tetris_back_lib.dir/DependInfo.cmake"
-  "CMakeFiles/tetris_cli.dir/DependInfo.cmake"
-  "CMakeFiles/play_tetris_cli.dir/DependInfo.cmake"
-  "CMakeFiles/snake_desktop.dir/DependInfo.cmake"
-  "CMakeFiles/play_snake_desktop.dir/DependInfo.cmake"
-  "CMakeFiles/tetris_desktop.dir/DependInfo.cmake"
-  "CMakeFiles/play_tetris_desktop.dir/DependInfo.cmake"
   "CMakeFiles/clf.dir/DependInfo.cmake"
-  "CMakeFiles/snake_desktop_autogen_timestamp_deps.dir/DependInfo.cmake"
-  "CMakeFiles/snake_desktop_autogen.dir/DependInfo.cmake"
-  "CMakeFiles/tetris_desktop_autogen_timestamp_deps.dir/DependInfo.cmake"
-  "CMakeFiles/tetris_desktop_autogen.dir/DependInfo.cmake"
   )

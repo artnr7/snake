@@ -26,14 +26,14 @@ void rendering() {
   logo_rend(rend_scl_x, rend_scl_y);
   info_rend(g_info, rend_scl_x, rend_scl_y, rend_shift_x, rend_shift_y);
   gamefield_and_next_frame_rend(g_info, rend_scl_x, rend_scl_y, rend_shift_x,
-                             rend_shift_y);
+                                rend_shift_y);
   bord_rend(rend_scl_x, rend_scl_y, rend_shift_x, rend_shift_y);
 }
 
 /** @brief Прорисовка игрового поля и следующей фигуры */
 void gamefield_and_next_frame_rend(GameInfo_t g_info, int rend_scl_x,
-                                int rend_scl_y, int rend_shift_x,
-                                int rend_shift_y) {
+                                   int rend_scl_y, int rend_shift_x,
+                                   int rend_shift_y) {
   for (int i = 0; i < FIELD_H; i++) {
     for (int j = 0; j < FIELD_W; j++) {
       px_rend(i, j, rend_scl_x, rend_scl_y, rend_shift_x, rend_shift_y,
@@ -45,7 +45,8 @@ void gamefield_and_next_frame_rend(GameInfo_t g_info, int rend_scl_x,
   for (int i = 0; i < NEXT_TMINO_H; i++) {
     for (int j = 0; j < NEXT_TMINO_W; j++) {
       // printf("i = %d j = %d\n", i, j);
-      px_rend(i, j, rend_scl_x, rend_scl_y, 2, 16, determ_color(g_info.next[i][j]));
+      px_rend(i, j, rend_scl_x, rend_scl_y, 2, 16,
+              determ_color(g_info.next[i][j]));
     }
   }
 #endif

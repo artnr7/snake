@@ -27,6 +27,8 @@ void rand_fall(GameInfo_t *g_info, UserAction_t action, long int *dly,
   int fall_freq = rand() % 60;
   if ((action == Left || action == Right || action == Action) && fall_freq) {
     tmino_fall_with_dly(g_info, tmino_fell, dly);
+  } else {
+    tmino_fall_with_dly(g_info, tmino_fell, dly);
   }
 }
 

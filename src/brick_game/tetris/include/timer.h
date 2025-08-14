@@ -7,7 +7,7 @@
 #include "../include/conf.h"
 
 #define MILLISEC_IN_SEC 1000
-#define MICROSEC_IN_MILLISEC 1000
+#define MICROSEC_IN_SEC 1000000
 
 void dly_get(long int *dly);
 

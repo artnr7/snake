@@ -1,1 +1,0 @@
-/usr/bin/cc -g CMakeFiles/tetris_cli.dir/cli.c.o CMakeFiles/tetris_cli.dir/gui/cli/frontend.c.o CMakeFiles/tetris_cli.dir/gui/cli/src/frontend_utils.c.o CMakeFiles/tetris_cli.dir/gui/cli/src/menu.c.o -o tetris_cli  libtetris_back_lib.a -lncursesw /usr/lib/x86_64-linux-gnu/libformw.so 

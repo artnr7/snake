@@ -10,6 +10,7 @@
 #include "../../../brick_game/tetris/include/defs.h"
 #endif
 
+#include "../../../brick_game/tetris/include/timer.h"
 #include "menu.h"
 
 void ncurses_init();

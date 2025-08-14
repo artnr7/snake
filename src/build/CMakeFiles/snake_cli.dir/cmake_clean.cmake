@@ -21,6 +21,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/snake_cli.dir/brick_game/snake/model/src/timerforspeed.cc.o.d"
   "CMakeFiles/snake_cli.dir/brick_game/snake/model/src/utils.cc.o"
   "CMakeFiles/snake_cli.dir/brick_game/snake/model/src/utils.cc.o.d"
+  "CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.o"
+  "CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.o.d"
   "CMakeFiles/snake_cli.dir/cli.c.o"
   "CMakeFiles/snake_cli.dir/cli.c.o.d"
   "CMakeFiles/snake_cli.dir/gui/cli/frontend.c.o"

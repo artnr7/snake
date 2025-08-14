@@ -1,11 +1,10 @@
 set(TETRIS_DESKTOP tetris_desktop)
 set(PLAY_TETRIS_DESKTOP play_${TETRIS_DESKTOP})
 
-include(cmake/srcs/tetris_back.cmake)
 include(cmake/srcs/desktop_gui.cmake)
+include(cmake/make_libs/tetris_back_lib.cmake)
 
-set(TETRIS_DESKTOP_SRC_INCLUDE desktop.cc ${TETRIS_BACK_SRC_INCLUDE}
-                               ${DESKTOP_SRC_INCLUDE})
+set(TETRIS_DESKTOP_SRC_INCLUDE desktop.cc ${DESKTOP_SRC_INCLUDE})
 
 add_executable(${TETRIS_DESKTOP} ${TETRIS_DESKTOP_SRC_INCLUDE})
 
@@ -20,7 +19,8 @@ set_target_properties(
              AUTORCC ON
              AUTOUIC ON)
 
-target_link_libraries(${TETRIS_DESKTOP} PRIVATE Qt5::Core Qt5::Widgets)
+target_link_libraries(${TETRIS_DESKTOP} PRIVATE Qt5::Core Qt5::Widgets
+                                                tetris_back_lib)
 
 add_custom_target(
   ${PLAY_TETRIS_DESKTOP}

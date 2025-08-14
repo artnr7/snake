@@ -28,7 +28,7 @@ void s21::GameWidget::TetrisChooseBrush(QBrush &brush, int &px) {
 #endif
 
 void s21::GameWidget::paintEvent(QPaintEvent *event) {
-  // event = nullptr;
+  Q_UNUSED(event);
 #ifdef SNAKE
   GameInfo_t g_info = s21::Controller::updateCurrentState();
 #elif TETRIS

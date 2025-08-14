@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = 
 
-C_INCLUDES = 
+C_INCLUDES = -I/home/artnr7/snake/src/brick_game/snake -I/home/artnr7/snake/src/gui/cli -I/home/artnr7/snake/src/brick_game/data_types
 
 C_FLAGS = -g -std=gnu11 -DSNAKE -DCLI -Wall -Werror -Wextra -pedantic -lncursesw
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/artnr7/snake/src/brick_game/snake -I/home/artnr7/snake/src/gui/cli -I/home/artnr7/snake/src/brick_game/data_types
 
 CXX_FLAGS = -g -std=gnu++20 -DSNAKE -DCLI -Wall -Werror -Wextra -pedantic -lncursesw
 
