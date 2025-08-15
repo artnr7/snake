@@ -32,7 +32,5 @@ void gamestep(GameInfo_t *g_info, const UserAction_t *action, long int *dly,
   high_scr_set(g_info);
 
   dly_reset(*g_info, dly);
-#ifdef TETRIS
-  *hold += 1; // ◄ заглушка
-#endif
+  (void)*hold;
 }

@@ -1,5 +1,6 @@
 include(cmake/srcs/tetris_back.cmake)
 if(NOT TETRIS_LIB_MADE)
   add_library(tetris_back_lib STATIC ${TETRIS_BACK_SRC_INCLUDE})
+  target_compile_options(tetris_back_lib PRIVATE -Wall -Werror -Wextra)
   set(TETRIS_LIB_MADE ON)
 endif()

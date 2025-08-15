@@ -1,4 +1,4 @@
-#include "../include/view.hpp "
+#include "../include/view.hpp"
 
 void s21::GameWidget::Connections() {
   update_freq_timer_ = new QTimer(this);

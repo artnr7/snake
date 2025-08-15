@@ -10,8 +10,8 @@ s21::Controller *s21::Controller::instance = nullptr;
 #ifdef CLI
 s21::Controller *s21::Controller::GetController() {
   if (!instance)
-    instance = new Controller;
-  
+    instance = new Controller();
+
   return instance;
 }
 

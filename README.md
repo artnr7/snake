@@ -1,5 +1,5 @@
 ```
-cmake -B build -DCMAKE_BUILD_TYPE=Debug $(nproc)
+cmake -B build -DCMAKE_BUILD_TYPE=Debug
 ```
 
 ```

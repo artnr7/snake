@@ -1,16 +1,14 @@
 set(SNAKE_DESKTOP snake_desktop)
 set(PLAY_SNAKE_DESKTOP play_${SNAKE_DESKTOP})
 
-include(cmake/srcs/snake_back.cmake)
 include(cmake/srcs/desktop_gui.cmake)
+include(cmake/make_libs/snake_back_lib.cmake)
 
-set(SNAKE_DESKTOP_SRC_INCLUDE desktop.cc ${DESKTOP_SRC_INCLUDE}
-                              ${SNAKE_BACK_SRC_INCLUDE})
+set(SNAKE_DESKTOP_SRC_INCLUDE desktop.cc ${DESKTOP_SRC_INCLUDE})
 
 add_executable(${SNAKE_DESKTOP} ${SNAKE_DESKTOP_SRC_INCLUDE})
 
-target_compile_options(${SNAKE_DESKTOP} PRIVATE -DSNAKE -Wall -Werror -Wextra
-                                                -std=c++20 -pedantic)
+target_compile_options(${SNAKE_DESKTOP} PRIVATE -DSNAKE -Wall -Werror -Wextra)
 set(CMAKE_AUTOMOC ON)
 
 set_target_properties(
@@ -19,7 +17,8 @@ set_target_properties(
              AUTORCC ON
              AUTOUIC ON)
 
-target_link_libraries(${SNAKE_DESKTOP} PRIVATE Qt5::Core Qt5::Widgets)
+target_link_libraries(${SNAKE_DESKTOP} PRIVATE Qt5::Core Qt5::Widgets
+                                               snake_back_lib_dsnake)
 
 add_custom_target(
   ${PLAY_SNAKE_DESKTOP}

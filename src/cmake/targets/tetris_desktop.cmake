@@ -8,8 +8,7 @@ set(TETRIS_DESKTOP_SRC_INCLUDE desktop.cc ${DESKTOP_SRC_INCLUDE})
 
 add_executable(${TETRIS_DESKTOP} ${TETRIS_DESKTOP_SRC_INCLUDE})
 
-target_compile_options(${TETRIS_DESKTOP} PRIVATE -DTETRIS -Wall -Werror -Wextra
-                                                 -std=c++20 -pedantic)
+target_compile_options(${TETRIS_DESKTOP} PRIVATE -DTETRIS -Wall -Werror -Wextra)
 
 set(CMAKE_AUTOMOC ON)
 

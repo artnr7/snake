@@ -1,6 +1,13 @@
 include(cmake/srcs/snake_back.cmake)
-# if(NOT SNAKE_LIB_MADE)
-add_library(snake_back_lib STATIC ${SNAKE_BACK_SRC_INCLUDE})
-# target_include_directories(snake_back_lib PUBLIC brick_game/snake/controller
-# brick_game/snake/model/include brick_game/snake/model/snake_anim
-# brick_game/data_types ) set(SNAKE_LIB_MADE ON) endif()
+
+if(SNAKE_CLI_ON)
+  add_library(snake_back_lib_dsnake_dcli STATIC ${SNAKE_BACK_SRC_INCLUDE})
+  target_compile_options(snake_back_lib_dsnake_dcli PRIVATE -DSNAKE -DCLI -Wall
+                                                            -Werror -Wextra)
+endif()
+
+if(NOT SNAKE_CLI_ON)
+  add_library(snake_back_lib_dsnake STATIC ${SNAKE_BACK_SRC_INCLUDE})
+  target_compile_options(snake_back_lib_dsnake PRIVATE -DSNAKE -Wall -Werror
+                                                       -Wextra)
+endif()
