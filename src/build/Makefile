@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/artnr7/snake/src
+CMAKE_SOURCE_DIR = /home/atrnr7/snake/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/artnr7/snake/src/build
+CMAKE_BINARY_DIR = /home/atrnr7/snake/src/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/artnr7/snake/src/build/CMakeFiles /home/artnr7/snake/src/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/atrnr7/snake/src/build/CMakeFiles /home/atrnr7/snake/src/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/artnr7/snake/src/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/atrnr7/snake/src/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -174,7 +174,6 @@ brick_game/snake/controller/controller.o: brick_game/snake/controller/controller
 # target to build an object file
 brick_game/snake/controller/controller.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/controller/controller.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/controller/controller.cc.o
 .PHONY : brick_game/snake/controller/controller.cc.o
 
 brick_game/snake/controller/controller.i: brick_game/snake/controller/controller.cc.i
@@ -183,7 +182,6 @@ brick_game/snake/controller/controller.i: brick_game/snake/controller/controller
 # target to preprocess a source file
 brick_game/snake/controller/controller.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/controller/controller.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/controller/controller.cc.i
 .PHONY : brick_game/snake/controller/controller.cc.i
 
 brick_game/snake/controller/controller.s: brick_game/snake/controller/controller.cc.s
@@ -192,7 +190,6 @@ brick_game/snake/controller/controller.s: brick_game/snake/controller/controller
 # target to generate assembly for a file
 brick_game/snake/controller/controller.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/controller/controller.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/controller/controller.cc.s
 .PHONY : brick_game/snake/controller/controller.cc.s
 
 brick_game/snake/model/snake_anim/snake_anim.o: brick_game/snake/model/snake_anim/snake_anim.cc.o
@@ -201,7 +198,6 @@ brick_game/snake/model/snake_anim/snake_anim.o: brick_game/snake/model/snake_ani
 # target to build an object file
 brick_game/snake/model/snake_anim/snake_anim.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/snake_anim/snake_anim.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/snake_anim/snake_anim.cc.o
 .PHONY : brick_game/snake/model/snake_anim/snake_anim.cc.o
 
 brick_game/snake/model/snake_anim/snake_anim.i: brick_game/snake/model/snake_anim/snake_anim.cc.i
@@ -210,7 +206,6 @@ brick_game/snake/model/snake_anim/snake_anim.i: brick_game/snake/model/snake_ani
 # target to preprocess a source file
 brick_game/snake/model/snake_anim/snake_anim.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/snake_anim/snake_anim.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/snake_anim/snake_anim.cc.i
 .PHONY : brick_game/snake/model/snake_anim/snake_anim.cc.i
 
 brick_game/snake/model/snake_anim/snake_anim.s: brick_game/snake/model/snake_anim/snake_anim.cc.s
@@ -219,7 +214,6 @@ brick_game/snake/model/snake_anim/snake_anim.s: brick_game/snake/model/snake_ani
 # target to generate assembly for a file
 brick_game/snake/model/snake_anim/snake_anim.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/snake_anim/snake_anim.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/snake_anim/snake_anim.cc.s
 .PHONY : brick_game/snake/model/snake_anim/snake_anim.cc.s
 
 brick_game/snake/model/src/apple.o: brick_game/snake/model/src/apple.cc.o
@@ -228,7 +222,6 @@ brick_game/snake/model/src/apple.o: brick_game/snake/model/src/apple.cc.o
 # target to build an object file
 brick_game/snake/model/src/apple.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/apple.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/apple.cc.o
 .PHONY : brick_game/snake/model/src/apple.cc.o
 
 brick_game/snake/model/src/apple.i: brick_game/snake/model/src/apple.cc.i
@@ -237,7 +230,6 @@ brick_game/snake/model/src/apple.i: brick_game/snake/model/src/apple.cc.i
 # target to preprocess a source file
 brick_game/snake/model/src/apple.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/apple.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/apple.cc.i
 .PHONY : brick_game/snake/model/src/apple.cc.i
 
 brick_game/snake/model/src/apple.s: brick_game/snake/model/src/apple.cc.s
@@ -246,7 +238,6 @@ brick_game/snake/model/src/apple.s: brick_game/snake/model/src/apple.cc.s
 # target to generate assembly for a file
 brick_game/snake/model/src/apple.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/apple.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/apple.cc.s
 .PHONY : brick_game/snake/model/src/apple.cc.s
 
 brick_game/snake/model/src/business.o: brick_game/snake/model/src/business.cc.o
@@ -255,7 +246,6 @@ brick_game/snake/model/src/business.o: brick_game/snake/model/src/business.cc.o
 # target to build an object file
 brick_game/snake/model/src/business.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/business.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/business.cc.o
 .PHONY : brick_game/snake/model/src/business.cc.o
 
 brick_game/snake/model/src/business.i: brick_game/snake/model/src/business.cc.i
@@ -264,7 +254,6 @@ brick_game/snake/model/src/business.i: brick_game/snake/model/src/business.cc.i
 # target to preprocess a source file
 brick_game/snake/model/src/business.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/business.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/business.cc.i
 .PHONY : brick_game/snake/model/src/business.cc.i
 
 brick_game/snake/model/src/business.s: brick_game/snake/model/src/business.cc.s
@@ -273,7 +262,6 @@ brick_game/snake/model/src/business.s: brick_game/snake/model/src/business.cc.s
 # target to generate assembly for a file
 brick_game/snake/model/src/business.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/business.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/business.cc.s
 .PHONY : brick_game/snake/model/src/business.cc.s
 
 brick_game/snake/model/src/gamestate_check.o: brick_game/snake/model/src/gamestate_check.cc.o
@@ -282,7 +270,6 @@ brick_game/snake/model/src/gamestate_check.o: brick_game/snake/model/src/gamesta
 # target to build an object file
 brick_game/snake/model/src/gamestate_check.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/gamestate_check.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/gamestate_check.cc.o
 .PHONY : brick_game/snake/model/src/gamestate_check.cc.o
 
 brick_game/snake/model/src/gamestate_check.i: brick_game/snake/model/src/gamestate_check.cc.i
@@ -291,7 +278,6 @@ brick_game/snake/model/src/gamestate_check.i: brick_game/snake/model/src/gamesta
 # target to preprocess a source file
 brick_game/snake/model/src/gamestate_check.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/gamestate_check.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/gamestate_check.cc.i
 .PHONY : brick_game/snake/model/src/gamestate_check.cc.i
 
 brick_game/snake/model/src/gamestate_check.s: brick_game/snake/model/src/gamestate_check.cc.s
@@ -300,7 +286,6 @@ brick_game/snake/model/src/gamestate_check.s: brick_game/snake/model/src/gamesta
 # target to generate assembly for a file
 brick_game/snake/model/src/gamestate_check.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/gamestate_check.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/gamestate_check.cc.s
 .PHONY : brick_game/snake/model/src/gamestate_check.cc.s
 
 brick_game/snake/model/src/highscore_and_level.o: brick_game/snake/model/src/highscore_and_level.cc.o
@@ -309,7 +294,6 @@ brick_game/snake/model/src/highscore_and_level.o: brick_game/snake/model/src/hig
 # target to build an object file
 brick_game/snake/model/src/highscore_and_level.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/highscore_and_level.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/highscore_and_level.cc.o
 .PHONY : brick_game/snake/model/src/highscore_and_level.cc.o
 
 brick_game/snake/model/src/highscore_and_level.i: brick_game/snake/model/src/highscore_and_level.cc.i
@@ -318,7 +302,6 @@ brick_game/snake/model/src/highscore_and_level.i: brick_game/snake/model/src/hig
 # target to preprocess a source file
 brick_game/snake/model/src/highscore_and_level.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/highscore_and_level.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/highscore_and_level.cc.i
 .PHONY : brick_game/snake/model/src/highscore_and_level.cc.i
 
 brick_game/snake/model/src/highscore_and_level.s: brick_game/snake/model/src/highscore_and_level.cc.s
@@ -327,7 +310,6 @@ brick_game/snake/model/src/highscore_and_level.s: brick_game/snake/model/src/hig
 # target to generate assembly for a file
 brick_game/snake/model/src/highscore_and_level.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/highscore_and_level.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/highscore_and_level.cc.s
 .PHONY : brick_game/snake/model/src/highscore_and_level.cc.s
 
 brick_game/snake/model/src/init.o: brick_game/snake/model/src/init.cc.o
@@ -336,7 +318,6 @@ brick_game/snake/model/src/init.o: brick_game/snake/model/src/init.cc.o
 # target to build an object file
 brick_game/snake/model/src/init.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/init.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/init.cc.o
 .PHONY : brick_game/snake/model/src/init.cc.o
 
 brick_game/snake/model/src/init.i: brick_game/snake/model/src/init.cc.i
@@ -345,7 +326,6 @@ brick_game/snake/model/src/init.i: brick_game/snake/model/src/init.cc.i
 # target to preprocess a source file
 brick_game/snake/model/src/init.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/init.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/init.cc.i
 .PHONY : brick_game/snake/model/src/init.cc.i
 
 brick_game/snake/model/src/init.s: brick_game/snake/model/src/init.cc.s
@@ -354,7 +334,6 @@ brick_game/snake/model/src/init.s: brick_game/snake/model/src/init.cc.s
 # target to generate assembly for a file
 brick_game/snake/model/src/init.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/init.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/init.cc.s
 .PHONY : brick_game/snake/model/src/init.cc.s
 
 brick_game/snake/model/src/snake_move.o: brick_game/snake/model/src/snake_move.cc.o
@@ -363,7 +342,6 @@ brick_game/snake/model/src/snake_move.o: brick_game/snake/model/src/snake_move.c
 # target to build an object file
 brick_game/snake/model/src/snake_move.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/snake_move.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/snake_move.cc.o
 .PHONY : brick_game/snake/model/src/snake_move.cc.o
 
 brick_game/snake/model/src/snake_move.i: brick_game/snake/model/src/snake_move.cc.i
@@ -372,7 +350,6 @@ brick_game/snake/model/src/snake_move.i: brick_game/snake/model/src/snake_move.c
 # target to preprocess a source file
 brick_game/snake/model/src/snake_move.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/snake_move.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/snake_move.cc.i
 .PHONY : brick_game/snake/model/src/snake_move.cc.i
 
 brick_game/snake/model/src/snake_move.s: brick_game/snake/model/src/snake_move.cc.s
@@ -381,7 +358,6 @@ brick_game/snake/model/src/snake_move.s: brick_game/snake/model/src/snake_move.c
 # target to generate assembly for a file
 brick_game/snake/model/src/snake_move.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/snake_move.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/snake_move.cc.s
 .PHONY : brick_game/snake/model/src/snake_move.cc.s
 
 brick_game/snake/model/src/speed.o: brick_game/snake/model/src/speed.cc.o
@@ -390,7 +366,6 @@ brick_game/snake/model/src/speed.o: brick_game/snake/model/src/speed.cc.o
 # target to build an object file
 brick_game/snake/model/src/speed.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/speed.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/speed.cc.o
 .PHONY : brick_game/snake/model/src/speed.cc.o
 
 brick_game/snake/model/src/speed.i: brick_game/snake/model/src/speed.cc.i
@@ -399,7 +374,6 @@ brick_game/snake/model/src/speed.i: brick_game/snake/model/src/speed.cc.i
 # target to preprocess a source file
 brick_game/snake/model/src/speed.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/speed.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/speed.cc.i
 .PHONY : brick_game/snake/model/src/speed.cc.i
 
 brick_game/snake/model/src/speed.s: brick_game/snake/model/src/speed.cc.s
@@ -408,7 +382,6 @@ brick_game/snake/model/src/speed.s: brick_game/snake/model/src/speed.cc.s
 # target to generate assembly for a file
 brick_game/snake/model/src/speed.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/speed.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/speed.cc.s
 .PHONY : brick_game/snake/model/src/speed.cc.s
 
 brick_game/snake/model/src/timerforspeed.o: brick_game/snake/model/src/timerforspeed.cc.o
@@ -417,7 +390,6 @@ brick_game/snake/model/src/timerforspeed.o: brick_game/snake/model/src/timerfors
 # target to build an object file
 brick_game/snake/model/src/timerforspeed.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/timerforspeed.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/timerforspeed.cc.o
 .PHONY : brick_game/snake/model/src/timerforspeed.cc.o
 
 brick_game/snake/model/src/timerforspeed.i: brick_game/snake/model/src/timerforspeed.cc.i
@@ -426,7 +398,6 @@ brick_game/snake/model/src/timerforspeed.i: brick_game/snake/model/src/timerfors
 # target to preprocess a source file
 brick_game/snake/model/src/timerforspeed.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/timerforspeed.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/timerforspeed.cc.i
 .PHONY : brick_game/snake/model/src/timerforspeed.cc.i
 
 brick_game/snake/model/src/timerforspeed.s: brick_game/snake/model/src/timerforspeed.cc.s
@@ -435,7 +406,6 @@ brick_game/snake/model/src/timerforspeed.s: brick_game/snake/model/src/timerfors
 # target to generate assembly for a file
 brick_game/snake/model/src/timerforspeed.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/timerforspeed.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/timerforspeed.cc.s
 .PHONY : brick_game/snake/model/src/timerforspeed.cc.s
 
 brick_game/snake/model/src/utils.o: brick_game/snake/model/src/utils.cc.o
@@ -444,7 +414,6 @@ brick_game/snake/model/src/utils.o: brick_game/snake/model/src/utils.cc.o
 # target to build an object file
 brick_game/snake/model/src/utils.cc.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/utils.cc.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/utils.cc.o
 .PHONY : brick_game/snake/model/src/utils.cc.o
 
 brick_game/snake/model/src/utils.i: brick_game/snake/model/src/utils.cc.i
@@ -453,7 +422,6 @@ brick_game/snake/model/src/utils.i: brick_game/snake/model/src/utils.cc.i
 # target to preprocess a source file
 brick_game/snake/model/src/utils.cc.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/utils.cc.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/utils.cc.i
 .PHONY : brick_game/snake/model/src/utils.cc.i
 
 brick_game/snake/model/src/utils.s: brick_game/snake/model/src/utils.cc.s
@@ -462,7 +430,6 @@ brick_game/snake/model/src/utils.s: brick_game/snake/model/src/utils.cc.s
 # target to generate assembly for a file
 brick_game/snake/model/src/utils.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_back_lib.dir/build.make CMakeFiles/snake_back_lib.dir/brick_game/snake/model/src/utils.cc.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/snake_cli.dir/build.make CMakeFiles/snake_cli.dir/brick_game/snake/model/src/utils.cc.s
 .PHONY : brick_game/snake/model/src/utils.cc.s
 
 brick_game/tetris/src/timer.o: brick_game/tetris/src/timer.c.o

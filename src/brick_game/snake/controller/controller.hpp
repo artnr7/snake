@@ -7,7 +7,11 @@ namespace s21 {
 class Controller {
 
 protected:
-  Controller() {};
+  // Controller() {};
+  static Controller *instance;
+
+  Controller() = default;
+  ~Controller() = default;
 
 public:
 #ifdef CLI

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/artnr7/snake/src
+CMAKE_SOURCE_DIR = /home/atrnr7/snake/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/artnr7/snake/src/build
+CMAKE_BINARY_DIR = /home/atrnr7/snake/src/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/snake_cli.dir/depend.make
@@ -70,228 +70,74 @@ include CMakeFiles/snake_cli.dir/progress.make
 include CMakeFiles/snake_cli.dir/flags.make
 
 CMakeFiles/snake_cli.dir/cli.c.o: CMakeFiles/snake_cli.dir/flags.make
-CMakeFiles/snake_cli.dir/cli.c.o: /home/artnr7/snake/src/cli.c
+CMakeFiles/snake_cli.dir/cli.c.o: /home/atrnr7/snake/src/cli.c
 CMakeFiles/snake_cli.dir/cli.c.o: CMakeFiles/snake_cli.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/snake_cli.dir/cli.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/cli.c.o -MF CMakeFiles/snake_cli.dir/cli.c.o.d -o CMakeFiles/snake_cli.dir/cli.c.o -c /home/artnr7/snake/src/cli.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/snake_cli.dir/cli.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/cli.c.o -MF CMakeFiles/snake_cli.dir/cli.c.o.d -o CMakeFiles/snake_cli.dir/cli.c.o -c /home/atrnr7/snake/src/cli.c
 
 CMakeFiles/snake_cli.dir/cli.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/snake_cli.dir/cli.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/artnr7/snake/src/cli.c > CMakeFiles/snake_cli.dir/cli.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atrnr7/snake/src/cli.c > CMakeFiles/snake_cli.dir/cli.c.i
 
 CMakeFiles/snake_cli.dir/cli.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/snake_cli.dir/cli.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/artnr7/snake/src/cli.c -o CMakeFiles/snake_cli.dir/cli.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atrnr7/snake/src/cli.c -o CMakeFiles/snake_cli.dir/cli.c.s
 
 CMakeFiles/snake_cli.dir/gui/cli/frontend.c.o: CMakeFiles/snake_cli.dir/flags.make
-CMakeFiles/snake_cli.dir/gui/cli/frontend.c.o: /home/artnr7/snake/src/gui/cli/frontend.c
+CMakeFiles/snake_cli.dir/gui/cli/frontend.c.o: /home/atrnr7/snake/src/gui/cli/frontend.c
 CMakeFiles/snake_cli.dir/gui/cli/frontend.c.o: CMakeFiles/snake_cli.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/snake_cli.dir/gui/cli/frontend.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/gui/cli/frontend.c.o -MF CMakeFiles/snake_cli.dir/gui/cli/frontend.c.o.d -o CMakeFiles/snake_cli.dir/gui/cli/frontend.c.o -c /home/artnr7/snake/src/gui/cli/frontend.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/snake_cli.dir/gui/cli/frontend.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/gui/cli/frontend.c.o -MF CMakeFiles/snake_cli.dir/gui/cli/frontend.c.o.d -o CMakeFiles/snake_cli.dir/gui/cli/frontend.c.o -c /home/atrnr7/snake/src/gui/cli/frontend.c
 
 CMakeFiles/snake_cli.dir/gui/cli/frontend.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/snake_cli.dir/gui/cli/frontend.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/artnr7/snake/src/gui/cli/frontend.c > CMakeFiles/snake_cli.dir/gui/cli/frontend.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atrnr7/snake/src/gui/cli/frontend.c > CMakeFiles/snake_cli.dir/gui/cli/frontend.c.i
 
 CMakeFiles/snake_cli.dir/gui/cli/frontend.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/snake_cli.dir/gui/cli/frontend.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/artnr7/snake/src/gui/cli/frontend.c -o CMakeFiles/snake_cli.dir/gui/cli/frontend.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atrnr7/snake/src/gui/cli/frontend.c -o CMakeFiles/snake_cli.dir/gui/cli/frontend.c.s
 
 CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.o: CMakeFiles/snake_cli.dir/flags.make
-CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.o: /home/artnr7/snake/src/gui/cli/src/frontend_utils.c
+CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.o: /home/atrnr7/snake/src/gui/cli/src/frontend_utils.c
 CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.o: CMakeFiles/snake_cli.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.o -MF CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.o.d -o CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.o -c /home/artnr7/snake/src/gui/cli/src/frontend_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.o -MF CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.o.d -o CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.o -c /home/atrnr7/snake/src/gui/cli/src/frontend_utils.c
 
 CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/artnr7/snake/src/gui/cli/src/frontend_utils.c > CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atrnr7/snake/src/gui/cli/src/frontend_utils.c > CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.i
 
 CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/artnr7/snake/src/gui/cli/src/frontend_utils.c -o CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atrnr7/snake/src/gui/cli/src/frontend_utils.c -o CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.s
 
 CMakeFiles/snake_cli.dir/gui/cli/src/menu.c.o: CMakeFiles/snake_cli.dir/flags.make
-CMakeFiles/snake_cli.dir/gui/cli/src/menu.c.o: /home/artnr7/snake/src/gui/cli/src/menu.c
+CMakeFiles/snake_cli.dir/gui/cli/src/menu.c.o: /home/atrnr7/snake/src/gui/cli/src/menu.c
 CMakeFiles/snake_cli.dir/gui/cli/src/menu.c.o: CMakeFiles/snake_cli.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/snake_cli.dir/gui/cli/src/menu.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/gui/cli/src/menu.c.o -MF CMakeFiles/snake_cli.dir/gui/cli/src/menu.c.o.d -o CMakeFiles/snake_cli.dir/gui/cli/src/menu.c.o -c /home/artnr7/snake/src/gui/cli/src/menu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/snake_cli.dir/gui/cli/src/menu.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/gui/cli/src/menu.c.o -MF CMakeFiles/snake_cli.dir/gui/cli/src/menu.c.o.d -o CMakeFiles/snake_cli.dir/gui/cli/src/menu.c.o -c /home/atrnr7/snake/src/gui/cli/src/menu.c
 
 CMakeFiles/snake_cli.dir/gui/cli/src/menu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/snake_cli.dir/gui/cli/src/menu.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/artnr7/snake/src/gui/cli/src/menu.c > CMakeFiles/snake_cli.dir/gui/cli/src/menu.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atrnr7/snake/src/gui/cli/src/menu.c > CMakeFiles/snake_cli.dir/gui/cli/src/menu.c.i
 
 CMakeFiles/snake_cli.dir/gui/cli/src/menu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/snake_cli.dir/gui/cli/src/menu.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/artnr7/snake/src/gui/cli/src/menu.c -o CMakeFiles/snake_cli.dir/gui/cli/src/menu.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atrnr7/snake/src/gui/cli/src/menu.c -o CMakeFiles/snake_cli.dir/gui/cli/src/menu.c.s
 
 CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.o: CMakeFiles/snake_cli.dir/flags.make
-CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.o: /home/artnr7/snake/src/brick_game/tetris/src/timer.c
+CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.o: /home/atrnr7/snake/src/brick_game/tetris/src/timer.c
 CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.o: CMakeFiles/snake_cli.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.o -MF CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.o.d -o CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.o -c /home/artnr7/snake/src/brick_game/tetris/src/timer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.o -MF CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.o.d -o CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.o -c /home/atrnr7/snake/src/brick_game/tetris/src/timer.c
 
 CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/artnr7/snake/src/brick_game/tetris/src/timer.c > CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/atrnr7/snake/src/brick_game/tetris/src/timer.c > CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.i
 
 CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/artnr7/snake/src/brick_game/tetris/src/timer.c -o CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.s
-
-CMakeFiles/snake_cli.dir/brick_game/snake/controller/controller.cc.o: CMakeFiles/snake_cli.dir/flags.make
-CMakeFiles/snake_cli.dir/brick_game/snake/controller/controller.cc.o: /home/artnr7/snake/src/brick_game/snake/controller/controller.cc
-CMakeFiles/snake_cli.dir/brick_game/snake/controller/controller.cc.o: CMakeFiles/snake_cli.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/snake_cli.dir/brick_game/snake/controller/controller.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/brick_game/snake/controller/controller.cc.o -MF CMakeFiles/snake_cli.dir/brick_game/snake/controller/controller.cc.o.d -o CMakeFiles/snake_cli.dir/brick_game/snake/controller/controller.cc.o -c /home/artnr7/snake/src/brick_game/snake/controller/controller.cc
-
-CMakeFiles/snake_cli.dir/brick_game/snake/controller/controller.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/snake_cli.dir/brick_game/snake/controller/controller.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/brick_game/snake/controller/controller.cc > CMakeFiles/snake_cli.dir/brick_game/snake/controller/controller.cc.i
-
-CMakeFiles/snake_cli.dir/brick_game/snake/controller/controller.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snake_cli.dir/brick_game/snake/controller/controller.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/brick_game/snake/controller/controller.cc -o CMakeFiles/snake_cli.dir/brick_game/snake/controller/controller.cc.s
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/apple.cc.o: CMakeFiles/snake_cli.dir/flags.make
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/apple.cc.o: /home/artnr7/snake/src/brick_game/snake/model/src/apple.cc
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/apple.cc.o: CMakeFiles/snake_cli.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/snake_cli.dir/brick_game/snake/model/src/apple.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/brick_game/snake/model/src/apple.cc.o -MF CMakeFiles/snake_cli.dir/brick_game/snake/model/src/apple.cc.o.d -o CMakeFiles/snake_cli.dir/brick_game/snake/model/src/apple.cc.o -c /home/artnr7/snake/src/brick_game/snake/model/src/apple.cc
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/apple.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/snake_cli.dir/brick_game/snake/model/src/apple.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/brick_game/snake/model/src/apple.cc > CMakeFiles/snake_cli.dir/brick_game/snake/model/src/apple.cc.i
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/apple.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snake_cli.dir/brick_game/snake/model/src/apple.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/brick_game/snake/model/src/apple.cc -o CMakeFiles/snake_cli.dir/brick_game/snake/model/src/apple.cc.s
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/business.cc.o: CMakeFiles/snake_cli.dir/flags.make
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/business.cc.o: /home/artnr7/snake/src/brick_game/snake/model/src/business.cc
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/business.cc.o: CMakeFiles/snake_cli.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/snake_cli.dir/brick_game/snake/model/src/business.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/brick_game/snake/model/src/business.cc.o -MF CMakeFiles/snake_cli.dir/brick_game/snake/model/src/business.cc.o.d -o CMakeFiles/snake_cli.dir/brick_game/snake/model/src/business.cc.o -c /home/artnr7/snake/src/brick_game/snake/model/src/business.cc
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/business.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/snake_cli.dir/brick_game/snake/model/src/business.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/brick_game/snake/model/src/business.cc > CMakeFiles/snake_cli.dir/brick_game/snake/model/src/business.cc.i
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/business.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snake_cli.dir/brick_game/snake/model/src/business.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/brick_game/snake/model/src/business.cc -o CMakeFiles/snake_cli.dir/brick_game/snake/model/src/business.cc.s
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/gamestate_check.cc.o: CMakeFiles/snake_cli.dir/flags.make
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/gamestate_check.cc.o: /home/artnr7/snake/src/brick_game/snake/model/src/gamestate_check.cc
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/gamestate_check.cc.o: CMakeFiles/snake_cli.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/snake_cli.dir/brick_game/snake/model/src/gamestate_check.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/brick_game/snake/model/src/gamestate_check.cc.o -MF CMakeFiles/snake_cli.dir/brick_game/snake/model/src/gamestate_check.cc.o.d -o CMakeFiles/snake_cli.dir/brick_game/snake/model/src/gamestate_check.cc.o -c /home/artnr7/snake/src/brick_game/snake/model/src/gamestate_check.cc
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/gamestate_check.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/snake_cli.dir/brick_game/snake/model/src/gamestate_check.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/brick_game/snake/model/src/gamestate_check.cc > CMakeFiles/snake_cli.dir/brick_game/snake/model/src/gamestate_check.cc.i
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/gamestate_check.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snake_cli.dir/brick_game/snake/model/src/gamestate_check.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/brick_game/snake/model/src/gamestate_check.cc -o CMakeFiles/snake_cli.dir/brick_game/snake/model/src/gamestate_check.cc.s
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/highscore_and_level.cc.o: CMakeFiles/snake_cli.dir/flags.make
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/highscore_and_level.cc.o: /home/artnr7/snake/src/brick_game/snake/model/src/highscore_and_level.cc
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/highscore_and_level.cc.o: CMakeFiles/snake_cli.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/snake_cli.dir/brick_game/snake/model/src/highscore_and_level.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/brick_game/snake/model/src/highscore_and_level.cc.o -MF CMakeFiles/snake_cli.dir/brick_game/snake/model/src/highscore_and_level.cc.o.d -o CMakeFiles/snake_cli.dir/brick_game/snake/model/src/highscore_and_level.cc.o -c /home/artnr7/snake/src/brick_game/snake/model/src/highscore_and_level.cc
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/highscore_and_level.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/snake_cli.dir/brick_game/snake/model/src/highscore_and_level.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/brick_game/snake/model/src/highscore_and_level.cc > CMakeFiles/snake_cli.dir/brick_game/snake/model/src/highscore_and_level.cc.i
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/highscore_and_level.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snake_cli.dir/brick_game/snake/model/src/highscore_and_level.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/brick_game/snake/model/src/highscore_and_level.cc -o CMakeFiles/snake_cli.dir/brick_game/snake/model/src/highscore_and_level.cc.s
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/init.cc.o: CMakeFiles/snake_cli.dir/flags.make
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/init.cc.o: /home/artnr7/snake/src/brick_game/snake/model/src/init.cc
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/init.cc.o: CMakeFiles/snake_cli.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/snake_cli.dir/brick_game/snake/model/src/init.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/brick_game/snake/model/src/init.cc.o -MF CMakeFiles/snake_cli.dir/brick_game/snake/model/src/init.cc.o.d -o CMakeFiles/snake_cli.dir/brick_game/snake/model/src/init.cc.o -c /home/artnr7/snake/src/brick_game/snake/model/src/init.cc
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/init.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/snake_cli.dir/brick_game/snake/model/src/init.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/brick_game/snake/model/src/init.cc > CMakeFiles/snake_cli.dir/brick_game/snake/model/src/init.cc.i
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/init.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snake_cli.dir/brick_game/snake/model/src/init.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/brick_game/snake/model/src/init.cc -o CMakeFiles/snake_cli.dir/brick_game/snake/model/src/init.cc.s
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/snake_move.cc.o: CMakeFiles/snake_cli.dir/flags.make
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/snake_move.cc.o: /home/artnr7/snake/src/brick_game/snake/model/src/snake_move.cc
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/snake_move.cc.o: CMakeFiles/snake_cli.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/snake_cli.dir/brick_game/snake/model/src/snake_move.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/brick_game/snake/model/src/snake_move.cc.o -MF CMakeFiles/snake_cli.dir/brick_game/snake/model/src/snake_move.cc.o.d -o CMakeFiles/snake_cli.dir/brick_game/snake/model/src/snake_move.cc.o -c /home/artnr7/snake/src/brick_game/snake/model/src/snake_move.cc
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/snake_move.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/snake_cli.dir/brick_game/snake/model/src/snake_move.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/brick_game/snake/model/src/snake_move.cc > CMakeFiles/snake_cli.dir/brick_game/snake/model/src/snake_move.cc.i
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/snake_move.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snake_cli.dir/brick_game/snake/model/src/snake_move.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/brick_game/snake/model/src/snake_move.cc -o CMakeFiles/snake_cli.dir/brick_game/snake/model/src/snake_move.cc.s
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/speed.cc.o: CMakeFiles/snake_cli.dir/flags.make
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/speed.cc.o: /home/artnr7/snake/src/brick_game/snake/model/src/speed.cc
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/speed.cc.o: CMakeFiles/snake_cli.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/snake_cli.dir/brick_game/snake/model/src/speed.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/brick_game/snake/model/src/speed.cc.o -MF CMakeFiles/snake_cli.dir/brick_game/snake/model/src/speed.cc.o.d -o CMakeFiles/snake_cli.dir/brick_game/snake/model/src/speed.cc.o -c /home/artnr7/snake/src/brick_game/snake/model/src/speed.cc
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/speed.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/snake_cli.dir/brick_game/snake/model/src/speed.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/brick_game/snake/model/src/speed.cc > CMakeFiles/snake_cli.dir/brick_game/snake/model/src/speed.cc.i
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/speed.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snake_cli.dir/brick_game/snake/model/src/speed.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/brick_game/snake/model/src/speed.cc -o CMakeFiles/snake_cli.dir/brick_game/snake/model/src/speed.cc.s
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/timerforspeed.cc.o: CMakeFiles/snake_cli.dir/flags.make
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/timerforspeed.cc.o: /home/artnr7/snake/src/brick_game/snake/model/src/timerforspeed.cc
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/timerforspeed.cc.o: CMakeFiles/snake_cli.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/snake_cli.dir/brick_game/snake/model/src/timerforspeed.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/brick_game/snake/model/src/timerforspeed.cc.o -MF CMakeFiles/snake_cli.dir/brick_game/snake/model/src/timerforspeed.cc.o.d -o CMakeFiles/snake_cli.dir/brick_game/snake/model/src/timerforspeed.cc.o -c /home/artnr7/snake/src/brick_game/snake/model/src/timerforspeed.cc
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/timerforspeed.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/snake_cli.dir/brick_game/snake/model/src/timerforspeed.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/brick_game/snake/model/src/timerforspeed.cc > CMakeFiles/snake_cli.dir/brick_game/snake/model/src/timerforspeed.cc.i
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/timerforspeed.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snake_cli.dir/brick_game/snake/model/src/timerforspeed.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/brick_game/snake/model/src/timerforspeed.cc -o CMakeFiles/snake_cli.dir/brick_game/snake/model/src/timerforspeed.cc.s
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/utils.cc.o: CMakeFiles/snake_cli.dir/flags.make
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/utils.cc.o: /home/artnr7/snake/src/brick_game/snake/model/src/utils.cc
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/utils.cc.o: CMakeFiles/snake_cli.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/snake_cli.dir/brick_game/snake/model/src/utils.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/brick_game/snake/model/src/utils.cc.o -MF CMakeFiles/snake_cli.dir/brick_game/snake/model/src/utils.cc.o.d -o CMakeFiles/snake_cli.dir/brick_game/snake/model/src/utils.cc.o -c /home/artnr7/snake/src/brick_game/snake/model/src/utils.cc
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/utils.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/snake_cli.dir/brick_game/snake/model/src/utils.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/brick_game/snake/model/src/utils.cc > CMakeFiles/snake_cli.dir/brick_game/snake/model/src/utils.cc.i
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/src/utils.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snake_cli.dir/brick_game/snake/model/src/utils.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/brick_game/snake/model/src/utils.cc -o CMakeFiles/snake_cli.dir/brick_game/snake/model/src/utils.cc.s
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/snake_anim/snake_anim.cc.o: CMakeFiles/snake_cli.dir/flags.make
-CMakeFiles/snake_cli.dir/brick_game/snake/model/snake_anim/snake_anim.cc.o: /home/artnr7/snake/src/brick_game/snake/model/snake_anim/snake_anim.cc
-CMakeFiles/snake_cli.dir/brick_game/snake/model/snake_anim/snake_anim.cc.o: CMakeFiles/snake_cli.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/snake_cli.dir/brick_game/snake/model/snake_anim/snake_anim.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/snake_cli.dir/brick_game/snake/model/snake_anim/snake_anim.cc.o -MF CMakeFiles/snake_cli.dir/brick_game/snake/model/snake_anim/snake_anim.cc.o.d -o CMakeFiles/snake_cli.dir/brick_game/snake/model/snake_anim/snake_anim.cc.o -c /home/artnr7/snake/src/brick_game/snake/model/snake_anim/snake_anim.cc
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/snake_anim/snake_anim.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/snake_cli.dir/brick_game/snake/model/snake_anim/snake_anim.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/brick_game/snake/model/snake_anim/snake_anim.cc > CMakeFiles/snake_cli.dir/brick_game/snake/model/snake_anim/snake_anim.cc.i
-
-CMakeFiles/snake_cli.dir/brick_game/snake/model/snake_anim/snake_anim.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/snake_cli.dir/brick_game/snake/model/snake_anim/snake_anim.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/brick_game/snake/model/snake_anim/snake_anim.cc -o CMakeFiles/snake_cli.dir/brick_game/snake/model/snake_anim/snake_anim.cc.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/atrnr7/snake/src/brick_game/tetris/src/timer.c -o CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.s
 
 # Object files for target snake_cli
 snake_cli_OBJECTS = \
@@ -299,18 +145,7 @@ snake_cli_OBJECTS = \
 "CMakeFiles/snake_cli.dir/gui/cli/frontend.c.o" \
 "CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.o" \
 "CMakeFiles/snake_cli.dir/gui/cli/src/menu.c.o" \
-"CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.o" \
-"CMakeFiles/snake_cli.dir/brick_game/snake/controller/controller.cc.o" \
-"CMakeFiles/snake_cli.dir/brick_game/snake/model/src/apple.cc.o" \
-"CMakeFiles/snake_cli.dir/brick_game/snake/model/src/business.cc.o" \
-"CMakeFiles/snake_cli.dir/brick_game/snake/model/src/gamestate_check.cc.o" \
-"CMakeFiles/snake_cli.dir/brick_game/snake/model/src/highscore_and_level.cc.o" \
-"CMakeFiles/snake_cli.dir/brick_game/snake/model/src/init.cc.o" \
-"CMakeFiles/snake_cli.dir/brick_game/snake/model/src/snake_move.cc.o" \
-"CMakeFiles/snake_cli.dir/brick_game/snake/model/src/speed.cc.o" \
-"CMakeFiles/snake_cli.dir/brick_game/snake/model/src/timerforspeed.cc.o" \
-"CMakeFiles/snake_cli.dir/brick_game/snake/model/src/utils.cc.o" \
-"CMakeFiles/snake_cli.dir/brick_game/snake/model/snake_anim/snake_anim.cc.o"
+"CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.o"
 
 # External object files for target snake_cli
 snake_cli_EXTERNAL_OBJECTS =
@@ -320,22 +155,12 @@ snake_cli: CMakeFiles/snake_cli.dir/gui/cli/frontend.c.o
 snake_cli: CMakeFiles/snake_cli.dir/gui/cli/src/frontend_utils.c.o
 snake_cli: CMakeFiles/snake_cli.dir/gui/cli/src/menu.c.o
 snake_cli: CMakeFiles/snake_cli.dir/brick_game/tetris/src/timer.c.o
-snake_cli: CMakeFiles/snake_cli.dir/brick_game/snake/controller/controller.cc.o
-snake_cli: CMakeFiles/snake_cli.dir/brick_game/snake/model/src/apple.cc.o
-snake_cli: CMakeFiles/snake_cli.dir/brick_game/snake/model/src/business.cc.o
-snake_cli: CMakeFiles/snake_cli.dir/brick_game/snake/model/src/gamestate_check.cc.o
-snake_cli: CMakeFiles/snake_cli.dir/brick_game/snake/model/src/highscore_and_level.cc.o
-snake_cli: CMakeFiles/snake_cli.dir/brick_game/snake/model/src/init.cc.o
-snake_cli: CMakeFiles/snake_cli.dir/brick_game/snake/model/src/snake_move.cc.o
-snake_cli: CMakeFiles/snake_cli.dir/brick_game/snake/model/src/speed.cc.o
-snake_cli: CMakeFiles/snake_cli.dir/brick_game/snake/model/src/timerforspeed.cc.o
-snake_cli: CMakeFiles/snake_cli.dir/brick_game/snake/model/src/utils.cc.o
-snake_cli: CMakeFiles/snake_cli.dir/brick_game/snake/model/snake_anim/snake_anim.cc.o
 snake_cli: CMakeFiles/snake_cli.dir/build.make
+snake_cli: libsnake_back_lib.a
 snake_cli: /usr/lib/x86_64-linux-gnu/libncursesw.so
 snake_cli: /usr/lib/x86_64-linux-gnu/libformw.so
 snake_cli: CMakeFiles/snake_cli.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable snake_cli"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable snake_cli"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/snake_cli.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -347,6 +172,6 @@ CMakeFiles/snake_cli.dir/clean:
 .PHONY : CMakeFiles/snake_cli.dir/clean
 
 CMakeFiles/snake_cli.dir/depend:
-	cd /home/artnr7/snake/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/artnr7/snake/src /home/artnr7/snake/src /home/artnr7/snake/src/build /home/artnr7/snake/src/build /home/artnr7/snake/src/build/CMakeFiles/snake_cli.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/atrnr7/snake/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/atrnr7/snake/src /home/atrnr7/snake/src /home/atrnr7/snake/src/build /home/atrnr7/snake/src/build /home/atrnr7/snake/src/build/CMakeFiles/snake_cli.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/snake_cli.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/artnr7/snake/src
+CMAKE_SOURCE_DIR = /home/atrnr7/snake/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/artnr7/snake/src/build
+CMAKE_BINARY_DIR = /home/atrnr7/snake/src/build
 
 # Utility rule file for play_snake_cli.
 
@@ -82,6 +82,6 @@ CMakeFiles/play_snake_cli.dir/clean:
 .PHONY : CMakeFiles/play_snake_cli.dir/clean
 
 CMakeFiles/play_snake_cli.dir/depend:
-	cd /home/artnr7/snake/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/artnr7/snake/src /home/artnr7/snake/src /home/artnr7/snake/src/build /home/artnr7/snake/src/build /home/artnr7/snake/src/build/CMakeFiles/play_snake_cli.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/atrnr7/snake/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/atrnr7/snake/src /home/atrnr7/snake/src /home/atrnr7/snake/src/build /home/atrnr7/snake/src/build /home/atrnr7/snake/src/build/CMakeFiles/play_snake_cli.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/play_snake_cli.dir/depend
 
