@@ -19,5 +19,6 @@ bool s21::Model::MoveDelay() {
   }
 
   old_time = value.count();
+
   return move;
 }

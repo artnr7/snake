@@ -30,8 +30,11 @@ void s21::GameWidget::keyPressEvent(QKeyEvent *Kevent) {
   }
 }
 
+#ifdef SNAKE
 void s21::GameWidget::keyReleaseEvent(QKeyEvent *Kevent) {
+  Q_UNUSED(Kevent);
   if (Kevent->key() == Qt::Key_Space) {
     emit s21::GameWidget::DeviceInputFixed(UserAction_t::Action, false);
   }
 }
+#endif

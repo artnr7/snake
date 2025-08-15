@@ -5,13 +5,19 @@
 #include "gamewidget.hpp"
 
 namespace s21 {
-class App : public QObject {
+class App : public QApplication {
+  Q_OBJECT
 public:
-  void AppObj(int argc, char *argv[]);
+  App(int argc, char *argv[]);
   void Config(s21::GameWidget *game_w);
 
 private:
-  s21::GameWidget *GameWidget;
+  QTimer *update_timer_;
+  void Connections();
+signals:
+  void AppClose();
+private slots:
+  void Exit();
 };
 } // namespace s21
 

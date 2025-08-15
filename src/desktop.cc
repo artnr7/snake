@@ -1,8 +1,7 @@
 #include "gui/desktop/view/include/view.hpp"
 
 int main(int argc, char *argv[]) {
-  s21::App view_snake;
+  s21::App view_snake(argc, argv);
 
-  view_snake.AppObj(argc, argv);
-  return 0;
+  return view_snake.exec();
 }

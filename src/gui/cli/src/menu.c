@@ -8,7 +8,7 @@
 /** @brief Прорисовка игры */
 void rendering() {
   GameInfo_t g_info = updateCurrentState();
-  if (g_info.pause == Terminated || g_info.pause == GameOver) {
+  if (g_info.pause == Terminated || g_info.pause == GameOvered) {
     return;
   }
 

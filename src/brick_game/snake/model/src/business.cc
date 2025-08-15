@@ -4,7 +4,7 @@
 /** @brief  */
 
 void s21::Model::GameStep() {
-  if (IsNoLaunched())
+  if (!IsLaunched())
     return;
   bool dly = MoveDelay();
 

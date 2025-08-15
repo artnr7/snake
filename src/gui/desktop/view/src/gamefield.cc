@@ -57,7 +57,7 @@ void s21::GameWidget::paintEvent(QPaintEvent *event) {
                          MULT - 1, MULT - 1, QBrush{"#FF0000"});
       }
 #elif TETRIS
-      if (g_info.field != NULL) {
+      if (g_info.pause == Launched || g_info.pause == Paused) {
         QBrush brush;
         TetrisChooseBrush(brush, g_info.field[i][j]);
         painter.fillRect(GAMEFIELD_X + j * MULT + 1, GAMEFIELD_Y + i * MULT + 1,
@@ -68,7 +68,7 @@ void s21::GameWidget::paintEvent(QPaintEvent *event) {
   }
 
 #ifdef TETRIS
-  if (g_info.field != NULL) {
+  if (g_info.pause == Launched || g_info.pause == Paused) {
 
     for (size_t i = 0; i < NEXT_H / MULT; ++i) {
       for (size_t j = 0; j < NEXT_W / MULT; ++j) {

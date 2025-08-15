@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_s21__GameWidget_t {
-    QByteArrayData data[10];
-    char stringdata0[102];
+    QByteArrayData data[9];
+    char stringdata0[97];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -39,14 +39,13 @@ QT_MOC_LITERAL(3, 34, 12), // "UserAction_t"
 QT_MOC_LITERAL(4, 47, 6), // "action"
 QT_MOC_LITERAL(5, 54, 4), // "hold"
 QT_MOC_LITERAL(6, 59, 15), // "TransmiteSignal"
-QT_MOC_LITERAL(7, 75, 4), // "Exit"
-QT_MOC_LITERAL(8, 80, 10), // "BackUpdate"
-QT_MOC_LITERAL(9, 91, 10) // "UpdateInfo"
+QT_MOC_LITERAL(7, 75, 10), // "BackUpdate"
+QT_MOC_LITERAL(8, 86, 10) // "UpdateInfo"
 
     },
     "s21::GameWidget\0DeviceInputFixed\0\0"
     "UserAction_t\0action\0hold\0TransmiteSignal\0"
-    "Exit\0BackUpdate\0UpdateInfo"
+    "BackUpdate\0UpdateInfo"
 };
 #undef QT_MOC_LITERAL
 
@@ -56,7 +55,7 @@ static const uint qt_meta_data_s21__GameWidget[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       5,   14, // methods
+       4,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -64,20 +63,18 @@ static const uint qt_meta_data_s21__GameWidget[] = {
        1,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    2,   39,    2, 0x06 /* Public */,
+       1,    2,   34,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       6,    2,   44,    2, 0x08 /* Private */,
-       7,    0,   49,    2, 0x08 /* Private */,
-       8,    0,   50,    2, 0x08 /* Private */,
-       9,    0,   51,    2, 0x08 /* Private */,
+       6,    2,   39,    2, 0x08 /* Private */,
+       7,    0,   44,    2, 0x08 /* Private */,
+       8,    0,   45,    2, 0x08 /* Private */,
 
  // signals: parameters
     QMetaType::Void, 0x80000000 | 3, QMetaType::Bool,    4,    5,
 
  // slots: parameters
     QMetaType::Void, 0x80000000 | 3, QMetaType::Bool,    4,    5,
-    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
 
@@ -92,9 +89,8 @@ void s21::GameWidget::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
         switch (_id) {
         case 0: _t->DeviceInputFixed((*reinterpret_cast< UserAction_t(*)>(_a[1])),(*reinterpret_cast< bool(*)>(_a[2]))); break;
         case 1: _t->TransmiteSignal((*reinterpret_cast< UserAction_t(*)>(_a[1])),(*reinterpret_cast< bool(*)>(_a[2]))); break;
-        case 2: _t->Exit(); break;
-        case 3: _t->BackUpdate(); break;
-        case 4: _t->UpdateInfo(); break;
+        case 2: _t->BackUpdate(); break;
+        case 3: _t->UpdateInfo(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
@@ -138,13 +134,13 @@ int s21::GameWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 5)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 5;
+        _id -= 4;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 5)
+        if (_id < 4)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 5;
+        _id -= 4;
     }
     return _id;
 }

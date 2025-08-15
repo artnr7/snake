@@ -30,7 +30,7 @@ typedef struct {
 
 } GameInfo_t;
 
-typedef enum { NoLaunched, Launched, Paused, Terminated, GameOver } GameState;
+typedef enum { NoLaunched, Launched, Paused, Terminated, GameOvered } GameState;
 
 
 #endif

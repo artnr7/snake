@@ -5,7 +5,7 @@ void s21::GameWidget::InfoDraw(GameWidget *field_w) {
 #ifdef SNAKE
   g_info = s21::Controller::updateCurrentState();
 #elif TETRIS
-  // GameInfo_t g_info = updateCurrentState();
+  g_info = updateCurrentState();
 #endif
 
   info_lay = new QVBoxLayout(field_w);
@@ -61,7 +61,7 @@ void s21::GameWidget::UpdateInfoFun() {
 #ifdef SNAKE
   g_info = s21::Controller::updateCurrentState();
 #elif TETRIS
-  // GameInfo_t g_info = updateCurrentState();
+  g_info = updateCurrentState();
 #endif
   QString user_level = QString::number(g_info.level);
   level->setText("Level:" + user_level);

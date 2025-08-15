@@ -1,3 +1,6 @@
+#ifndef GAMEWIDGET_H
+#define GAMEWIDGET_H
+
 #include "app_config.hpp"
 #include <QString>
 #include <QVBoxLayout>
@@ -11,7 +14,9 @@ public:
   explicit GameWidget(QWidget *parent = nullptr);
 
   void keyPressEvent(QKeyEvent *Kevent) override;
+#ifdef SNAKE
   void keyReleaseEvent(QKeyEvent *Kevent) override;
+#endif
   void InfoDraw(GameWidget *game_w);
   void UpdateInfoFun();
 
@@ -36,8 +41,9 @@ signals:
   void DeviceInputFixed(UserAction_t action, bool hold);
 private slots:
   void TransmiteSignal(UserAction_t action, bool hold);
-  void Exit();
   void BackUpdate();
   void UpdateInfo();
 };
 } // namespace s21
+
+#endif

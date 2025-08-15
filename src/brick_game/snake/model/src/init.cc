@@ -15,12 +15,12 @@ s21::Model *s21::Model::GetModel() {
 }
 
 s21::Model::Model() : s_info_() {
-  Malloc();
   s_info_.pause = GameState::NoLaunched;
+  Malloc();
 }
 
 void s21::Model::Malloc() {
-  if (!s_info_.field) {
+  if (IsNoLaunched()) {
     s_info_.field = new int *[FIELD_H] {};
 
     for (int i = 0; i < FIELD_H; ++i) {
@@ -30,7 +30,10 @@ void s21::Model::Malloc() {
 }
 
 void s21::Model::InitGame() {
-  if (IsLanchedOrPaused())
+  if (IsPaused()) {
+    s_info_.pause = GameState::Launched;
+  }
+  if (IsLanchedOrPaused() || IsGameEnd())
     return;
   ParseSnake();
   SpawnApple();
@@ -40,9 +43,17 @@ void s21::Model::InitGame() {
   s_info_.high_score = GetHighscore();
 }
 
-void s21::Model::TakeBreak() { s_info_.pause = GameState::Paused; }
+void s21::Model::TakeBreak() {
+  if (IsLaunched()) {
+    s_info_.pause = GameState::Paused;
+  }
+}
 
-void s21::Model::GoEnd() { s_info_.pause = GameState::Terminated; }
+void s21::Model::GoEnd() {
+  if (IsLaunched() || IsNoLaunched() || IsPaused()) {
+    s_info_.pause = GameState::Terminated;
+  }
+}
 
 // не нужен
 // void s21::Model::Mdealloc() {

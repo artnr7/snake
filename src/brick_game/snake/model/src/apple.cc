@@ -21,17 +21,16 @@ void s21::Model::SpawnApple() {
 
 /** @brief  */
 void s21::Model::ParseApple() {
-  if (s_info_.pause == GameState::GameOver ||
-      s_info_.pause == GameState::Terminated)
+  if (!IsLaunched())
     return;
   s_info_.field[apple_.cord_y_][apple_.cord_x_] = PxCode::Apple;
 }
 
 /** @brief  */
 int s21::Model::EatApple() {
-  if (IsGameEnd())
+  if (!IsLaunched()) {
     return 0;
-
+  }
   bool ate_apple = 0;
   auto head = snake_anim_.GetHead();
   if (head.cord_y_ == apple_.cord_y_ && head.cord_x_ == apple_.cord_x_) {

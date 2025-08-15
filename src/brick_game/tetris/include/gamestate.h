@@ -8,7 +8,7 @@ bool is_nolaunched(GameInfo_t *g_info);
 bool is_launched(GameInfo_t *g_info);
 bool is_paused(GameInfo_t *g_info);
 bool is_launched_or_paused(GameInfo_t *g_info);
-bool is_gameover_or_terminated(GameInfo_t *g_info);
+bool is_gameovered_or_terminated(GameInfo_t *g_info);
 bool is_game_end(GameInfo_t *g_info);
 bool is_inactive(GameInfo_t *g_info);
 

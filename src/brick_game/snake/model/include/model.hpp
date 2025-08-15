@@ -51,10 +51,13 @@ protected:
   void SnakeSelfCollision();
 
   /*--------→ GameState Check ←---------*/
+  bool IsLaunched();
   bool IsNoLaunched();
   bool IsLanchedOrPaused();
-  bool IsGameoverOrTerminated();
+  bool IsGameoveredOrTerminated();
   bool IsGameEnd();
+  bool IsPaused();
+  bool IsGameInactive();
 
   /*--------→ Score ←---------*/
   void IncreaseScore();

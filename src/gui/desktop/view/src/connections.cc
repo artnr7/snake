@@ -16,9 +16,6 @@ void s21::GameWidget::Connections() {
   QWidget::connect(this, &s21::GameWidget::DeviceInputFixed, this,
                    &s21::GameWidget::TransmiteSignal);
 
-  QWidget::connect(update_freq_timer_, &QTimer::timeout, this,
-                   &s21::GameWidget::Exit);
-
   QWidget::connect(back_update_freq_timer_, &QTimer::timeout, this,
                    &s21::GameWidget::UpdateInfo);
 }
