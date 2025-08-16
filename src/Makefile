@@ -139,3 +139,5 @@ c:
 	@cmake-format -i CMakeLists.txt
 	@find . -name '*.cmake' -exec cmake-format -i {} +
 	@echo "Format done."
+
+cclean: clean c 

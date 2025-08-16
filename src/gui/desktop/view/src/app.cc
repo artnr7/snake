@@ -34,7 +34,7 @@ void s21::App::Connections() {
   update_timer_->start(15);
 
   QApplication::connect(update_timer_, &QTimer::timeout, this, &s21::App::Exit);
-      QApplication::connect(this, &s21::App::AppClose, this, &s21::App::quit);
+  QApplication::connect(this, &s21::App::AppClose, this, &s21::App::quit);
 }
 
 void s21::App::Exit() {

@@ -2,36 +2,20 @@
 #ifdef CLI
 #include "controller_wrapper_for_c.h"
 #endif
-// #include <iostream>
-
-s21::Controller *s21::Controller::instance = nullptr;
 
 // Обёртки
 #ifdef CLI
 s21::Controller *s21::Controller::GetController() {
-  if (!instance)
-    instance = new Controller();
-
-  return instance;
+  static Controller st_controller;
+  return &st_controller;
 }
-
-extern "C" {
 
 void userInput(UserAction_t action, bool hold) {
-  s21::Controller::GetController()->userInput(action, hold);
+  return s21::Controller::GetController()->userInput(action, hold);
 }
-
 GameInfo_t updateCurrentState() {
   return s21::Controller::GetController()->updateCurrentState();
 }
-}
-
-// void userInput(UserAction_t action, bool hold) {
-//   return s21::Controller::GetController()->userInput(action, hold);
-// }
-// GameInfo_t updateCurrentState() {
-//   return s21::Controller::GetController()->updateCurrentState();
-// }
 #endif
 
 void s21::Controller::userInput(UserAction_t action, bool hold) {

@@ -16,6 +16,7 @@ s21::Model *s21::Model::GetModel() {
 
 s21::Model::Model() : s_info_() {
   s_info_.pause = GameState::NoLaunched;
+  s_info_.next = nullptr;
   Malloc();
 }
 
