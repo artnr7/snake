@@ -1,13 +1,12 @@
 #ifndef CONTROLLER_H_
 #define CONTROLLER_H_
 
-#include "../model/include/model.hpp"
-
+#include "../../data_types/data_types.h"
 namespace s21 {
 class Controller {
 
 protected:
-  Controller() {};
+  Controller(){};
 
 public:
 #ifdef CLI

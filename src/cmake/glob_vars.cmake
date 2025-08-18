@@ -7,4 +7,6 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CURSES_NEED_NCURSES TRUE)
 set(CURSES_NEED_WIDE TRUE)
 
+set(GAMES snake tetris)
+
 enable_testing()

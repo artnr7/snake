@@ -35,6 +35,10 @@ include(cmake/targets/tetris_desktop.cmake)
 # ############################# TESTS
 
 include(cmake/tests/snake.cmake)
+include(cmake/tests/tetris.cmake)
+
+# ############################# COVERAGE
+include(cmake/gcov/Coverage.cmake)
 
 include(cmake/formatting/CMakeFormat.cmake)
 include(cmake/formatting/ClangFormat.cmake)

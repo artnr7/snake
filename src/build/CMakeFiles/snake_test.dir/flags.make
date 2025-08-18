@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/atrnr7/snake/src/build/snake_test_autogen/include
+CXX_INCLUDES = -I/home/artnr7/snake/src/build/snake_test_autogen/include
 
-CXX_FLAGS = -g -std=gnu++20 -DSNAKE -Wall -Werror -Wextra -DGTEST_HAS_PTHREAD=1
+CXX_FLAGS = -g -std=gnu++20 -Wall -Werror -Wextra -DGTEST_HAS_PTHREAD=1
 

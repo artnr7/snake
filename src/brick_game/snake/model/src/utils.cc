@@ -1,4 +1,6 @@
-#include "../include/model.hpp"
+#include "../model.hpp"
+
+#define PointReward 1
 
 /** @brief  */
 
@@ -47,7 +49,7 @@ void s21::Model::WalkOnSnake(PxCode &px_code) {
 void s21::Model::IncreaseScore() {
   if (!IsLaunched())
     return;
-  s_info_.score += 5;
+  s_info_.score += PointReward;
 }
 
 void s21::Model::SetSnakeDir(UserAction_t &action) {

@@ -1,4 +1,4 @@
-#include "../include/model.hpp"
+#include "../model.hpp"
 #define DEFAULT_SNAKE_SPEED DEFAULT_SPEED
 #define SNAKE_SPEED_MULT 20
 

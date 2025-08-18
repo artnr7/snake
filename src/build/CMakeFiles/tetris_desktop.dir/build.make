@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/atrnr7/snake/src
+CMAKE_SOURCE_DIR = /home/artnr7/snake/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/atrnr7/snake/src/build
+CMAKE_BINARY_DIR = /home/artnr7/snake/src/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tetris_desktop.dir/depend.make
@@ -71,135 +71,135 @@ include CMakeFiles/tetris_desktop.dir/flags.make
 
 tetris_desktop_autogen/timestamp: /usr/lib/qt5/bin/moc
 tetris_desktop_autogen/timestamp: CMakeFiles/tetris_desktop.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target tetris_desktop"
-	/usr/bin/cmake -E cmake_autogen /home/atrnr7/snake/src/build/CMakeFiles/tetris_desktop_autogen.dir/AutogenInfo.json Debug
-	/usr/bin/cmake -E touch /home/atrnr7/snake/src/build/tetris_desktop_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target tetris_desktop"
+	/usr/bin/cmake -E cmake_autogen /home/artnr7/snake/src/build/CMakeFiles/tetris_desktop_autogen.dir/AutogenInfo.json Debug
+	/usr/bin/cmake -E touch /home/artnr7/snake/src/build/tetris_desktop_autogen/timestamp
 
 CMakeFiles/tetris_desktop.dir/tetris_desktop_autogen/mocs_compilation.cpp.o: CMakeFiles/tetris_desktop.dir/flags.make
 CMakeFiles/tetris_desktop.dir/tetris_desktop_autogen/mocs_compilation.cpp.o: tetris_desktop_autogen/mocs_compilation.cpp
 CMakeFiles/tetris_desktop.dir/tetris_desktop_autogen/mocs_compilation.cpp.o: CMakeFiles/tetris_desktop.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tetris_desktop.dir/tetris_desktop_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tetris_desktop.dir/tetris_desktop_autogen/mocs_compilation.cpp.o -MF CMakeFiles/tetris_desktop.dir/tetris_desktop_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/tetris_desktop.dir/tetris_desktop_autogen/mocs_compilation.cpp.o -c /home/atrnr7/snake/src/build/tetris_desktop_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tetris_desktop.dir/tetris_desktop_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tetris_desktop.dir/tetris_desktop_autogen/mocs_compilation.cpp.o -MF CMakeFiles/tetris_desktop.dir/tetris_desktop_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/tetris_desktop.dir/tetris_desktop_autogen/mocs_compilation.cpp.o -c /home/artnr7/snake/src/build/tetris_desktop_autogen/mocs_compilation.cpp
 
 CMakeFiles/tetris_desktop.dir/tetris_desktop_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tetris_desktop.dir/tetris_desktop_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/atrnr7/snake/src/build/tetris_desktop_autogen/mocs_compilation.cpp > CMakeFiles/tetris_desktop.dir/tetris_desktop_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/build/tetris_desktop_autogen/mocs_compilation.cpp > CMakeFiles/tetris_desktop.dir/tetris_desktop_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/tetris_desktop.dir/tetris_desktop_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tetris_desktop.dir/tetris_desktop_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/atrnr7/snake/src/build/tetris_desktop_autogen/mocs_compilation.cpp -o CMakeFiles/tetris_desktop.dir/tetris_desktop_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/build/tetris_desktop_autogen/mocs_compilation.cpp -o CMakeFiles/tetris_desktop.dir/tetris_desktop_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/tetris_desktop.dir/desktop.cc.o: CMakeFiles/tetris_desktop.dir/flags.make
-CMakeFiles/tetris_desktop.dir/desktop.cc.o: /home/atrnr7/snake/src/desktop.cc
+CMakeFiles/tetris_desktop.dir/desktop.cc.o: /home/artnr7/snake/src/desktop.cc
 CMakeFiles/tetris_desktop.dir/desktop.cc.o: CMakeFiles/tetris_desktop.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tetris_desktop.dir/desktop.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tetris_desktop.dir/desktop.cc.o -MF CMakeFiles/tetris_desktop.dir/desktop.cc.o.d -o CMakeFiles/tetris_desktop.dir/desktop.cc.o -c /home/atrnr7/snake/src/desktop.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tetris_desktop.dir/desktop.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tetris_desktop.dir/desktop.cc.o -MF CMakeFiles/tetris_desktop.dir/desktop.cc.o.d -o CMakeFiles/tetris_desktop.dir/desktop.cc.o -c /home/artnr7/snake/src/desktop.cc
 
 CMakeFiles/tetris_desktop.dir/desktop.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tetris_desktop.dir/desktop.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/atrnr7/snake/src/desktop.cc > CMakeFiles/tetris_desktop.dir/desktop.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/desktop.cc > CMakeFiles/tetris_desktop.dir/desktop.cc.i
 
 CMakeFiles/tetris_desktop.dir/desktop.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tetris_desktop.dir/desktop.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/atrnr7/snake/src/desktop.cc -o CMakeFiles/tetris_desktop.dir/desktop.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/desktop.cc -o CMakeFiles/tetris_desktop.dir/desktop.cc.s
 
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.o: CMakeFiles/tetris_desktop.dir/flags.make
-CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.o: /home/atrnr7/snake/src/gui/desktop/view/src/app.cc
+CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.o: /home/artnr7/snake/src/gui/desktop/view/src/app.cc
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.o: CMakeFiles/tetris_desktop.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.o -MF CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.o.d -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.o -c /home/atrnr7/snake/src/gui/desktop/view/src/app.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.o -MF CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.o.d -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.o -c /home/artnr7/snake/src/gui/desktop/view/src/app.cc
 
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/atrnr7/snake/src/gui/desktop/view/src/app.cc > CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/gui/desktop/view/src/app.cc > CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.i
 
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/atrnr7/snake/src/gui/desktop/view/src/app.cc -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/gui/desktop/view/src/app.cc -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/app.cc.s
 
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connections.cc.o: CMakeFiles/tetris_desktop.dir/flags.make
-CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connections.cc.o: /home/atrnr7/snake/src/gui/desktop/view/src/connections.cc
+CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connections.cc.o: /home/artnr7/snake/src/gui/desktop/view/src/connections.cc
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connections.cc.o: CMakeFiles/tetris_desktop.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connections.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connections.cc.o -MF CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connections.cc.o.d -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connections.cc.o -c /home/atrnr7/snake/src/gui/desktop/view/src/connections.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connections.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connections.cc.o -MF CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connections.cc.o.d -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connections.cc.o -c /home/artnr7/snake/src/gui/desktop/view/src/connections.cc
 
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connections.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connections.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/atrnr7/snake/src/gui/desktop/view/src/connections.cc > CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connections.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/gui/desktop/view/src/connections.cc > CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connections.cc.i
 
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connections.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connections.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/atrnr7/snake/src/gui/desktop/view/src/connections.cc -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connections.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/gui/desktop/view/src/connections.cc -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/connections.cc.s
 
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.o: CMakeFiles/tetris_desktop.dir/flags.make
-CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.o: /home/atrnr7/snake/src/gui/desktop/view/src/game_w.cc
+CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.o: /home/artnr7/snake/src/gui/desktop/view/src/game_w.cc
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.o: CMakeFiles/tetris_desktop.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.o -MF CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.o.d -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.o -c /home/atrnr7/snake/src/gui/desktop/view/src/game_w.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.o -MF CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.o.d -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.o -c /home/artnr7/snake/src/gui/desktop/view/src/game_w.cc
 
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/atrnr7/snake/src/gui/desktop/view/src/game_w.cc > CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/gui/desktop/view/src/game_w.cc > CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.i
 
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/atrnr7/snake/src/gui/desktop/view/src/game_w.cc -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/gui/desktop/view/src/game_w.cc -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/game_w.cc.s
 
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.o: CMakeFiles/tetris_desktop.dir/flags.make
-CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.o: /home/atrnr7/snake/src/gui/desktop/view/src/gamefield.cc
+CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.o: /home/artnr7/snake/src/gui/desktop/view/src/gamefield.cc
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.o: CMakeFiles/tetris_desktop.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.o -MF CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.o.d -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.o -c /home/atrnr7/snake/src/gui/desktop/view/src/gamefield.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.o -MF CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.o.d -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.o -c /home/artnr7/snake/src/gui/desktop/view/src/gamefield.cc
 
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/atrnr7/snake/src/gui/desktop/view/src/gamefield.cc > CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/gui/desktop/view/src/gamefield.cc > CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.i
 
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/atrnr7/snake/src/gui/desktop/view/src/gamefield.cc -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/gui/desktop/view/src/gamefield.cc -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/gamefield.cc.s
 
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.o: CMakeFiles/tetris_desktop.dir/flags.make
-CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.o: /home/atrnr7/snake/src/gui/desktop/view/src/info.cc
+CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.o: /home/artnr7/snake/src/gui/desktop/view/src/info.cc
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.o: CMakeFiles/tetris_desktop.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.o -MF CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.o.d -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.o -c /home/atrnr7/snake/src/gui/desktop/view/src/info.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.o -MF CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.o.d -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.o -c /home/artnr7/snake/src/gui/desktop/view/src/info.cc
 
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/atrnr7/snake/src/gui/desktop/view/src/info.cc > CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/gui/desktop/view/src/info.cc > CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.i
 
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/atrnr7/snake/src/gui/desktop/view/src/info.cc -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/gui/desktop/view/src/info.cc -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/info.cc.s
 
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.o: CMakeFiles/tetris_desktop.dir/flags.make
-CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.o: /home/atrnr7/snake/src/gui/desktop/view/src/key_events.cc
+CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.o: /home/artnr7/snake/src/gui/desktop/view/src/key_events.cc
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.o: CMakeFiles/tetris_desktop.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.o -MF CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.o.d -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.o -c /home/atrnr7/snake/src/gui/desktop/view/src/key_events.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.o -MF CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.o.d -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.o -c /home/artnr7/snake/src/gui/desktop/view/src/key_events.cc
 
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/atrnr7/snake/src/gui/desktop/view/src/key_events.cc > CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/gui/desktop/view/src/key_events.cc > CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.i
 
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/atrnr7/snake/src/gui/desktop/view/src/key_events.cc -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/gui/desktop/view/src/key_events.cc -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/key_events.cc.s
 
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.o: CMakeFiles/tetris_desktop.dir/flags.make
-CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.o: /home/atrnr7/snake/src/gui/desktop/view/src/slots.cc
+CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.o: /home/artnr7/snake/src/gui/desktop/view/src/slots.cc
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.o: CMakeFiles/tetris_desktop.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.o -MF CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.o.d -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.o -c /home/atrnr7/snake/src/gui/desktop/view/src/slots.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.o -MF CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.o.d -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.o -c /home/artnr7/snake/src/gui/desktop/view/src/slots.cc
 
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/atrnr7/snake/src/gui/desktop/view/src/slots.cc > CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/artnr7/snake/src/gui/desktop/view/src/slots.cc > CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.i
 
 CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/atrnr7/snake/src/gui/desktop/view/src/slots.cc -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/artnr7/snake/src/gui/desktop/view/src/slots.cc -o CMakeFiles/tetris_desktop.dir/gui/desktop/view/src/slots.cc.s
 
 # Object files for target tetris_desktop
 tetris_desktop_OBJECTS = \
@@ -231,7 +231,7 @@ tetris_desktop: libtetris_back_lib.a
 tetris_desktop: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13
 tetris_desktop: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13
 tetris_desktop: CMakeFiles/tetris_desktop.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/atrnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable tetris_desktop"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/artnr7/snake/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable tetris_desktop"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tetris_desktop.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -243,6 +243,6 @@ CMakeFiles/tetris_desktop.dir/clean:
 .PHONY : CMakeFiles/tetris_desktop.dir/clean
 
 CMakeFiles/tetris_desktop.dir/depend: tetris_desktop_autogen/timestamp
-	cd /home/atrnr7/snake/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/atrnr7/snake/src /home/atrnr7/snake/src /home/atrnr7/snake/src/build /home/atrnr7/snake/src/build /home/atrnr7/snake/src/build/CMakeFiles/tetris_desktop.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/artnr7/snake/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/artnr7/snake/src /home/artnr7/snake/src /home/artnr7/snake/src/build /home/artnr7/snake/src/build /home/artnr7/snake/src/build/CMakeFiles/tetris_desktop.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/tetris_desktop.dir/depend
 

@@ -15,4 +15,6 @@ bool EQEqual(bool &equal);
 
 bool EQField(int **field_1, int **field_2);
 
+int AreObjsInField(int px_code, int **field);
+
 #endif

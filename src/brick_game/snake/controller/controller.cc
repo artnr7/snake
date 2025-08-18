@@ -1,4 +1,5 @@
 #include "controller.hpp"
+#include "../model/model.hpp"
 #ifdef CLI
 #include "controller_wrapper_for_c.h"
 #endif

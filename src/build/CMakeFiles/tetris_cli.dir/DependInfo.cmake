@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/atrnr7/snake/src/brick_game/tetris/src/timer.c" "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.o" "gcc" "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.o.d"
-  "/home/atrnr7/snake/src/cli.c" "CMakeFiles/tetris_cli.dir/cli.c.o" "gcc" "CMakeFiles/tetris_cli.dir/cli.c.o.d"
-  "/home/atrnr7/snake/src/gui/cli/frontend.c" "CMakeFiles/tetris_cli.dir/gui/cli/frontend.c.o" "gcc" "CMakeFiles/tetris_cli.dir/gui/cli/frontend.c.o.d"
-  "/home/atrnr7/snake/src/gui/cli/src/frontend_utils.c" "CMakeFiles/tetris_cli.dir/gui/cli/src/frontend_utils.c.o" "gcc" "CMakeFiles/tetris_cli.dir/gui/cli/src/frontend_utils.c.o.d"
-  "/home/atrnr7/snake/src/gui/cli/src/menu.c" "CMakeFiles/tetris_cli.dir/gui/cli/src/menu.c.o" "gcc" "CMakeFiles/tetris_cli.dir/gui/cli/src/menu.c.o.d"
+  "/home/artnr7/snake/src/brick_game/tetris/src/timer.c" "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.o" "gcc" "CMakeFiles/tetris_cli.dir/brick_game/tetris/src/timer.c.o.d"
+  "/home/artnr7/snake/src/cli.c" "CMakeFiles/tetris_cli.dir/cli.c.o" "gcc" "CMakeFiles/tetris_cli.dir/cli.c.o.d"
+  "/home/artnr7/snake/src/gui/cli/frontend.c" "CMakeFiles/tetris_cli.dir/gui/cli/frontend.c.o" "gcc" "CMakeFiles/tetris_cli.dir/gui/cli/frontend.c.o.d"
+  "/home/artnr7/snake/src/gui/cli/src/frontend_utils.c" "CMakeFiles/tetris_cli.dir/gui/cli/src/frontend_utils.c.o" "gcc" "CMakeFiles/tetris_cli.dir/gui/cli/src/frontend_utils.c.o.d"
+  "/home/artnr7/snake/src/gui/cli/src/menu.c" "CMakeFiles/tetris_cli.dir/gui/cli/src/menu.c.o" "gcc" "CMakeFiles/tetris_cli.dir/gui/cli/src/menu.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

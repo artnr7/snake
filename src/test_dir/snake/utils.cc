@@ -1,4 +1,5 @@
 #include "utils.hpp"
+#include <iostream>
 
 void MallocField(int ***field) {
 
@@ -28,11 +29,22 @@ void GInfoWrongInit(GameInfo_t &g_info) {
 bool EQGInfo(GameInfo_t &g_info_1, GameInfo_t &g_info_2) {
   bool equal = true;
 
+  std::cout << equal << std::endl;
+
   equal = EQField(g_info_1.field, g_info_2.field);
+  std::cout << equal << std::endl;
+
   equal = g_info_1.level == g_info_2.level ? EQEqual(equal) : false;
+  std::cout << equal << std::endl;
+
   equal = g_info_1.next == g_info_2.next ? EQEqual(equal) : false;
+  std::cout << equal << std::endl;
+
   equal = g_info_1.pause == g_info_2.pause ? EQEqual(equal) : false;
+  std::cout << equal << std::endl;
+
   equal = g_info_1.score == g_info_2.score ? EQEqual(equal) : false;
+  std::cout << equal << std::endl;
 
   return equal;
 }
@@ -41,18 +53,37 @@ bool EQEqual(bool &equal) { return equal == false ? false : true; }
 
 bool EQField(int **field_1, int **field_2) {
   bool equal = true;
+  std::cout << field_1 << " -- -- " << field_2 << std::endl;
   if (field_1 != nullptr && field_2 != nullptr) {
     for (int i = 0; i < FIELD_H && equal; ++i) {
       for (int j = 0; j < FIELD_W && equal; ++j) {
 
         if (field_1[i][j] != field_2[i][j]) {
+          std::cout << "-1-1-1-1" << i << j << std::endl;
           equal = false;
         }
       }
     }
   }
+  // std::cout << "=================" << equal << std::endl;
+
   if (field_1 == nullptr || field_2 == nullptr) {
     equal = field_1 == field_2 ? true : false;
   }
+  // std::cout << "=================" << equal << std::endl;
+
   return equal;
+}
+
+int AreObjsInField(int px_code, int **field) {
+  int count = 0;
+
+  for (int i = 0; i < FIELD_H; ++i) {
+    for (int j = 0; j < FIELD_W; ++j) {
+      if (field[i][j] == px_code) {
+        ++count;
+      }
+    }
+  }
+  return count;
 }
