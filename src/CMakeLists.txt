@@ -40,5 +40,8 @@ include(cmake/tests/tetris.cmake)
 # ############################# COVERAGE
 include(cmake/gcov/Coverage.cmake)
 
+# ############################# FORMAT
 include(cmake/formatting/CMakeFormat.cmake)
 include(cmake/formatting/ClangFormat.cmake)
+
+# ############################# CLEAN include(cmake/utils/Clean.cmake)

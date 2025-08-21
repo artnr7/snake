@@ -7,8 +7,8 @@
 #include "moving/moving.h"
 #include "rows_hit.h"
 #include "speed_and_levels.h"
-#include "tmino_create.h"
 #include "timer.h"
+#include "tmino_create.h"
 
 void init_game(GameInfo_t *g_info, int *tmino_pos);
 

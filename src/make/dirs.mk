@@ -1,0 +1,16 @@
+# директории
+TEST_DIR := test_dir 
+INSTALL_DIR := install_dir
+DIST_DIR := dist_dir
+# TETRIS
+TETRIS_TEST_DIR := ${TEST_DIR}/tetris
+TETRIS_INSTALL_DIR := ${INSTALL_DIR}/tetris
+TETRIS_LIB_DIR := $(TETRIS_INSTALL_DIR)
+TETRIS_OBJ_FILES_DIR := $(TETRIS_INSTALL_DIR)/tetris_obj_files_dir
+TETRIS_DIST_DIR = ${DIST_DIR}/tetris_dist_dir
+# SNAKE
+SNAKE_TEST_DIR := ${TEST_DIR}/snake
+SNAKE_INSTALL_DIR := ${INSTALL_DIR}/snake
+SNAKE_LIB_DIR := $(SNAKE_INSTALL_DIR)
+SNAKE_OBJ_FILES_DIR := $(SNAKE_INSTALL_DIR)/snake_obj_files_dir
+SNAKE_DIST_DIR = ${DIST_DIR}/snake

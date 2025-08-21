@@ -1,4 +1,4 @@
- #ifndef MODEL_HPP_
+#ifndef MODEL_HPP_
 #define MODEL_HPP_
 
 #include "../../data_types/data_types.h"

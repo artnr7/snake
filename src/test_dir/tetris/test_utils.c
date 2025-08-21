@@ -14,7 +14,8 @@ void chess_fill(int **field) {
 }
 
 void fill(int **field, int qty) {
-  if (qty < 1) return;
+  if (qty < 1)
+    return;
   for (int i = FLD_H - qty; i < FLD_H; i++) {
     for (int j = 0; j < FLD_W; j++) {
       field[i][j] = RedIStc;
@@ -46,7 +47,7 @@ int move_detect(int **field, const Tetromino_t tmino, int st_y, int st_x,
     }
     spc_skip = false;
     /* ▼ Eсли попадается знак тетромино */
-    if (ch == L'■') {  // ■
+    if (ch == L'■') { // ■
       /* ▼ Если блок занят, то создать фигуру не можем  */
       if (mode == 0 && (field[y][x] == RedIMvg || field[y][x] == GreenLMvg ||
                         field[y][x] == YellowZMvg || field[y][x] == BlueJMvg ||

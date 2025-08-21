@@ -5,7 +5,7 @@
 #include <wchar.h>
 
 /*----------→ DEFINES ←---------- */
-#define TMINO_QTY 7  // ◄ Кол-во видов тетромино
+#define TMINO_QTY 7 // ◄ Кол-во видов тетромино
 
 #define NEXT_TMINO_H 2 // ◄ Высота матрицы для хранения тетромино
 #define NEXT_TMINO_W 4 // ◄ Ширина матрицы для хранения тетромино
@@ -41,13 +41,13 @@ typedef enum {
 
 /** @brief Enum, который описывает цвета*/
 typedef enum {
-  Red = 1, // ◄ Красный
-  Green,   // ◄ Зелёный
-  Yellow,  // ◄ Жёлтый
-  Blue,    // ◄ Синий
-  Magenta, // ◄ Фиолетовый
-  Cyan,    // ◄ Бирюзовый
-  White,   // ◄ Белый
+  Red = 1,         // ◄ Красный
+  Green,           // ◄ Зелёный
+  Yellow,          // ◄ Жёлтый
+  Blue,            // ◄ Синий
+  Magenta,         // ◄ Фиолетовый
+  Cyan,            // ◄ Бирюзовый
+  White,           // ◄ Белый
   DefaultColor = 8 // ◄ ничего(отсутствие цвета)
 } PxColor_t;
 

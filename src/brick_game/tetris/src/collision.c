@@ -20,14 +20,13 @@ bool is_blk_insd(int i, int j) {
  */
 void can_tmino_rot_fn(GameInfo_t g_info, int i, int j, int rot_mtx_h,
                       int rot_mtx_w, bool *try_x_mv, bool *can_tmino_rot) {
-  int blk_qty = 0;  // ◄ кол-во пройденных блоков тетромино, в каждом 4
+  int blk_qty = 0; // ◄ кол-во пройденных блоков тетромино, в каждом 4
 
   /* k и l соответствующие индексы, куда копируем блоки */
   for (int k = i; k < rot_mtx_h && blk_qty <= TMINO_BLKS_QTY; k++) {
     for (int l = j; l < rot_mtx_w && blk_qty <= TMINO_BLKS_QTY; l++) {
-      int rot_mtx_i =
-          rot_mtx_h - (l - j) - 1;  // ◄ верт. индекс откуда копируем
-      int rot_mtx_j = j + k - i;  // ◄ горизонтальный индекс откуда копируем
+      int rot_mtx_i = rot_mtx_h - (l - j) - 1; // ◄ верт. индекс откуда копируем
+      int rot_mtx_j = j + k - i; // ◄ горизонтальный индекс откуда копируем
 
       if (is_blk_insd(rot_mtx_i, rot_mtx_j) &&
           mvg_px_dtrm(g_info.field[rot_mtx_i][rot_mtx_j])) {
@@ -49,8 +48,8 @@ void can_tmino_rot_fn(GameInfo_t g_info, int i, int j, int rot_mtx_h,
  * @return Упадёт ли тетромино в следующем кадре
  */
 bool bot_coll(GameInfo_t g_info) {
-  int blk_qty = 0;  // ◄ кол-во пройденных блоков тетромино, в каждом их 4
-  bool tmino_will_fall = false;  // ◄ упадёт ли тетромино в следующем кадре
+  int blk_qty = 0; // ◄ кол-во пройденных блоков тетромино, в каждом их 4
+  bool tmino_will_fall = false; // ◄ упадёт ли тетромино в следующем кадре
 
   for (int i = 0; i < FIELD_H && blk_qty <= TMINO_BLKS_QTY; i++) {
     for (int j = 0; j < FIELD_W && blk_qty <= TMINO_BLKS_QTY; j++) {
@@ -68,9 +67,8 @@ bool bot_coll(GameInfo_t g_info) {
 }
 
 /** @brief Коллизия с левой и правой границами поля и тетромино */
-void lr_brd_tmino_coll(const GameInfo_t *g_info,
-                       WhoIsNearby_t *who_is_nearby) {
-  int blk_qty = 0;  // ◄ кол-во пройденных блоков тетромино, в каждом их 4
+void lr_brd_tmino_coll(const GameInfo_t *g_info, WhoIsNearby_t *who_is_nearby) {
+  int blk_qty = 0; // ◄ кол-во пройденных блоков тетромино, в каждом их 4
 
   for (int i = 0; i < FIELD_H && blk_qty <= TMINO_BLKS_QTY; i++) {
     for (int j = 0; j < FIELD_W && blk_qty <= TMINO_BLKS_QTY; j++) {
@@ -99,19 +97,19 @@ void lr_brd_tmino_coll(const GameInfo_t *g_info,
 void can_tmino_mv_fn(WhoIsNearby_t who_is_nearby,
                      CanTetrominoMove_t *can_tmino_mv) {
   if (who_is_nearby.LBorder) {
-    *can_tmino_mv = ToRight;  // ◄ разрешение движения вправо
+    *can_tmino_mv = ToRight; // ◄ разрешение движения вправо
     if (who_is_nearby.RBlock) {
-      *can_tmino_mv = NoWay;  // ◄ запрет движения
+      *can_tmino_mv = NoWay; // ◄ запрет движения
     }
   } else if (who_is_nearby.RBorder) {
-    *can_tmino_mv = ToLeft;  // ◄ разрешение движения влево
+    *can_tmino_mv = ToLeft; // ◄ разрешение движения влево
     if (who_is_nearby.LBlock) {
-      *can_tmino_mv = NoWay;  // ◄ запрет движения
+      *can_tmino_mv = NoWay; // ◄ запрет движения
     }
   } else if (who_is_nearby.LBlock) {
-    *can_tmino_mv = ToRight;  // ◄ разрешение движения вправо
+    *can_tmino_mv = ToRight; // ◄ разрешение движения вправо
     if (who_is_nearby.RBlock) {
-      *can_tmino_mv = NoWay;  // ◄ запрет движения
+      *can_tmino_mv = NoWay; // ◄ запрет движения
     }
   }
 }

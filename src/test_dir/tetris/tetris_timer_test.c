@@ -10,7 +10,7 @@ START_TEST(dly_get_1) {
   long dly = 0;
 
   dly_get(&dly);
-  usleep(100000);  // ◄ 100 микросекунд
+  usleep(100000); // ◄ 100 микросекунд
   dly_get(&dly);
 
   ck_assert_int_ge(dly, 100);
