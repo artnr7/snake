@@ -1,11 +1,11 @@
-#include "../model.hpp"
 #include <random>
+
+#include "../model.hpp"
 
 /** @brief Спавн яблока в случайной свободной ячейке поля
  * @todo Когда больше не будет свободной ячейки игра должна завершаться
  */
 void s21::Model::SpawnApple() {
-
   std::random_device rd;
   std::mt19937 rng(rd());
 
@@ -15,14 +15,14 @@ void s21::Model::SpawnApple() {
   do {
     apple_.cord_y_ = y_dist(rng);
     apple_.cord_x_ = x_dist(rng);
-  } while ((s_info_.field)[apple_.cord_y_][apple_.cord_x_] != PxCode::Nothing);
+  } while ((s_info_.field)[apple_.cord_y_][apple_.cord_x_] !=
+           PxCode::NothingSnake);
   /* пока по этим кордам в поле не будет пустоты ↑ */
 }
 
 /** @brief  */
 void s21::Model::ParseApple() {
-  if (!IsLaunched())
-    return;
+  if (!IsLaunched()) return;
   s_info_.field[apple_.cord_y_][apple_.cord_x_] = PxCode::Apple;
 }
 

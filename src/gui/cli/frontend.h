@@ -1,8 +1,9 @@
 #ifndef __TETRIS_FRONTEND__
 #define __TETRIS_FRONTEND__
 
-#include "include/frontend_utils.h"
 #include <locale.h>
+
+#include "include/frontend_utils.h"
 
 void frontend();
 

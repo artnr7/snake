@@ -1,5 +1,6 @@
-#include "../model.hpp"
 #include <iostream>
+
+#include "../model.hpp"
 
 /*=====================→ INIT ←==================== */
 
@@ -25,7 +26,7 @@ void s21::Model::Malloc() {
     s_info_.field = new int *[FIELD_H] {};
 
     for (int i = 0; i < FIELD_H; ++i) {
-      (s_info_.field)[i] = new int[FIELD_W]{PxCode::Nothing};
+      (s_info_.field)[i] = new int[FIELD_W]{PxCode::NothingSnake};
     }
   }
 }
@@ -34,8 +35,7 @@ void s21::Model::InitGame() {
   if (IsPaused()) {
     s_info_.pause = GameState::Launched;
   }
-  if (IsLanchedOrPaused() || IsGameEnd())
-    return;
+  if (IsLanchedOrPaused() || IsGameEnd()) return;
   ParseSnake();
   SpawnApple();
   ParseApple();

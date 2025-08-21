@@ -1,4 +1,5 @@
 #include "snake_anim.hpp"
+
 #include <iostream>
 
 s21::SnakeAnim::SnakeAnim() : body_() {
@@ -19,17 +20,17 @@ void s21::SnakeAnim::MoveBody() {
   auto new_head = GetHead();
 
   switch (s_dir_) {
-  case Up:
-    --(new_head.cord_y_);
-    break;
-  case Right:
-    ++(new_head.cord_x_);
-    break;
-  case Down:
-    ++(new_head.cord_y_);
-    break;
-  case Left:
-    --(new_head.cord_x_);
+    case Up:
+      --(new_head.cord_y_);
+      break;
+    case Right:
+      ++(new_head.cord_x_);
+      break;
+    case Down:
+      ++(new_head.cord_y_);
+      break;
+    case Left:
+      --(new_head.cord_x_);
   }
 
   body_.push_front({new_head});
@@ -49,36 +50,35 @@ int s21::SnakeAnim::CheckCollision() {
 void s21::SnakeAnim::RemoveTail() { body_.pop_back(); }
 
 void s21::SnakeAnim::SetDirection(UserAction_t &action) {
-
   switch (action) {
-  case UserAction_t::Up:
-    if (s_dir_ == SnakeDirection::Left || s_dir_ == SnakeDirection::Right) {
-      s_dir_ = SnakeDirection::Up;
-    }
-    break;
-  case UserAction_t::Right:
-    if (s_dir_ == SnakeDirection::Up || s_dir_ == SnakeDirection::Down) {
-      s_dir_ = SnakeDirection::Right;
-    }
-    break;
-  case UserAction_t::Down:
-    if (s_dir_ == SnakeDirection::Left || s_dir_ == SnakeDirection::Right) {
-      s_dir_ = SnakeDirection::Down;
-    }
-    break;
-  case UserAction_t::Left:
-    if (s_dir_ == SnakeDirection::Up || s_dir_ == SnakeDirection::Down) {
-      s_dir_ = SnakeDirection::Left;
-    }
-    break;
-  case UserAction_t::Start:
-    break;
-  case UserAction_t::Pause:
-    break;
-  case UserAction_t::Action:
-    break;
-  case UserAction_t::Terminate:
-    break;
+    case UserAction_t::Up:
+      if (s_dir_ == SnakeDirection::Left || s_dir_ == SnakeDirection::Right) {
+        s_dir_ = SnakeDirection::Up;
+      }
+      break;
+    case UserAction_t::Right:
+      if (s_dir_ == SnakeDirection::Up || s_dir_ == SnakeDirection::Down) {
+        s_dir_ = SnakeDirection::Right;
+      }
+      break;
+    case UserAction_t::Down:
+      if (s_dir_ == SnakeDirection::Left || s_dir_ == SnakeDirection::Right) {
+        s_dir_ = SnakeDirection::Down;
+      }
+      break;
+    case UserAction_t::Left:
+      if (s_dir_ == SnakeDirection::Up || s_dir_ == SnakeDirection::Down) {
+        s_dir_ = SnakeDirection::Left;
+      }
+      break;
+    case UserAction_t::Start:
+      break;
+    case UserAction_t::Pause:
+      break;
+    case UserAction_t::Action:
+      break;
+    case UserAction_t::Terminate:
+      break;
   }
 }
 

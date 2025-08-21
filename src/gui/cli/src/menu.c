@@ -1,4 +1,5 @@
 #include "../include/menu.h"
+
 #include <stdio.h>
 
 /* В этом файле встречаются случайные числа для координат отрисовки в терминале
@@ -15,13 +16,13 @@ void rendering() {
   /* Масштаб игры, высчитывается относительно масштаба по горизонтали для более
   * равномерной картинки
   ▼ */
-  int rend_scl_x = 4, // ◄ стандартно == 4, только rend_scl_x %2 == 0
+  int rend_scl_x = 4,  // ◄ стандартно == 4, только rend_scl_x %2 == 0
       rend_scl_y = rend_scl_x / 2;
 
   /* ▼ Горизонтальный отступ от границ окна */
-  int rend_shift_x = 10; // ◄ стандартно == 10
+  int rend_shift_x = 10;  // ◄ стандартно == 10
   /* ▼ Горизонтальный отступ от границ окна */
-  int rend_shift_y = 7; // ◄ стандартно == 7
+  int rend_shift_y = 7;  // ◄ стандартно == 7
 
   logo_rend(rend_scl_x, rend_scl_y);
   info_rend(g_info, rend_scl_x, rend_scl_y, rend_shift_x, rend_shift_y);
@@ -163,13 +164,15 @@ void info_rend(GameInfo_t g_info, int rend_scl_x, int rend_scl_y,
 
 /** @brief Прорисовка управления в информационной части */
 void info_action_rend(int info_y) {
-  wchar_t *start_exit = L"\n\
+  wchar_t *start_exit =
+      L"\n\
       █  PRESS S   █      PRESS Q    █\n\
  █▀▀▀▐█▌▄▀▀██ █▀▀█▐█▌    █▀▀█ █ █ ▀ ▐█▌\n\
  █▄▄▄ █ █  ██ █    █     █▄▄█  █  █  █\n\
  ▄▄▄█ █ ▀██ █ █    █     █▄▄▄ █ █ █  █";
 
-  wchar_t *pause = L"\n\
+  wchar_t *pause =
+      L"\n\
 \t█▀█ ▄▀▀██ █ █ █▀▀▀ █▀▀█\n\
 \t█▄█ █  ██ █ █ █▄▄▄ █▄▄█\n\
 \t█   ▀██ █ █▄█ ▄▄▄█ █▄▄▄\n\
@@ -181,24 +184,28 @@ void info_action_rend(int info_y) {
 
 /** @brief Прорисовка счёта в информационной части */
 void player_info_rend(GameInfo_t g_info, int info_y, int info_x) {
-  wchar_t *next = L"\n\
+  wchar_t *next =
+      L"\n\
 \t                █\n\
 \t  ▄▄▄▄ █▀▀█ █ █▐█▌\n\
 \t  █  █ █▄▄█  █  █\n\
 \t  █  █ █▄▄▄ █ █ █";
 
-  wchar_t *score = L"\n\
+  wchar_t *score =
+      L"\n\
 \t█▀▀▀ █▀▀▀ █▀▀█ █▀▀█ █▀▀█\n\
 \t█▄▄▄ █    █  █ █    █▄▄█\n\
 \t▄▄▄█ █▄▄▄ █▄▄█ █    █▄▄▄";
 
-  wchar_t *level = L"\n\
+  wchar_t *level =
+      L"\n\
 \t    █               █\n\
 \t    █ █▀▀█ █ █ █▀▀█ █\n\
 \t    █ █▄▄█ █▄█ █▄▄█ █\n\
 \t    █ █▄▄▄ ▀█▀ █▄▄▄ █";
 
-  wchar_t *highscore = L"\n\
+  wchar_t *highscore =
+      L"\n\
  ▄                                       \n\
  █▄▄▄ ▀ █▀▀█ █▄▄▄ █▀▀▀ █▀▀▀ █▀▀█ █▀▀█ █▀▀█\n\
  █  █ █ █▄▄█ █  █ █▄▄▄ █    █  █ █    █▄▄█\n\
@@ -216,7 +223,8 @@ void player_info_rend(GameInfo_t g_info, int info_y, int info_x) {
  * @todo Сделать чтение из файла по-хорошему, но не хочу тратить время
  */
 void logo_rend() {
-  wchar_t *logo = L"\n\
+  wchar_t *logo =
+      L"\n\
 ████████████████ ███████████████ ████████████████   ██████████████ ████████    █████████████\n\
 ████████████████ ███████████████ ████████████████  ███████████████ ████████  ███████████████\n\
 ███   ████   ███  ████       ███ ███   ████   ███ ██████    █████  ████████ ██████    █████ \n\

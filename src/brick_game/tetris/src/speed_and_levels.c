@@ -13,14 +13,14 @@ void high_scr_get(GameInfo_t *g_info) {
   g_info->high_score = 0;
   const char *high_scr_file = "brick_game/tetris/data_base/highscore.txt";
   FILE *fp = fopen(high_scr_file, "r");
-  if (!fp) { // ◄ если файла не существует - создаём
+  if (!fp) {  // ◄ если файла не существует - создаём
     fp = fopen(high_scr_file, "w");
     if (fp) {
       fclose(fp);
     }
   } else {
     char highscr_str[11] = "tensymbols";
-    fgets(highscr_str, 10, fp); //
+    fgets(highscr_str, 10, fp);  //
     g_info->high_score = atoi(highscr_str);
     fclose(fp);
   }

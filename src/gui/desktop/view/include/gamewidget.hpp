@@ -1,16 +1,17 @@
 #ifndef GAMEWIDGET_H
 #define GAMEWIDGET_H
 
-#include "app_config.hpp"
 #include <QString>
 #include <QVBoxLayout>
+
+#include "app_config.hpp"
 
 namespace s21 {
 // Основное окно игры
 class GameWidget : public QWidget {
   Q_OBJECT
 
-public:
+ public:
   explicit GameWidget(QWidget *parent = nullptr);
 
   void keyPressEvent(QKeyEvent *Kevent) override;
@@ -20,7 +21,7 @@ public:
   void InfoDraw(GameWidget *game_w);
   void UpdateInfoFun();
 
-private:
+ private:
   void Connections();
 
   // Painters
@@ -37,13 +38,13 @@ private:
   // timers
   QTimer *update_freq_timer_;
   QTimer *back_update_freq_timer_;
-signals:
+ signals:
   void DeviceInputFixed(UserAction_t action, bool hold);
-private slots:
+ private slots:
   void TransmiteSignal(UserAction_t action, bool hold);
   void BackUpdate();
   void UpdateInfo();
 };
-} // namespace s21
+}  // namespace s21
 
 #endif

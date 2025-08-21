@@ -1,8 +1,9 @@
 #ifndef __GAMESTATE__
 #define __GAMESTATE__
 
-#include "../../data_types/data_types.h"
 #include <stdbool.h>
+
+#include "../../data_types/data_types.h"
 
 bool is_nolaunched(GameInfo_t *g_info);
 bool is_launched(GameInfo_t *g_info);

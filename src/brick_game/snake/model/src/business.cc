@@ -4,8 +4,7 @@
 /** @brief  */
 
 void s21::Model::GameStep() {
-  if (!IsLaunched())
-    return;
+  if (!IsLaunched()) return;
   bool dly = MoveDelay();
 
   MoveSnake(dly);

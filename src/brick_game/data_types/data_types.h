@@ -2,11 +2,11 @@
 #define DATA_TYPES_H_
 
 /*----------→ DEFINES ←---------- */
-#define TMINO_QTY 7    // ◄ Кол-во видов тетромино
-#define FIELD_H 20     // ◄ Высота игрового поля
-#define FIELD_W 10     // ◄ Ширина игрового поля
-#define FIELD_H_HALF 9 // ◄ Половина высоты поля(имеет смысл индекс внутри)
-#define FIELD_W_HALF 4 // ◄ Половина ширины поля(имеет смысл индекс внутри)
+#define TMINO_QTY 7     // ◄ Кол-во видов тетромино
+#define FIELD_H 20      // ◄ Высота игрового поля
+#define FIELD_W 10      // ◄ Ширина игрового поля
+#define FIELD_H_HALF 9  // ◄ Половина высоты поля(имеет смысл индекс внутри)
+#define FIELD_W_HALF 4  // ◄ Половина ширины поля(имеет смысл индекс внутри)
 
 typedef enum {
   Start,
@@ -31,5 +31,7 @@ typedef struct {
 } GameInfo_t;
 
 typedef enum { NoLaunched, Launched, Paused, Terminated, GameOvered } GameState;
+
+typedef enum { NothingSnake, Apple, Snake } PxCode;
 
 #endif

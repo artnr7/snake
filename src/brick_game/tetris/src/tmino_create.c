@@ -35,7 +35,7 @@ Tetromino_t *tmino_stc_obj() {
  * поле
  */
 void fld_tmino_create(GameInfo_t *g_info, Tetromino_t *tmino, int *tmino_pos) {
-  *tmino_pos = 0; // ◄ инициализация позиции нового тетромино, всегда 0
+  *tmino_pos = 0;  // ◄ инициализация позиции нового тетромино, всегда 0
   tmino_parser(g_info->field, *tmino, TMINO_START_Y, TMINO_START_X, 0);
 
   get_tmino(tmino);
@@ -50,7 +50,7 @@ void fld_tmino_create(GameInfo_t *g_info, Tetromino_t *tmino, int *tmino_pos) {
 /** @brief Получение тетромино в структуру */
 void get_tmino(Tetromino_t *tmino) {
   srand(clock());
-  int tmino_rand_id = rand() % TMINO_QTY; // ◄ случайный выбор из 7 вариантов
+  int tmino_rand_id = rand() % TMINO_QTY;  // ◄ случайный выбор из 7 вариантов
   tmino->shape = (*(tminos_init() + tmino_rand_id)).shape;
   tmino->px_code = (*(tminos_init() + tmino_rand_id)).px_code;
 }
@@ -97,7 +97,7 @@ bool tmino_parser(int **field, const Tetromino_t tmino, int st_y, int st_x,
     }
     spc_skip = false;
     /* ▼ Eсли попадается знак тетромино */
-    if (ch == L'■') { // ■
+    if (ch == L'■') {  // ■
       /* ▼ Записываем в поле код тетромино */
       if (mode == 0) {
         field[y][x] = tmino.px_code;

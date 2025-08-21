@@ -2,8 +2,8 @@
 
 /** @brief Уничтожение полных рядов */
 void rows_hit(GameInfo_t *g_info) {
-  int ersd_rows_qty = 0; // ◄ кол-во уничтоженных рядов
-  int full_row_i = 0;    // ◄ кол-во полных рядов
+  int ersd_rows_qty = 0;  // ◄ кол-во уничтоженных рядов
+  int full_row_i = 0;     // ◄ кол-во полных рядов
 
   /* Пока есть полные ряды, они уничтожаются;
    * После схлопываются верхняя и
@@ -65,16 +65,16 @@ void tmino_collapse(GameInfo_t *g_info, int full_row_i) {
  * рядов */
 void scr_chg(GameInfo_t *g_info, int ersd_rows_qty) {
   switch (ersd_rows_qty) {
-  case (1):
-    g_info->score += OneLine;
-    break;
-  case (2):
-    g_info->score += TwoLines;
-    break;
-  case (3):
-    g_info->score += ThreeLines;
-    break;
-  case (4):
-    g_info->score += FourLines;
+    case (1):
+      g_info->score += OneLine;
+      break;
+    case (2):
+      g_info->score += TwoLines;
+      break;
+    case (3):
+      g_info->score += ThreeLines;
+      break;
+    case (4):
+      g_info->score += FourLines;
   }
 }

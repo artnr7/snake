@@ -1,39 +1,81 @@
-# 1 правило моих проектов → помечать концы названий пользовательских директорий приставкой _dir 
-# 2 перед изменением Мейкфайла запушить изменения в Гитлаб
+all: 
+	@cmake -B build -DCMAKE_BUILD_TYPE=Debug   
+	
+install:
+	@cmake -B build -DCMAKE_BUILD_TYPE=Debug
+	@cmake --build build --target tetris_cli --parallel $(nproc)    
+	@cmake --build build --target tetris_desktop --parallel $(nproc)    
+	@cmake --build build --target snake_cli --parallel $(nproc)    
+	@cmake --build build --target snake_desktop --parallel $(nproc)
+	@echo "Install is completed"
 
-# FORMAT
-include make/cmake_format.mk
-include make/clang.mk
-include make/clean.mk
+uninstall:
+	@cmake --build build --target custom_uninstall --parallel $(nproc)   
 
-include make/format_clean.mk
+###--------→ CLEAN ←------------------------------------------------------------###
+FILES_TO_DEL := build dist_dir coverage 
 
-# PODGOTOVKA
-include make/dirs.mk # DIRS
-include make/srcs.mk 
-include make/exe_files.mk
+clean: 
+	@rm -rf $(FILES_TO_DEL)
+	@echo "Clean done"	 
 
-include make/compilers.mk
-# MAIN TARGETS
-all: install
-include make/install.mk
-include make/uninstall.mk
+###--------→ DVI ←--------------------------------------------------------------------###
+dvi:
+	doxygen
 
-include make/libs.mk
-include make/compilation.mk
-include make/dvi.mk
-include make/dist.mk
+###--------→ DIST ←--------------------------------------------------------------------###
+BRICKGAME_DIST_ARCH := brick_game-2.0.tar.gz
+
+BRICKGAME_DIST_FILES := brick_game gui Doxyfile play Makefile\
+ CMakeLists.txt cmake ${TEST_DIR} docs README.md
+
+dist:
+	@mkdir -p $(DIST_DIR)
+	@cp -r $(BRICKGAME_DIST_FILES) $(DIST_DIR)
+	@tar -czf ${BRICKGAME_DIST_ARCH} $(DIST_DIR)
+	@rm -rf $(DIST_DIR)
+	@echo "Dist done"
+
+###--------→ TEST ←--------------------------------------------------------------------###
+test:
+	@cmake --build build --target run_snake_test --parallel $(nproc)    
+
+###--------→ PLAY ←--------------------------------------------------------------------###
+play_tc:
+	@cmake --build build --target play_tetris_cli --parallel $(nproc)
+
+play_td:
+	@cmake --build build --target play_tetris_desktop --parallel $(nproc)
+
+play_sc:
+	@cmake --build build --target play_snake_cli --parallel $(nproc)
+
+play_sd:
+	@cmake --build build --target play_snake_desktop --parallel $(nproc)
+	
+###--------→ REBUILD ←--------------------------------------------------------------------###
+r: 
+	@cmake -B build -DCMAKE_BUILD_TYPE=Debug   
+	@cmake --build build --target clean --parallel $(nproc)    
 
 
+###--------→ CLANG ←---------------------------------------------------------------###
+CLANG_FILES := $(shell find . \( -name '*.c' -o -name '*.h' -o -name '*.cc' -o -name '*.hpp' \))
 
+clang_f:
+	@cp ../materials/linters/.clang-format . 
+	@clang-format -i $(CLANG_FILES)
+	@rm .clang-format
+	@echo "Clang done"
 
-include make/play.mk
+###--------→ CMAKE ←---------------------------------------------------------------###
+CMAKE_FILES := $(shell find . -name '*.cmake')
+cmake_f: 
+	@cmake-format -i $(CMAKE_FILES) CMakeLists.txt
+	@echo "Cmake done"
 
-include make/tests.mk
+###--------→ FORMAT ←--------------------------------------------------------------------###
+f: clang_f cmake_f 
 
-include make/gcov.mk
-
-
-include make/cppcheck.mk
-
-include make/gdb.mk
+cclean: clean f
+	@echo "Clean and Format done"

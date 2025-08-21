@@ -1,8 +1,9 @@
 #ifndef SNAKE_ANIM_H_
 #define SNAKE_ANIM_H_
 
-#include "../../../data_types/data_types.h"
 #include <deque>
+
+#include "../../../data_types/data_types.h"
 
 #define SNAKE_INIT_SIZE 4
 #define DEFAULT_SPEED 300
@@ -23,8 +24,7 @@ typedef struct {
 } SnakeSpeed;
 
 class SnakeAnim {
-
-public:
+ public:
   SnakeAnim();
   std::deque<ObjectPc> &GetBody();
   ObjectPc GetHead();
@@ -38,11 +38,11 @@ public:
   /*--------→ Speed ← ---------*/
   int CheckCollision();
 
-private:
+ private:
   std::deque<ObjectPc> body_;
   SnakeDirection s_dir_;
   SnakeSpeed speed_;
 };
-} // namespace s21
+}  // namespace s21
 
 #endif

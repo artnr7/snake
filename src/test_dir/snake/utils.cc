@@ -1,8 +1,8 @@
 #include "utils.hpp"
+
 #include <iostream>
 
 void MallocField(int ***field) {
-
   *field = new int *[FIELD_H] {};
 
   for (int i = 0; i < FIELD_H; ++i) {
@@ -57,7 +57,6 @@ bool EQField(int **field_1, int **field_2) {
   if (field_1 != nullptr && field_2 != nullptr) {
     for (int i = 0; i < FIELD_H && equal; ++i) {
       for (int j = 0; j < FIELD_W && equal; ++j) {
-
         if (field_1[i][j] != field_2[i][j]) {
           std::cout << "-1-1-1-1" << i << j << std::endl;
           equal = false;

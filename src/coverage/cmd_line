@@ -1,1 +1,0 @@
-genhtml --output-directory /home/artnr7/snake/src/coverage coverage_filtered.info

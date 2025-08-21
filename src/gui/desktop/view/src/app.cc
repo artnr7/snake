@@ -11,7 +11,6 @@ s21::App::App(int argc, char *argv[]) : QApplication(argc, argv) {
 }
 
 void s21::App::Config(s21::GameWidget *game_w) {
-
   // Размеры ↓
   game_w->setFixedSize(APP_W, APP_H);
 

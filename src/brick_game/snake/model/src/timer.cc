@@ -1,5 +1,6 @@
-#include "../model.hpp"
 #include <chrono>
+
+#include "../model.hpp"
 
 bool s21::Model::MoveDelay() {
   if (!IsLaunched()) {

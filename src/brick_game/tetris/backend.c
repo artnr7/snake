@@ -10,29 +10,29 @@ void userInput(UserAction_t action, bool hold) {
   dly_get(&dly);
 
   switch (action) {
-  case Start:
-    init_game(g_info, &tmino_pos);
-    break;
-  case Pause:
-    set_paused(g_info);
-    break;
-  case Terminate:
-    go_end(g_info);
-    break;
-  case Left:
-    lr_mv(g_info, Left);
-    break;
-  case Right:
-    lr_mv(g_info, Right);
-    break;
-  case Down:
-    tmino_drop(g_info, &tmino_fell);
-    break;
-  case Action:
-    tmino_spin(g_info, &tmino_pos, &tmino_fell);
-    break;
-  case Up:
-    break;
+    case Start:
+      init_game(g_info, &tmino_pos);
+      break;
+    case Pause:
+      set_paused(g_info);
+      break;
+    case Terminate:
+      go_end(g_info);
+      break;
+    case Left:
+      lr_mv(g_info, Left);
+      break;
+    case Right:
+      lr_mv(g_info, Right);
+      break;
+    case Down:
+      tmino_drop(g_info, &tmino_fell);
+      break;
+    case Action:
+      tmino_spin(g_info, &tmino_pos, &tmino_fell);
+      break;
+    case Up:
+      break;
   }
 
   gamestep(g_info, &action, &dly, &tmino_fell, &tmino_pos, &hold);

@@ -62,7 +62,8 @@ void tmino_fall(GameInfo_t *g_info, bool *tmino_fell) {
  * @param tmino_fell Упала/упадёт тетромино в следующем кадре
  */
 void down_shift(int **field, int **nxt_frm, bool tmino_fell) {
-  int blk_qty = 0; // ◄ кол-во пройденных блоков тетромино, в каждой фигуре их 4
+  int blk_qty =
+      0;  // ◄ кол-во пройденных блоков тетромино, в каждой фигуре их 4
 
   for (int i = 0; i < FIELD_H && blk_qty <= TMINO_BLKS_QTY; i++) {
     for (int j = 0; j < FIELD_W && blk_qty <= TMINO_BLKS_QTY; j++) {
@@ -89,7 +90,7 @@ void tmino_fixation(int **nxt_frm, bool tmino_fell) {
   if (!tmino_fell) {
     return;
   }
-  int blk_qty = 0; // ◄ кол-во пройденных блоков тетромино, в каждом 4
+  int blk_qty = 0;  // ◄ кол-во пройденных блоков тетромино, в каждом 4
 
   for (int i = 0; i < FIELD_H && blk_qty <= TMINO_BLKS_QTY; i++) {
     for (int j = 0; j < FIELD_W && blk_qty <= TMINO_BLKS_QTY; j++) {

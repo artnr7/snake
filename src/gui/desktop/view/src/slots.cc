@@ -1,5 +1,6 @@
-#include "../include/view.hpp"
 #include <iostream>
+
+#include "../include/view.hpp"
 
 void s21::GameWidget::UpdateInfo() { s21::GameWidget::UpdateInfoFun(); }
 

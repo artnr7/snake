@@ -1,4 +1,5 @@
 #include "controller.hpp"
+
 #include "../model/model.hpp"
 #ifdef CLI
 #include "controller_wrapper_for_c.h"
@@ -24,30 +25,30 @@ void s21::Controller::userInput(UserAction_t action, bool hold) {
 
   model->GameStep();
   switch (action) {
-  case UserAction_t::Start:
-    model->InitGame();
-    break;
-  case UserAction_t::Pause:
-    model->TakeBreak();
-    break;
-  case UserAction_t::Terminate:
-    model->GoEnd();
-    break;
-  case UserAction_t::Up:
-    model->SetSnakeDir(action);
-    break;
-  case UserAction_t::Right:
-    model->SetSnakeDir(action);
-    break;
-  case UserAction_t::Down:
-    model->SetSnakeDir(action);
-    break;
-  case UserAction_t::Left:
-    model->SetSnakeDir(action);
-    break;
-  case UserAction_t::Action:
-    model->ChangeSpeed(hold);
-    break;
+    case UserAction_t::Start:
+      model->InitGame();
+      break;
+    case UserAction_t::Pause:
+      model->TakeBreak();
+      break;
+    case UserAction_t::Terminate:
+      model->GoEnd();
+      break;
+    case UserAction_t::Up:
+      model->SetSnakeDir(action);
+      break;
+    case UserAction_t::Right:
+      model->SetSnakeDir(action);
+      break;
+    case UserAction_t::Down:
+      model->SetSnakeDir(action);
+      break;
+    case UserAction_t::Left:
+      model->SetSnakeDir(action);
+      break;
+    case UserAction_t::Action:
+      model->ChangeSpeed(hold);
+      break;
   }
 }
 

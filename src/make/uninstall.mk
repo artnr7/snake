@@ -1,1 +1,0 @@
-uninstall: rm -rf ${INSTALL_DIR}

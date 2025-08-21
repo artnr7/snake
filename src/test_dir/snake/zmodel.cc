@@ -1,7 +1,9 @@
+#include <gtest/gtest.h>
+
+#include <iostream>
+
 #include "../../brick_game/snake/model/model.hpp"
 #include "utils.hpp"
-#include <gtest/gtest.h>
-#include <iostream>
 
 TEST(get_model, get_model_1) {
   s21::Model *model_1 = s21::Model::GetModel();
@@ -32,8 +34,8 @@ TEST(init_game, init_game_1) {
 
   GameInfo_t g_info = model->GetSInfo();
 
-  int snake_px_qty = AreObjsInField(s21::PxCode::Snake, g_info.field);
-  int apple_px_qty = AreObjsInField(s21::PxCode::Apple, g_info.field);
+  int snake_px_qty = AreObjsInField(PxCode::Snake, g_info.field);
+  int apple_px_qty = AreObjsInField(PxCode::Apple, g_info.field);
 
   EXPECT_EQ(snake_px_qty, 4);
   EXPECT_EQ(apple_px_qty, 1);

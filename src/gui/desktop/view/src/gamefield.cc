@@ -1,5 +1,6 @@
-#include "../include/view.hpp"
 #include <iostream>
+
+#include "../include/view.hpp"
 
 #ifdef TETRIS
 void s21::GameWidget::TetrisChooseBrush(QBrush &brush, int &px) {
@@ -49,10 +50,10 @@ void s21::GameWidget::paintEvent(QPaintEvent *event) {
       painter.drawRect(GAMEFIELD_X + j * MULT, GAMEFIELD_Y + i * MULT, MULT,
                        MULT);
 #ifdef SNAKE
-      if (g_info.field[i][j] == s21::PxCode::Snake) {
+      if (g_info.field[i][j] == PxCode::Snake) {
         painter.fillRect(GAMEFIELD_X + j * MULT + 1, GAMEFIELD_Y + i * MULT + 1,
                          MULT - 1, MULT - 1, QBrush{"#00FFFF"});
-      } else if (g_info.field[i][j] == s21::PxCode::Apple) {
+      } else if (g_info.field[i][j] == PxCode::Apple) {
         painter.fillRect(GAMEFIELD_X + j * MULT + 1, GAMEFIELD_Y + i * MULT + 1,
                          MULT - 1, MULT - 1, QBrush{"#FF0000"});
       }
@@ -69,7 +70,6 @@ void s21::GameWidget::paintEvent(QPaintEvent *event) {
 
 #ifdef TETRIS
   if (g_info.pause == Launched || g_info.pause == Paused) {
-
     for (size_t i = 0; i < NEXT_H / MULT; ++i) {
       for (size_t j = 0; j < NEXT_W / MULT; ++j) {
         painter.drawRect(NEXT_X + j * MULT, NEXT_Y + i * MULT, MULT, MULT);

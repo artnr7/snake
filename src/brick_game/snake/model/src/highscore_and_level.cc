@@ -1,6 +1,7 @@
-#include "../model.hpp"
 #include <fstream>
 #include <iostream>
+
+#include "../model.hpp"
 
 #define PointsToLevelUp 5
 #define MaxLevelsNum 10

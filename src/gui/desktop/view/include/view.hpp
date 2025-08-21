@@ -5,9 +5,9 @@
 
 namespace s21 {
 class View {
-public:
+ public:
   s21::App *App;
 };
-} // namespace s21
+}  // namespace s21
 
 #endif

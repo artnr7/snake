@@ -6,11 +6,8 @@
 
 namespace s21 {
 
-typedef enum { Nothing, Apple, Snake } PxCode;
-
 class Model {
-
-protected:
+ protected:
   Model();
 
   static Model *model_;
@@ -71,7 +68,7 @@ protected:
   void MoveSnake(bool &dly);
   void RemoveOrNotTail(bool &ate_apple, bool &dly);
 
-public:
+ public:
   /*=====================→ METHODS ←==================== */
   static Model *GetModel();
   // не нужен void Mdealloc();
@@ -87,6 +84,6 @@ public:
   void SetSnakeDir(UserAction_t &action);
   void ChangeSpeed(bool &hold);
 };
-} // namespace s21
+}  // namespace s21
 
 #endif

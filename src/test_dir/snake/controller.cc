@@ -1,6 +1,8 @@
 #include "../../brick_game/snake/controller/controller.hpp"
-#include "utils.hpp"
+
 #include <gtest/gtest.h>
+
+#include "utils.hpp"
 
 TEST(userInput_start, right_1) {
   s21::Controller::userInput(UserAction_t::Start, false);

@@ -7,18 +7,18 @@
 namespace s21 {
 class App : public QApplication {
   Q_OBJECT
-public:
+ public:
   App(int argc, char *argv[]);
   void Config(s21::GameWidget *game_w);
 
-private:
+ private:
   QTimer *update_timer_;
   void Connections();
-signals:
+ signals:
   void AppClose();
-private slots:
+ private slots:
   void Exit();
 };
-} // namespace s21
+}  // namespace s21
 
 #endif

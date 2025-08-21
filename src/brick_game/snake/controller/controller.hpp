@@ -4,11 +4,10 @@
 #include "../../data_types/data_types.h"
 namespace s21 {
 class Controller {
-
-protected:
+ protected:
   Controller(){};
 
-public:
+ public:
 #ifdef CLI
   static Controller *GetController();
 #endif
@@ -16,6 +15,6 @@ public:
   static void userInput(UserAction_t action, bool hold);
   static GameInfo_t updateCurrentState();
 };
-} // namespace s21
+}  // namespace s21
 
 #endif

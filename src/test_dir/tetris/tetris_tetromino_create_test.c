@@ -93,8 +93,8 @@ START_TEST(fld_tmino_create_1) {
       }
     }
   }
-  ck_assert_int_eq(mvg_f, 4); // ◄ 4 блока в тетромино всегда
-  ck_assert_int_eq(mvg_n, 4); // ◄ 4 блока в тетромино всегда
+  ck_assert_int_eq(mvg_f, 4);  // ◄ 4 блока в тетромино всегда
+  ck_assert_int_eq(mvg_n, 4);  // ◄ 4 блока в тетромино всегда
   ck_assert_int_eq(tmino_pos, 0);
 
   tg_info_and_nxt_frm_free(tg_info);
@@ -199,7 +199,7 @@ START_TEST(tmino_parser_1) {
       }
     }
   }
-  ck_assert_int_eq(mvg_f, 4); // ◄ 4 блока в тетромино всегда
+  ck_assert_int_eq(mvg_f, 4);  // ◄ 4 блока в тетромино всегда
 
   tg_info_and_nxt_frm_free(tg_info);
 }

@@ -1,4 +1,4 @@
-#include "gui/cli/frontend.h"
+#include "../gui/cli/frontend.h"
 
 int main() {
   setlocale(LC_ALL, "");

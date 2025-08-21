@@ -1,9 +1,10 @@
 #ifndef __MOVING_UTILS__
 #define __MOVING_UTILS__
 
+#include <stdlib.h>
+
 #include "../conf.h"
 #include "../init.h"
-#include <stdlib.h>
 
 bool mvg_px_dtrm(PixelCode_t px);
 
