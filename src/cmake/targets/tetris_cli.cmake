@@ -4,7 +4,7 @@ set(PLAY_TETRIS_CLI play_${TETRIS_CLI})
 include(cmake/srcs/cli_gui.cmake)
 include(cmake/make_libs/tetris_back_lib.cmake)
 
-set(TETRIS_CLI_SRC_INCLUDE cli.c ${CLI_GUI_SRC_INCLUDE})
+set(TETRIS_CLI_SRC_INCLUDE play/cli.c ${CLI_GUI_SRC_INCLUDE})
 
 add_executable(${TETRIS_CLI} ${TETRIS_CLI_SRC_INCLUDE})
 

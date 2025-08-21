@@ -4,7 +4,7 @@ set(PLAY_SNAKE_DESKTOP play_${SNAKE_DESKTOP})
 include(cmake/srcs/desktop_gui.cmake)
 include(cmake/make_libs/snake_back_lib.cmake)
 
-set(SNAKE_DESKTOP_SRC_INCLUDE desktop.cc ${DESKTOP_SRC_INCLUDE})
+set(SNAKE_DESKTOP_SRC_INCLUDE play/desktop.cc ${DESKTOP_SRC_INCLUDE})
 
 add_executable(${SNAKE_DESKTOP} ${SNAKE_DESKTOP_SRC_INCLUDE})
 

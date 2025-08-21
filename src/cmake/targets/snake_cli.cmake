@@ -5,7 +5,7 @@ set(PLAY_SNAKE_CLI play_${SNAKE_CLI})
 include(cmake/srcs/cli_gui.cmake)
 include(cmake/make_libs/snake_back_lib.cmake)
 
-set(SNAKE_CLI_SRC_INCLUDE cli.c ${CLI_GUI_SRC_INCLUDE}
+set(SNAKE_CLI_SRC_INCLUDE play/cli.c ${CLI_GUI_SRC_INCLUDE}
                           ${SNAKE_BACK_SRC_INCLUDE})
 
 add_executable(${SNAKE_CLI} ${SNAKE_CLI_SRC_INCLUDE})

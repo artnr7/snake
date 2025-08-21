@@ -1,5 +1,1 @@
-uninstall_t: clean
-
-uninstall_s: clean
-
-uninstall: uninstall_s
+uninstall: rm -rf ${INSTALL_DIR}
