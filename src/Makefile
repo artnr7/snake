@@ -12,22 +12,18 @@ install:
 uninstall:
 	@cmake --build build --target custom_uninstall --parallel $(nproc)   
 
-###--------→ CLEAN ←------------------------------------------------------------###
-FILES_TO_DEL := build dist_dir coverage 
-
-clean: 
-	@rm -rf $(FILES_TO_DEL)
-	@echo "Clean done"	 
 
 ###--------→ DVI ←--------------------------------------------------------------------###
+DOXY_DIR := docs/brick_game_v2.0
 dvi:
-	doxygen
+	doxygen $(DOXY_DIR)/Doxyfile
 
 ###--------→ DIST ←--------------------------------------------------------------------###
+DIST_DIR := dist_dir 
 BRICKGAME_DIST_ARCH := brick_game-2.0.tar.gz
 
-BRICKGAME_DIST_FILES := brick_game gui Doxyfile play Makefile\
- CMakeLists.txt cmake ${TEST_DIR} docs README.md
+BRICKGAME_DIST_FILES := brick_game gui play Makefile\
+ CMakeLists.txt cmake ${TEST_DIR} docs
 
 dist:
 	@mkdir -p $(DIST_DIR)
@@ -74,6 +70,12 @@ cmake_f:
 	@cmake-format -i $(CMAKE_FILES) CMakeLists.txt
 	@echo "Cmake done"
 
+###--------→ CLEAN ←------------------------------------------------------------###
+FILES_TO_DEL := build $(DIST_DIR) coverage $(DOXY_DIR)/doxygen $(BRICKGAME_DIST_ARCH)
+
+clean: 
+	@rm -rf $(FILES_TO_DEL)
+	@echo "Clean done"	 
 ###--------→ FORMAT ←--------------------------------------------------------------------###
 f: clang_f cmake_f 
 
