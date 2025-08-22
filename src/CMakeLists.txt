@@ -20,7 +20,7 @@ include(cmake/find_packages/tests.cmake)
 include(cmake/find_packages/qt.cmake)
 include(cmake/find_packages/curses.cmake)
 
-# ############################ PLAY 
+# ############################ PLAY
 
 # snake_cli
 include(cmake/targets/play/snake_cli.cmake)
