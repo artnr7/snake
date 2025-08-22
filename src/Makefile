@@ -36,6 +36,19 @@ dist:
 test:
 	@cmake --build build --target run_snake_test --parallel $(nproc)    
 
+testt:
+	@cmake --build build --target run_tetris_test --parallel $(nproc)   
+# testt: clean clang tetris_test_compile
+# 	@./$(TETRIS_TEST_EXE_FILE)
+
+# test_valgrind: clean clang tetris_test_compile
+# 	@valgrind $(VAL_FLAGS) ./$(TETRIS_TEST_EXE_FILE)
+
+# tetris_test_compile: tetris_back_lib $(TETRIS_FRONT_OBJ_FILES)
+# 	@$(GCC) $(TETRIS_TEST_FILES) $(GT_FLAGS) -o $(TETRIS_TEST_EXE_FILE)\
+# 	 $(TETRIS_FRONT_OBJ_FILES) $(TETRIS_LIB_FILE) -lncursesw
+# 	@echo "Test compiled" 
+
 ###--------→ PLAY ←--------------------------------------------------------------------###
 play_tc:
 	@cmake --build build --target play_tetris_cli --parallel $(nproc)

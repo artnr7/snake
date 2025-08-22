@@ -16,12 +16,9 @@ target_compile_options(
   PRIVATE -DTETRIS
           -Wall
           -Werror
-          -Wextra
-          -std=c11
-          -pedantic
-          -lncursesw)
+          -Wextra)
 
-target_link_libraries(${TETRIS_CLI} PRIVATE Curses::Curses tetris_back_lib)
+target_link_libraries(${TETRIS_CLI} PRIVATE ncursesw tetris_back_lib)
 
 add_custom_target(
   ${PLAY_TETRIS_CLI}

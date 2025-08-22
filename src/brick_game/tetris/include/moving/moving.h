@@ -3,6 +3,6 @@
 
 #include "left_right_move.h"
 #include "rotate.h"
-#include "tetromino_fall.h"
+#include "tmino_fall.h"
 
 #endif

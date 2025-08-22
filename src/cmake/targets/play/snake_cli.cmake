@@ -13,10 +13,9 @@ set_target_properties(
   ${SNAKE_CLI} PROPERTIES RUNTIME_OUTPUT_DIRECTORY
                           "${CMAKE_SOURCE_DIR}/${INSTALL_DIR}")
 
-target_compile_options(${SNAKE_CLI} PRIVATE -DSNAKE -DCLI -Wall -Werror -Wextra
-                                            -lncursesw)
+target_compile_options(${SNAKE_CLI} PRIVATE -DSNAKE -DCLI -Wall -Werror -Wextra)
 
-target_link_libraries(${SNAKE_CLI} PRIVATE Curses::Curses
+target_link_libraries(${SNAKE_CLI} PRIVATE ncursesw
                                            snake_back_lib_dsnake_dcli)
 add_custom_target(
   ${PLAY_SNAKE_CLI}

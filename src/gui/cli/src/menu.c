@@ -9,7 +9,8 @@
 /** @brief Прорисовка игры */
 void rendering() {
   GameInfo_t g_info = updateCurrentState();
-  if (g_info.pause == Terminated || g_info.pause == GameOvered) {
+  if (g_info.pause == Terminated || g_info.pause == GameOvered ||
+      g_info.pause == Woned) {
     return;
   }
 
@@ -45,7 +46,6 @@ void gamefield_and_next_frame_rend(GameInfo_t g_info, int rend_scl_x,
 #ifdef TETRIS
   for (int i = 0; i < NEXT_TMINO_H; i++) {
     for (int j = 0; j < NEXT_TMINO_W; j++) {
-      // printf("i = %d j = %d\n", i, j);
       px_rend(i, j, rend_scl_x, rend_scl_y, 2, 16,
               determ_color(g_info.next[i][j]));
     }
@@ -184,12 +184,14 @@ void info_action_rend(int info_y) {
 
 /** @brief Прорисовка счёта в информационной части */
 void player_info_rend(GameInfo_t g_info, int info_y, int info_x) {
+#ifdef TETRIS
   wchar_t *next =
       L"\n\
 \t                █\n\
 \t  ▄▄▄▄ █▀▀█ █ █▐█▌\n\
 \t  █  █ █▄▄█  █  █\n\
 \t  █  █ █▄▄▄ █ █ █";
+#endif
 
   wchar_t *score =
       L"\n\
@@ -211,7 +213,9 @@ void player_info_rend(GameInfo_t g_info, int info_y, int info_x) {
  █  █ █ █▄▄█ █  █ █▄▄▄ █    █  █ █    █▄▄█\n\
  █  █ █ ▄▄▄█ █  █ ▄▄▄█ █▄▄▄ █▄▄█ █    █▄▄▄";
 
+#ifdef TETRIS
   mvprintw(info_y + 15, 0, "%ls", next);
+#endif
   mvprintw(info_y + 28, 0, "%ls", score);
   mvprintw(info_y + 32, 0, "%ls", level);
   mvprintw(info_y + 37, 0, "%ls", highscore);
@@ -223,9 +227,11 @@ void player_info_rend(GameInfo_t g_info, int info_y, int info_x) {
  * @todo Сделать чтение из файла по-хорошему, но не хочу тратить время
  */
 void logo_rend() {
-  wchar_t *logo =
+  wchar_t *logo = NULL;
+#ifdef TETRIS
+  logo =
       L"\n\
-████████████████ ███████████████ ████████████████   ██████████████ ████████    █████████████\n\
+████████████████ ███████████████ ████████████████   ██████████████ ████████    ████████████▄\n\
 ████████████████ ███████████████ ████████████████  ███████████████ ████████  ███████████████\n\
 ███   ████   ███  ████       ███ ███   ████   ███ ██████    █████  ████████ ██████    █████ \n\
       ████        ████                 ████        █████    █████    ████   █████           \n\
@@ -237,7 +243,24 @@ void logo_rend() {
      ▄████▄       ████       ███      ▄████▄      ██████    ██████ ████████ ███████  ██████ \n\
     ████████     ███████████████     ████████     ██████    ██████ ████████  █████████████  \n\
     ████████     ███████████████     ████████     ██████    ██████ ████████   ███████████";
+#endif
 
+#ifdef SNAKE
+  logo =
+      L"\n\
+   ████████████▄ ██████    ██████   █████████████  █████      █████ ███████████████\n\
+ ██████████▀█▀██ ██████    ██████   █████████████  █████       ████ ███████████████\n\
+██████    █████   ████      ████    ████    █████  ████      ██████  ████       ███\n\
+█████             █████     ████    ████    ██████ ████    █████     ████          \n\
+ ███████          ████████  ████    ██████████████ ████ ███████      ████          \n\
+  █████████       ██████████████   ███████████████ ██████████        ███████████   \n\
+     ███████      ████ █████████   ███████████████ ███████████       ███████████   \n\
+ ██     ██████    ████   ███████   █████    ██████ ████ ███████      ████          \n\
+████     ██████   ████     █████  ██████    ██████ ████    █████     ████          \n\
+███████  ██████   ████      ████  ██████    ██████ ████      ██████  ████       ███\n\
+ █████████████   ██████    ██████ ██████    ██████ █████       ████ ███████████████\n\
+  ███████████    ██████    ██████ ██████    ██████ █████      █████ ███████████████";
+#endif
   attron(COLOR_PAIR(4));
   mvprintw(0, 0, "%ls", logo);
   attroff(COLOR_PAIR(4));

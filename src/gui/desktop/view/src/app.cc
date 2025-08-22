@@ -44,7 +44,8 @@ void s21::App::Exit() {
 #elif SNAKE
   g_info = s21::Controller::updateCurrentState();
 #endif
-  if (g_info.pause == Terminated || g_info.pause == GameOvered) {
+  if (g_info.pause == Terminated || g_info.pause == GameOvered ||
+      g_info.pause == Woned) {
     emit AppClose();
   }
 }

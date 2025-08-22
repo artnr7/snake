@@ -1,5 +1,5 @@
-#ifndef SNAKE_ANIM_H_
-#define SNAKE_ANIM_H_
+#ifndef SNAKE_ANIM_HPP_
+#define SNAKE_ANIM_HPP_
 
 #include <deque>
 

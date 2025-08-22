@@ -6,6 +6,9 @@
  * @todo Когда больше не будет свободной ячейки игра должна завершаться
  */
 void s21::Model::SpawnApple() {
+  if (s_info_.score == MAX_SCORE) {
+    return;
+  }
   std::random_device rd;
   std::mt19937 rng(rd());
 
@@ -34,8 +37,8 @@ int s21::Model::EatApple() {
   bool ate_apple = 0;
   auto head = snake_anim_.GetHead();
   if (head.cord_y_ == apple_.cord_y_ && head.cord_x_ == apple_.cord_x_) {
-    SpawnApple();
     IncreaseScore();
+    SpawnApple();
     LevelUp();
     SetSnakeSpeed();
     GetConstSnakeSpeed();

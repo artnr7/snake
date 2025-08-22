@@ -15,6 +15,6 @@ bool s21::Model::IsGameoveredOrTerminated() {
          s_info_.pause == GameState::Terminated;
 }
 
-bool s21::Model::IsGameEnd() { return IsGameoveredOrTerminated(); }
+bool s21::Model::IsWoned() { return s_info_.pause == GameState::Woned; }
 
-bool s21::Model::IsGameInactive() { return 0; }
+bool s21::Model::IsGameEnd() { return IsGameoveredOrTerminated() || IsWoned(); }

@@ -1,7 +1,7 @@
 #ifndef __TEST_UTILS__
 #define __TEST_UTILS__
 
-#include "../brick_game/tetris/tetris_include/tetris_data_types.h"
+#include "../../brick_game/tetris/include/conf.h"
 
 void chess_fill(int **field);
 

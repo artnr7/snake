@@ -2,12 +2,9 @@
 
 #include "../model.hpp"
 
-/*=====================→ INIT ←==================== */
-
-/** @brief  */
-
 s21::Model *s21::Model::model_ = nullptr;
 
+/** @brief Геттер синглтона модели */
 s21::Model *s21::Model::GetModel() {
   if (model_ == nullptr) {
     model_ = new Model();
@@ -31,11 +28,12 @@ void s21::Model::Malloc() {
   }
 }
 
+/** @brief Инициализация игры */
 void s21::Model::InitGame() {
   if (IsPaused()) {
     s_info_.pause = GameState::Launched;
   }
-  if (IsLanchedOrPaused() || IsGameEnd()) return;
+  if (!IsNoLaunched()) return;
   ParseSnake();
   SpawnApple();
   ParseApple();
@@ -44,24 +42,16 @@ void s21::Model::InitGame() {
   s_info_.high_score = GetHighscore();
 }
 
+/** @brief Постановка игры на паузу */
 void s21::Model::TakeBreak() {
   if (IsLaunched()) {
     s_info_.pause = GameState::Paused;
   }
 }
 
+/** @brief Команда завершить игру и установить соответствующее состояние */
 void s21::Model::GoEnd() {
   if (IsLaunched() || IsNoLaunched() || IsPaused()) {
     s_info_.pause = GameState::Terminated;
   }
 }
-
-// не нужен
-// void s21::Model::Mdealloc() {
-//   if (s_info_.field != nullptr) {
-//     for (int i = 0; i < FIELD_H; ++i) {
-//       delete[] (s_info_.field)[i];
-//     }
-//     delete[] s_info_.field;
-//   }
-// }

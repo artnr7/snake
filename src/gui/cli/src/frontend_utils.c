@@ -36,7 +36,8 @@ void start(UserAction_t *action, bool *hold) {
 /** @brief Основной игровой цикл */
 void gameloop(UserAction_t *action, bool *hold) {
   while (updateCurrentState().pause != Terminated &&
-         updateCurrentState().pause != GameOvered) {
+         updateCurrentState().pause != GameOvered &&
+         updateCurrentState().pause != Woned) {
     keyboard_input(action, hold);
     userInput(*action, *hold);
     rendering();

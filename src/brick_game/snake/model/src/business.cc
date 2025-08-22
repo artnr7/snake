@@ -1,10 +1,14 @@
 #include "../model.hpp"
 
-/*=====================→ BUSINESS ←==================== */
-/** @brief  */
-
+/** @brief Шаг игры
+ * @details Сборник функций выполняющихся при каждом вызове обновления
+ * контроллера
+ */
 void s21::Model::GameStep() {
-  if (!IsLaunched()) return;
+  if (!IsLaunched()) {
+    return;
+  }
+
   bool dly = MoveDelay();
 
   MoveSnake(dly);
@@ -17,5 +21,12 @@ void s21::Model::GameStep() {
 
   Collision();
 
+  Win();
+
   ParseObjs();
+}
+
+void s21::Model::SetSnakeDir(UserAction_t &action) {
+  if (!IsLaunched()) return;
+  snake_anim_.SetDirection(action);
 }

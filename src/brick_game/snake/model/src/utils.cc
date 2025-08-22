@@ -2,9 +2,7 @@
 
 #define PointReward 1
 
-/** @brief  */
-
-/** @brief Получение информации об игровой структуре */
+/** @brief Геттер структуры переменных игры существующих в данный момент */
 GameInfo_t s21::Model::GetSInfo() { return s_info_; }
 
 void s21::Model::ParseObjs() {
@@ -47,13 +45,15 @@ void s21::Model::IncreaseScore() {
   s_info_.score += PointReward;
 }
 
-void s21::Model::SetSnakeDir(UserAction_t &action) {
+void s21::Model::Win() {
   if (!IsLaunched()) return;
-  snake_anim_.SetDirection(action);
+
+  if (s_info_.score == MAX_SCORE) {
+    s_info_.pause = GameState::Woned;
+  }
 }
 
 /*--------→ Collision ← ---------*/
-
 void s21::Model::Collision() {
   if (!IsLaunched()) return;
   WallCollision();

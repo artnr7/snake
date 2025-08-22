@@ -1,10 +1,10 @@
 #include "test_utils.h"
 
-#include "../brick_game/tetris/tetris_include/tetris_moving/tetris_moving_utils.h"
+#include "../../brick_game/tetris/include/moving/moving_utils.h"
 
 void chess_fill(int **field) {
-  for (int i = 0; i < FLD_H; i++) {
-    for (int j = 0; j < FLD_W; j++) {
+  for (int i = 0; i < FIELD_H; i++) {
+    for (int j = 0; j < FIELD_W; j++) {
       field[i][j] = RedIStc;
       if (i % 10 == j) {
         field[i][j] = Nothing;
@@ -15,8 +15,8 @@ void chess_fill(int **field) {
 
 void fill(int **field, int qty) {
   if (qty < 1) return;
-  for (int i = FLD_H - qty; i < FLD_H; i++) {
-    for (int j = 0; j < FLD_W; j++) {
+  for (int i = FIELD_H - qty; i < FIELD_H; i++) {
+    for (int j = 0; j < FIELD_W; j++) {
       field[i][j] = RedIStc;
     }
   }
@@ -72,8 +72,8 @@ int move_detect(int **field, const Tetromino_t tmino, int st_y, int st_x,
 
 int tmino_detect(int **field) {
   int mvg = 0;
-  for (int i = 0; i < FLD_H; i++) {
-    for (int j = 0; j < FLD_W; j++) {
+  for (int i = 0; i < FIELD_H; i++) {
+    for (int j = 0; j < FIELD_W; j++) {
       if (mvg_px_dtrm(field[i][j])) {
         mvg++;
       }

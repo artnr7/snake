@@ -8,6 +8,9 @@
 #define FIELD_H_HALF 9  // ◄ Половина высоты поля(имеет смысл индекс внутри)
 #define FIELD_W_HALF 4  // ◄ Половина ширины поля(имеет смысл индекс внутри)
 
+#define MAX_SCORE (FIELD_H * FIELD_W)
+
+/** @brief Действия игрока */
 typedef enum {
   Start,
   Pause,
@@ -19,6 +22,7 @@ typedef enum {
   Action
 } UserAction_t;
 
+/** @brief Переменные игры */
 typedef struct {
   int **field;
   int **next;
@@ -27,11 +31,19 @@ typedef struct {
   int level;
   int speed;
   int pause;
-
 } GameInfo_t;
 
-typedef enum { NoLaunched, Launched, Paused, Terminated, GameOvered } GameState;
+/** @brief Состояния игры */
+typedef enum {
+  NoLaunched,
+  Launched,
+  Paused,
+  Terminated,
+  GameOvered,
+  Woned
+} GameState;
 
+/** @brief Значения клеток поля */
 typedef enum { NothingSnake, Apple, Snake } PxCode;
 
 #endif
