@@ -131,4 +131,6 @@ Makefile.old
 dkms.conf
 
 #custom
+build
 .vscode
+install_dir

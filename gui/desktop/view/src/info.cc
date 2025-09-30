@@ -1,0 +1,73 @@
+#include "../include/view.hpp"
+
+/** @brief Рисование справочной информации */
+void s21::GameWidget::InfoDraw(GameWidget *field_w) {
+  GameInfo_t g_info = {};
+#ifdef SNAKE
+  g_info = s21::Controller::updateCurrentState();
+#elif TETRIS
+  g_info = updateCurrentState();
+#endif
+
+  info_lay = new QVBoxLayout(field_w);
+  info_lay->setContentsMargins(INFO_X + INDENT_X, INFO_Y + INDENT_Y, INDENT_X,
+                               INDENT_Y);
+  info_lay->addSpacing(INDENT_Y);
+
+  InfoLabelsDraw(g_info);
+  info_lay->addSpacing(100 * INDENT_Y);
+}
+
+/** @brief Рисование частей справочной информации */
+void s21::GameWidget::InfoLabelsDraw(GameInfo_t &g_info) {
+  QFont info_font("Verdana", 15, 300);
+
+  QLabel *rules = new QLabel;
+  rules->setText(
+      "            TO\nSTART|PAUSE|EXIT\n           PRESS\n   S   | "
+      "  T   |   Q");
+  rules->setFont(info_font);
+
+  level = new QLabel(QString("Level:") + QString::number(g_info.level));
+  level->setFont(info_font);
+
+  score = new QLabel(QString("Score:") + QString::number(g_info.score));
+  score->setFont(info_font);
+
+  highscore =
+      new QLabel(QString("Highscore:") + QString::number(g_info.high_score));
+  highscore->setFont(info_font);
+
+  info_lay->addWidget(rules, 0, Qt::AlignTop);
+  info_lay->addSpacing(2 * INDENT_Y);
+
+  info_lay->addWidget(level, 0, Qt::AlignTop);
+  info_lay->addWidget(score, 0, Qt::AlignTop);
+  info_lay->addWidget(highscore, 0, Qt::AlignTop);
+
+#ifdef TETRIS
+  QLabel *next = new QLabel;
+  next->setText("       NEXT");
+  next->setFont(info_font);
+  info_lay->addWidget(next, 0, Qt::AlignTop);
+#endif
+}
+
+/** @brief Обновление справочной информации */
+void s21::GameWidget::UpdateInfoFun() {
+  GameInfo_t g_info = {};
+
+#ifdef SNAKE
+  g_info = s21::Controller::updateCurrentState();
+#elif TETRIS
+  g_info = updateCurrentState();
+#endif
+  QString user_level = QString::number(g_info.level);
+  level->setText("Level:" + user_level);
+
+  QString user_score = QString::number(g_info.score);
+  score->setText("Score:" + user_score);
+
+  QString user_highscore = QString::number(g_info.high_score);
+  highscore->setText("Highscore:" + user_highscore);
+}
